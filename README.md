@@ -1,6 +1,6 @@
 # Kode Penelitian Skripsi
 
-Kode untuk skripsi **"Analisis Perbandingan Whisper dan XLS-R terhadap Performa Automatic Speech Recognition Bahasa Jawa pada Variasi Jumlah Data Training"**.
+Kode untuk skripsi **"Komparasi Performa dan Efisiensi Data Model Whisper dan XLS-R untuk ASR Bahasa Jawa Berdasarkan Pemodelan Power Law"**.
 
 Berkas ini adalah ringkasan operasional. **Dokumen konvensi lengkap** berada di:
 
