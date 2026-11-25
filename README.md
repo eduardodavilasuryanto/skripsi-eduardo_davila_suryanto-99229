@@ -1,6 +1,6 @@
 # Komparasi Performa dan Efisiensi Data Whisper dan XLS-R untuk ASR Bahasa Jawa
 
-Repositori ini berisi kode, konfigurasi, pembagian data, hipotesis per utterance, keluaran analisis, dan log eksperimen untuk skripsi *Komparasi Performa dan Efisiensi Data Model Whisper dan XLS-R untuk ASR Bahasa Jawa Berdasarkan Pemodelan Power Law* (Program Studi Sistem Informasi, Universitas Multimedia Nusantara, 2026). Setiap angka pada BAB III, BAB IV, dan Lampiran B skripsi dapat ditelusuri ke skrip dan berkas keluaran di sini tanpa melatih ulang model.
+Repositori ini berisi kode, konfigurasi, pembagian data, hipotesis per utterance, keluaran analisis, dan log eksperimen untuk skripsi *Komparasi Performa dan Efisiensi Data Model Whisper dan XLS-R untuk ASR Bahasa Jawa Berdasarkan Pemodelan Power Law* (Program Studi Sistem Informasi, Fakultas Teknik dan Informatika, Universitas Multimedia Nusantara, 2026). Setiap angka pada BAB III, BAB IV, dan Lampiran B skripsi dapat ditelusuri ke skrip dan berkas keluaran di sini tanpa melatih ulang model.
 
 ## Rancangan Penelitian
 
@@ -52,6 +52,7 @@ outputs/hypotheses/           hipotesis per utterance kesepuluh konfigurasi pada
 outputs/results/              metrik, tabel, dan laporan analisis (JSON dan CSV)
 logs/                         log setiap eksekusi skrip dan setiap run
 requirements.txt              versi terkunci seluruh pustaka
+LICENSE, LICENSE-DATA         lisensi kode (MIT) dan lisensi data serta keluaran (CC BY-SA 4.0)
 ```
 
 | Tahap | Skrip |
@@ -122,7 +123,13 @@ Repositori ini dipublikasikan pada 25 November 2026, dimulai dari satu *commit* 
 
 Pada daftar proses CPU teratas di `logs/whisper_d4.monitor.log`, `logs/whisper_d5.monitor.log`, dan `logs/xlsr_d5.monitor.log`, nama satu proses perangkat lunak di luar penelitian diganti `[disunting]` pada lima tempat. Sumber satu catatan manual pada `logs/xlsr_d1_trial.monitor.log` juga diganti `[disunting]`. Persentase CPU-nya dipertahankan. `analyze_training_process.py` hanya membaca total CPU proses Python dari baris tersebut, sehingga sesudah dijalankan ulang seluruh CSV keluarannya identik. Yang berubah hanya SHA-256 keempat log pada `training_process_report.json` beserta waktu eksekusinya.
 
-Log dan laporan lainnya dipertahankan apa adanya, termasuk jalur folder pada komputer penulis.
+Log dan laporan lainnya dipertahankan apa adanya, termasuk jalur folder pada komputer penulis. Beberapa log, teks yang dicetak skrip, dan label pada laporan memuat penanda kerja internal, misalnya nomor poin masukan pemeriksaan naskah. Penanda itu tidak diubah agar log dan laporan yang tersimpan tetap sama dengan keluaran skripnya.
+
+Sesudah publikasi, *docstring* dan komentar skrip dirapikan dari rujukan ke dokumen kerja yang tidak dipublikasikan. Perapian itu tidak mengubah kode, dan kesamaannya diperiksa dengan membandingkan pohon sintaksis setiap skrip. `train_asr.py`, `run_inference.py`, dan `asr_common.py` tidak disunting sama sekali, karena hasil D1 sah selama isi ketiga berkas itu identik dengan versi yang menjalankan kedua run D1.
+
+## Lisensi
+
+Kode sumber, yaitu berkas `.py` dan `.ps1`, dilisensikan di bawah MIT License (`LICENSE`). Berkas lainnya, termasuk konfigurasi, pembagian data, subset, hipotesis, keluaran analisis, dan log, dilisensikan di bawah Creative Commons Attribution-ShareAlike 4.0 International (`LICENSE-DATA`). Lisensi tersebut mengikuti lisensi corpus OpenSLR SLR35, karena berkas-berkas itu memuat atau diturunkan dari transkrip corpus tersebut.
 
 ## Sitasi
 
@@ -130,4 +137,14 @@ Log dan laporan lainnya dipertahankan apa adanya, termasuk jalur folder pada kom
 Suryanto, E. D. (2026). Komparasi performa dan efisiensi data model Whisper dan
 XLS-R untuk ASR bahasa Jawa berdasarkan pemodelan power law [Skripsi].
 Universitas Multimedia Nusantara.
+```
+
+Corpus yang dipakai:
+
+```
+Kjartansson, O., Sarin, S., Pipatsrisawat, K., Jansche, M., & Ha, L. (2018).
+Crowd-sourced speech corpora for Javanese, Sundanese, Sinhala, Nepali, and
+Bangladeshi Bengali. Proceedings of the 6th Workshop on Spoken Language
+Technologies for Under-Resourced Languages (SLTU 2018), 52-55.
+https://doi.org/10.21437/SLTU.2018-11
 ```
