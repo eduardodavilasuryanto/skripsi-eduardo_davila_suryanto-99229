@@ -2,12 +2,10 @@
 
 Tujuan
 ------
-Menghasilkan Tabel 4.1 `bab-4.md`, yaitu status pelatihan setiap konfigurasi,
-sesuai komitmen `DraftResearch.md` Lampiran B.16 bahwa status penghentian
-setiap run dilaporkan bersama hasilnya. Rekap yang sama memuat angka prosa
-`bab-4.md` Subbab 4.1 dan puncak VRAM pelatihan pada `bab-3.md` Subbab 3.5.1.
-Sebelum skrip ini ada, Tabel 4.1 disusun oleh skrip bantu sesi di luar
-repositori.
+Menghasilkan Tabel 4.1 skripsi, yaitu status pelatihan setiap konfigurasi,
+karena status penghentian setiap run dilaporkan bersama hasilnya. Rekap yang
+sama memuat angka prosa Subbab 4.1 dan puncak VRAM pelatihan pada Subbab
+3.5.1.
 
 Skrip ini hanya membaca laporan yang ditulis `train_asr.py` selama pelatihan.
 Skrip tidak memuat model, tidak memakai GPU, dan tidak mengubah berkas apa pun
@@ -29,7 +27,7 @@ Definisi kolom
                            terakhir, dibagi learning rate puncak konfigurasi.
 - Durasi                 : `result.train_runtime_seconds`, mencakup evaluasi
                            validation dan penyimpanan checkpoint selama
-                           pelatihan (Lampiran B.11).
+                           pelatihan.
 - Detik per langkah      : `result.seconds_per_step`, tanpa evaluasi dan
                            penyimpanan.
 - Puncak VRAM            : `result.train_peak_reserved_mib` dan

@@ -1,9 +1,9 @@
-"""Pemeriksaan prosedur inferensi H1: Holm, selang simultan, dan uji permutasi berpasangan (Revisi 01 poin 23).
+"""Pemeriksaan prosedur inferensi H1: Holm, selang simultan, dan uji permutasi berpasangan.
 
 Tujuan
 ------
 H1 diputuskan dari nilai *p* *bootstrap* dua sisi yang dikoreksi Holm, dan
-`bab-4.md` Tabel 4.3 juga melaporkan selang persentil pada taraf urutan Holm.
+Tabel 4.3 skripsi juga melaporkan selang persentil pada taraf urutan Holm.
 Selang bertaraf Holm itu tidak dijamin memiliki cakupan simultan, sehingga
 skrip ini memisahkan inferensi marginal dari inferensi simultan dan menguji
 putusan H1 dengan prosedur berpasangan lain yang terkalibrasi.

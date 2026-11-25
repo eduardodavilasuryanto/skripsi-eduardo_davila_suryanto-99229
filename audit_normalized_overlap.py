@@ -1,4 +1,4 @@
-"""Audit tumpang tindih transkrip antarbagian setelah normalisasi (Revisi 01 poin 13).
+"""Audit tumpang tindih transkrip antarbagian setelah normalisasi.
 
 Tujuan
 ------

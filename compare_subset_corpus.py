@@ -1,4 +1,4 @@
-"""Bukti mekanisme partisi arsip dan perbandingan subset kerja dengan corpus penuh (Revisi 01 poin 11).
+"""Bukti mekanisme partisi arsip dan perbandingan subset kerja dengan corpus penuh.
 
 Tujuan
 ------

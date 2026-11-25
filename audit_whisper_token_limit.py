@@ -1,9 +1,9 @@
-"""Audit batas 128 token keluaran Whisper dan uji sensitivitasnya (Revisi 01 poin 18).
+"""Audit batas 128 token keluaran Whisper dan uji sensitivitasnya.
 
 Tujuan
 ------
 Memeriksa apakah batas `generation_max_new_tokens` 128 pada dekode Whisper
-(`bab-3.md` Tabel 3.14) memotong keluaran pada data test, dan seberapa besar
+(Tabel 3.14 skripsi) memotong keluaran pada data test, dan seberapa besar
 pengaruhnya terhadap WER dan CER bila batas dinaikkan. XLS-R dengan dekode
 CTC tidak memiliki batas padanan; panjang keluarannya hanya dibatasi jumlah
 kerangka akustik.

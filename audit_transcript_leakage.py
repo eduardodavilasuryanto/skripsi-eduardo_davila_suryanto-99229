@@ -2,8 +2,7 @@
 
 Tujuan
 ------
-Menghasilkan angka yang dikutip pada `DraftResearch.md` Subbab 8.2 dan
-`bab-2.md` Subbab 2.2.9, yaitu besaran kebocoran transkrip antara data
+Menghasilkan angka yang dikutip pada Subbab 2.2.9 skripsi, yaitu besaran kebocoran transkrip antara data
 training dan data test menurut strategi pembagian data. Sebelum skrip ini
 dibuat, angka tersebut tercantum di naskah tanpa berkas yang
 menghasilkannya, sehingga tidak memenuhi daftar periksa Bagian 8
@@ -168,7 +167,7 @@ def load_metadata(path: Path) -> list[Utterance]:
 def normalise_text(text: str) -> str:
     """Normalisasi ringan untuk pemeriksaan ketegaran hasil.
 
-    Bukan prosedur normalisasi naskah pada Subbab 8.3. Fungsi ini hanya
+    Bukan prosedur normalisasi utama pada Subbab 3.3.4 skripsi. Fungsi ini hanya
     menyatukan bentuk Unicode, menyeragamkan huruf besar-kecil, dan
     merapatkan spasi, agar dapat diperiksa apakah besaran kebocoran
     berubah bila kecocokan transkrip dilonggarkan.

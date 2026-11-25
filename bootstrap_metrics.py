@@ -2,11 +2,11 @@
 
 Tujuan
 ------
-Menghasilkan keluaran 1 `bab-3.md` Subbab 3.6.4, yaitu WER dan CER setiap
+Menghasilkan keluaran 1 Subbab 3.6.4 skripsi, yaitu WER dan CER setiap
 konfigurasi beserta selang kepercayaan 95%, dan pengujian H1 pada Tabel 3.15:
 paired bootstrap tingkat utterance pada setiap tingkat data dengan koreksi
 Holm-Bonferroni atas lima pengujian. Lebar selang juga dilaporkan sebagai
-bahan pemeriksaan kecukupan kuota data test (Utang nomor 18).
+bahan pemeriksaan kecukupan kuota data test.
 
 Prosedur
 --------

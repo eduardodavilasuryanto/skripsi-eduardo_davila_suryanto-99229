@@ -2,9 +2,8 @@
 
 Tujuan
 ------
-Menghasilkan angka proses pelaksanaan eksperimen bagi `bab-4.md` Subbab 4.1,
-`lampiran.md` Lampiran B (Tabel B.1 sampai B.8 dan kedua gambarnya),
-`bab-3.md` Subbab 3.6.6, serta `DraftResearch.md` Lampiran B.15 dan B.20.
+Menghasilkan angka proses pelaksanaan eksperimen bagi Subbab 3.6.6 dan 4.1
+serta Lampiran B skripsi (Tabel B.1 sampai B.8 dan kedua gambarnya).
 Yang dianalisis adalah jalannya pelatihan
 dan inference, bukan hasil pada data test: lama setiap run beserta
 rinciannya, laju per langkah dan kestabilannya, dinamika loss, norma gradien,
@@ -94,7 +93,7 @@ Keluaran
 - `outputs/results/training_process_evaluations.csv` : satu baris per evaluasi.
 - `outputs/results/training_process_monitor.csv`     : satu baris per potret.
 - `outputs/results/training_process_appendix_b1_durations.csv` sampai
-  `..._b8_snapshot_groups.csv`: nilai Tabel B.1 sampai B.8 `lampiran.md`
+  `..._b8_snapshot_groups.csv`: nilai Tabel B.1 sampai B.8 Lampiran B
   dalam satuan naskah (jam, menit, persen) tanpa pembulatan, agar setiap
   konversi satuan dihasilkan skrip ini.
 - `outputs/results/training_process_report.json`     : laporan lengkap,
@@ -147,7 +146,7 @@ RUNS_TABLE = "training_process_runs.csv"
 WINDOWS_TABLE = "training_process_windows.csv"
 EVALUATIONS_TABLE = "training_process_evaluations.csv"
 MONITOR_TABLE = "training_process_monitor.csv"
-# Nilai Tabel B.1 sampai B.8 `lampiran.md` dalam satuan naskah, tanpa
+# Nilai Tabel B.1 sampai B.8 Lampiran B dalam satuan naskah, tanpa
 # pembulatan: `training_process_appendix_b1_durations.csv` dan seterusnya.
 APPENDIX_PREFIX = "training_process_appendix_"
 
@@ -995,7 +994,7 @@ def group_summary(label: str, snapshots: Sequence[dict[str, Any]]) -> dict[str, 
 
 
 def appendix_tables(runs: Sequence[dict[str, Any]], summary: dict[str, Any]) -> dict[str, tuple[list[str], list[list[Any]]]]:
-    """Nilai Tabel B.1 sampai B.8 `lampiran.md` dalam satuan naskah, tanpa pembulatan."""
+    """Nilai Tabel B.1 sampai B.8 Lampiran B dalam satuan naskah, tanpa pembulatan."""
     tables: dict[str, tuple[list[str], list[list[Any]]]] = {}
     rows = [run["row"] for run in runs]
 

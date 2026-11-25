@@ -2,7 +2,7 @@
 
 Tujuan
 ------
-Menyiapkan bahan keluaran 6 `bab-3.md` Subbab 3.6.4, yaitu analisis kesalahan
+Menyiapkan bahan keluaran 6 Subbab 3.6.4 skripsi, yaitu analisis kesalahan
 kualitatif pada D1 dan D5 kedua model. Skrip ini hanya menghitung; tafsir
 kualitatifnya dikerjakan dengan membaca keluaran ini, sesuai konvensi bahwa
 angka yang masuk naskah berasal dari skrip.

@@ -1,4 +1,4 @@
-"""Analisis penutur dikenal dan belum dikenal per tingkat data (Revisi 01 poin 12).
+"""Analisis penutur dikenal dan belum dikenal per tingkat data.
 
 Tujuan
 ------

@@ -1,4 +1,4 @@
-"""Kebutuhan jam data training untuk mencapai WER sasaran di dalam rentang terukur (Revisi 01 poin 3).
+"""Kebutuhan jam data training untuk mencapai WER sasaran di dalam rentang terukur.
 
 Tujuan
 ------

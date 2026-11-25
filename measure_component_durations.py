@@ -2,10 +2,9 @@
 
 Tujuan
 ------
-Menghasilkan kolom durasi Tabel 3.9 `bab-3.md` dan Tabel 8.2.4
-`DraftResearch.md`. Sebelum skrip ini ada, kolom tersebut berupa perkiraan,
-yaitu jumlah utterance komponen dikalikan durasi rata-rata, sehingga tidak
-memenuhi daftar periksa angka (Utang nomor 26). Skrip ini menjumlahkan durasi
+Menghasilkan kolom durasi Tabel 3.9 skripsi. Sebelum skrip ini ada, kolom
+tersebut berupa perkiraan, yaitu jumlah utterance komponen dikalikan durasi
+rata-rata. Skrip ini menjumlahkan durasi
 setiap utterance di dalam komponennya.
 
 Komponen dihitung ulang dengan definisi yang sama seperti `giant_component`

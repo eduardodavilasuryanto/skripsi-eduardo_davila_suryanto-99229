@@ -1,9 +1,9 @@
-"""Sensitivitas hasil terhadap dua utterance data test yang cacat (Revisi 01 poin 32).
+"""Sensitivitas hasil terhadap dua utterance data test yang cacat.
 
 Tujuan
 ------
-Dua utterance data test tidak sesuai dengan audionya (`DraftResearch.md`
-Lampiran B.17, Keputusan Metodologis I.3 poin 17): `3d653a789b` rekamannya
+Dua utterance data test tidak sesuai dengan audionya:
+`3d653a789b` rekamannya
 terpotong sesudah tiga kata, dan `174723df08` memuat ucapan di luar
 transkripnya. Keduanya tetap pada data test sebagai hasil utama. Skrip ini
 menghitung ulang WER, CER, uji H1, dan kurva penskalaan tanpa keduanya, agar
@@ -22,9 +22,9 @@ utterance dicocokkan dengan laporan `bootstrap_metrics_report.json` dan
 terbukti sama dengan hasil utama. Karena jumlah utterance berbeda, resample
 kedua perhitungan tidak identik.
 
-Utterance training bertranskrip pesan galat (`05e59eab6d`, Lampiran B.3) tidak
-dapat diukur tanpa melatih ulang D5, yang tidak dikerjakan atas keputusan
-pengguna (I.3 poin 20(a)); laporan menyatakannya terbuka.
+Utterance training bertranskrip pesan galat (`05e59eab6d`) tidak dapat
+diukur tanpa melatih ulang D5, yang tidak dikerjakan; laporan menyatakannya
+terbuka.
 
 Masukan
 -------
@@ -93,7 +93,7 @@ from log_environment import collect_environment, set_seed
 REPORT_NAME = "sensitivity_defective_test_report.json"
 CONFIGS_TABLE_NAME = "sensitivity_defective_test_configs.csv"
 
-# Lampiran B.17: rekaman terpotong dan rekaman berucapan tambahan.
+# Rekaman terpotong dan rekaman berucapan tambahan.
 EXCLUDED_IDS: tuple[str, ...] = ("3d653a789b", "174723df08")
 TRAINING_DEFECT_ID = "05e59eab6d"
 

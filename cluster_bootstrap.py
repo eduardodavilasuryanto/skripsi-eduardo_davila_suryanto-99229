@@ -1,4 +1,4 @@
-"""Sensitivitas inferensi terhadap *bootstrap* berkelompok penutur dan prompt (Revisi 01 poin 22).
+"""Sensitivitas inferensi terhadap *bootstrap* berkelompok penutur dan prompt.
 
 Tujuan
 ------

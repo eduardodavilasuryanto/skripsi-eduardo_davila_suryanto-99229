@@ -1,4 +1,4 @@
-"""Paket pemeriksa: kode, konfigurasi, lingkungan, pembagian, hipotesis, keluaran, dan log beserta manifest (Revisi 01 poin 24).
+"""Paket pemeriksa: kode, konfigurasi, lingkungan, pembagian, hipotesis, keluaran, dan log beserta manifest.
 
 Tujuan
 ------
@@ -52,8 +52,7 @@ DEFAULT_OUT_DIR = SCRIPT_DIR.parent / "_15_dokumen-revisi" / "paket-pemeriksa"
 GRID_CONFIGS = ["configs/trial/whisper_d1_trial.yaml", "configs/trial/xlsr_d1_trial.yaml",
                 *[f"configs/{m}_d{i}.yaml" for m in ("whisper", "xlsr") for i in range(2, 6)]]
 
-# Tabel naskah -> skrip -> keluaran, sama dengan komentar sinkronisasi bab-4.md dan lampiran.md serta
-# Tabel 3.16 bab-3.md.
+# Tabel skripsi -> skrip -> keluaran, sama dengan pemetaan pada README.
 TABLE_MAP = [
     ("Tabel 3.4, 3.5", "build_text_disjoint_split.py, build_nested_subsets.py",
      "outputs/build_text_disjoint_split_report.json, outputs/build_nested_subsets_report.json"),
@@ -72,7 +71,7 @@ TABLE_MAP = [
     ("Subbab 4.1.2 sampai 4.1.5, Tabel B.1 sampai B.8, Gambar B.1 dan B.2", "analyze_training_process.py",
      "outputs/results/training_process_report.json, outputs/results/training_process_*.csv, "
      "outputs/results/training_process_appendix_b1_durations.csv sampai _b8_snapshot_groups.csv"),
-    # Revisi pembimbing (25 November 2026), tanpa tabel baru; metode pada Subbab 3.6.7 sampai 3.6.10 bab-3.md.
+    # Audit dan efisiensi, tanpa tabel baru; metode pada Subbab 3.6.7 sampai 3.6.10 skripsi.
     ("Subbab 4.1.6, 4.5.4 sampai 4.5.6, 4.6.2",
      "audit_audio_annotations.py, audit_speech_register.py, audit_affix_errors.py, benchmark_inference.py",
      "outputs/results/{audit_audio_annotations_*,speech_register_*,audit_affix_errors_*,"

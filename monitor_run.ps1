@@ -11,16 +11,15 @@
     daya. Keberadaan proses diperiksa setiap -PollSeconds; begitu proses keluar,
     potret akhir beserta ringkasan run_report.json ditulis dan skrip selesai.
 
-    Sejak Sesi 22 setiap potret juga mencatat beban dan kinerja CPU, aktivitas
+    Setiap potret juga mencatat beban dan kinerja CPU, aktivitas
     disk, beban CPU proses teratas termasuk total seluruh proses python, status
     isi dan kuras baterai, serta peristiwa sambung-putus charger (Kernel-Power
-    105) sejak potret sebelumnya, untuk menguji dugaan penyebab perlambatan
-    Lampiran B.15. Seluruhnya terbaca tanpa hak administrator.
+    105) sejak potret sebelumnya, untuk menelusuri penyebab perlambatan
+    pelatihan. Seluruhnya terbaca tanpa hak administrator.
 
     Skrip ini hanya membaca. Proses training dan berkasnya tidak disentuh; log
     training dibuka dengan FileShare.ReadWrite agar Tee-Object tetap dapat
-    menulis. Dibuat Sesi 21 sebagai pemantau sementara, bukan mekanisme antrean
-    Utang nomor 32.
+    menulis.
 
 .EXAMPLE
     pwsh -NoProfile -File monitor_run.ps1 -RunName xlsr_d1_trial

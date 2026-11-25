@@ -3,15 +3,15 @@
 Tujuan
 ------
 Menghasilkan pembagian data yang mengunci kesepuluh konfigurasi penelitian,
-yaitu data test, data validation, dan training pool, sesuai `bab-3.md`
-Subbab 3.3.3. Algoritma pembagiannya sama dengan strategi text-disjoint pada
+yaitu data test, data validation, dan training pool, sesuai Subbab
+3.3.3 skripsi. Algoritma pembagiannya sama dengan strategi text-disjoint pada
 `audit_transcript_leakage.py`, dengan dua perbedaan yang disengaja:
 
 1. Kuota dipatok dalam jumlah utterance, yaitu 3.100 test dan 1.900
-   validation (Keputusan Metodologis I.3 poin 4), bukan sebagai proporsi.
+   validation, bukan sebagai proporsi.
 2. Utterance yang dikeluarkan preprocessing disaring **sebelum** pembagian,
    sehingga populasi yang dibagi sama dengan populasi yang dievaluasi.
-   Kriteria pengeluarannya mengikuti `bab-3.md` Subbab 3.3.4: durasi di bawah
+   Kriteria pengeluarannya mengikuti Subbab 3.3.4 skripsi: durasi di bawah
    1,5 detik, transkrip memuat angka, atau transkrip memuat karakter U+FFFD.
    Pemeriksaan angka dan U+FFFD dilakukan pada transkrip mentah. Langkah
    normalisasi 1 sampai 4 (NFC, huruf kecil, pelepasan diakritik, penghapusan
@@ -20,7 +20,7 @@ Subbab 3.3.3. Algoritma pembagiannya sama dengan strategi text-disjoint pada
 
 Skrip juga menghitung statistik durasi, format audio, dan ukuran berkas subset
 kerja dari header berkas FLAC, sebelum dan sesudah penyaringan, karena
-statistik tersebut belum pernah memiliki skrip penghasil (Utang nomor 24).
+statistik tersebut sebelumnya belum memiliki skrip penghasil.
 
 Masukan
 -------
@@ -78,7 +78,7 @@ SCRIPT_DIR = Path(__file__).resolve().parent
 DEFAULT_SPLIT_DIR = SCRIPT_DIR / "outputs" / "splits"
 DEFAULT_REPORT = SCRIPT_DIR / "outputs" / "build_text_disjoint_split_report.json"
 
-# Seed pembagian produksi, ditetapkan pengguna pada Sesi 15 sebelum hasilnya
+# Seed pembagian produksi, ditetapkan penulis sebelum hasilnya
 # dilihat. Tidak boleh diganti demi ukuran hasil yang lebih rapi.
 SPLIT_SEED = 42
 
@@ -194,7 +194,7 @@ def split_text_disjoint(
     records: Sequence[Record],
     seed: int,
 ) -> tuple[list[Record], list[Record], list[Record], int]:
-    """Pembagian text-disjoint sesuai lima langkah `bab-3.md` Subbab 3.3.3.
+    """Pembagian text-disjoint sesuai lima langkah Subbab 3.3.3 skripsi.
 
     Grup diurutkan lebih dulu agar hasilnya tidak bergantung pada urutan baris
     masukan, lalu diacak dengan seed yang ditetapkan.

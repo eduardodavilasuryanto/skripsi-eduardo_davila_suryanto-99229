@@ -2,13 +2,12 @@
 
 Tujuan
 ------
-Menutup Utang nomor 7 pada `konteks.md`, yaitu menyediakan satu sumber tunggal
+Menyediakan satu sumber tunggal
 bagi nilai lingkungan yang dilaporkan pada naskah BAB III Subbab 3.5, sekaligus
 menyediakan fungsi yang dapat dipanggil skrip pelatihan agar setiap *run*
 meninggalkan jejak lingkungannya sendiri.
 
-Keluarannya menutup tiga lapis informasi yang ditetapkan pada `konteks.md`
-Bagian II Subbab 5.2:
+Keluarannya mencakup tiga lapis informasi:
 
 * Lapis 1, perangkat keras fisik: GPU, VRAM, jumlah GPU, CPU dan jumlah *core*,
   RAM sistem, jenis penyimpanan, serta sistem operasi dan versinya.
@@ -37,7 +36,7 @@ Keluaran
 
 Nilai yang tidak dapat dibaca ditulis sebagai `null` pada JSON dan sebagai
 `TIDAK TERBACA` pada ringkasan, disertai alasannya. Nilai tersebut tidak pernah
-diisi dari perkiraan, mengikuti pola cacat berulang pada `konteks.md` Bagian I.6.
+diisi dari perkiraan.
 
 Cara menjalankan
 ----------------

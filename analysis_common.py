@@ -1,9 +1,9 @@
-"""Modul bersama analisis Milestone 3: hipotesis, cacah galat, dan bootstrap.
+"""Modul bersama analisis utama: hipotesis, cacah galat, dan bootstrap.
 
 Tujuan
 ------
 Menyediakan satu jalur pemuatan dan penarikan ulang bagi seluruh skrip
-analisis Milestone 3 (`bab-3.md` Subbab 3.6), agar WER yang dihitung ulang
+analisis utama (Subbab 3.6 skripsi), agar WER yang dihitung ulang
 pada setiap iterasi bootstrap teragregasi persis seperti Subbab 3.6.1 dan agar
 seluruh skrip memakai himpunan resample yang sama.
 
@@ -22,8 +22,8 @@ generator ber-seed. Skrip mana pun yang memakai seed dan jumlah iterasi yang
 sama memperoleh resample yang identik, sehingga selang WER, uji H1, dan
 selang parameter kurva bertumpu pada penarikan yang sama.
 
-Hasil D1 kedua model berasal dari run percobaan Milestone 1, sehingga berkas
-hipotesisnya bernama `*_d1_trial` (Keputusan Metodologis I.3 poin 14).
+Hasil D1 kedua model berasal dari run percobaan awal yang memakai nilai grid,
+sehingga berkas hipotesisnya bernama `*_d1_trial`.
 
 Modul ini tidak dijalankan sendiri. Teks yang dicetak skrip pemakainya
 dibatasi pada ASCII, karena keluaran Python yang disalurkan ke PowerShell
@@ -57,7 +57,7 @@ SUBSETS_REPORT = SCRIPT_DIR / "outputs" / "build_nested_subsets_report.json"
 MODELS: tuple[str, ...] = ("whisper", "xlsr")
 LEVELS: tuple[str, ...] = ("d1", "d2", "d3", "d4", "d5")
 
-# Konfigurasi D1 adalah run percobaan Milestone 1 (Keputusan Metodologis I.3 poin 14).
+# Konfigurasi D1 adalah run percobaan awal yang memakai nilai grid.
 RUN_NAME_OVERRIDES: dict[tuple[str, str], str] = {
     ("whisper", "d1"): "whisper_d1_trial",
     ("xlsr", "d1"): "xlsr_d1_trial",

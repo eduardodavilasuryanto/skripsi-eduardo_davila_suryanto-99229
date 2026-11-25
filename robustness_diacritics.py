@@ -1,9 +1,9 @@
-"""Uji ketegaran: WER dan CER pada teks yang mempertahankan diakritik.
+"""Uji sensitivitas normalisasi: WER dan CER pada teks yang mempertahankan diakritik.
 
 Tujuan
 ------
-Menghasilkan keluaran 7 `bab-3.md` Subbab 3.6.4, yaitu uji ketegaran atas
-keputusan pelepasan diakritik (Subbab 3.3.4; `DraftResearch.md` Subbab 8.3),
+Menghasilkan keluaran 7 Subbab 3.6.4 skripsi, yaitu uji sensitivitas atas
+keputusan pelepasan diakritik (Subbab 3.3.4),
 untuk menunjukkan besaran pengaruh keputusan normalisasi itu terhadap WER dan
 CER setiap konfigurasi.
 

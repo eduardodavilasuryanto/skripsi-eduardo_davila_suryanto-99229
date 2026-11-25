@@ -2,7 +2,7 @@
 
 Tujuan
 ------
-Memeriksa metadata bibliografi yang ditulis pada `_02_context-MD-files/bab-2.md`
+Memeriksa metadata bibliografi yang ditulis pada naskah BAB II skripsi
 bagian "Rujukan Teori Bab II" terhadap sumber otoritatif daring, yaitu Crossref
 REST API (untuk entri ber-DOI dan pencarian bibliografis) dan arXiv API (untuk
 entri pracetak). Keluarannya dipakai untuk memutuskan entri mana yang perlu
@@ -15,7 +15,7 @@ terindeks Crossref, misalnya terbitan pra-DOI dan ACL Anthology).
 Masukan
 -------
 Tidak ada berkas masukan. Metadata yang diklaim ditulis sebagai konstanta
-`CLAIMS` pada modul ini, disalin apa adanya dari `bab-2.md` baris 616 sampai 640.
+`CLAIMS` pada modul ini, disalin apa adanya dari naskah BAB II.
 
 Keluaran
 --------

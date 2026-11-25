@@ -3,15 +3,12 @@
 Tujuan
 ------
 Menghasilkan ulang, dengan skrip berlog, statistik transkrip yang dikutip
-`DraftResearch.md` Subbab 3.5 butir b dan c serta statistik tambahannya, dan
-`bab-3.md` Subbab 3.1 dan 3.3.4. Angka-angka itu dihitung pada 10 September
-2026 tanpa skrip yang tersimpan (`DraftResearch.md` Lampiran A), sehingga
-belum memenuhi Daftar Periksa I.5. Skrip ini lahir pada Sesi 30 ketika
-penulisan paper menemukan bahwa angka tersebut tidak ada pada keluaran skrip
-mana pun.
+Subbab 3.1 dan 3.3.4 skripsi beserta statistik tambahannya. Angka-angka itu
+semula dihitung pada 10 September 2026 tanpa skrip yang tersimpan, dan skrip
+ini mencocokkannya dengan data.
 
 Populasinya corpus penuh, yaitu seluruh 185.076 baris metadata
-`utt_spk_text.tsv`, sama dengan populasi yang dinyatakan Lampiran A.
+`utt_spk_text.tsv`.
 Pembacaan metadata memakai `load_metadata` dari `audit_transcript_leakage.py`,
 sehingga kolom ketiga dan seterusnya digabung kembali dengan tab dan jumlah
 kalimat uniknya sama dengan audit kebocoran.
@@ -89,7 +86,7 @@ VARIANT_WORD = "dheweke"
 REPLACEMENT_CHARACTER = "�"
 
 # Angka naskah yang dicocokkan, dengan letaknya. Seluruhnya berpopulasi corpus
-# penuh menurut DraftResearch.md Lampiran A dan dihitung tanpa skrip.
+# penuh dan semula dihitung tanpa skrip.
 NASKAH_VALUES = {
     "pct_utterances_with_accent": (26.9, "DraftResearch.md 3.5b; bab-3.md 3.1"),
     "dheweke_variants": (17, "DraftResearch.md 3.5b"),

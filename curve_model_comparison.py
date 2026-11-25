@@ -1,4 +1,4 @@
-"""Perbandingan bentuk fungsi kurva dengan AICc, BIC, dependensi titik, dan prediksi titik yang ditahan (Revisi 01 poin 20).
+"""Perbandingan bentuk fungsi kurva dengan AICc, BIC, dependensi titik, dan prediksi titik yang ditahan.
 
 Tujuan
 ------
@@ -236,7 +236,7 @@ def main(argv: Sequence[str] | None = None) -> int:
               f"{100 * holdout[name]['leave_one_out']['interior_rmse']:.2f}; D5 ditahan: "
               + ", ".join(f"{k} {100 * v:+.2f}" for k, v in d5_errors.items()), flush=True)
 
-    # Sensitivitas terhadap titik yang belum konvergen (Revisi 01 poin 17): E0 bersama tanpa titik tertentu,
+    # Sensitivitas terhadap titik yang belum konvergen: E0 bersama tanpa titik tertentu,
     # dengan bootstrap pencocokan ulang yang berangkat dari estimasi titik penuh skenario itu.
     shared = SPECS[PRIMARY_DEFAULT]
     scenarios = {

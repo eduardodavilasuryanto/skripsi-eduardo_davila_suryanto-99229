@@ -2,9 +2,8 @@
 
 Tujuan
 ------
-Menghasilkan keluaran 3 sampai 5 `bab-3.md` Subbab 3.6.4 dan pengujian H2 dan
-H3 pada Tabel 3.15, mengikuti enam langkah Subbab 3.6.2 dan `DraftResearch.md`
-Subbab 8.0c.
+Menghasilkan keluaran 3 sampai 5 Subbab 3.6.4 skripsi dan pengujian H2 dan
+H3 pada Tabel 3.15, mengikuti enam langkah Subbab 3.6.2.
 
 Prosedur
 --------
@@ -18,7 +17,7 @@ Prosedur
    parameter).
 4. AIC = n ln(RSS / n) + 2K dengan n = 10 dan K = jumlah parameter + 1.
    E0 bersama dipertahankan kecuali AIC model E0 terpisah lebih rendah lebih
-   dari 2; aturan ini ditetapkan pengguna sebelum pencocokan dijalankan.
+   dari 2; aturan ini ditetapkan penulis sebelum pencocokan dijalankan.
 5. Bootstrap: 10.000 resample tingkat utterance (seed 42, sama dengan
    `bootstrap_metrics.py`); kesepuluh WER dihitung ulang dan kurva dicocokkan
    ulang dari estimasi titik penuh sebagai titik awal. Selang persentil 95%.
@@ -29,7 +28,7 @@ Prosedur
    memakai model utama hasil langkah 4.
 
 D adalah jam data training terukur dari laporan `build_nested_subsets.py`,
-yaitu 1,000; 3,000; 10,001; 30,001; dan 66,134, atas keputusan pengguna.
+yaitu 1,000; 3,000; 10,001; 30,001; dan 66,134, atas keputusan penulis.
 
 Masukan
 -------

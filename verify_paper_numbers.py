@@ -2,11 +2,11 @@
 
 Tujuan
 ------
-Memastikan setiap angka pada paper `_06_dokumen-skripsi/_04_paper/paper.md`
-berasal dari keluaran skrip penelitian, bukan disalin tangan dari naskah
-skripsi. Atas keputusan pengguna 4 November 2026, paper memuat tabel dan
-daftar pustakanya sendiri sebagai pengecualian terhadap aturan Sesi 9 bahwa
-tabel hanya hidup pada bab naskah. Skrip ini adalah pengaman pengecualian itu.
+Memastikan setiap angka pada naskah artikel `_06_dokumen-skripsi/_04_paper/paper.md`,
+yang berada di luar repositori ini, berasal dari keluaran skrip penelitian,
+bukan disalin tangan dari naskah skripsi. Artikel memuat tabel dan daftar
+pustakanya sendiri, sehingga setiap salinan angka dan rujukan diperiksa
+terhadap sumbernya.
 
 Tiga jenis pemeriksaan dijalankan atas bagian paper pada `CHECKED_SECTIONS`:
 
@@ -24,7 +24,7 @@ Tiga jenis pemeriksaan dijalankan atas bagian paper pada `CHECKED_SECTIONS`:
    dihitung sebagai bilangan prosa.
 
 4. Rujukan. Setiap entri Daftar Pustaka harus sama persis dengan satu entri
-   registri `DraftResearch.md` Bab 14, entri bernomor 1 sampai N tanpa celah,
+   registri rujukan penulis, entri bernomor 1 sampai N tanpa celah,
    setiap nomor yang disitasi memiliki entri dan setiap entri disitasi, serta
    urutan kemunculan pertama sitasi adalah 1, 2, 3, dan seterusnya. Pemetaan
    nomor registri ke nomor paper diturunkan dari kecocokan teks entri itu.
@@ -39,7 +39,7 @@ Selain itu diperiksa akhiran baris CRLF. Bagian yang diperiksa bertambah
 setiap tahap penulisan paper.
 
 Beberapa bilangan bukan keluaran skrip penelitian, yaitu spesifikasi model
-dan corpus yang tercatat pada `bab-3.md`. Bilangan itu ditulis sebagai
+dan corpus yang tercatat pada BAB III skripsi. Bilangan itu ditulis sebagai
 konstanta dengan sumbernya, dan klaimnya ditandai sebagai spesifikasi luar.
 
 Skrip hanya membaca, deterministik tanpa random seed, dan tidak memakai GPU.
@@ -60,8 +60,8 @@ Masukan
 - `outputs/results/<run>_test_metrics.json` kesepuluh run grid
 - `outputs/runs/<run>/run_report.json` kesepuluh run grid, serta
   `trainer_state.json` keempat run uji determinisme
-- `../_02_context-MD-files/DraftResearch.md`, `bab-1.md`, dan `bab-2.md` :
-  hulu angka penelitian terdahulu yang dikutip paper. `DraftResearch.md` Bab 14
+- Dokumen perencanaan serta naskah BAB I dan BAB II pada `../_02_context-MD-files/`,
+  di luar repositori ini: hulu angka penelitian terdahulu yang dikutip artikel
   sekaligus registri rujukan bagi pemeriksaan Daftar Pustaka.
 - `configs/trial/*_d1_trial.yaml`, `configs/*_d{2..5}.yaml`, dan
   `configs/trial/*_det_{a,b}.yaml`
@@ -146,9 +146,9 @@ WARNING_CTC = "ctc_loss_backward_gpu"
 WARNING_CTC_TEXT = "does not have a deterministic implementation"
 
 # Spesifikasi luar, bukan keluaran skrip penelitian.
-N_CORPUS_ARCHIVES = 16                 # arsip SLR35 di OpenSLR; bab-3.md Subbab 3.1
-PARAMS_MILLIONS = {"whisper": 244, "xlsr": 315, "whisper_medium": 769}  # bab-3.md Subbab 3.4.1
-WHISPER_WINDOW_SECONDS = 30            # jendela masukan Whisper [3]; bab-3.md Subbab 3.1
+N_CORPUS_ARCHIVES = 16                 # arsip SLR35 di OpenSLR; Subbab 3.1 skripsi
+PARAMS_MILLIONS = {"whisper": 244, "xlsr": 315, "whisper_medium": 769}  # Subbab 3.4.1 skripsi
+WHISPER_WINDOW_SECONDS = 30            # jendela masukan Whisper [3]; Subbab 3.1 skripsi
 SPEC_SOURCE = "spesifikasi luar, bab-3.md"
 
 NUMBER_WORDS = {1: "satu", 2: "dua", 3: "tiga", 4: "empat", 5: "lima", 7: "tujuh", 8: "delapan",
@@ -281,7 +281,7 @@ def unchanged_since(commit: str, path: str) -> bool:
 
 
 def run_name(model: str, level: str) -> str:
-    """Nama run grid; D1 berasal dari run percobaan Milestone 1."""
+    """Nama run grid; D1 berasal dari run percobaan awal."""
     return f"{model}_{level}_trial" if level == "d1" else f"{model}_{level}"
 
 

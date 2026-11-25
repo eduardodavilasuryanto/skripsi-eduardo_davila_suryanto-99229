@@ -1,8 +1,8 @@
-"""Galat batas kata kedua model pada kelima tingkat, terutama D3 dan D4 (Revisi 01 poin 33).
+"""Galat batas kata kedua model pada kelima tingkat, terutama D3 dan D4.
 
 Tujuan
 ------
-`bab-4.md` Subbab 4.6.1 menduga bahwa sisa keunggulan WER Whisper pada D3 dan
+Dugaan awal pada pembahasan skripsi menyatakan bahwa sisa keunggulan WER Whisper pada D3 dan
 D4, ketika CER kedua model tidak berbeda, terletak pada penentuan batas kata,
 padahal analisis kesalahan hanya mencakup D1 dan D5. Skrip ini mengukur galat
 batas kata pada kelima tingkat.

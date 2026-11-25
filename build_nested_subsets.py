@@ -2,7 +2,7 @@
 
 Tujuan
 ------
-Membentuk kelima tingkat data training sesuai `bab-3.md` Subbab 3.3.2, yaitu
+Membentuk kelima tingkat data training sesuai Subbab 3.3.2 skripsi, yaitu
 1, 3, 10, dan 30 jam ditambah seluruh training pool, secara bersarang
 D1 ⊂ D2 ⊂ D3 ⊂ D4 ⊂ D5. Training pool diurutkan menurut `id`, diacak satu kali
 pada tingkat utterance dengan seed yang ditetapkan, lalu setiap tingkat diambil
@@ -16,7 +16,7 @@ target dipenuhi, dan kelebihannya kurang dari satu utterance. D5 tidak memakai
 target, melainkan seluruh training pool.
 
 Durasi dibaca dari kolom `duration_seconds` training pool, yaitu berkas yang
-dikunci sejak Sesi 15, lalu dijumlahkan dalam milidetik bulat agar keputusan
+dikunci sebelum subset dibentuk, lalu dijumlahkan dalam milidetik bulat agar keputusan
 berhenti tidak dipengaruhi galat pembulatan floating point.
 
 Masukan
@@ -62,7 +62,7 @@ DEFAULT_SPLIT_DIR = SCRIPT_DIR / "outputs" / "splits"
 DEFAULT_SUBSET_DIR = SCRIPT_DIR / "outputs" / "subsets"
 DEFAULT_REPORT = SCRIPT_DIR / "outputs" / "build_nested_subsets_report.json"
 
-# Seed pengacakan training pool, ditetapkan pengguna pada Sesi 16 sebelum
+# Seed pengacakan training pool, ditetapkan penulis sebelum
 # hasilnya dilihat, sama dengan seed pembagian. Tidak boleh diganti demi
 # ukuran tingkat yang lebih rapi.
 SUBSET_SEED = 42
