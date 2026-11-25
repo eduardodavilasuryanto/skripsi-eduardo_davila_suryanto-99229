@@ -1,0 +1,66 @@
+Started 2026-11-25T06:20:00.895827+00:00; xlsr_d5; protocol=D:\_01_Bachelor_Information_System\_00-SKRIPSI\_01_python-scripts\configs\inference_benchmark.json; SHA-256=295c370488f9ac7bf70713ee34d3a5c5445c0f9a79d2cf289b098e975ee78f36
+Training configuration SHA-256=9caec80c2a486e3f3925ea6888537eb5bfcdf0f4d9b45290a26f875bd1df8204; seed=42; protocol={'seed': 42, 'test_sample_size': 320, 'warmup_size': 16, 'repetitions': 3, 'batch_size': 1, 'models': ['whisper_d5', 'xlsr_d5']}
+Measured audio: 320 utterances; 1884.025 s
+GPU before CUDA: {'name': 'NVIDIA GeForce RTX 4060 Laptop GPU', 'driver_version': '610.88', 'memory.total': '8188', 'memory.used': '0', 'utilization.gpu': '0', 'temperature.gpu': '47', 'pstate': 'P0'}
+
+Loading weights:   0%|          | 0/424 [00:00<?, ?it/s]
+Loading weights:   4%|▍         | 18/424 [00:00<00:02, 151.46it/s]
+Loading weights:  11%|█         | 47/424 [00:00<00:01, 213.97it/s]
+Loading weights:  16%|█▋        | 69/424 [00:00<00:02, 119.48it/s]
+Loading weights:  20%|██        | 85/424 [00:00<00:02, 129.15it/s]
+Loading weights:  27%|██▋       | 115/424 [00:00<00:01, 161.77it/s]
+Loading weights:  32%|███▏      | 134/424 [00:00<00:01, 163.74it/s]
+Loading weights: 100%|██████████| 424/424 [00:00<00:00, 483.33it/s]
+[inference] 1/16 utterance
+[inference] 1/320 utterance
+[inference] 21/320 utterance
+[inference] 41/320 utterance
+[inference] 61/320 utterance
+[inference] 81/320 utterance
+[inference] 101/320 utterance
+[inference] 121/320 utterance
+[inference] 141/320 utterance
+[inference] 161/320 utterance
+[inference] 181/320 utterance
+[inference] 201/320 utterance
+[inference] 221/320 utterance
+[inference] 241/320 utterance
+[inference] 261/320 utterance
+[inference] 281/320 utterance
+[inference] 301/320 utterance
+Rep 1: {'iteration': 1, 'elapsed_seconds': 10.650711100002809, 'rtf': 0.005653168668145491, 'peak_allocated_mib': 1847.05419921875, 'peak_reserved_mib': 1958.0, 'accuracy': {'wer': 0.20176991150442478, 'cer': 0.0411514426273102, 'n_utterances': 320, 'n_excluded_empty_reference': 0, 'n_empty_hypothesis': 0}}
+[inference] 1/320 utterance
+[inference] 21/320 utterance
+[inference] 41/320 utterance
+[inference] 61/320 utterance
+[inference] 81/320 utterance
+[inference] 101/320 utterance
+[inference] 121/320 utterance
+[inference] 141/320 utterance
+[inference] 161/320 utterance
+[inference] 181/320 utterance
+[inference] 201/320 utterance
+[inference] 221/320 utterance
+[inference] 241/320 utterance
+[inference] 261/320 utterance
+[inference] 281/320 utterance
+[inference] 301/320 utterance
+Rep 2: {'iteration': 2, 'elapsed_seconds': 10.687533099997381, 'rtf': 0.005672712994783711, 'peak_allocated_mib': 1847.05419921875, 'peak_reserved_mib': 1958.0, 'accuracy': {'wer': 0.20176991150442478, 'cer': 0.0411514426273102, 'n_utterances': 320, 'n_excluded_empty_reference': 0, 'n_empty_hypothesis': 0}}
+[inference] 1/320 utterance
+[inference] 21/320 utterance
+[inference] 41/320 utterance
+[inference] 61/320 utterance
+[inference] 81/320 utterance
+[inference] 101/320 utterance
+[inference] 121/320 utterance
+[inference] 141/320 utterance
+[inference] 161/320 utterance
+[inference] 181/320 utterance
+[inference] 201/320 utterance
+[inference] 221/320 utterance
+[inference] 241/320 utterance
+[inference] 261/320 utterance
+[inference] 281/320 utterance
+[inference] 301/320 utterance
+Rep 3: {'iteration': 3, 'elapsed_seconds': 10.609905099998286, 'rtf': 0.005631509719880727, 'peak_allocated_mib': 1847.05419921875, 'peak_reserved_mib': 1958.0, 'accuracy': {'wer': 0.20176991150442478, 'cer': 0.0411514426273102, 'n_utterances': 320, 'n_excluded_empty_reference': 0, 'n_empty_hypothesis': 0}}
+Summary: {'median_seconds': 10.650711100002809, 'median_rtf': 0.005653168668145491, 'max_peak_allocated_mib': 1847.05419921875, 'max_peak_reserved_mib': 1958.0, 'median_wer': 0.20176991150442478, 'median_cer': 0.0411514426273102}

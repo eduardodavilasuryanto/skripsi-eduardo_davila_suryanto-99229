@@ -1,0 +1,82 @@
+id,split,archive,reasons,transcript,audio_review
+00bbb76c14,train_pool,0,random_in_stratum,Tamara dipuntepangaken kaliyan modelling,pending
+00ca30b23d,train_pool,0,random_in_stratum,Dene ingkang kalih taksih dipun padosi buktinipun,pending
+0258e92e22,train_pool,0,random_in_stratum,Iggy Azalea lunga dhateng luxemburg,pending
+03a16700d2,train_pool,0,low_reference_word_rate,impine Bambang diwujudke karo Raffi Ahmad,pending
+058d7e5021,train_pool,0,random_in_stratum,I usually use my credit card for payment,pending
+05e59eab6d,train_pool,0,recorder_message,No more tokens. Restart app with internet connection for more.,pending
+0aa0eb429f,train_pool,0,upper_acoustic_candidates,Perpanjangan kapsula jroning parenkim limpa diarani trabekula,pending
+0c699f06ee,train_pool,0,upper_acoustic_candidates,Raine ayu lan alus kaya manungsa sarta duwé dhadha,pending
+0f4fde196b,train_pool,0,low_reference_word_rate,sarasvati tansah eling sakjroning Mohammad Tria Ramadhani,pending
+10b5c794bd,train_pool,1,random_in_stratum,Wulandari dikontrak kerja karo Toto,pending
+13cf4d728a,train_pool,1,upper_acoustic_candidates,Sawijining pelajar Lukman Firdaus tiwas,pending
+160d48fc4c,train_pool,1,random_in_stratum,Okto dados putra jaler piyambak saking sedhérék ingkang cacahipun gangsal,pending
+1cb1c07b98,train_pool,1,upper_acoustic_candidates,Brookings Institution Press,pending
+1cf1d90902,train_pool,1,random_in_stratum,Nugroho dikontrak kerja karo Twinings,pending
+1f699d6f6f,train_pool,1,random_in_stratum,Basa iki dipituturaké ing tlatah Jakarta lan saubengé,pending
+231e6b8eba,train_pool,2,upper_acoustic_candidates,Foto ikan nila putih kaundhuh tanggal pitulikur mei rong ewu sewelas,pending
+250abf6128,train_pool,2,random_in_stratum,Siti tansah eling sakjroning Ibrahim Imran,pending
+2a95db6059,train_pool,2,random_in_stratum,Dhompèt ya iku piranti kanggo wadhah dhuwit,pending
+2db20e6179,train_pool,2,upper_acoustic_candidates,File Milk clouds in tea,pending
+2dcc8ce1c8,train_pool,2,random_in_stratum,Nani Wijaya lagi sekolah nang Chungceong University,pending
+2e377ee37b,train_pool,2,random_in_stratum,Adaptasi tingkah laku punika adapatasi uatawi penyesuaian tingkah laku,pending
+2e42b0c267,train_pool,2,low_reference_word_rate,impine Nur diwujudke karo Ita Purnamasari,pending
+2e7090e894,train_pool,2,low_reference_word_rate,Diamèteré seket dhuwuré limang,pending
+31f5d123fb,train_pool,3,low_reference_word_rate,Agus dikontrak kerja karo Puma,pending
+3485b6a953,train_pool,3,upper_acoustic_candidates,Nalika umur wolung taun ingkang ngurus Ernest punika mbakyunipun,pending
+34cd4a2ddf,train_pool,3,upper_acoustic_candidates,Ing Indonésia tembung sandal dijupuk saka basa Walanda sandaal,pending
+35935b7d64,train_pool,3,random_in_stratum,Pandhu mung sawetara wektu dadi raja amarga mati,pending
+3711d6d3b1,train_pool,3,random_in_stratum,Dhini Aminarti dolan menyang Gunung Kidul,pending
+3a0742fb8e,train_pool,3,low_reference_word_rate,Semarang kalebu tlatah pesisir Jawa sisih lor,pending
+3b5c440af0,train_pool,3,random_in_stratum,Alkaloid berberina bisa matèni bakteri yèn tatu korèngen lan kudisen,pending
+3eaa08c77e,train_pool,3,low_reference_word_rate,Maia Estianty dolan menyang Pemalang,pending
+3eebfbe54a,train_pool,3,random_in_stratum,Nur tansah eling sakjroning Ebet Kadarusman,pending
+0034ac8d52,validation,0,random_in_stratum,Kisah pepanggihan kalihan para Siren kacariyosaken ing kisah Odisseia,pending
+039e95497d,validation,0,upper_acoustic_candidates,Ganyong abang wernané wit pelepah lan godhongé abang rada ungu,pending
+0a5f4dac8e,validation,0,upper_acoustic_candidates,Sakliyané iku wiji anggrèk ora nduwé lembaga biji,pending
+0d1d842b99,validation,0,random_in_stratum,Uga tau digosipaké karo Jeff Smeenge penulis skenario,pending
+0ddd7102d6,validation,0,random_in_stratum,Uga akèh tinemu industri manufaktur wigati,pending
+0ea2db915e,validation,0,random_in_stratum,Mulané ana manéka rupa hurup kanggo uni sing padha,pending
+12bf2ab232,validation,1,upper_acoustic_candidates,Venice is the see of a cardinal,pending
+12e73cee59,validation,1,random_in_stratum,Ginjel duwé bentuk kaya kacang mawa lekukan sing ngadhep mlebu,pending
+16e70604f9,validation,1,random_in_stratum,Puji tansah eling sakjroning Olla Ramlan,pending
+1ab077d032,validation,1,upper_acoustic_candidates,Supaya dhèwèké padha miturut dalan kang bener,pending
+1c082ea6c4,validation,1,random_in_stratum,Digodhog nganggo telung gelas banyu nganti sisa sagelas banjur disaring,pending
+1e006c408d,validation,1,random_in_stratum,Kartosoewirjo konsisten tetep tahan marang pulitik hijrahe,pending
+223bb2c24c,validation,2,upper_acoustic_candidates,Wisa iki disuntikake liwat siung loro kang mlengkung,pending
+2286e08bad,validation,2,random_in_stratum,Distrik Tengah Mahoz HaMerkaz,pending
+23c99a0553,validation,2,random_in_stratum,Arca wiwit ditemokaké ing laladan Kandang Gajak,pending
+24d47c0832,validation,2,random_in_stratum,Ita Purnamasari dolan menyang Banten,pending
+25ec4014ab,validation,2,random_in_stratum,impine Abdul diwujudke karo Morgan Oey,pending
+270db3ab91,validation,2,upper_acoustic_candidates,The school is uphill from my house,pending
+31eb73d04a,validation,3,random_in_stratum,Gusti Muhammad Hatta,pending
+3215e0ce61,validation,3,random_in_stratum,Menika krupukipun selak mlempem sampun sangalas menit mboten dinyuk,pending
+32bf13ddb7,validation,3,upper_acoustic_candidates,Fernando Alonso menang balapan mungsuh Felipe Massa,pending
+35b5bb1073,validation,3,upper_acoustic_candidates,Gunung iki sing mènèhi jeneng marang Semenanjung Balkan,pending
+35e5a9c189,validation,3,random_in_stratum,impine Siti diwujudke karo Roger Danuarta,pending
+3d1f19161b,validation,3,random_in_stratum,Dhèwèké banjur ndarbèni lan nglola Hotel Sheraton,pending
+007a639534,test,0,random_in_stratum,Kaonawan Sumirah ya iku Sutradara,pending
+0206ce17b4,test,0,random_in_stratum,Pramila dipunbetahaken wontenipun penyuluhan dhateng masarakat sakiteripun,pending
+04d45aeaa3,test,0,upper_acoustic_candidates,Nalika ing musim udan kembang kertas ora perlu disiram manèh,pending
+05fb1d2ae4,test,0,upper_acoustic_candidates,Jakob Sumardjo miyos ing Jombor Danguran Klaten Jawa Tengah,pending
+0cb90674b1,test,0,random_in_stratum,Srengéngé minangka panunjang uripé,pending
+0ee3814b3d,test,0,random_in_stratum,Anasuya nyuwun supados tiga déwa sami njalma minangka putranipun,pending
+12fa871c49,test,1,random_in_stratum,Nur tansah eling sakjroning Iszur Muchtar,pending
+130a5a4557,test,1,upper_acoustic_candidates,Musiké ditulis William Lawes lan Simon Ives,pending
+14afa20036,test,1,random_in_stratum,Kepala Adat dados pangayom tumrap sedaya aspek pagesangan masyarakat,pending
+154c7620fd,test,1,random_in_stratum,Tanduran gula bit ora mbutuhaké akéh banyu,pending
+15e679a795,test,1,random_in_stratum,Gajah Uwong Wanita Ibu dan Anak lan Dik Kedah,pending
+174723df08,test,1,low_reference_word_rate;previously_confirmed_test_defect,Ananging dereng kawujud dumugi sapunika,pending
+1cc288085f,test,1,upper_acoustic_candidates,Your shouting hurts my ears,pending
+220d152cad,test,2,random_in_stratum,Isma il diutus marang marang Qabilah Yaman Mekkah,pending
+27228fb74c,test,2,upper_acoustic_candidates,Saka iku Drogba mulai asring dolanan bal balan karo kanca kancanè,pending
+2d4799e7b9,test,2,upper_acoustic_candidates,Dados boten kirang kawan atus resiké,pending
+2e5c03fc2c,test,2,random_in_stratum,Ijarah asalé saka basa Arab sing tegesé upah sewa utawa jasa,pending
+2f9f7a1afb,test,2,random_in_stratum,Justin Beiber lunga dhateng Bangor,pending
+2faa4d85e0,test,2,random_in_stratum,impine Jaka diwujudke karo Sandra Dewi,pending
+321d68a11c,test,3,upper_acoustic_candidates,A cowboy is a person who rides horses,pending
+3239d92ac3,test,3,random_in_stratum,Wiwitané kulawarga Ji ngendhalèkaké nagara Zhou kanthi kapusat,pending
+390e796d1e,test,3,random_in_stratum,Setu dikontrak kerja karo New Balance,pending
+3b6a33deee,test,3,random_in_stratum,Bengawan Sala mili ngalor ngliwati tlatah Jawa Tengah,pending
+3c62a5da5d,test,3,random_in_stratum,Siganus Stellatus utawi Brown Spotted Spinefoot baronang lada,pending
+3d653a789b,test,3,previously_confirmed_test_defect;upper_acoustic_candidates,Nanging digawéne e gamelanKu duwéni ancas supaya bisa dadi media pembelajaran,pending

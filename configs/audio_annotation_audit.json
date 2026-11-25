@@ -1,0 +1,15 @@
+{
+  "frame_ms": 20,
+  "lower_percentile": 20,
+  "upper_percentile": 80,
+  "dbfs_floor": -120.0,
+  "near_full_scale_fraction": 0.999,
+  "min_normalized_words_for_rate_flag": 4,
+  "max_audio_words_per_second_flag": 8.0,
+  "min_audio_words_per_second_flag": 0.3,
+  "random_examples_per_archive_split": 4,
+  "high_floor_examples_per_archive_split": 2,
+  "seed": 42,
+  "confirmed_test_defect_ids": ["3d653a789b", "174723df08"],
+  "known_recorder_message": "No more tokens. Restart app with internet connection for more."
+}

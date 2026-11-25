@@ -1,0 +1,815 @@
+{
+  "generated_at": "2026-09-20T16:28:58+07:00",
+  "script": "audit_transcript_leakage.py",
+  "metadata_path": "D:\\_01_Bachelor_Information_System\\_00-SKRIPSI\\_03_dataset\\asr_javanese_0\\utt_spk_text.tsv",
+  "seeds": [
+    1,
+    7,
+    13,
+    42,
+    101,
+    2024,
+    31337,
+    60221,
+    99991,
+    123457
+  ],
+  "test_fraction": 0.066955,
+  "val_fraction": 0.041037,
+  "working_subset_archives": [
+    "asr_javanese_0",
+    "asr_javanese_1",
+    "asr_javanese_2",
+    "asr_javanese_3"
+  ],
+  "working_subset_membership_method": "berkas FLAC pada disk",
+  "populations": [
+    {
+      "population": "corpus_penuh",
+      "base_statistics": {
+        "n_utterances": 185076,
+        "n_unique_transcripts_raw": 96878,
+        "n_unique_transcripts_normalised": 96877,
+        "mean_readings_per_transcript": 1.9104,
+        "n_transcripts_read_more_than_once": 46826,
+        "pct_repeated_read_by_different_speakers": 99.94,
+        "n_unique_speakers": 1019
+      },
+      "split_strategies": {
+        "random_utterance": {
+          "strategy": "random_utterance",
+          "n_seeds": 10,
+          "transcript_leak_mean": 70.04,
+          "transcript_leak_sd": 0.35,
+          "transcript_leak_min": 69.56,
+          "transcript_leak_max": 70.71,
+          "speaker_overlap_mean": 99.97,
+          "runs": [
+            {
+              "seed": 1,
+              "n_train": 165091,
+              "n_val": 7594,
+              "n_test": 12391,
+              "transcript_leak_pct": 70.31,
+              "speaker_overlap_pct": 99.96
+            },
+            {
+              "seed": 7,
+              "n_train": 165091,
+              "n_val": 7594,
+              "n_test": 12391,
+              "transcript_leak_pct": 69.56,
+              "speaker_overlap_pct": 99.97
+            },
+            {
+              "seed": 13,
+              "n_train": 165091,
+              "n_val": 7594,
+              "n_test": 12391,
+              "transcript_leak_pct": 70.01,
+              "speaker_overlap_pct": 99.96
+            },
+            {
+              "seed": 42,
+              "n_train": 165091,
+              "n_val": 7594,
+              "n_test": 12391,
+              "transcript_leak_pct": 69.63,
+              "speaker_overlap_pct": 99.97
+            },
+            {
+              "seed": 101,
+              "n_train": 165091,
+              "n_val": 7594,
+              "n_test": 12391,
+              "transcript_leak_pct": 70.05,
+              "speaker_overlap_pct": 99.98
+            },
+            {
+              "seed": 2024,
+              "n_train": 165091,
+              "n_val": 7594,
+              "n_test": 12391,
+              "transcript_leak_pct": 70.2,
+              "speaker_overlap_pct": 99.97
+            },
+            {
+              "seed": 31337,
+              "n_train": 165091,
+              "n_val": 7594,
+              "n_test": 12391,
+              "transcript_leak_pct": 69.81,
+              "speaker_overlap_pct": 99.94
+            },
+            {
+              "seed": 60221,
+              "n_train": 165091,
+              "n_val": 7594,
+              "n_test": 12391,
+              "transcript_leak_pct": 70.28,
+              "speaker_overlap_pct": 100.0
+            },
+            {
+              "seed": 99991,
+              "n_train": 165091,
+              "n_val": 7594,
+              "n_test": 12391,
+              "transcript_leak_pct": 70.71,
+              "speaker_overlap_pct": 99.94
+            },
+            {
+              "seed": 123457,
+              "n_train": 165091,
+              "n_val": 7594,
+              "n_test": 12391,
+              "transcript_leak_pct": 69.87,
+              "speaker_overlap_pct": 99.99
+            }
+          ]
+        },
+        "speaker_disjoint": {
+          "strategy": "speaker_disjoint",
+          "n_seeds": 10,
+          "transcript_leak_mean": 68.7,
+          "transcript_leak_sd": 3.48,
+          "transcript_leak_min": 64.36,
+          "transcript_leak_max": 73.99,
+          "speaker_overlap_mean": 0.0,
+          "runs": [
+            {
+              "seed": 1,
+              "n_train": 164823,
+              "n_val": 7849,
+              "n_test": 12404,
+              "transcript_leak_pct": 65.08,
+              "speaker_overlap_pct": 0.0
+            },
+            {
+              "seed": 7,
+              "n_train": 164773,
+              "n_val": 7658,
+              "n_test": 12645,
+              "transcript_leak_pct": 73.99,
+              "speaker_overlap_pct": 0.0
+            },
+            {
+              "seed": 13,
+              "n_train": 164596,
+              "n_val": 7963,
+              "n_test": 12517,
+              "transcript_leak_pct": 66.71,
+              "speaker_overlap_pct": 0.0
+            },
+            {
+              "seed": 42,
+              "n_train": 164612,
+              "n_val": 7692,
+              "n_test": 12772,
+              "transcript_leak_pct": 67.83,
+              "speaker_overlap_pct": 0.0
+            },
+            {
+              "seed": 101,
+              "n_train": 164954,
+              "n_val": 7656,
+              "n_test": 12466,
+              "transcript_leak_pct": 68.17,
+              "speaker_overlap_pct": 0.0
+            },
+            {
+              "seed": 2024,
+              "n_train": 164625,
+              "n_val": 7822,
+              "n_test": 12629,
+              "transcript_leak_pct": 66.36,
+              "speaker_overlap_pct": 0.0
+            },
+            {
+              "seed": 31337,
+              "n_train": 164842,
+              "n_val": 7647,
+              "n_test": 12587,
+              "transcript_leak_pct": 73.31,
+              "speaker_overlap_pct": 0.0
+            },
+            {
+              "seed": 60221,
+              "n_train": 164614,
+              "n_val": 7898,
+              "n_test": 12564,
+              "transcript_leak_pct": 64.36,
+              "speaker_overlap_pct": 0.0
+            },
+            {
+              "seed": 99991,
+              "n_train": 164679,
+              "n_val": 7780,
+              "n_test": 12617,
+              "transcript_leak_pct": 68.32,
+              "speaker_overlap_pct": 0.0
+            },
+            {
+              "seed": 123457,
+              "n_train": 164614,
+              "n_val": 7772,
+              "n_test": 12690,
+              "transcript_leak_pct": 72.86,
+              "speaker_overlap_pct": 0.0
+            }
+          ]
+        },
+        "text_disjoint": {
+          "strategy": "text_disjoint",
+          "n_seeds": 10,
+          "transcript_leak_mean": 0.0,
+          "transcript_leak_sd": 0.0,
+          "transcript_leak_min": 0.0,
+          "transcript_leak_max": 0.0,
+          "speaker_overlap_mean": 99.97,
+          "runs": [
+            {
+              "seed": 1,
+              "n_train": 165091,
+              "n_val": 7594,
+              "n_test": 12391,
+              "transcript_leak_pct": 0.0,
+              "speaker_overlap_pct": 99.96
+            },
+            {
+              "seed": 7,
+              "n_train": 165089,
+              "n_val": 7594,
+              "n_test": 12393,
+              "transcript_leak_pct": 0.0,
+              "speaker_overlap_pct": 99.95
+            },
+            {
+              "seed": 13,
+              "n_train": 165091,
+              "n_val": 7594,
+              "n_test": 12391,
+              "transcript_leak_pct": 0.0,
+              "speaker_overlap_pct": 99.96
+            },
+            {
+              "seed": 42,
+              "n_train": 165088,
+              "n_val": 7594,
+              "n_test": 12394,
+              "transcript_leak_pct": 0.0,
+              "speaker_overlap_pct": 99.97
+            },
+            {
+              "seed": 101,
+              "n_train": 165091,
+              "n_val": 7594,
+              "n_test": 12391,
+              "transcript_leak_pct": 0.0,
+              "speaker_overlap_pct": 99.98
+            },
+            {
+              "seed": 2024,
+              "n_train": 165088,
+              "n_val": 7595,
+              "n_test": 12393,
+              "transcript_leak_pct": 0.0,
+              "speaker_overlap_pct": 99.98
+            },
+            {
+              "seed": 31337,
+              "n_train": 165083,
+              "n_val": 7595,
+              "n_test": 12398,
+              "transcript_leak_pct": 0.0,
+              "speaker_overlap_pct": 99.99
+            },
+            {
+              "seed": 60221,
+              "n_train": 165091,
+              "n_val": 7594,
+              "n_test": 12391,
+              "transcript_leak_pct": 0.0,
+              "speaker_overlap_pct": 99.98
+            },
+            {
+              "seed": 99991,
+              "n_train": 165091,
+              "n_val": 7594,
+              "n_test": 12391,
+              "transcript_leak_pct": 0.0,
+              "speaker_overlap_pct": 99.98
+            },
+            {
+              "seed": 123457,
+              "n_train": 165090,
+              "n_val": 7595,
+              "n_test": 12391,
+              "transcript_leak_pct": 0.0,
+              "speaker_overlap_pct": 99.99
+            }
+          ]
+        }
+      },
+      "test_fraction_sweep": [
+        {
+          "test_fraction": 0.05,
+          "random_utterance_mean": 70.46,
+          "random_utterance_min": 69.9,
+          "random_utterance_max": 71.34,
+          "speaker_disjoint_mean": 68.9,
+          "speaker_disjoint_min": 62.21,
+          "speaker_disjoint_max": 75.92
+        },
+        {
+          "test_fraction": 0.067,
+          "random_utterance_mean": 70.05,
+          "random_utterance_min": 69.54,
+          "random_utterance_max": 70.7,
+          "speaker_disjoint_mean": 68.7,
+          "speaker_disjoint_min": 64.36,
+          "speaker_disjoint_max": 73.99
+        },
+        {
+          "test_fraction": 0.1,
+          "random_utterance_mean": 69.0,
+          "random_utterance_min": 68.73,
+          "random_utterance_max": 69.31,
+          "speaker_disjoint_mean": 68.11,
+          "speaker_disjoint_min": 63.72,
+          "speaker_disjoint_max": 72.5
+        },
+        {
+          "test_fraction": 0.15,
+          "random_utterance_mean": 67.3,
+          "random_utterance_min": 67.06,
+          "random_utterance_max": 67.52,
+          "speaker_disjoint_mean": 66.6,
+          "speaker_disjoint_min": 64.13,
+          "speaker_disjoint_max": 71.32
+        },
+        {
+          "test_fraction": 0.2,
+          "random_utterance_mean": 65.35,
+          "random_utterance_min": 65.01,
+          "random_utterance_max": 65.54,
+          "speaker_disjoint_mean": 65.18,
+          "speaker_disjoint_min": 61.95,
+          "speaker_disjoint_max": 69.14
+        },
+        {
+          "test_fraction": 0.3,
+          "random_utterance_mean": 61.11,
+          "random_utterance_min": 60.77,
+          "random_utterance_max": 61.38,
+          "speaker_disjoint_mean": 60.88,
+          "speaker_disjoint_min": 57.21,
+          "speaker_disjoint_max": 63.46
+        }
+      ],
+      "speaker_transcript_graph": {
+        "n_components": 13,
+        "largest_component_utterances": 118050,
+        "largest_component_pct": 63.78,
+        "second_component_utterances": 67015,
+        "second_component_pct": 36.21,
+        "n_remaining_components": 11,
+        "remaining_components_utterances": 11,
+        "remaining_components_pct": 0.006,
+        "test_quota_utterances": 12391,
+        "component_sizes_desc": [
+          118050,
+          67015,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "population": "subset_kerja",
+      "base_statistics": {
+        "n_utterances": 46309,
+        "n_unique_transcripts_raw": 37887,
+        "n_unique_transcripts_normalised": 37887,
+        "mean_readings_per_transcript": 1.2223,
+        "n_transcripts_read_more_than_once": 7003,
+        "pct_repeated_read_by_different_speakers": 99.96,
+        "n_unique_speakers": 922
+      },
+      "split_strategies": {
+        "random_utterance": {
+          "strategy": "random_utterance",
+          "n_seeds": 10,
+          "transcript_leak_mean": 30.93,
+          "transcript_leak_sd": 0.68,
+          "transcript_leak_min": 29.77,
+          "transcript_leak_max": 31.71,
+          "speaker_overlap_mean": 99.82,
+          "runs": [
+            {
+              "seed": 1,
+              "n_train": 41309,
+              "n_val": 1900,
+              "n_test": 3100,
+              "transcript_leak_pct": 30.13,
+              "speaker_overlap_pct": 99.87
+            },
+            {
+              "seed": 7,
+              "n_train": 41309,
+              "n_val": 1900,
+              "n_test": 3100,
+              "transcript_leak_pct": 31.35,
+              "speaker_overlap_pct": 99.87
+            },
+            {
+              "seed": 13,
+              "n_train": 41309,
+              "n_val": 1900,
+              "n_test": 3100,
+              "transcript_leak_pct": 30.19,
+              "speaker_overlap_pct": 99.61
+            },
+            {
+              "seed": 42,
+              "n_train": 41309,
+              "n_val": 1900,
+              "n_test": 3100,
+              "transcript_leak_pct": 31.13,
+              "speaker_overlap_pct": 99.9
+            },
+            {
+              "seed": 101,
+              "n_train": 41309,
+              "n_val": 1900,
+              "n_test": 3100,
+              "transcript_leak_pct": 31.71,
+              "speaker_overlap_pct": 99.84
+            },
+            {
+              "seed": 2024,
+              "n_train": 41309,
+              "n_val": 1900,
+              "n_test": 3100,
+              "transcript_leak_pct": 31.03,
+              "speaker_overlap_pct": 99.84
+            },
+            {
+              "seed": 31337,
+              "n_train": 41309,
+              "n_val": 1900,
+              "n_test": 3100,
+              "transcript_leak_pct": 31.52,
+              "speaker_overlap_pct": 99.68
+            },
+            {
+              "seed": 60221,
+              "n_train": 41309,
+              "n_val": 1900,
+              "n_test": 3100,
+              "transcript_leak_pct": 31.58,
+              "speaker_overlap_pct": 99.81
+            },
+            {
+              "seed": 99991,
+              "n_train": 41309,
+              "n_val": 1900,
+              "n_test": 3100,
+              "transcript_leak_pct": 30.84,
+              "speaker_overlap_pct": 99.87
+            },
+            {
+              "seed": 123457,
+              "n_train": 41309,
+              "n_val": 1900,
+              "n_test": 3100,
+              "transcript_leak_pct": 29.77,
+              "speaker_overlap_pct": 99.9
+            }
+          ]
+        },
+        "speaker_disjoint": {
+          "strategy": "speaker_disjoint",
+          "n_seeds": 10,
+          "transcript_leak_mean": 30.36,
+          "transcript_leak_sd": 1.88,
+          "transcript_leak_min": 27.26,
+          "transcript_leak_max": 32.85,
+          "speaker_overlap_mean": 0.0,
+          "runs": [
+            {
+              "seed": 1,
+              "n_train": 41221,
+              "n_val": 1931,
+              "n_test": 3157,
+              "transcript_leak_pct": 31.23,
+              "speaker_overlap_pct": 0.0
+            },
+            {
+              "seed": 7,
+              "n_train": 41117,
+              "n_val": 1996,
+              "n_test": 3196,
+              "transcript_leak_pct": 32.79,
+              "speaker_overlap_pct": 0.0
+            },
+            {
+              "seed": 13,
+              "n_train": 41258,
+              "n_val": 1904,
+              "n_test": 3147,
+              "transcript_leak_pct": 30.19,
+              "speaker_overlap_pct": 0.0
+            },
+            {
+              "seed": 42,
+              "n_train": 41221,
+              "n_val": 1904,
+              "n_test": 3184,
+              "transcript_leak_pct": 29.87,
+              "speaker_overlap_pct": 0.0
+            },
+            {
+              "seed": 101,
+              "n_train": 41269,
+              "n_val": 1923,
+              "n_test": 3117,
+              "transcript_leak_pct": 32.85,
+              "speaker_overlap_pct": 0.0
+            },
+            {
+              "seed": 2024,
+              "n_train": 41223,
+              "n_val": 1967,
+              "n_test": 3119,
+              "transcript_leak_pct": 28.98,
+              "speaker_overlap_pct": 0.0
+            },
+            {
+              "seed": 31337,
+              "n_train": 41231,
+              "n_val": 1929,
+              "n_test": 3149,
+              "transcript_leak_pct": 30.07,
+              "speaker_overlap_pct": 0.0
+            },
+            {
+              "seed": 60221,
+              "n_train": 41139,
+              "n_val": 1942,
+              "n_test": 3228,
+              "transcript_leak_pct": 32.06,
+              "speaker_overlap_pct": 0.0
+            },
+            {
+              "seed": 99991,
+              "n_train": 41154,
+              "n_val": 1985,
+              "n_test": 3170,
+              "transcript_leak_pct": 27.26,
+              "speaker_overlap_pct": 0.0
+            },
+            {
+              "seed": 123457,
+              "n_train": 41244,
+              "n_val": 1932,
+              "n_test": 3133,
+              "transcript_leak_pct": 28.34,
+              "speaker_overlap_pct": 0.0
+            }
+          ]
+        },
+        "text_disjoint": {
+          "strategy": "text_disjoint",
+          "n_seeds": 10,
+          "transcript_leak_mean": 0.0,
+          "transcript_leak_sd": 0.0,
+          "transcript_leak_min": 0.0,
+          "transcript_leak_max": 0.0,
+          "speaker_overlap_mean": 99.91,
+          "runs": [
+            {
+              "seed": 1,
+              "n_train": 41309,
+              "n_val": 1900,
+              "n_test": 3100,
+              "transcript_leak_pct": 0.0,
+              "speaker_overlap_pct": 99.97
+            },
+            {
+              "seed": 7,
+              "n_train": 41308,
+              "n_val": 1900,
+              "n_test": 3101,
+              "transcript_leak_pct": 0.0,
+              "speaker_overlap_pct": 99.77
+            },
+            {
+              "seed": 13,
+              "n_train": 41309,
+              "n_val": 1900,
+              "n_test": 3100,
+              "transcript_leak_pct": 0.0,
+              "speaker_overlap_pct": 99.87
+            },
+            {
+              "seed": 42,
+              "n_train": 41309,
+              "n_val": 1900,
+              "n_test": 3100,
+              "transcript_leak_pct": 0.0,
+              "speaker_overlap_pct": 99.94
+            },
+            {
+              "seed": 101,
+              "n_train": 41308,
+              "n_val": 1901,
+              "n_test": 3100,
+              "transcript_leak_pct": 0.0,
+              "speaker_overlap_pct": 99.94
+            },
+            {
+              "seed": 2024,
+              "n_train": 41309,
+              "n_val": 1900,
+              "n_test": 3100,
+              "transcript_leak_pct": 0.0,
+              "speaker_overlap_pct": 99.97
+            },
+            {
+              "seed": 31337,
+              "n_train": 41309,
+              "n_val": 1900,
+              "n_test": 3100,
+              "transcript_leak_pct": 0.0,
+              "speaker_overlap_pct": 99.84
+            },
+            {
+              "seed": 60221,
+              "n_train": 41309,
+              "n_val": 1900,
+              "n_test": 3100,
+              "transcript_leak_pct": 0.0,
+              "speaker_overlap_pct": 100.0
+            },
+            {
+              "seed": 99991,
+              "n_train": 41308,
+              "n_val": 1900,
+              "n_test": 3101,
+              "transcript_leak_pct": 0.0,
+              "speaker_overlap_pct": 99.87
+            },
+            {
+              "seed": 123457,
+              "n_train": 41309,
+              "n_val": 1900,
+              "n_test": 3100,
+              "transcript_leak_pct": 0.0,
+              "speaker_overlap_pct": 99.97
+            }
+          ]
+        }
+      },
+      "test_fraction_sweep": [
+        {
+          "test_fraction": 0.05,
+          "random_utterance_mean": 31.57,
+          "random_utterance_min": 30.11,
+          "random_utterance_max": 32.87,
+          "speaker_disjoint_mean": 31.01,
+          "speaker_disjoint_min": 27.17,
+          "speaker_disjoint_max": 33.59
+        },
+        {
+          "test_fraction": 0.067,
+          "random_utterance_mean": 30.92,
+          "random_utterance_min": 29.75,
+          "random_utterance_max": 31.72,
+          "speaker_disjoint_mean": 30.36,
+          "speaker_disjoint_min": 27.26,
+          "speaker_disjoint_max": 32.85
+        },
+        {
+          "test_fraction": 0.1,
+          "random_utterance_mean": 29.84,
+          "random_utterance_min": 28.73,
+          "random_utterance_max": 30.54,
+          "speaker_disjoint_mean": 29.15,
+          "speaker_disjoint_min": 26.78,
+          "speaker_disjoint_max": 31.42
+        },
+        {
+          "test_fraction": 0.15,
+          "random_utterance_mean": 28.44,
+          "random_utterance_min": 27.86,
+          "random_utterance_max": 28.95,
+          "speaker_disjoint_mean": 27.74,
+          "speaker_disjoint_min": 25.92,
+          "speaker_disjoint_max": 29.66
+        },
+        {
+          "test_fraction": 0.2,
+          "random_utterance_mean": 26.95,
+          "random_utterance_min": 26.31,
+          "random_utterance_max": 27.24,
+          "speaker_disjoint_mean": 26.52,
+          "speaker_disjoint_min": 24.92,
+          "speaker_disjoint_max": 27.79
+        },
+        {
+          "test_fraction": 0.3,
+          "random_utterance_mean": 23.82,
+          "random_utterance_min": 23.27,
+          "random_utterance_max": 24.07,
+          "speaker_disjoint_mean": 23.96,
+          "speaker_disjoint_min": 23.01,
+          "speaker_disjoint_max": 24.64
+        }
+      ],
+      "speaker_transcript_graph": {
+        "n_components": 61,
+        "largest_component_utterances": 29479,
+        "largest_component_pct": 63.66,
+        "second_component_utterances": 16713,
+        "second_component_pct": 36.09,
+        "n_remaining_components": 59,
+        "remaining_components_utterances": 117,
+        "remaining_components_pct": 0.253,
+        "test_quota_utterances": 3100,
+        "component_sizes_desc": [
+          29479,
+          16713,
+          10,
+          5,
+          5,
+          5,
+          4,
+          4,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      }
+    }
+  ],
+  "elapsed_seconds": 32.33
+}

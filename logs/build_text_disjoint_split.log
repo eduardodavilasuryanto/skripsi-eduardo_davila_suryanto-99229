@@ -1,0 +1,30 @@
+==============================================================================
+Pembagian data produksi text-disjoint
+Waktu mulai        : 2026-09-26T07:40:58+07:00
+Metadata           : D:\_01_Bachelor_Information_System\_00-SKRIPSI\_03_dataset\asr_javanese_0\utt_spk_text.tsv
+Random seed        : 42
+Kuota              : test 3100, validation 1900
+Batas durasi       : 1.5 detik
+==============================================================================
+Berkas FLAC        : 46309
+Format audio       : {'FLAC 16000 Hz 1 kanal PCM_16': 46309}
+Ukuran rata-rata   : 98.7 KB
+Subset kerja       : 46309 utterance bermetadata
+Dikeluarkan        : 16 utterance (durasi_di_bawah_1_5_detik 3, memuat_angka 13)
+Subset tersaring   : 46293 utterance, 74.216 jam
+test               : 3100 utterance, 5.03 jam, 6.7%
+validation         : 1900 utterance, 3.053 jam, 4.1%
+train_pool         : 41293 utterance, 66.134 jam, 89.2%
+Grup transkrip     : 37872
+Periksa sizes_sum_to_population           : True
+Periksa test_meets_quota                  : True
+Periksa validation_meets_quota            : True
+Periksa test_transcripts_in_train_pct     : 0.0
+Periksa test_transcripts_in_validation_pct: 0.0
+Periksa validation_transcripts_in_train_pct: 0.0
+Periksa test_speakers_in_train_pct        : 99.9
+==============================================================================
+Pembagian ditulis  : D:\_01_Bachelor_Information_System\_00-SKRIPSI\_01_python-scripts\outputs\splits
+Laporan ditulis ke : D:\_01_Bachelor_Information_System\_00-SKRIPSI\_01_python-scripts\outputs\build_text_disjoint_split_report.json
+Durasi eksekusi    : 9.0 detik
+==============================================================================

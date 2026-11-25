@@ -1,0 +1,279 @@
+{
+  "generated_at": "2026-11-15T18:34:56+07:00",
+  "script": "h1_inference_check.py",
+  "seed": 42,
+  "n_bootstrap": 10000,
+  "n_permutations": 10000,
+  "holm_matches_statsmodels_and_published": true,
+  "bonferroni_level": 0.99,
+  "interval_notes": {
+    "marginal_95": "cakupan 95% bagi setiap tingkat secara terpisah",
+    "holm_level": "taraf mengikuti urutan Holm; tidak dijamin bercakupan simultan",
+    "bonferroni_simultaneous": "cakupan bersama sekurang-kurangnya 95% bagi kelima tingkat"
+  },
+  "simultaneous_wer_intervals_exclude_zero": true,
+  "levels": [
+    {
+      "level": "d1",
+      "wer_diff": -0.06637998078594629,
+      "ci_marginal_95": [
+        -0.07717836713733127,
+        -0.05458937568356856
+      ],
+      "ci_holm_level": [
+        -0.08044984158761267,
+        -0.05125831832729282
+      ],
+      "holm_level": 0.99,
+      "ci_bonferroni_simultaneous": [
+        -0.08044984158761267,
+        -0.05125831832729282
+      ],
+      "p_bootstrap_holm": 0.000999900009999,
+      "p_permutation": 9.999000099990002e-05,
+      "cer_diff": -0.01158759622208877,
+      "cer_ci_bonferroni_simultaneous": [
+        -0.01797605974168775,
+        -0.0024216576307022992
+      ],
+      "p_permutation_cer": 9.999000099990002e-05,
+      "p_permutation_holm": 0.0004999500049995,
+      "p_permutation_cer_holm": 0.0004999500049995
+    },
+    {
+      "level": "d2",
+      "wer_diff": -0.07196120591060891,
+      "ci_marginal_95": [
+        -0.08109118876872155,
+        -0.06217951125961367
+      ],
+      "ci_holm_level": [
+        -0.08338892572983535,
+        -0.05942664509658077
+      ],
+      "holm_level": 0.9875,
+      "ci_bonferroni_simultaneous": [
+        -0.08359143652859884,
+        -0.05911595954940251
+      ],
+      "p_bootstrap_holm": 0.000999900009999,
+      "p_permutation": 9.999000099990002e-05,
+      "cer_diff": -0.012686302342086586,
+      "cer_ci_bonferroni_simultaneous": [
+        -0.01716961441744884,
+        -0.006167189818853606
+      ],
+      "p_permutation_cer": 9.999000099990002e-05,
+      "p_permutation_holm": 0.0004999500049995,
+      "p_permutation_cer_holm": 0.0004999500049995
+    },
+    {
+      "level": "d3",
+      "wer_diff": -0.017567134818610185,
+      "ci_marginal_95": [
+        -0.02448720825628669,
+        -0.010747724722666297
+      ],
+      "ci_holm_level": [
+        -0.02585192829085523,
+        -0.009340099316421097
+      ],
+      "holm_level": 0.9833333333333333,
+      "ci_bonferroni_simultaneous": [
+        -0.02645197631938772,
+        -0.00837830956427337
+      ],
+      "p_bootstrap_holm": 0.000999900009999,
+      "p_permutation": 9.999000099990002e-05,
+      "cer_diff": 0.00040945569689359614,
+      "cer_ci_bonferroni_simultaneous": [
+        -0.002049254175274847,
+        0.0028335682259418163
+      ],
+      "p_permutation_cer": 0.6742325767423257,
+      "p_permutation_holm": 0.0004999500049995,
+      "p_permutation_cer_holm": 0.6742325767423257
+    },
+    {
+      "level": "d4",
+      "wer_diff": -0.012214648428564893,
+      "ci_marginal_95": [
+        -0.01800418500723607,
+        -0.006469752023157696
+      ],
+      "ci_holm_level": [
+        -0.018801766558787597,
+        -0.00566304178987409
+      ],
+      "holm_level": 0.975,
+      "ci_bonferroni_simultaneous": [
+        -0.019838550952626526,
+        -0.004655504253243135
+      ],
+      "p_bootstrap_holm": 0.000999900009999,
+      "p_permutation": 9.999000099990002e-05,
+      "cer_diff": 0.0013785008462084403,
+      "cer_ci_bonferroni_simultaneous": [
+        -0.0006376068574474001,
+        0.003356882199010999
+      ],
+      "p_permutation_cer": 0.0735926407359264,
+      "p_permutation_holm": 0.0004999500049995,
+      "p_permutation_cer_holm": 0.1471852814718528
+    },
+    {
+      "level": "d5",
+      "wer_diff": -0.03412781920490416,
+      "ci_marginal_95": [
+        -0.04005159454637984,
+        -0.02835485940033203
+      ],
+      "ci_holm_level": [
+        -0.04005159454637984,
+        -0.02835485940033203
+      ],
+      "holm_level": 0.95,
+      "ci_bonferroni_simultaneous": [
+        -0.04191755867901466,
+        -0.026499676269587977
+      ],
+      "p_bootstrap_holm": 0.000999900009999,
+      "p_permutation": 9.999000099990002e-05,
+      "cer_diff": -0.00392395042856363,
+      "cer_ci_bonferroni_simultaneous": [
+        -0.005889286146314834,
+        -0.0020079288487719464
+      ],
+      "p_permutation_cer": 9.999000099990002e-05,
+      "p_permutation_holm": 0.0004999500049995,
+      "p_permutation_cer_holm": 0.0004999500049995
+    }
+  ],
+  "input_sha256": {
+    "whisper_d1_trial_test.tsv": "9c6a51f450b2e3d4cc347a6c0c4ce467d6d639c8124f5b7bcd444655d1c11ec4",
+    "whisper_d2_test.tsv": "ea8ff9b88852a2c4c96c3d7f26d5f0af021a57d84e0d0a2cc5b460b70d611fc5",
+    "whisper_d3_test.tsv": "118e05def5274b01517fe7ee6e0047faf525505d42533d3e868cc9dd08c33d0a",
+    "whisper_d4_test.tsv": "f05b1bc509da70ae7c004a6f613fa86282f941fc69e386095ecfc2f0f9fa5c7b",
+    "whisper_d5_test.tsv": "0bc978bf437745e40f9e039c6408c7cda194dcb109a7d0b44372ec265e6bf871",
+    "xlsr_d1_trial_test.tsv": "0a2f581e56824179d91d55647a02a8561f383e8492a721c1549afdbf90474950",
+    "xlsr_d2_test.tsv": "bf9f012df6bbad33b937af9d9179ae5ce7e37a1e8041a7f49193d15a0daa4f50",
+    "xlsr_d3_test.tsv": "b3128109fed9f2e1fe7e502c558343871c7d14a2e04fceeb5916a7cfbb45c953",
+    "xlsr_d4_test.tsv": "cdc40bdc96b6e02822f74f4618e8fc8586fb0bca097501996020c3fa402ab6b7",
+    "xlsr_d5_test.tsv": "2242d1c0e3151548c5b04df006c5d7802496b7509efbdbb2748a9e9a014936e1",
+    "bootstrap_metrics_report.json": "471a69c663c4622a720debb7840c1dc3e2ab78f6af25ca77a6e63062616d9073"
+  },
+  "environment": {
+    "skrip": "log_environment.py",
+    "lapis_1_perangkat_keras": {
+      "gpu": {
+        "jumlah_gpu_terdeteksi_torch": 1,
+        "nama": "NVIDIA GeForce RTX 4060 Laptop GPU",
+        "vram_total_mib": 8188,
+        "compute_capability": "sm_89",
+        "jumlah_streaming_multiprocessor": 24
+      },
+      "cpu": {
+        "nama": "13th Gen Intel(R) Core(TM) i7-13700HX",
+        "penanda_keluarga": "Intel64 Family 6 Model 191 Stepping 2, GenuineIntel",
+        "core_fisik": 16,
+        "core_logis": 24
+      },
+      "ram_sistem": {
+        "total_gib": 31.81,
+        "tersedia_saat_pencatatan_gib": 20.83
+      },
+      "penyimpanan": {
+        "PhysicalDisks": [
+          {
+            "FriendlyName": "SAMSUNG MZVL21T0HCLR-00BL2",
+            "MediaType": "SSD",
+            "SizeGB": 953.9
+          }
+        ],
+        "Volumes": [
+          {
+            "DriveLetter": "D",
+            "FileSystemType": "NTFS",
+            "SizeGB": 476.2
+          },
+          {
+            "DriveLetter": "C",
+            "FileSystemType": "NTFS",
+            "SizeGB": 475.8
+          }
+        ]
+      },
+      "sistem_operasi": {
+        "platform": "Windows-11-10.0.26300-SP0",
+        "sistem": "Windows",
+        "rilis": "11",
+        "versi": "10.0.26300",
+        "arsitektur": "AMD64",
+        "nama_host": "Eduardo"
+      }
+    },
+    "lapis_2_perangkat_lunak_terikat_perangkat_keras": {
+      "python": {
+        "versi": "3.12.10",
+        "implementasi": "CPython",
+        "executable": "D:\\_01_Bachelor_Information_System\\_00-SKRIPSI\\skripsi-venv\\Scripts\\python.exe"
+      },
+      "driver_nvidia": {
+        "versi": "610.88",
+        "sumber": "nvidia-smi"
+      },
+      "cuda": {
+        "tersedia": true,
+        "runtime_versi_torch": "13.0",
+        "cudnn_versi_mentah": 92400,
+        "cudnn_versi": "9.24.0"
+      },
+      "pytorch": {
+        "versi": "2.14.0+cu130",
+        "build_cuda": "13.0",
+        "versi_lengkap": "2.14.0+cu130"
+      },
+      "presisi": {
+        "dtype_bawaan": "torch.float32",
+        "float32_matmul_precision": "highest",
+        "bf16_didukung": true
+      },
+      "tf32": {
+        "cuda_matmul_allow_tf32": false,
+        "cudnn_allow_tf32": true,
+        "catatan": "Kedua kanal dilaporkan terpisah karena nilai bawaannya berbeda. Melaporkannya sebagai satu status tunggal adalah penyederhanaan yang keliru."
+      },
+      "determinisme": {
+        "cudnn_deterministic": false,
+        "cudnn_benchmark": false,
+        "use_deterministic_algorithms": false
+      },
+      "pustaka": {
+        "torch": "2.14.0+cu130",
+        "transformers": "5.17.0",
+        "datasets": "5.0.1",
+        "accelerate": "1.15.0",
+        "tokenizers": "0.23.2",
+        "safetensors": "0.8.0",
+        "soundfile": "0.14.0",
+        "jiwer": "4.0.0",
+        "bitsandbytes": "0.50.2",
+        "numpy": "2.5.3",
+        "pandas": "3.0.5",
+        "scipy": "1.18.1",
+        "scikit-learn": "1.9.0",
+        "statsmodels": "0.15.0",
+        "matplotlib": "3.11.1"
+      }
+    },
+    "lapis_3_jejak_eksekusi": {
+      "timestamp_utc": "2026-11-15T11:35:04+00:00",
+      "timestamp_lokal": "2026-11-15T18:35:04+07:00",
+      "random_seed": 42,
+      "vram_puncak_teralokasi_mib": 0.0,
+      "vram_puncak_tercadang_mib": 0.0,
+      "durasi_pengumpulan_detik": 8.138
+    }
+  },
+  "elapsed_seconds": 6.4
+}

@@ -1,0 +1,4524 @@
+{
+  "config_sha256": "11226a4f60877dfdad335883cee67fe04d652cabf6e914e51d146e733721c01c",
+  "configuration": {
+    "digraphs": [
+      "ng",
+      "ny",
+      "dh",
+      "th"
+    ],
+    "prefixes": {
+      "di": [
+        "wujudke",
+        "kontrak",
+        "arani",
+        "gawe",
+        "sebut",
+        "kenal",
+        "jupuk",
+        "wiwiti",
+        "pangan",
+        "tandur",
+        "tulis",
+        "jaga",
+        "tambah",
+        "masak",
+        "olah"
+      ],
+      "dipun": [
+        "paringi",
+        "wastani",
+        "olah",
+        "produksi",
+        "sebat",
+        "remeni",
+        "dhahar",
+        "damel",
+        "kumbah",
+        "sembah",
+        "rayu",
+        "wiwiti",
+        "layani",
+        "sukani",
+        "pendhet",
+        "serat",
+        "tata",
+        "jagi",
+        "bantu"
+      ]
+    },
+    "suffixes": {
+      "ake": [
+        "nyebab",
+        "ditemok",
+        "nggunak",
+        "ngasil",
+        "digunak",
+        "ngleksanak",
+        "ngetok",
+        "nerus",
+        "njlentreh",
+        "disiar",
+        "nggambar",
+        "digambar",
+        "ngedeg",
+        "nerang",
+        "ngumpul",
+        "nyritak",
+        "nyediak",
+        "ngilang"
+      ],
+      "aken": [
+        "katimbul",
+        "ngawonten",
+        "dipunkempal",
+        "dipunlebet",
+        "miyos",
+        "kagambar",
+        "dipunpanggih",
+        "dipunmanfaat",
+        "nyempit",
+        "dipunsajik",
+        "dipunpasar",
+        "dipunginak",
+        "dipunwonten",
+        "dipunsambung",
+        "dipunkembang",
+        "ngginak",
+        "nindak",
+        "nerus",
+        "nglebet",
+        "ngempal",
+        "nyambung",
+        "nglajeng",
+        "mujud"
+      ],
+      "ipun": [
+        "piyambak",
+        "panjenengan",
+        "asal",
+        "isin",
+        "kekalih",
+        "salajeng",
+        "gesang",
+        "inggil",
+        "papan",
+        "asman",
+        "satunggal",
+        "tengen",
+        "asil",
+        "payon",
+        "irung",
+        "dinten",
+        "putran",
+        "tebih",
+        "wonten"
+      ],
+      "ne": [
+        "impi",
+        "siji",
+        "cita",
+        "kanca",
+        "isi",
+        "rasa",
+        "werna",
+        "garwa",
+        "bojo",
+        "ibu",
+        "rupa",
+        "griya",
+        "asu",
+        "guna"
+      ]
+    },
+    "alternatives": {
+      "di": [
+        "dipun"
+      ],
+      "dipun": [
+        "di"
+      ],
+      "ake": [
+        "aken",
+        "ke"
+      ],
+      "aken": [
+        "ake",
+        "ke"
+      ],
+      "ipun": [
+        "e",
+        "ne"
+      ],
+      "ne": [
+        "e",
+        "ipun"
+      ]
+    }
+  },
+  "hypotheses_sha256": {
+    "whisper_d1_trial": "9c6a51f450b2e3d4cc347a6c0c4ce467d6d639c8124f5b7bcd444655d1c11ec4",
+    "whisper_d2": "ea8ff9b88852a2c4c96c3d7f26d5f0af021a57d84e0d0a2cc5b460b70d611fc5",
+    "whisper_d3": "118e05def5274b01517fe7ee6e0047faf525505d42533d3e868cc9dd08c33d0a",
+    "whisper_d4": "f05b1bc509da70ae7c004a6f613fa86282f941fc69e386095ecfc2f0f9fa5c7b",
+    "whisper_d5": "0bc978bf437745e40f9e039c6408c7cda194dcb109a7d0b44372ec265e6bf871",
+    "xlsr_d1_trial": "0a2f581e56824179d91d55647a02a8561f383e8492a721c1549afdbf90474950",
+    "xlsr_d2": "bf9f012df6bbad33b937af9d9179ae5ce7e37a1e8041a7f49193d15a0daa4f50",
+    "xlsr_d3": "b3128109fed9f2e1fe7e502c558343871c7d14a2e04fceeb5916a7cfbb45c953",
+    "xlsr_d4": "cdc40bdc96b6e02822f74f4618e8fc8586fb0bca097501996020c3fa402ab6b7",
+    "xlsr_d5": "2242d1c0e3151548c5b04df006c5d7802496b7509efbdbb2748a9e9a014936e1"
+  },
+  "test_utterances": 3100,
+  "levels": [
+    "d1",
+    "d2",
+    "d3",
+    "d4",
+    "d5"
+  ],
+  "grouped_grapheme_denominator": 139732,
+  "reference_digraphs": {
+    "th": 307,
+    "ng": 5343,
+    "dh": 752,
+    "ny": 402
+  },
+  "lexicon_types_observed": 107,
+  "unobserved_lexicon_types": [
+    "asune"
+  ],
+  "affix_counts": [
+    {
+      "model": "whisper",
+      "level": "d1",
+      "affix": "ake",
+      "reference_tokens": 75,
+      "exact": 32,
+      "absent": 0,
+      "listed_replacement": 1,
+      "other_or_unresolved": 42
+    },
+    {
+      "model": "whisper",
+      "level": "d1",
+      "affix": "aken",
+      "reference_tokens": 42,
+      "exact": 12,
+      "absent": 0,
+      "listed_replacement": 0,
+      "other_or_unresolved": 30
+    },
+    {
+      "model": "whisper",
+      "level": "d1",
+      "affix": "di",
+      "reference_tokens": 334,
+      "exact": 294,
+      "absent": 0,
+      "listed_replacement": 0,
+      "other_or_unresolved": 40
+    },
+    {
+      "model": "whisper",
+      "level": "d1",
+      "affix": "dipun",
+      "reference_tokens": 41,
+      "exact": 17,
+      "absent": 2,
+      "listed_replacement": 0,
+      "other_or_unresolved": 22
+    },
+    {
+      "model": "whisper",
+      "level": "d1",
+      "affix": "ipun",
+      "reference_tokens": 86,
+      "exact": 46,
+      "absent": 0,
+      "listed_replacement": 0,
+      "other_or_unresolved": 40
+    },
+    {
+      "model": "whisper",
+      "level": "d1",
+      "affix": "ne",
+      "reference_tokens": 191,
+      "exact": 149,
+      "absent": 0,
+      "listed_replacement": 0,
+      "other_or_unresolved": 42
+    },
+    {
+      "model": "whisper",
+      "level": "d2",
+      "affix": "ake",
+      "reference_tokens": 75,
+      "exact": 39,
+      "absent": 0,
+      "listed_replacement": 2,
+      "other_or_unresolved": 34
+    },
+    {
+      "model": "whisper",
+      "level": "d2",
+      "affix": "aken",
+      "reference_tokens": 42,
+      "exact": 23,
+      "absent": 0,
+      "listed_replacement": 0,
+      "other_or_unresolved": 19
+    },
+    {
+      "model": "whisper",
+      "level": "d2",
+      "affix": "di",
+      "reference_tokens": 334,
+      "exact": 313,
+      "absent": 0,
+      "listed_replacement": 0,
+      "other_or_unresolved": 21
+    },
+    {
+      "model": "whisper",
+      "level": "d2",
+      "affix": "dipun",
+      "reference_tokens": 41,
+      "exact": 26,
+      "absent": 2,
+      "listed_replacement": 0,
+      "other_or_unresolved": 13
+    },
+    {
+      "model": "whisper",
+      "level": "d2",
+      "affix": "ipun",
+      "reference_tokens": 86,
+      "exact": 62,
+      "absent": 0,
+      "listed_replacement": 0,
+      "other_or_unresolved": 24
+    },
+    {
+      "model": "whisper",
+      "level": "d2",
+      "affix": "ne",
+      "reference_tokens": 191,
+      "exact": 166,
+      "absent": 0,
+      "listed_replacement": 0,
+      "other_or_unresolved": 25
+    },
+    {
+      "model": "whisper",
+      "level": "d3",
+      "affix": "ake",
+      "reference_tokens": 75,
+      "exact": 55,
+      "absent": 0,
+      "listed_replacement": 2,
+      "other_or_unresolved": 18
+    },
+    {
+      "model": "whisper",
+      "level": "d3",
+      "affix": "aken",
+      "reference_tokens": 42,
+      "exact": 29,
+      "absent": 0,
+      "listed_replacement": 0,
+      "other_or_unresolved": 13
+    },
+    {
+      "model": "whisper",
+      "level": "d3",
+      "affix": "di",
+      "reference_tokens": 334,
+      "exact": 323,
+      "absent": 0,
+      "listed_replacement": 0,
+      "other_or_unresolved": 11
+    },
+    {
+      "model": "whisper",
+      "level": "d3",
+      "affix": "dipun",
+      "reference_tokens": 41,
+      "exact": 33,
+      "absent": 2,
+      "listed_replacement": 0,
+      "other_or_unresolved": 6
+    },
+    {
+      "model": "whisper",
+      "level": "d3",
+      "affix": "ipun",
+      "reference_tokens": 86,
+      "exact": 67,
+      "absent": 0,
+      "listed_replacement": 0,
+      "other_or_unresolved": 19
+    },
+    {
+      "model": "whisper",
+      "level": "d3",
+      "affix": "ne",
+      "reference_tokens": 191,
+      "exact": 175,
+      "absent": 0,
+      "listed_replacement": 0,
+      "other_or_unresolved": 16
+    },
+    {
+      "model": "whisper",
+      "level": "d4",
+      "affix": "ake",
+      "reference_tokens": 75,
+      "exact": 58,
+      "absent": 0,
+      "listed_replacement": 2,
+      "other_or_unresolved": 15
+    },
+    {
+      "model": "whisper",
+      "level": "d4",
+      "affix": "aken",
+      "reference_tokens": 42,
+      "exact": 36,
+      "absent": 0,
+      "listed_replacement": 0,
+      "other_or_unresolved": 6
+    },
+    {
+      "model": "whisper",
+      "level": "d4",
+      "affix": "di",
+      "reference_tokens": 334,
+      "exact": 326,
+      "absent": 0,
+      "listed_replacement": 0,
+      "other_or_unresolved": 8
+    },
+    {
+      "model": "whisper",
+      "level": "d4",
+      "affix": "dipun",
+      "reference_tokens": 41,
+      "exact": 33,
+      "absent": 2,
+      "listed_replacement": 0,
+      "other_or_unresolved": 6
+    },
+    {
+      "model": "whisper",
+      "level": "d4",
+      "affix": "ipun",
+      "reference_tokens": 86,
+      "exact": 76,
+      "absent": 0,
+      "listed_replacement": 0,
+      "other_or_unresolved": 10
+    },
+    {
+      "model": "whisper",
+      "level": "d4",
+      "affix": "ne",
+      "reference_tokens": 191,
+      "exact": 187,
+      "absent": 0,
+      "listed_replacement": 0,
+      "other_or_unresolved": 4
+    },
+    {
+      "model": "whisper",
+      "level": "d5",
+      "affix": "ake",
+      "reference_tokens": 75,
+      "exact": 54,
+      "absent": 0,
+      "listed_replacement": 2,
+      "other_or_unresolved": 19
+    },
+    {
+      "model": "whisper",
+      "level": "d5",
+      "affix": "aken",
+      "reference_tokens": 42,
+      "exact": 35,
+      "absent": 0,
+      "listed_replacement": 0,
+      "other_or_unresolved": 7
+    },
+    {
+      "model": "whisper",
+      "level": "d5",
+      "affix": "di",
+      "reference_tokens": 334,
+      "exact": 331,
+      "absent": 0,
+      "listed_replacement": 0,
+      "other_or_unresolved": 3
+    },
+    {
+      "model": "whisper",
+      "level": "d5",
+      "affix": "dipun",
+      "reference_tokens": 41,
+      "exact": 38,
+      "absent": 0,
+      "listed_replacement": 0,
+      "other_or_unresolved": 3
+    },
+    {
+      "model": "whisper",
+      "level": "d5",
+      "affix": "ipun",
+      "reference_tokens": 86,
+      "exact": 79,
+      "absent": 0,
+      "listed_replacement": 0,
+      "other_or_unresolved": 7
+    },
+    {
+      "model": "whisper",
+      "level": "d5",
+      "affix": "ne",
+      "reference_tokens": 191,
+      "exact": 183,
+      "absent": 0,
+      "listed_replacement": 0,
+      "other_or_unresolved": 8
+    },
+    {
+      "model": "xlsr",
+      "level": "d1",
+      "affix": "ake",
+      "reference_tokens": 75,
+      "exact": 26,
+      "absent": 0,
+      "listed_replacement": 1,
+      "other_or_unresolved": 48
+    },
+    {
+      "model": "xlsr",
+      "level": "d1",
+      "affix": "aken",
+      "reference_tokens": 42,
+      "exact": 15,
+      "absent": 0,
+      "listed_replacement": 0,
+      "other_or_unresolved": 27
+    },
+    {
+      "model": "xlsr",
+      "level": "d1",
+      "affix": "di",
+      "reference_tokens": 334,
+      "exact": 295,
+      "absent": 2,
+      "listed_replacement": 0,
+      "other_or_unresolved": 37
+    },
+    {
+      "model": "xlsr",
+      "level": "d1",
+      "affix": "dipun",
+      "reference_tokens": 41,
+      "exact": 20,
+      "absent": 3,
+      "listed_replacement": 0,
+      "other_or_unresolved": 18
+    },
+    {
+      "model": "xlsr",
+      "level": "d1",
+      "affix": "ipun",
+      "reference_tokens": 86,
+      "exact": 59,
+      "absent": 0,
+      "listed_replacement": 0,
+      "other_or_unresolved": 27
+    },
+    {
+      "model": "xlsr",
+      "level": "d1",
+      "affix": "ne",
+      "reference_tokens": 191,
+      "exact": 165,
+      "absent": 0,
+      "listed_replacement": 0,
+      "other_or_unresolved": 26
+    },
+    {
+      "model": "xlsr",
+      "level": "d2",
+      "affix": "ake",
+      "reference_tokens": 75,
+      "exact": 39,
+      "absent": 0,
+      "listed_replacement": 1,
+      "other_or_unresolved": 35
+    },
+    {
+      "model": "xlsr",
+      "level": "d2",
+      "affix": "aken",
+      "reference_tokens": 42,
+      "exact": 23,
+      "absent": 0,
+      "listed_replacement": 0,
+      "other_or_unresolved": 19
+    },
+    {
+      "model": "xlsr",
+      "level": "d2",
+      "affix": "di",
+      "reference_tokens": 334,
+      "exact": 310,
+      "absent": 0,
+      "listed_replacement": 0,
+      "other_or_unresolved": 24
+    },
+    {
+      "model": "xlsr",
+      "level": "d2",
+      "affix": "dipun",
+      "reference_tokens": 41,
+      "exact": 31,
+      "absent": 1,
+      "listed_replacement": 0,
+      "other_or_unresolved": 9
+    },
+    {
+      "model": "xlsr",
+      "level": "d2",
+      "affix": "ipun",
+      "reference_tokens": 86,
+      "exact": 61,
+      "absent": 0,
+      "listed_replacement": 0,
+      "other_or_unresolved": 25
+    },
+    {
+      "model": "xlsr",
+      "level": "d2",
+      "affix": "ne",
+      "reference_tokens": 191,
+      "exact": 170,
+      "absent": 0,
+      "listed_replacement": 0,
+      "other_or_unresolved": 21
+    },
+    {
+      "model": "xlsr",
+      "level": "d3",
+      "affix": "ake",
+      "reference_tokens": 75,
+      "exact": 57,
+      "absent": 0,
+      "listed_replacement": 1,
+      "other_or_unresolved": 17
+    },
+    {
+      "model": "xlsr",
+      "level": "d3",
+      "affix": "aken",
+      "reference_tokens": 42,
+      "exact": 32,
+      "absent": 0,
+      "listed_replacement": 0,
+      "other_or_unresolved": 10
+    },
+    {
+      "model": "xlsr",
+      "level": "d3",
+      "affix": "di",
+      "reference_tokens": 334,
+      "exact": 327,
+      "absent": 0,
+      "listed_replacement": 0,
+      "other_or_unresolved": 7
+    },
+    {
+      "model": "xlsr",
+      "level": "d3",
+      "affix": "dipun",
+      "reference_tokens": 41,
+      "exact": 34,
+      "absent": 0,
+      "listed_replacement": 0,
+      "other_or_unresolved": 7
+    },
+    {
+      "model": "xlsr",
+      "level": "d3",
+      "affix": "ipun",
+      "reference_tokens": 86,
+      "exact": 74,
+      "absent": 0,
+      "listed_replacement": 0,
+      "other_or_unresolved": 12
+    },
+    {
+      "model": "xlsr",
+      "level": "d3",
+      "affix": "ne",
+      "reference_tokens": 191,
+      "exact": 185,
+      "absent": 0,
+      "listed_replacement": 0,
+      "other_or_unresolved": 6
+    },
+    {
+      "model": "xlsr",
+      "level": "d4",
+      "affix": "ake",
+      "reference_tokens": 75,
+      "exact": 64,
+      "absent": 0,
+      "listed_replacement": 2,
+      "other_or_unresolved": 9
+    },
+    {
+      "model": "xlsr",
+      "level": "d4",
+      "affix": "aken",
+      "reference_tokens": 42,
+      "exact": 36,
+      "absent": 0,
+      "listed_replacement": 0,
+      "other_or_unresolved": 6
+    },
+    {
+      "model": "xlsr",
+      "level": "d4",
+      "affix": "di",
+      "reference_tokens": 334,
+      "exact": 331,
+      "absent": 0,
+      "listed_replacement": 0,
+      "other_or_unresolved": 3
+    },
+    {
+      "model": "xlsr",
+      "level": "d4",
+      "affix": "dipun",
+      "reference_tokens": 41,
+      "exact": 34,
+      "absent": 0,
+      "listed_replacement": 0,
+      "other_or_unresolved": 7
+    },
+    {
+      "model": "xlsr",
+      "level": "d4",
+      "affix": "ipun",
+      "reference_tokens": 86,
+      "exact": 78,
+      "absent": 0,
+      "listed_replacement": 0,
+      "other_or_unresolved": 8
+    },
+    {
+      "model": "xlsr",
+      "level": "d4",
+      "affix": "ne",
+      "reference_tokens": 191,
+      "exact": 187,
+      "absent": 0,
+      "listed_replacement": 0,
+      "other_or_unresolved": 4
+    },
+    {
+      "model": "xlsr",
+      "level": "d5",
+      "affix": "ake",
+      "reference_tokens": 75,
+      "exact": 65,
+      "absent": 0,
+      "listed_replacement": 2,
+      "other_or_unresolved": 8
+    },
+    {
+      "model": "xlsr",
+      "level": "d5",
+      "affix": "aken",
+      "reference_tokens": 42,
+      "exact": 36,
+      "absent": 0,
+      "listed_replacement": 0,
+      "other_or_unresolved": 6
+    },
+    {
+      "model": "xlsr",
+      "level": "d5",
+      "affix": "di",
+      "reference_tokens": 334,
+      "exact": 327,
+      "absent": 0,
+      "listed_replacement": 0,
+      "other_or_unresolved": 7
+    },
+    {
+      "model": "xlsr",
+      "level": "d5",
+      "affix": "dipun",
+      "reference_tokens": 41,
+      "exact": 34,
+      "absent": 2,
+      "listed_replacement": 0,
+      "other_or_unresolved": 5
+    },
+    {
+      "model": "xlsr",
+      "level": "d5",
+      "affix": "ipun",
+      "reference_tokens": 86,
+      "exact": 77,
+      "absent": 0,
+      "listed_replacement": 0,
+      "other_or_unresolved": 9
+    },
+    {
+      "model": "xlsr",
+      "level": "d5",
+      "affix": "ne",
+      "reference_tokens": 191,
+      "exact": 187,
+      "absent": 0,
+      "listed_replacement": 0,
+      "other_or_unresolved": 4
+    }
+  ],
+  "graphemes": [
+    {
+      "model": "whisper",
+      "level": "d1",
+      "wer": 0.4123244430211812,
+      "cer": 0.09948408582191406,
+      "character_operations": {
+        "delete": 4507,
+        "replace": 6434,
+        "insert": 3637
+      },
+      "grouped_grapheme_errors": 14363,
+      "grouped_grapheme_rate": 0.10278962585520854,
+      "digraph_confusions": [
+        {
+          "reference": "",
+          "hypothesis": "dh",
+          "count": 7
+        },
+        {
+          "reference": "",
+          "hypothesis": "ng",
+          "count": 113
+        },
+        {
+          "reference": "",
+          "hypothesis": "ny",
+          "count": 6
+        },
+        {
+          "reference": "",
+          "hypothesis": "th",
+          "count": 3
+        },
+        {
+          "reference": " ",
+          "hypothesis": "dh",
+          "count": 2
+        },
+        {
+          "reference": " ",
+          "hypothesis": "ng",
+          "count": 1
+        },
+        {
+          "reference": " ",
+          "hypothesis": "ny",
+          "count": 2
+        },
+        {
+          "reference": " ",
+          "hypothesis": "th",
+          "count": 3
+        },
+        {
+          "reference": "a",
+          "hypothesis": "dh",
+          "count": 1
+        },
+        {
+          "reference": "a",
+          "hypothesis": "ng",
+          "count": 9
+        },
+        {
+          "reference": "b",
+          "hypothesis": "dh",
+          "count": 1
+        },
+        {
+          "reference": "d",
+          "hypothesis": "dh",
+          "count": 153
+        },
+        {
+          "reference": "d",
+          "hypothesis": "ny",
+          "count": 1
+        },
+        {
+          "reference": "d",
+          "hypothesis": "th",
+          "count": 9
+        },
+        {
+          "reference": "dh",
+          "hypothesis": "",
+          "count": 13
+        },
+        {
+          "reference": "dh",
+          "hypothesis": " ",
+          "count": 1
+        },
+        {
+          "reference": "dh",
+          "hypothesis": "a",
+          "count": 2
+        },
+        {
+          "reference": "dh",
+          "hypothesis": "d",
+          "count": 309
+        },
+        {
+          "reference": "dh",
+          "hypothesis": "e",
+          "count": 3
+        },
+        {
+          "reference": "dh",
+          "hypothesis": "i",
+          "count": 2
+        },
+        {
+          "reference": "dh",
+          "hypothesis": "j",
+          "count": 5
+        },
+        {
+          "reference": "dh",
+          "hypothesis": "l",
+          "count": 1
+        },
+        {
+          "reference": "dh",
+          "hypothesis": "o",
+          "count": 3
+        },
+        {
+          "reference": "dh",
+          "hypothesis": "r",
+          "count": 3
+        },
+        {
+          "reference": "dh",
+          "hypothesis": "t",
+          "count": 2
+        },
+        {
+          "reference": "dh",
+          "hypothesis": "u",
+          "count": 3
+        },
+        {
+          "reference": "e",
+          "hypothesis": "ng",
+          "count": 12
+        },
+        {
+          "reference": "g",
+          "hypothesis": "ng",
+          "count": 5
+        },
+        {
+          "reference": "h",
+          "hypothesis": "dh",
+          "count": 1
+        },
+        {
+          "reference": "h",
+          "hypothesis": "ng",
+          "count": 7
+        },
+        {
+          "reference": "i",
+          "hypothesis": "dh",
+          "count": 1
+        },
+        {
+          "reference": "i",
+          "hypothesis": "ng",
+          "count": 1
+        },
+        {
+          "reference": "j",
+          "hypothesis": "dh",
+          "count": 1
+        },
+        {
+          "reference": "j",
+          "hypothesis": "ng",
+          "count": 1
+        },
+        {
+          "reference": "k",
+          "hypothesis": "ng",
+          "count": 4
+        },
+        {
+          "reference": "k",
+          "hypothesis": "ny",
+          "count": 1
+        },
+        {
+          "reference": "l",
+          "hypothesis": "ng",
+          "count": 4
+        },
+        {
+          "reference": "m",
+          "hypothesis": "ng",
+          "count": 15
+        },
+        {
+          "reference": "m",
+          "hypothesis": "th",
+          "count": 1
+        },
+        {
+          "reference": "n",
+          "hypothesis": "dh",
+          "count": 1
+        },
+        {
+          "reference": "n",
+          "hypothesis": "ng",
+          "count": 58
+        },
+        {
+          "reference": "n",
+          "hypothesis": "ny",
+          "count": 13
+        },
+        {
+          "reference": "n",
+          "hypothesis": "th",
+          "count": 1
+        },
+        {
+          "reference": "ng",
+          "hypothesis": "",
+          "count": 99
+        },
+        {
+          "reference": "ng",
+          "hypothesis": " ",
+          "count": 3
+        },
+        {
+          "reference": "ng",
+          "hypothesis": "a",
+          "count": 1
+        },
+        {
+          "reference": "ng",
+          "hypothesis": "b",
+          "count": 1
+        },
+        {
+          "reference": "ng",
+          "hypothesis": "d",
+          "count": 1
+        },
+        {
+          "reference": "ng",
+          "hypothesis": "e",
+          "count": 3
+        },
+        {
+          "reference": "ng",
+          "hypothesis": "g",
+          "count": 7
+        },
+        {
+          "reference": "ng",
+          "hypothesis": "h",
+          "count": 6
+        },
+        {
+          "reference": "ng",
+          "hypothesis": "i",
+          "count": 2
+        },
+        {
+          "reference": "ng",
+          "hypothesis": "j",
+          "count": 2
+        },
+        {
+          "reference": "ng",
+          "hypothesis": "k",
+          "count": 17
+        },
+        {
+          "reference": "ng",
+          "hypothesis": "l",
+          "count": 1
+        },
+        {
+          "reference": "ng",
+          "hypothesis": "m",
+          "count": 18
+        },
+        {
+          "reference": "ng",
+          "hypothesis": "n",
+          "count": 44
+        },
+        {
+          "reference": "ng",
+          "hypothesis": "ny",
+          "count": 2
+        },
+        {
+          "reference": "ng",
+          "hypothesis": "r",
+          "count": 1
+        },
+        {
+          "reference": "ng",
+          "hypothesis": "t",
+          "count": 2
+        },
+        {
+          "reference": "ng",
+          "hypothesis": "u",
+          "count": 3
+        },
+        {
+          "reference": "ng",
+          "hypothesis": "w",
+          "count": 1
+        },
+        {
+          "reference": "ny",
+          "hypothesis": "",
+          "count": 5
+        },
+        {
+          "reference": "ny",
+          "hypothesis": "a",
+          "count": 3
+        },
+        {
+          "reference": "ny",
+          "hypothesis": "h",
+          "count": 2
+        },
+        {
+          "reference": "ny",
+          "hypothesis": "i",
+          "count": 9
+        },
+        {
+          "reference": "ny",
+          "hypothesis": "j",
+          "count": 1
+        },
+        {
+          "reference": "ny",
+          "hypothesis": "n",
+          "count": 7
+        },
+        {
+          "reference": "ny",
+          "hypothesis": "ng",
+          "count": 2
+        },
+        {
+          "reference": "ny",
+          "hypothesis": "y",
+          "count": 4
+        },
+        {
+          "reference": "o",
+          "hypothesis": "dh",
+          "count": 1
+        },
+        {
+          "reference": "o",
+          "hypothesis": "ng",
+          "count": 6
+        },
+        {
+          "reference": "r",
+          "hypothesis": "dh",
+          "count": 2
+        },
+        {
+          "reference": "r",
+          "hypothesis": "ng",
+          "count": 2
+        },
+        {
+          "reference": "s",
+          "hypothesis": "dh",
+          "count": 1
+        },
+        {
+          "reference": "s",
+          "hypothesis": "ng",
+          "count": 2
+        },
+        {
+          "reference": "t",
+          "hypothesis": "dh",
+          "count": 7
+        },
+        {
+          "reference": "t",
+          "hypothesis": "th",
+          "count": 33
+        },
+        {
+          "reference": "th",
+          "hypothesis": "",
+          "count": 12
+        },
+        {
+          "reference": "th",
+          "hypothesis": "a",
+          "count": 1
+        },
+        {
+          "reference": "th",
+          "hypothesis": "b",
+          "count": 1
+        },
+        {
+          "reference": "th",
+          "hypothesis": "d",
+          "count": 16
+        },
+        {
+          "reference": "th",
+          "hypothesis": "dh",
+          "count": 5
+        },
+        {
+          "reference": "th",
+          "hypothesis": "e",
+          "count": 1
+        },
+        {
+          "reference": "th",
+          "hypothesis": "h",
+          "count": 2
+        },
+        {
+          "reference": "th",
+          "hypothesis": "j",
+          "count": 2
+        },
+        {
+          "reference": "th",
+          "hypothesis": "k",
+          "count": 2
+        },
+        {
+          "reference": "th",
+          "hypothesis": "l",
+          "count": 1
+        },
+        {
+          "reference": "th",
+          "hypothesis": "o",
+          "count": 1
+        },
+        {
+          "reference": "th",
+          "hypothesis": "p",
+          "count": 2
+        },
+        {
+          "reference": "th",
+          "hypothesis": "r",
+          "count": 3
+        },
+        {
+          "reference": "th",
+          "hypothesis": "t",
+          "count": 91
+        },
+        {
+          "reference": "th",
+          "hypothesis": "u",
+          "count": 2
+        },
+        {
+          "reference": "th",
+          "hypothesis": "w",
+          "count": 1
+        },
+        {
+          "reference": "u",
+          "hypothesis": "dh",
+          "count": 1
+        },
+        {
+          "reference": "u",
+          "hypothesis": "ng",
+          "count": 3
+        },
+        {
+          "reference": "w",
+          "hypothesis": "dh",
+          "count": 1
+        },
+        {
+          "reference": "w",
+          "hypothesis": "ng",
+          "count": 3
+        },
+        {
+          "reference": "y",
+          "hypothesis": "ng",
+          "count": 2
+        },
+        {
+          "reference": "y",
+          "hypothesis": "ny",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "model": "whisper",
+      "level": "d2",
+      "wer": 0.3057779404364335,
+      "cer": 0.0718731233280559,
+      "character_operations": {
+        "delete": 3315,
+        "insert": 2455,
+        "replace": 4762
+      },
+      "grouped_grapheme_errors": 10346,
+      "grouped_grapheme_rate": 0.07404173703947557,
+      "digraph_confusions": [
+        {
+          "reference": "",
+          "hypothesis": "dh",
+          "count": 2
+        },
+        {
+          "reference": "",
+          "hypothesis": "ng",
+          "count": 103
+        },
+        {
+          "reference": "",
+          "hypothesis": "th",
+          "count": 2
+        },
+        {
+          "reference": " ",
+          "hypothesis": "dh",
+          "count": 4
+        },
+        {
+          "reference": " ",
+          "hypothesis": "th",
+          "count": 1
+        },
+        {
+          "reference": "a",
+          "hypothesis": "ng",
+          "count": 7
+        },
+        {
+          "reference": "b",
+          "hypothesis": "dh",
+          "count": 2
+        },
+        {
+          "reference": "b",
+          "hypothesis": "th",
+          "count": 1
+        },
+        {
+          "reference": "c",
+          "hypothesis": "dh",
+          "count": 1
+        },
+        {
+          "reference": "c",
+          "hypothesis": "ny",
+          "count": 1
+        },
+        {
+          "reference": "d",
+          "hypothesis": "dh",
+          "count": 152
+        },
+        {
+          "reference": "d",
+          "hypothesis": "th",
+          "count": 8
+        },
+        {
+          "reference": "dh",
+          "hypothesis": "",
+          "count": 9
+        },
+        {
+          "reference": "dh",
+          "hypothesis": "a",
+          "count": 1
+        },
+        {
+          "reference": "dh",
+          "hypothesis": "d",
+          "count": 234
+        },
+        {
+          "reference": "dh",
+          "hypothesis": "e",
+          "count": 1
+        },
+        {
+          "reference": "dh",
+          "hypothesis": "g",
+          "count": 1
+        },
+        {
+          "reference": "dh",
+          "hypothesis": "j",
+          "count": 3
+        },
+        {
+          "reference": "dh",
+          "hypothesis": "o",
+          "count": 3
+        },
+        {
+          "reference": "dh",
+          "hypothesis": "r",
+          "count": 2
+        },
+        {
+          "reference": "dh",
+          "hypothesis": "u",
+          "count": 1
+        },
+        {
+          "reference": "e",
+          "hypothesis": "dh",
+          "count": 1
+        },
+        {
+          "reference": "e",
+          "hypothesis": "ng",
+          "count": 10
+        },
+        {
+          "reference": "g",
+          "hypothesis": "ng",
+          "count": 4
+        },
+        {
+          "reference": "h",
+          "hypothesis": "ng",
+          "count": 5
+        },
+        {
+          "reference": "i",
+          "hypothesis": "ng",
+          "count": 2
+        },
+        {
+          "reference": "i",
+          "hypothesis": "ny",
+          "count": 1
+        },
+        {
+          "reference": "j",
+          "hypothesis": "dh",
+          "count": 1
+        },
+        {
+          "reference": "j",
+          "hypothesis": "ng",
+          "count": 1
+        },
+        {
+          "reference": "k",
+          "hypothesis": "ng",
+          "count": 5
+        },
+        {
+          "reference": "k",
+          "hypothesis": "ny",
+          "count": 1
+        },
+        {
+          "reference": "l",
+          "hypothesis": "ng",
+          "count": 1
+        },
+        {
+          "reference": "m",
+          "hypothesis": "ng",
+          "count": 13
+        },
+        {
+          "reference": "n",
+          "hypothesis": "dh",
+          "count": 1
+        },
+        {
+          "reference": "n",
+          "hypothesis": "ng",
+          "count": 53
+        },
+        {
+          "reference": "n",
+          "hypothesis": "ny",
+          "count": 8
+        },
+        {
+          "reference": "ng",
+          "hypothesis": "",
+          "count": 70
+        },
+        {
+          "reference": "ng",
+          "hypothesis": " ",
+          "count": 2
+        },
+        {
+          "reference": "ng",
+          "hypothesis": "e",
+          "count": 1
+        },
+        {
+          "reference": "ng",
+          "hypothesis": "g",
+          "count": 4
+        },
+        {
+          "reference": "ng",
+          "hypothesis": "h",
+          "count": 4
+        },
+        {
+          "reference": "ng",
+          "hypothesis": "j",
+          "count": 1
+        },
+        {
+          "reference": "ng",
+          "hypothesis": "k",
+          "count": 7
+        },
+        {
+          "reference": "ng",
+          "hypothesis": "l",
+          "count": 1
+        },
+        {
+          "reference": "ng",
+          "hypothesis": "m",
+          "count": 12
+        },
+        {
+          "reference": "ng",
+          "hypothesis": "n",
+          "count": 33
+        },
+        {
+          "reference": "ng",
+          "hypothesis": "ny",
+          "count": 4
+        },
+        {
+          "reference": "ng",
+          "hypothesis": "r",
+          "count": 2
+        },
+        {
+          "reference": "ng",
+          "hypothesis": "s",
+          "count": 2
+        },
+        {
+          "reference": "ng",
+          "hypothesis": "t",
+          "count": 1
+        },
+        {
+          "reference": "ng",
+          "hypothesis": "u",
+          "count": 1
+        },
+        {
+          "reference": "ng",
+          "hypothesis": "w",
+          "count": 1
+        },
+        {
+          "reference": "ny",
+          "hypothesis": "",
+          "count": 3
+        },
+        {
+          "reference": "ny",
+          "hypothesis": "e",
+          "count": 2
+        },
+        {
+          "reference": "ny",
+          "hypothesis": "h",
+          "count": 1
+        },
+        {
+          "reference": "ny",
+          "hypothesis": "i",
+          "count": 9
+        },
+        {
+          "reference": "ny",
+          "hypothesis": "n",
+          "count": 5
+        },
+        {
+          "reference": "ny",
+          "hypothesis": "ng",
+          "count": 6
+        },
+        {
+          "reference": "ny",
+          "hypothesis": "y",
+          "count": 4
+        },
+        {
+          "reference": "o",
+          "hypothesis": "ng",
+          "count": 6
+        },
+        {
+          "reference": "r",
+          "hypothesis": "dh",
+          "count": 3
+        },
+        {
+          "reference": "r",
+          "hypothesis": "ng",
+          "count": 2
+        },
+        {
+          "reference": "s",
+          "hypothesis": "ng",
+          "count": 1
+        },
+        {
+          "reference": "t",
+          "hypothesis": "dh",
+          "count": 4
+        },
+        {
+          "reference": "t",
+          "hypothesis": "th",
+          "count": 23
+        },
+        {
+          "reference": "th",
+          "hypothesis": "",
+          "count": 7
+        },
+        {
+          "reference": "th",
+          "hypothesis": "b",
+          "count": 1
+        },
+        {
+          "reference": "th",
+          "hypothesis": "c",
+          "count": 1
+        },
+        {
+          "reference": "th",
+          "hypothesis": "d",
+          "count": 10
+        },
+        {
+          "reference": "th",
+          "hypothesis": "dh",
+          "count": 6
+        },
+        {
+          "reference": "th",
+          "hypothesis": "k",
+          "count": 1
+        },
+        {
+          "reference": "th",
+          "hypothesis": "o",
+          "count": 1
+        },
+        {
+          "reference": "th",
+          "hypothesis": "r",
+          "count": 3
+        },
+        {
+          "reference": "th",
+          "hypothesis": "t",
+          "count": 75
+        },
+        {
+          "reference": "th",
+          "hypothesis": "u",
+          "count": 1
+        },
+        {
+          "reference": "u",
+          "hypothesis": "ng",
+          "count": 3
+        },
+        {
+          "reference": "u",
+          "hypothesis": "th",
+          "count": 1
+        },
+        {
+          "reference": "v",
+          "hypothesis": "th",
+          "count": 1
+        },
+        {
+          "reference": "w",
+          "hypothesis": "ng",
+          "count": 2
+        },
+        {
+          "reference": "x",
+          "hypothesis": "dh",
+          "count": 1
+        },
+        {
+          "reference": "y",
+          "hypothesis": "ng",
+          "count": 1
+        },
+        {
+          "reference": "y",
+          "hypothesis": "ny",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "model": "whisper",
+      "level": "d3",
+      "wer": 0.2222425545541882,
+      "cer": 0.051127368018780366,
+      "character_operations": {
+        "delete": 2471,
+        "insert": 1533,
+        "replace": 3488
+      },
+      "grouped_grapheme_errors": 7400,
+      "grouped_grapheme_rate": 0.05295852059657058,
+      "digraph_confusions": [
+        {
+          "reference": "",
+          "hypothesis": "dh",
+          "count": 2
+        },
+        {
+          "reference": "",
+          "hypothesis": "ng",
+          "count": 28
+        },
+        {
+          "reference": "",
+          "hypothesis": "ny",
+          "count": 1
+        },
+        {
+          "reference": "",
+          "hypothesis": "th",
+          "count": 4
+        },
+        {
+          "reference": " ",
+          "hypothesis": "dh",
+          "count": 2
+        },
+        {
+          "reference": " ",
+          "hypothesis": "th",
+          "count": 1
+        },
+        {
+          "reference": "a",
+          "hypothesis": "ng",
+          "count": 4
+        },
+        {
+          "reference": "b",
+          "hypothesis": "dh",
+          "count": 1
+        },
+        {
+          "reference": "d",
+          "hypothesis": "dh",
+          "count": 131
+        },
+        {
+          "reference": "d",
+          "hypothesis": "th",
+          "count": 3
+        },
+        {
+          "reference": "dh",
+          "hypothesis": "",
+          "count": 4
+        },
+        {
+          "reference": "dh",
+          "hypothesis": "a",
+          "count": 2
+        },
+        {
+          "reference": "dh",
+          "hypothesis": "d",
+          "count": 165
+        },
+        {
+          "reference": "dh",
+          "hypothesis": "i",
+          "count": 1
+        },
+        {
+          "reference": "dh",
+          "hypothesis": "j",
+          "count": 2
+        },
+        {
+          "reference": "dh",
+          "hypothesis": "ng",
+          "count": 1
+        },
+        {
+          "reference": "dh",
+          "hypothesis": "r",
+          "count": 2
+        },
+        {
+          "reference": "dh",
+          "hypothesis": "t",
+          "count": 1
+        },
+        {
+          "reference": "dh",
+          "hypothesis": "th",
+          "count": 1
+        },
+        {
+          "reference": "e",
+          "hypothesis": "ng",
+          "count": 3
+        },
+        {
+          "reference": "g",
+          "hypothesis": "dh",
+          "count": 1
+        },
+        {
+          "reference": "g",
+          "hypothesis": "ng",
+          "count": 3
+        },
+        {
+          "reference": "h",
+          "hypothesis": "dh",
+          "count": 1
+        },
+        {
+          "reference": "h",
+          "hypothesis": "ng",
+          "count": 4
+        },
+        {
+          "reference": "h",
+          "hypothesis": "th",
+          "count": 1
+        },
+        {
+          "reference": "i",
+          "hypothesis": "th",
+          "count": 1
+        },
+        {
+          "reference": "j",
+          "hypothesis": "dh",
+          "count": 1
+        },
+        {
+          "reference": "k",
+          "hypothesis": "dh",
+          "count": 1
+        },
+        {
+          "reference": "k",
+          "hypothesis": "ng",
+          "count": 2
+        },
+        {
+          "reference": "k",
+          "hypothesis": "ny",
+          "count": 1
+        },
+        {
+          "reference": "l",
+          "hypothesis": "ng",
+          "count": 1
+        },
+        {
+          "reference": "m",
+          "hypothesis": "ng",
+          "count": 11
+        },
+        {
+          "reference": "n",
+          "hypothesis": "ng",
+          "count": 43
+        },
+        {
+          "reference": "n",
+          "hypothesis": "ny",
+          "count": 2
+        },
+        {
+          "reference": "ng",
+          "hypothesis": "",
+          "count": 47
+        },
+        {
+          "reference": "ng",
+          "hypothesis": " ",
+          "count": 1
+        },
+        {
+          "reference": "ng",
+          "hypothesis": "a",
+          "count": 1
+        },
+        {
+          "reference": "ng",
+          "hypothesis": "g",
+          "count": 3
+        },
+        {
+          "reference": "ng",
+          "hypothesis": "h",
+          "count": 4
+        },
+        {
+          "reference": "ng",
+          "hypothesis": "k",
+          "count": 6
+        },
+        {
+          "reference": "ng",
+          "hypothesis": "l",
+          "count": 2
+        },
+        {
+          "reference": "ng",
+          "hypothesis": "m",
+          "count": 11
+        },
+        {
+          "reference": "ng",
+          "hypothesis": "n",
+          "count": 26
+        },
+        {
+          "reference": "ng",
+          "hypothesis": "ny",
+          "count": 2
+        },
+        {
+          "reference": "ng",
+          "hypothesis": "o",
+          "count": 1
+        },
+        {
+          "reference": "ng",
+          "hypothesis": "t",
+          "count": 1
+        },
+        {
+          "reference": "ng",
+          "hypothesis": "w",
+          "count": 2
+        },
+        {
+          "reference": "ny",
+          "hypothesis": "",
+          "count": 2
+        },
+        {
+          "reference": "ny",
+          "hypothesis": "c",
+          "count": 1
+        },
+        {
+          "reference": "ny",
+          "hypothesis": "h",
+          "count": 1
+        },
+        {
+          "reference": "ny",
+          "hypothesis": "i",
+          "count": 5
+        },
+        {
+          "reference": "ny",
+          "hypothesis": "n",
+          "count": 1
+        },
+        {
+          "reference": "ny",
+          "hypothesis": "ng",
+          "count": 2
+        },
+        {
+          "reference": "ny",
+          "hypothesis": "o",
+          "count": 1
+        },
+        {
+          "reference": "ny",
+          "hypothesis": "y",
+          "count": 4
+        },
+        {
+          "reference": "o",
+          "hypothesis": "ng",
+          "count": 2
+        },
+        {
+          "reference": "p",
+          "hypothesis": "dh",
+          "count": 1
+        },
+        {
+          "reference": "r",
+          "hypothesis": "dh",
+          "count": 4
+        },
+        {
+          "reference": "r",
+          "hypothesis": "ng",
+          "count": 1
+        },
+        {
+          "reference": "r",
+          "hypothesis": "th",
+          "count": 1
+        },
+        {
+          "reference": "t",
+          "hypothesis": "th",
+          "count": 27
+        },
+        {
+          "reference": "th",
+          "hypothesis": "",
+          "count": 3
+        },
+        {
+          "reference": "th",
+          "hypothesis": "a",
+          "count": 1
+        },
+        {
+          "reference": "th",
+          "hypothesis": "d",
+          "count": 9
+        },
+        {
+          "reference": "th",
+          "hypothesis": "dh",
+          "count": 2
+        },
+        {
+          "reference": "th",
+          "hypothesis": "g",
+          "count": 1
+        },
+        {
+          "reference": "th",
+          "hypothesis": "h",
+          "count": 1
+        },
+        {
+          "reference": "th",
+          "hypothesis": "i",
+          "count": 1
+        },
+        {
+          "reference": "th",
+          "hypothesis": "k",
+          "count": 1
+        },
+        {
+          "reference": "th",
+          "hypothesis": "n",
+          "count": 1
+        },
+        {
+          "reference": "th",
+          "hypothesis": "r",
+          "count": 2
+        },
+        {
+          "reference": "th",
+          "hypothesis": "t",
+          "count": 64
+        },
+        {
+          "reference": "u",
+          "hypothesis": "ng",
+          "count": 4
+        },
+        {
+          "reference": "w",
+          "hypothesis": "dh",
+          "count": 1
+        },
+        {
+          "reference": "w",
+          "hypothesis": "ng",
+          "count": 3
+        },
+        {
+          "reference": "y",
+          "hypothesis": "ng",
+          "count": 1
+        },
+        {
+          "reference": "y",
+          "hypothesis": "ny",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "model": "whisper",
+      "level": "d4",
+      "wer": 0.1642801592021593,
+      "cer": 0.038024785718185294,
+      "character_operations": {
+        "delete": 1736,
+        "insert": 1251,
+        "replace": 2585
+      },
+      "grouped_grapheme_errors": 5512,
+      "grouped_grapheme_rate": 0.03944694128760771,
+      "digraph_confusions": [
+        {
+          "reference": "",
+          "hypothesis": "dh",
+          "count": 4
+        },
+        {
+          "reference": "",
+          "hypothesis": "ng",
+          "count": 24
+        },
+        {
+          "reference": "",
+          "hypothesis": "ny",
+          "count": 2
+        },
+        {
+          "reference": "",
+          "hypothesis": "th",
+          "count": 5
+        },
+        {
+          "reference": "b",
+          "hypothesis": "dh",
+          "count": 1
+        },
+        {
+          "reference": "b",
+          "hypothesis": "th",
+          "count": 1
+        },
+        {
+          "reference": "c",
+          "hypothesis": "dh",
+          "count": 1
+        },
+        {
+          "reference": "d",
+          "hypothesis": "dh",
+          "count": 120
+        },
+        {
+          "reference": "dh",
+          "hypothesis": "",
+          "count": 6
+        },
+        {
+          "reference": "dh",
+          "hypothesis": "a",
+          "count": 1
+        },
+        {
+          "reference": "dh",
+          "hypothesis": "d",
+          "count": 136
+        },
+        {
+          "reference": "dh",
+          "hypothesis": "j",
+          "count": 2
+        },
+        {
+          "reference": "dh",
+          "hypothesis": "o",
+          "count": 1
+        },
+        {
+          "reference": "dh",
+          "hypothesis": "r",
+          "count": 1
+        },
+        {
+          "reference": "dh",
+          "hypothesis": "t",
+          "count": 1
+        },
+        {
+          "reference": "dh",
+          "hypothesis": "u",
+          "count": 1
+        },
+        {
+          "reference": "e",
+          "hypothesis": "ng",
+          "count": 2
+        },
+        {
+          "reference": "g",
+          "hypothesis": "ng",
+          "count": 4
+        },
+        {
+          "reference": "h",
+          "hypothesis": "dh",
+          "count": 1
+        },
+        {
+          "reference": "h",
+          "hypothesis": "ng",
+          "count": 3
+        },
+        {
+          "reference": "k",
+          "hypothesis": "dh",
+          "count": 1
+        },
+        {
+          "reference": "k",
+          "hypothesis": "ng",
+          "count": 4
+        },
+        {
+          "reference": "k",
+          "hypothesis": "ny",
+          "count": 1
+        },
+        {
+          "reference": "l",
+          "hypothesis": "ng",
+          "count": 1
+        },
+        {
+          "reference": "l",
+          "hypothesis": "th",
+          "count": 1
+        },
+        {
+          "reference": "m",
+          "hypothesis": "ng",
+          "count": 6
+        },
+        {
+          "reference": "n",
+          "hypothesis": "ng",
+          "count": 29
+        },
+        {
+          "reference": "n",
+          "hypothesis": "ny",
+          "count": 3
+        },
+        {
+          "reference": "ng",
+          "hypothesis": "",
+          "count": 25
+        },
+        {
+          "reference": "ng",
+          "hypothesis": "a",
+          "count": 1
+        },
+        {
+          "reference": "ng",
+          "hypothesis": "d",
+          "count": 1
+        },
+        {
+          "reference": "ng",
+          "hypothesis": "e",
+          "count": 1
+        },
+        {
+          "reference": "ng",
+          "hypothesis": "g",
+          "count": 2
+        },
+        {
+          "reference": "ng",
+          "hypothesis": "h",
+          "count": 2
+        },
+        {
+          "reference": "ng",
+          "hypothesis": "i",
+          "count": 1
+        },
+        {
+          "reference": "ng",
+          "hypothesis": "k",
+          "count": 4
+        },
+        {
+          "reference": "ng",
+          "hypothesis": "l",
+          "count": 1
+        },
+        {
+          "reference": "ng",
+          "hypothesis": "m",
+          "count": 6
+        },
+        {
+          "reference": "ng",
+          "hypothesis": "n",
+          "count": 15
+        },
+        {
+          "reference": "ng",
+          "hypothesis": "ny",
+          "count": 1
+        },
+        {
+          "reference": "ng",
+          "hypothesis": "o",
+          "count": 1
+        },
+        {
+          "reference": "ng",
+          "hypothesis": "w",
+          "count": 3
+        },
+        {
+          "reference": "ny",
+          "hypothesis": "",
+          "count": 1
+        },
+        {
+          "reference": "ny",
+          "hypothesis": "e",
+          "count": 1
+        },
+        {
+          "reference": "ny",
+          "hypothesis": "h",
+          "count": 2
+        },
+        {
+          "reference": "ny",
+          "hypothesis": "i",
+          "count": 2
+        },
+        {
+          "reference": "ny",
+          "hypothesis": "k",
+          "count": 1
+        },
+        {
+          "reference": "ny",
+          "hypothesis": "ng",
+          "count": 1
+        },
+        {
+          "reference": "ny",
+          "hypothesis": "o",
+          "count": 2
+        },
+        {
+          "reference": "ny",
+          "hypothesis": "y",
+          "count": 3
+        },
+        {
+          "reference": "o",
+          "hypothesis": "ng",
+          "count": 1
+        },
+        {
+          "reference": "p",
+          "hypothesis": "ny",
+          "count": 1
+        },
+        {
+          "reference": "p",
+          "hypothesis": "th",
+          "count": 2
+        },
+        {
+          "reference": "r",
+          "hypothesis": "dh",
+          "count": 1
+        },
+        {
+          "reference": "r",
+          "hypothesis": "ng",
+          "count": 1
+        },
+        {
+          "reference": "r",
+          "hypothesis": "th",
+          "count": 1
+        },
+        {
+          "reference": "t",
+          "hypothesis": "dh",
+          "count": 2
+        },
+        {
+          "reference": "t",
+          "hypothesis": "th",
+          "count": 18
+        },
+        {
+          "reference": "th",
+          "hypothesis": "",
+          "count": 3
+        },
+        {
+          "reference": "th",
+          "hypothesis": "a",
+          "count": 1
+        },
+        {
+          "reference": "th",
+          "hypothesis": "d",
+          "count": 1
+        },
+        {
+          "reference": "th",
+          "hypothesis": "dh",
+          "count": 3
+        },
+        {
+          "reference": "th",
+          "hypothesis": "e",
+          "count": 2
+        },
+        {
+          "reference": "th",
+          "hypothesis": "h",
+          "count": 1
+        },
+        {
+          "reference": "th",
+          "hypothesis": "i",
+          "count": 1
+        },
+        {
+          "reference": "th",
+          "hypothesis": "k",
+          "count": 1
+        },
+        {
+          "reference": "th",
+          "hypothesis": "r",
+          "count": 2
+        },
+        {
+          "reference": "th",
+          "hypothesis": "t",
+          "count": 47
+        },
+        {
+          "reference": "th",
+          "hypothesis": "z",
+          "count": 1
+        },
+        {
+          "reference": "u",
+          "hypothesis": "ng",
+          "count": 4
+        },
+        {
+          "reference": "w",
+          "hypothesis": "dh",
+          "count": 1
+        },
+        {
+          "reference": "y",
+          "hypothesis": "ng",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "model": "whisper",
+      "level": "d5",
+      "wer": 0.1539869161443799,
+      "cer": 0.03551345744390457,
+      "character_operations": {
+        "delete": 1537,
+        "insert": 1293,
+        "replace": 2374
+      },
+      "grouped_grapheme_errors": 5164,
+      "grouped_grapheme_rate": 0.036956459508201416,
+      "digraph_confusions": [
+        {
+          "reference": "",
+          "hypothesis": "ng",
+          "count": 21
+        },
+        {
+          "reference": "",
+          "hypothesis": "th",
+          "count": 3
+        },
+        {
+          "reference": " ",
+          "hypothesis": "dh",
+          "count": 1
+        },
+        {
+          "reference": "a",
+          "hypothesis": "ng",
+          "count": 1
+        },
+        {
+          "reference": "b",
+          "hypothesis": "dh",
+          "count": 1
+        },
+        {
+          "reference": "c",
+          "hypothesis": "dh",
+          "count": 1
+        },
+        {
+          "reference": "d",
+          "hypothesis": "dh",
+          "count": 141
+        },
+        {
+          "reference": "dh",
+          "hypothesis": "",
+          "count": 3
+        },
+        {
+          "reference": "dh",
+          "hypothesis": "d",
+          "count": 130
+        },
+        {
+          "reference": "dh",
+          "hypothesis": "j",
+          "count": 2
+        },
+        {
+          "reference": "dh",
+          "hypothesis": "l",
+          "count": 1
+        },
+        {
+          "reference": "dh",
+          "hypothesis": "r",
+          "count": 1
+        },
+        {
+          "reference": "dh",
+          "hypothesis": "th",
+          "count": 1
+        },
+        {
+          "reference": "dh",
+          "hypothesis": "u",
+          "count": 1
+        },
+        {
+          "reference": "e",
+          "hypothesis": "dh",
+          "count": 1
+        },
+        {
+          "reference": "e",
+          "hypothesis": "ng",
+          "count": 2
+        },
+        {
+          "reference": "g",
+          "hypothesis": "dh",
+          "count": 1
+        },
+        {
+          "reference": "g",
+          "hypothesis": "ng",
+          "count": 4
+        },
+        {
+          "reference": "h",
+          "hypothesis": "ng",
+          "count": 1
+        },
+        {
+          "reference": "i",
+          "hypothesis": "ny",
+          "count": 1
+        },
+        {
+          "reference": "i",
+          "hypothesis": "th",
+          "count": 1
+        },
+        {
+          "reference": "k",
+          "hypothesis": "dh",
+          "count": 1
+        },
+        {
+          "reference": "k",
+          "hypothesis": "ng",
+          "count": 3
+        },
+        {
+          "reference": "k",
+          "hypothesis": "ny",
+          "count": 1
+        },
+        {
+          "reference": "m",
+          "hypothesis": "ng",
+          "count": 4
+        },
+        {
+          "reference": "n",
+          "hypothesis": "dh",
+          "count": 2
+        },
+        {
+          "reference": "n",
+          "hypothesis": "ng",
+          "count": 28
+        },
+        {
+          "reference": "n",
+          "hypothesis": "ny",
+          "count": 4
+        },
+        {
+          "reference": "n",
+          "hypothesis": "th",
+          "count": 1
+        },
+        {
+          "reference": "ng",
+          "hypothesis": "",
+          "count": 26
+        },
+        {
+          "reference": "ng",
+          "hypothesis": "d",
+          "count": 1
+        },
+        {
+          "reference": "ng",
+          "hypothesis": "e",
+          "count": 2
+        },
+        {
+          "reference": "ng",
+          "hypothesis": "g",
+          "count": 3
+        },
+        {
+          "reference": "ng",
+          "hypothesis": "h",
+          "count": 2
+        },
+        {
+          "reference": "ng",
+          "hypothesis": "k",
+          "count": 1
+        },
+        {
+          "reference": "ng",
+          "hypothesis": "m",
+          "count": 6
+        },
+        {
+          "reference": "ng",
+          "hypothesis": "n",
+          "count": 23
+        },
+        {
+          "reference": "ng",
+          "hypothesis": "ny",
+          "count": 2
+        },
+        {
+          "reference": "ng",
+          "hypothesis": "o",
+          "count": 1
+        },
+        {
+          "reference": "ng",
+          "hypothesis": "t",
+          "count": 1
+        },
+        {
+          "reference": "ng",
+          "hypothesis": "u",
+          "count": 2
+        },
+        {
+          "reference": "ng",
+          "hypothesis": "w",
+          "count": 2
+        },
+        {
+          "reference": "ny",
+          "hypothesis": "",
+          "count": 1
+        },
+        {
+          "reference": "ny",
+          "hypothesis": "e",
+          "count": 2
+        },
+        {
+          "reference": "ny",
+          "hypothesis": "h",
+          "count": 2
+        },
+        {
+          "reference": "ny",
+          "hypothesis": "i",
+          "count": 1
+        },
+        {
+          "reference": "ny",
+          "hypothesis": "ng",
+          "count": 2
+        },
+        {
+          "reference": "ny",
+          "hypothesis": "u",
+          "count": 1
+        },
+        {
+          "reference": "ny",
+          "hypothesis": "y",
+          "count": 3
+        },
+        {
+          "reference": "o",
+          "hypothesis": "ng",
+          "count": 2
+        },
+        {
+          "reference": "p",
+          "hypothesis": "ny",
+          "count": 1
+        },
+        {
+          "reference": "r",
+          "hypothesis": "dh",
+          "count": 2
+        },
+        {
+          "reference": "r",
+          "hypothesis": "ng",
+          "count": 2
+        },
+        {
+          "reference": "r",
+          "hypothesis": "th",
+          "count": 1
+        },
+        {
+          "reference": "t",
+          "hypothesis": "dh",
+          "count": 3
+        },
+        {
+          "reference": "t",
+          "hypothesis": "th",
+          "count": 22
+        },
+        {
+          "reference": "th",
+          "hypothesis": "",
+          "count": 2
+        },
+        {
+          "reference": "th",
+          "hypothesis": "d",
+          "count": 3
+        },
+        {
+          "reference": "th",
+          "hypothesis": "dh",
+          "count": 2
+        },
+        {
+          "reference": "th",
+          "hypothesis": "e",
+          "count": 2
+        },
+        {
+          "reference": "th",
+          "hypothesis": "r",
+          "count": 2
+        },
+        {
+          "reference": "th",
+          "hypothesis": "t",
+          "count": 41
+        },
+        {
+          "reference": "u",
+          "hypothesis": "ng",
+          "count": 4
+        },
+        {
+          "reference": "w",
+          "hypothesis": "ng",
+          "count": 1
+        },
+        {
+          "reference": "y",
+          "hypothesis": "ng",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "model": "xlsr",
+      "level": "d1",
+      "wer": 0.4787044238071275,
+      "cer": 0.11107168204400283,
+      "character_operations": {
+        "delete": 6271,
+        "replace": 7480,
+        "insert": 2525
+      },
+      "grouped_grapheme_errors": 16114,
+      "grouped_grapheme_rate": 0.11532075687745112,
+      "digraph_confusions": [
+        {
+          "reference": "",
+          "hypothesis": "dh",
+          "count": 3
+        },
+        {
+          "reference": "",
+          "hypothesis": "ng",
+          "count": 35
+        },
+        {
+          "reference": "",
+          "hypothesis": "th",
+          "count": 1
+        },
+        {
+          "reference": " ",
+          "hypothesis": "dh",
+          "count": 1
+        },
+        {
+          "reference": " ",
+          "hypothesis": "ng",
+          "count": 3
+        },
+        {
+          "reference": "a",
+          "hypothesis": "ng",
+          "count": 2
+        },
+        {
+          "reference": "d",
+          "hypothesis": "dh",
+          "count": 76
+        },
+        {
+          "reference": "d",
+          "hypothesis": "th",
+          "count": 5
+        },
+        {
+          "reference": "dh",
+          "hypothesis": "",
+          "count": 14
+        },
+        {
+          "reference": "dh",
+          "hypothesis": "a",
+          "count": 3
+        },
+        {
+          "reference": "dh",
+          "hypothesis": "c",
+          "count": 1
+        },
+        {
+          "reference": "dh",
+          "hypothesis": "d",
+          "count": 372
+        },
+        {
+          "reference": "dh",
+          "hypothesis": "j",
+          "count": 2
+        },
+        {
+          "reference": "dh",
+          "hypothesis": "r",
+          "count": 1
+        },
+        {
+          "reference": "dh",
+          "hypothesis": "t",
+          "count": 3
+        },
+        {
+          "reference": "dh",
+          "hypothesis": "th",
+          "count": 1
+        },
+        {
+          "reference": "dh",
+          "hypothesis": "y",
+          "count": 1
+        },
+        {
+          "reference": "e",
+          "hypothesis": "ng",
+          "count": 9
+        },
+        {
+          "reference": "g",
+          "hypothesis": "ng",
+          "count": 3
+        },
+        {
+          "reference": "h",
+          "hypothesis": "ng",
+          "count": 5
+        },
+        {
+          "reference": "i",
+          "hypothesis": "ng",
+          "count": 2
+        },
+        {
+          "reference": "i",
+          "hypothesis": "ny",
+          "count": 2
+        },
+        {
+          "reference": "k",
+          "hypothesis": "ng",
+          "count": 3
+        },
+        {
+          "reference": "k",
+          "hypothesis": "ny",
+          "count": 1
+        },
+        {
+          "reference": "l",
+          "hypothesis": "ng",
+          "count": 1
+        },
+        {
+          "reference": "m",
+          "hypothesis": "ng",
+          "count": 21
+        },
+        {
+          "reference": "n",
+          "hypothesis": "ng",
+          "count": 59
+        },
+        {
+          "reference": "n",
+          "hypothesis": "ny",
+          "count": 8
+        },
+        {
+          "reference": "ng",
+          "hypothesis": "",
+          "count": 126
+        },
+        {
+          "reference": "ng",
+          "hypothesis": " ",
+          "count": 2
+        },
+        {
+          "reference": "ng",
+          "hypothesis": "a",
+          "count": 2
+        },
+        {
+          "reference": "ng",
+          "hypothesis": "b",
+          "count": 1
+        },
+        {
+          "reference": "ng",
+          "hypothesis": "d",
+          "count": 2
+        },
+        {
+          "reference": "ng",
+          "hypothesis": "e",
+          "count": 2
+        },
+        {
+          "reference": "ng",
+          "hypothesis": "g",
+          "count": 44
+        },
+        {
+          "reference": "ng",
+          "hypothesis": "h",
+          "count": 1
+        },
+        {
+          "reference": "ng",
+          "hypothesis": "j",
+          "count": 7
+        },
+        {
+          "reference": "ng",
+          "hypothesis": "k",
+          "count": 8
+        },
+        {
+          "reference": "ng",
+          "hypothesis": "l",
+          "count": 3
+        },
+        {
+          "reference": "ng",
+          "hypothesis": "m",
+          "count": 20
+        },
+        {
+          "reference": "ng",
+          "hypothesis": "n",
+          "count": 76
+        },
+        {
+          "reference": "ng",
+          "hypothesis": "ny",
+          "count": 1
+        },
+        {
+          "reference": "ng",
+          "hypothesis": "t",
+          "count": 2
+        },
+        {
+          "reference": "ng",
+          "hypothesis": "u",
+          "count": 4
+        },
+        {
+          "reference": "ng",
+          "hypothesis": "w",
+          "count": 5
+        },
+        {
+          "reference": "ng",
+          "hypothesis": "y",
+          "count": 1
+        },
+        {
+          "reference": "ny",
+          "hypothesis": "",
+          "count": 6
+        },
+        {
+          "reference": "ny",
+          "hypothesis": "d",
+          "count": 2
+        },
+        {
+          "reference": "ny",
+          "hypothesis": "e",
+          "count": 5
+        },
+        {
+          "reference": "ny",
+          "hypothesis": "i",
+          "count": 16
+        },
+        {
+          "reference": "ny",
+          "hypothesis": "j",
+          "count": 3
+        },
+        {
+          "reference": "ny",
+          "hypothesis": "m",
+          "count": 1
+        },
+        {
+          "reference": "ny",
+          "hypothesis": "n",
+          "count": 19
+        },
+        {
+          "reference": "ny",
+          "hypothesis": "ng",
+          "count": 5
+        },
+        {
+          "reference": "ny",
+          "hypothesis": "y",
+          "count": 13
+        },
+        {
+          "reference": "o",
+          "hypothesis": "ng",
+          "count": 3
+        },
+        {
+          "reference": "r",
+          "hypothesis": "dh",
+          "count": 2
+        },
+        {
+          "reference": "r",
+          "hypothesis": "ng",
+          "count": 1
+        },
+        {
+          "reference": "r",
+          "hypothesis": "th",
+          "count": 1
+        },
+        {
+          "reference": "s",
+          "hypothesis": "ng",
+          "count": 1
+        },
+        {
+          "reference": "t",
+          "hypothesis": "dh",
+          "count": 1
+        },
+        {
+          "reference": "t",
+          "hypothesis": "th",
+          "count": 11
+        },
+        {
+          "reference": "th",
+          "hypothesis": "",
+          "count": 20
+        },
+        {
+          "reference": "th",
+          "hypothesis": " ",
+          "count": 1
+        },
+        {
+          "reference": "th",
+          "hypothesis": "a",
+          "count": 2
+        },
+        {
+          "reference": "th",
+          "hypothesis": "b",
+          "count": 2
+        },
+        {
+          "reference": "th",
+          "hypothesis": "c",
+          "count": 2
+        },
+        {
+          "reference": "th",
+          "hypothesis": "d",
+          "count": 29
+        },
+        {
+          "reference": "th",
+          "hypothesis": "dh",
+          "count": 8
+        },
+        {
+          "reference": "th",
+          "hypothesis": "e",
+          "count": 2
+        },
+        {
+          "reference": "th",
+          "hypothesis": "f",
+          "count": 1
+        },
+        {
+          "reference": "th",
+          "hypothesis": "g",
+          "count": 1
+        },
+        {
+          "reference": "th",
+          "hypothesis": "h",
+          "count": 4
+        },
+        {
+          "reference": "th",
+          "hypothesis": "i",
+          "count": 1
+        },
+        {
+          "reference": "th",
+          "hypothesis": "j",
+          "count": 3
+        },
+        {
+          "reference": "th",
+          "hypothesis": "k",
+          "count": 2
+        },
+        {
+          "reference": "th",
+          "hypothesis": "l",
+          "count": 1
+        },
+        {
+          "reference": "th",
+          "hypothesis": "p",
+          "count": 2
+        },
+        {
+          "reference": "th",
+          "hypothesis": "r",
+          "count": 3
+        },
+        {
+          "reference": "th",
+          "hypothesis": "s",
+          "count": 1
+        },
+        {
+          "reference": "th",
+          "hypothesis": "t",
+          "count": 147
+        },
+        {
+          "reference": "th",
+          "hypothesis": "u",
+          "count": 1
+        },
+        {
+          "reference": "u",
+          "hypothesis": "ng",
+          "count": 3
+        }
+      ]
+    },
+    {
+      "model": "xlsr",
+      "level": "d2",
+      "wer": 0.3777391463470424,
+      "cer": 0.08455942567014249,
+      "character_operations": {
+        "delete": 4784,
+        "replace": 5658,
+        "insert": 1949
+      },
+      "grouped_grapheme_errors": 12298,
+      "grouped_grapheme_rate": 0.0880113359860304,
+      "digraph_confusions": [
+        {
+          "reference": "",
+          "hypothesis": "ng",
+          "count": 31
+        },
+        {
+          "reference": "",
+          "hypothesis": "ny",
+          "count": 1
+        },
+        {
+          "reference": " ",
+          "hypothesis": "dh",
+          "count": 1
+        },
+        {
+          "reference": " ",
+          "hypothesis": "ng",
+          "count": 1
+        },
+        {
+          "reference": "d",
+          "hypothesis": "dh",
+          "count": 54
+        },
+        {
+          "reference": "d",
+          "hypothesis": "th",
+          "count": 4
+        },
+        {
+          "reference": "dh",
+          "hypothesis": "",
+          "count": 8
+        },
+        {
+          "reference": "dh",
+          "hypothesis": "a",
+          "count": 1
+        },
+        {
+          "reference": "dh",
+          "hypothesis": "d",
+          "count": 319
+        },
+        {
+          "reference": "dh",
+          "hypothesis": "i",
+          "count": 1
+        },
+        {
+          "reference": "dh",
+          "hypothesis": "j",
+          "count": 2
+        },
+        {
+          "reference": "dh",
+          "hypothesis": "t",
+          "count": 3
+        },
+        {
+          "reference": "e",
+          "hypothesis": "ng",
+          "count": 6
+        },
+        {
+          "reference": "e",
+          "hypothesis": "th",
+          "count": 1
+        },
+        {
+          "reference": "g",
+          "hypothesis": "dh",
+          "count": 2
+        },
+        {
+          "reference": "g",
+          "hypothesis": "ng",
+          "count": 6
+        },
+        {
+          "reference": "h",
+          "hypothesis": "ng",
+          "count": 3
+        },
+        {
+          "reference": "i",
+          "hypothesis": "ng",
+          "count": 2
+        },
+        {
+          "reference": "l",
+          "hypothesis": "ng",
+          "count": 3
+        },
+        {
+          "reference": "m",
+          "hypothesis": "ng",
+          "count": 8
+        },
+        {
+          "reference": "n",
+          "hypothesis": "dh",
+          "count": 2
+        },
+        {
+          "reference": "n",
+          "hypothesis": "ng",
+          "count": 56
+        },
+        {
+          "reference": "n",
+          "hypothesis": "ny",
+          "count": 6
+        },
+        {
+          "reference": "ng",
+          "hypothesis": "",
+          "count": 81
+        },
+        {
+          "reference": "ng",
+          "hypothesis": " ",
+          "count": 1
+        },
+        {
+          "reference": "ng",
+          "hypothesis": "d",
+          "count": 2
+        },
+        {
+          "reference": "ng",
+          "hypothesis": "g",
+          "count": 24
+        },
+        {
+          "reference": "ng",
+          "hypothesis": "j",
+          "count": 8
+        },
+        {
+          "reference": "ng",
+          "hypothesis": "k",
+          "count": 9
+        },
+        {
+          "reference": "ng",
+          "hypothesis": "l",
+          "count": 5
+        },
+        {
+          "reference": "ng",
+          "hypothesis": "m",
+          "count": 19
+        },
+        {
+          "reference": "ng",
+          "hypothesis": "n",
+          "count": 116
+        },
+        {
+          "reference": "ng",
+          "hypothesis": "ny",
+          "count": 3
+        },
+        {
+          "reference": "ng",
+          "hypothesis": "t",
+          "count": 1
+        },
+        {
+          "reference": "ng",
+          "hypothesis": "w",
+          "count": 2
+        },
+        {
+          "reference": "ny",
+          "hypothesis": "",
+          "count": 3
+        },
+        {
+          "reference": "ny",
+          "hypothesis": "c",
+          "count": 1
+        },
+        {
+          "reference": "ny",
+          "hypothesis": "e",
+          "count": 1
+        },
+        {
+          "reference": "ny",
+          "hypothesis": "i",
+          "count": 15
+        },
+        {
+          "reference": "ny",
+          "hypothesis": "j",
+          "count": 1
+        },
+        {
+          "reference": "ny",
+          "hypothesis": "k",
+          "count": 1
+        },
+        {
+          "reference": "ny",
+          "hypothesis": "n",
+          "count": 10
+        },
+        {
+          "reference": "ny",
+          "hypothesis": "ng",
+          "count": 5
+        },
+        {
+          "reference": "ny",
+          "hypothesis": "y",
+          "count": 1
+        },
+        {
+          "reference": "o",
+          "hypothesis": "ng",
+          "count": 1
+        },
+        {
+          "reference": "o",
+          "hypothesis": "ny",
+          "count": 1
+        },
+        {
+          "reference": "r",
+          "hypothesis": "dh",
+          "count": 1
+        },
+        {
+          "reference": "r",
+          "hypothesis": "ng",
+          "count": 2
+        },
+        {
+          "reference": "t",
+          "hypothesis": "th",
+          "count": 15
+        },
+        {
+          "reference": "th",
+          "hypothesis": "",
+          "count": 14
+        },
+        {
+          "reference": "th",
+          "hypothesis": "a",
+          "count": 1
+        },
+        {
+          "reference": "th",
+          "hypothesis": "b",
+          "count": 3
+        },
+        {
+          "reference": "th",
+          "hypothesis": "d",
+          "count": 16
+        },
+        {
+          "reference": "th",
+          "hypothesis": "dh",
+          "count": 9
+        },
+        {
+          "reference": "th",
+          "hypothesis": "e",
+          "count": 2
+        },
+        {
+          "reference": "th",
+          "hypothesis": "h",
+          "count": 3
+        },
+        {
+          "reference": "th",
+          "hypothesis": "i",
+          "count": 1
+        },
+        {
+          "reference": "th",
+          "hypothesis": "j",
+          "count": 1
+        },
+        {
+          "reference": "th",
+          "hypothesis": "p",
+          "count": 1
+        },
+        {
+          "reference": "th",
+          "hypothesis": "r",
+          "count": 1
+        },
+        {
+          "reference": "th",
+          "hypothesis": "s",
+          "count": 2
+        },
+        {
+          "reference": "th",
+          "hypothesis": "t",
+          "count": 119
+        },
+        {
+          "reference": "u",
+          "hypothesis": "dh",
+          "count": 1
+        },
+        {
+          "reference": "u",
+          "hypothesis": "ng",
+          "count": 5
+        },
+        {
+          "reference": "y",
+          "hypothesis": "ny",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "model": "xlsr",
+      "level": "d3",
+      "wer": 0.2398096893727984,
+      "cer": 0.05071791232188677,
+      "character_operations": {
+        "delete": 2806,
+        "replace": 3287,
+        "insert": 1339
+      },
+      "grouped_grapheme_errors": 7353,
+      "grouped_grapheme_rate": 0.05262216242521398,
+      "digraph_confusions": [
+        {
+          "reference": "",
+          "hypothesis": "dh",
+          "count": 3
+        },
+        {
+          "reference": "",
+          "hypothesis": "ng",
+          "count": 22
+        },
+        {
+          "reference": "",
+          "hypothesis": "th",
+          "count": 1
+        },
+        {
+          "reference": " ",
+          "hypothesis": "dh",
+          "count": 1
+        },
+        {
+          "reference": " ",
+          "hypothesis": "ng",
+          "count": 1
+        },
+        {
+          "reference": " ",
+          "hypothesis": "th",
+          "count": 1
+        },
+        {
+          "reference": "c",
+          "hypothesis": "ng",
+          "count": 1
+        },
+        {
+          "reference": "d",
+          "hypothesis": "dh",
+          "count": 112
+        },
+        {
+          "reference": "d",
+          "hypothesis": "th",
+          "count": 1
+        },
+        {
+          "reference": "dh",
+          "hypothesis": "",
+          "count": 7
+        },
+        {
+          "reference": "dh",
+          "hypothesis": " ",
+          "count": 1
+        },
+        {
+          "reference": "dh",
+          "hypothesis": "a",
+          "count": 1
+        },
+        {
+          "reference": "dh",
+          "hypothesis": "d",
+          "count": 190
+        },
+        {
+          "reference": "dh",
+          "hypothesis": "e",
+          "count": 1
+        },
+        {
+          "reference": "dh",
+          "hypothesis": "i",
+          "count": 1
+        },
+        {
+          "reference": "dh",
+          "hypothesis": "j",
+          "count": 1
+        },
+        {
+          "reference": "dh",
+          "hypothesis": "r",
+          "count": 1
+        },
+        {
+          "reference": "dh",
+          "hypothesis": "t",
+          "count": 1
+        },
+        {
+          "reference": "dh",
+          "hypothesis": "th",
+          "count": 1
+        },
+        {
+          "reference": "e",
+          "hypothesis": "ng",
+          "count": 2
+        },
+        {
+          "reference": "g",
+          "hypothesis": "ng",
+          "count": 3
+        },
+        {
+          "reference": "g",
+          "hypothesis": "ny",
+          "count": 1
+        },
+        {
+          "reference": "h",
+          "hypothesis": "dh",
+          "count": 1
+        },
+        {
+          "reference": "h",
+          "hypothesis": "ng",
+          "count": 3
+        },
+        {
+          "reference": "k",
+          "hypothesis": "dh",
+          "count": 1
+        },
+        {
+          "reference": "k",
+          "hypothesis": "ng",
+          "count": 3
+        },
+        {
+          "reference": "l",
+          "hypothesis": "ng",
+          "count": 1
+        },
+        {
+          "reference": "m",
+          "hypothesis": "ng",
+          "count": 12
+        },
+        {
+          "reference": "m",
+          "hypothesis": "ny",
+          "count": 1
+        },
+        {
+          "reference": "n",
+          "hypothesis": "ng",
+          "count": 42
+        },
+        {
+          "reference": "n",
+          "hypothesis": "ny",
+          "count": 6
+        },
+        {
+          "reference": "ng",
+          "hypothesis": "",
+          "count": 41
+        },
+        {
+          "reference": "ng",
+          "hypothesis": "d",
+          "count": 1
+        },
+        {
+          "reference": "ng",
+          "hypothesis": "g",
+          "count": 9
+        },
+        {
+          "reference": "ng",
+          "hypothesis": "h",
+          "count": 1
+        },
+        {
+          "reference": "ng",
+          "hypothesis": "j",
+          "count": 3
+        },
+        {
+          "reference": "ng",
+          "hypothesis": "k",
+          "count": 3
+        },
+        {
+          "reference": "ng",
+          "hypothesis": "m",
+          "count": 7
+        },
+        {
+          "reference": "ng",
+          "hypothesis": "n",
+          "count": 37
+        },
+        {
+          "reference": "ng",
+          "hypothesis": "ny",
+          "count": 2
+        },
+        {
+          "reference": "ng",
+          "hypothesis": "r",
+          "count": 1
+        },
+        {
+          "reference": "ng",
+          "hypothesis": "w",
+          "count": 2
+        },
+        {
+          "reference": "ny",
+          "hypothesis": "c",
+          "count": 1
+        },
+        {
+          "reference": "ny",
+          "hypothesis": "dh",
+          "count": 1
+        },
+        {
+          "reference": "ny",
+          "hypothesis": "e",
+          "count": 1
+        },
+        {
+          "reference": "ny",
+          "hypothesis": "i",
+          "count": 9
+        },
+        {
+          "reference": "ny",
+          "hypothesis": "n",
+          "count": 2
+        },
+        {
+          "reference": "ny",
+          "hypothesis": "ng",
+          "count": 2
+        },
+        {
+          "reference": "ny",
+          "hypothesis": "y",
+          "count": 6
+        },
+        {
+          "reference": "r",
+          "hypothesis": "ng",
+          "count": 1
+        },
+        {
+          "reference": "s",
+          "hypothesis": "ng",
+          "count": 1
+        },
+        {
+          "reference": "t",
+          "hypothesis": "th",
+          "count": 13
+        },
+        {
+          "reference": "th",
+          "hypothesis": "",
+          "count": 7
+        },
+        {
+          "reference": "th",
+          "hypothesis": "a",
+          "count": 1
+        },
+        {
+          "reference": "th",
+          "hypothesis": "c",
+          "count": 1
+        },
+        {
+          "reference": "th",
+          "hypothesis": "d",
+          "count": 13
+        },
+        {
+          "reference": "th",
+          "hypothesis": "dh",
+          "count": 3
+        },
+        {
+          "reference": "th",
+          "hypothesis": "h",
+          "count": 1
+        },
+        {
+          "reference": "th",
+          "hypothesis": "k",
+          "count": 2
+        },
+        {
+          "reference": "th",
+          "hypothesis": "n",
+          "count": 1
+        },
+        {
+          "reference": "th",
+          "hypothesis": "r",
+          "count": 2
+        },
+        {
+          "reference": "th",
+          "hypothesis": "s",
+          "count": 1
+        },
+        {
+          "reference": "th",
+          "hypothesis": "t",
+          "count": 78
+        },
+        {
+          "reference": "u",
+          "hypothesis": "dh",
+          "count": 1
+        },
+        {
+          "reference": "u",
+          "hypothesis": "ng",
+          "count": 3
+        },
+        {
+          "reference": "y",
+          "hypothesis": "ng",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "model": "xlsr",
+      "level": "d4",
+      "wer": 0.1764948076307242,
+      "cer": 0.03664628487197685,
+      "character_operations": {
+        "delete": 1940,
+        "replace": 2326,
+        "insert": 1104
+      },
+      "grouped_grapheme_errors": 5330,
+      "grouped_grapheme_rate": 0.03814444794320557,
+      "digraph_confusions": [
+        {
+          "reference": "",
+          "hypothesis": "dh",
+          "count": 2
+        },
+        {
+          "reference": "",
+          "hypothesis": "ng",
+          "count": 12
+        },
+        {
+          "reference": "",
+          "hypothesis": "th",
+          "count": 1
+        },
+        {
+          "reference": "a",
+          "hypothesis": "ng",
+          "count": 1
+        },
+        {
+          "reference": "c",
+          "hypothesis": "th",
+          "count": 1
+        },
+        {
+          "reference": "d",
+          "hypothesis": "dh",
+          "count": 101
+        },
+        {
+          "reference": "dh",
+          "hypothesis": "",
+          "count": 5
+        },
+        {
+          "reference": "dh",
+          "hypothesis": "d",
+          "count": 153
+        },
+        {
+          "reference": "dh",
+          "hypothesis": "j",
+          "count": 1
+        },
+        {
+          "reference": "dh",
+          "hypothesis": "r",
+          "count": 1
+        },
+        {
+          "reference": "dh",
+          "hypothesis": "th",
+          "count": 4
+        },
+        {
+          "reference": "e",
+          "hypothesis": "ng",
+          "count": 3
+        },
+        {
+          "reference": "g",
+          "hypothesis": "ng",
+          "count": 4
+        },
+        {
+          "reference": "h",
+          "hypothesis": "ng",
+          "count": 1
+        },
+        {
+          "reference": "i",
+          "hypothesis": "ng",
+          "count": 1
+        },
+        {
+          "reference": "k",
+          "hypothesis": "ng",
+          "count": 4
+        },
+        {
+          "reference": "k",
+          "hypothesis": "th",
+          "count": 1
+        },
+        {
+          "reference": "l",
+          "hypothesis": "ng",
+          "count": 1
+        },
+        {
+          "reference": "m",
+          "hypothesis": "ng",
+          "count": 5
+        },
+        {
+          "reference": "n",
+          "hypothesis": "ng",
+          "count": 33
+        },
+        {
+          "reference": "n",
+          "hypothesis": "ny",
+          "count": 5
+        },
+        {
+          "reference": "ng",
+          "hypothesis": "",
+          "count": 33
+        },
+        {
+          "reference": "ng",
+          "hypothesis": " ",
+          "count": 2
+        },
+        {
+          "reference": "ng",
+          "hypothesis": "e",
+          "count": 1
+        },
+        {
+          "reference": "ng",
+          "hypothesis": "g",
+          "count": 10
+        },
+        {
+          "reference": "ng",
+          "hypothesis": "j",
+          "count": 2
+        },
+        {
+          "reference": "ng",
+          "hypothesis": "k",
+          "count": 1
+        },
+        {
+          "reference": "ng",
+          "hypothesis": "m",
+          "count": 4
+        },
+        {
+          "reference": "ng",
+          "hypothesis": "n",
+          "count": 19
+        },
+        {
+          "reference": "ng",
+          "hypothesis": "ny",
+          "count": 2
+        },
+        {
+          "reference": "ng",
+          "hypothesis": "r",
+          "count": 2
+        },
+        {
+          "reference": "ng",
+          "hypothesis": "s",
+          "count": 1
+        },
+        {
+          "reference": "ng",
+          "hypothesis": "u",
+          "count": 1
+        },
+        {
+          "reference": "ny",
+          "hypothesis": "",
+          "count": 2
+        },
+        {
+          "reference": "ny",
+          "hypothesis": "i",
+          "count": 6
+        },
+        {
+          "reference": "ny",
+          "hypothesis": "j",
+          "count": 1
+        },
+        {
+          "reference": "ny",
+          "hypothesis": "k",
+          "count": 1
+        },
+        {
+          "reference": "ny",
+          "hypothesis": "n",
+          "count": 3
+        },
+        {
+          "reference": "ny",
+          "hypothesis": "ng",
+          "count": 2
+        },
+        {
+          "reference": "ny",
+          "hypothesis": "y",
+          "count": 2
+        },
+        {
+          "reference": "o",
+          "hypothesis": "th",
+          "count": 1
+        },
+        {
+          "reference": "r",
+          "hypothesis": "dh",
+          "count": 1
+        },
+        {
+          "reference": "r",
+          "hypothesis": "ng",
+          "count": 1
+        },
+        {
+          "reference": "t",
+          "hypothesis": "th",
+          "count": 31
+        },
+        {
+          "reference": "th",
+          "hypothesis": "",
+          "count": 3
+        },
+        {
+          "reference": "th",
+          "hypothesis": "d",
+          "count": 8
+        },
+        {
+          "reference": "th",
+          "hypothesis": "dh",
+          "count": 2
+        },
+        {
+          "reference": "th",
+          "hypothesis": "i",
+          "count": 2
+        },
+        {
+          "reference": "th",
+          "hypothesis": "k",
+          "count": 1
+        },
+        {
+          "reference": "th",
+          "hypothesis": "r",
+          "count": 1
+        },
+        {
+          "reference": "th",
+          "hypothesis": "s",
+          "count": 2
+        },
+        {
+          "reference": "th",
+          "hypothesis": "t",
+          "count": 54
+        }
+      ]
+    },
+    {
+      "model": "xlsr",
+      "level": "d5",
+      "wer": 0.18811473534928405,
+      "cer": 0.039437407872468196,
+      "character_operations": {
+        "delete": 2220,
+        "replace": 2508,
+        "insert": 1051
+      },
+      "grouped_grapheme_errors": 5726,
+      "grouped_grapheme_rate": 0.040978444450805826,
+      "digraph_confusions": [
+        {
+          "reference": "",
+          "hypothesis": "dh",
+          "count": 3
+        },
+        {
+          "reference": "",
+          "hypothesis": "ng",
+          "count": 16
+        },
+        {
+          "reference": "",
+          "hypothesis": "th",
+          "count": 2
+        },
+        {
+          "reference": "a",
+          "hypothesis": "ng",
+          "count": 1
+        },
+        {
+          "reference": "d",
+          "hypothesis": "dh",
+          "count": 126
+        },
+        {
+          "reference": "d",
+          "hypothesis": "th",
+          "count": 1
+        },
+        {
+          "reference": "dh",
+          "hypothesis": "",
+          "count": 4
+        },
+        {
+          "reference": "dh",
+          "hypothesis": "d",
+          "count": 118
+        },
+        {
+          "reference": "dh",
+          "hypothesis": "i",
+          "count": 1
+        },
+        {
+          "reference": "dh",
+          "hypothesis": "j",
+          "count": 1
+        },
+        {
+          "reference": "dh",
+          "hypothesis": "o",
+          "count": 1
+        },
+        {
+          "reference": "dh",
+          "hypothesis": "r",
+          "count": 1
+        },
+        {
+          "reference": "dh",
+          "hypothesis": "t",
+          "count": 1
+        },
+        {
+          "reference": "dh",
+          "hypothesis": "th",
+          "count": 1
+        },
+        {
+          "reference": "e",
+          "hypothesis": "ng",
+          "count": 2
+        },
+        {
+          "reference": "g",
+          "hypothesis": "ng",
+          "count": 4
+        },
+        {
+          "reference": "h",
+          "hypothesis": "ng",
+          "count": 3
+        },
+        {
+          "reference": "k",
+          "hypothesis": "dh",
+          "count": 1
+        },
+        {
+          "reference": "k",
+          "hypothesis": "ng",
+          "count": 2
+        },
+        {
+          "reference": "m",
+          "hypothesis": "ng",
+          "count": 6
+        },
+        {
+          "reference": "n",
+          "hypothesis": "dh",
+          "count": 1
+        },
+        {
+          "reference": "n",
+          "hypothesis": "ng",
+          "count": 20
+        },
+        {
+          "reference": "n",
+          "hypothesis": "ny",
+          "count": 1
+        },
+        {
+          "reference": "ng",
+          "hypothesis": "",
+          "count": 34
+        },
+        {
+          "reference": "ng",
+          "hypothesis": " ",
+          "count": 1
+        },
+        {
+          "reference": "ng",
+          "hypothesis": "g",
+          "count": 8
+        },
+        {
+          "reference": "ng",
+          "hypothesis": "k",
+          "count": 3
+        },
+        {
+          "reference": "ng",
+          "hypothesis": "m",
+          "count": 6
+        },
+        {
+          "reference": "ng",
+          "hypothesis": "n",
+          "count": 29
+        },
+        {
+          "reference": "ng",
+          "hypothesis": "r",
+          "count": 1
+        },
+        {
+          "reference": "ng",
+          "hypothesis": "s",
+          "count": 1
+        },
+        {
+          "reference": "ng",
+          "hypothesis": "w",
+          "count": 1
+        },
+        {
+          "reference": "ng",
+          "hypothesis": "y",
+          "count": 1
+        },
+        {
+          "reference": "ny",
+          "hypothesis": "e",
+          "count": 1
+        },
+        {
+          "reference": "ny",
+          "hypothesis": "i",
+          "count": 5
+        },
+        {
+          "reference": "ny",
+          "hypothesis": "j",
+          "count": 2
+        },
+        {
+          "reference": "ny",
+          "hypothesis": "k",
+          "count": 1
+        },
+        {
+          "reference": "ny",
+          "hypothesis": "m",
+          "count": 1
+        },
+        {
+          "reference": "ny",
+          "hypothesis": "n",
+          "count": 4
+        },
+        {
+          "reference": "ny",
+          "hypothesis": "ng",
+          "count": 1
+        },
+        {
+          "reference": "ny",
+          "hypothesis": "y",
+          "count": 5
+        },
+        {
+          "reference": "r",
+          "hypothesis": "ng",
+          "count": 1
+        },
+        {
+          "reference": "t",
+          "hypothesis": "th",
+          "count": 13
+        },
+        {
+          "reference": "th",
+          "hypothesis": "",
+          "count": 4
+        },
+        {
+          "reference": "th",
+          "hypothesis": "b",
+          "count": 1
+        },
+        {
+          "reference": "th",
+          "hypothesis": "c",
+          "count": 1
+        },
+        {
+          "reference": "th",
+          "hypothesis": "d",
+          "count": 4
+        },
+        {
+          "reference": "th",
+          "hypothesis": "dh",
+          "count": 1
+        },
+        {
+          "reference": "th",
+          "hypothesis": "h",
+          "count": 2
+        },
+        {
+          "reference": "th",
+          "hypothesis": "i",
+          "count": 1
+        },
+        {
+          "reference": "th",
+          "hypothesis": "k",
+          "count": 1
+        },
+        {
+          "reference": "th",
+          "hypothesis": "r",
+          "count": 1
+        },
+        {
+          "reference": "th",
+          "hypothesis": "s",
+          "count": 2
+        },
+        {
+          "reference": "th",
+          "hypothesis": "t",
+          "count": 61
+        }
+      ]
+    }
+  ]
+}

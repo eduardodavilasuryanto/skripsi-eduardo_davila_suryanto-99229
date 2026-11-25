@@ -1,0 +1,348 @@
+{
+  "generated_at": "2026-11-15T18:35:06+07:00",
+  "script": "error_boundary.py",
+  "seed": 42,
+  "n_bootstrap": 10000,
+  "definitions": {
+    "merges": "spasi referensi yang terhapus atau tersubstitusi bukan spasi pada penjajaran karakter",
+    "splits": "spasi hipotesis yang tersisip atau menggantikan bukan spasi pada penjajaran karakter",
+    "boundary_only": "referensi dan hipotesis sama setelah spasi dihapus, berbeda sebelumnya",
+    "wer_without_boundary_only": "galat kata utterance hanya-batas dinolkan; batas bawah pengaruh",
+    "boundary_rate": "(penggabungan + pemisahan) per batas kata referensi"
+  },
+  "per_config": {
+    "whisper_d1_trial": {
+      "merges_per_1000_boundaries": 59.81129058052135,
+      "splits_per_1000_boundaries": 71.11253265099418,
+      "n_boundary_only_utterances": 66,
+      "word_errors_in_boundary_only_utterances": 149,
+      "share_of_word_errors_pct": 1.6531676467324976,
+      "wer": 0.4123244430211812,
+      "wer_without_boundary_only": 0.4055080287295851
+    },
+    "whisper_d2": {
+      "merges_per_1000_boundaries": 40.460578922117385,
+      "splits_per_1000_boundaries": 43.97889013273629,
+      "n_boundary_only_utterances": 63,
+      "word_errors_in_boundary_only_utterances": 139,
+      "share_of_word_errors_pct": 2.0795930580490722,
+      "wer": 0.3057779404364335,
+      "wer_without_boundary_only": 0.29941900361407203
+    },
+    "whisper_d3": {
+      "merges_per_1000_boundaries": 28.306412921797538,
+      "splits_per_1000_boundaries": 26.12079535156458,
+      "n_boundary_only_utterances": 58,
+      "word_errors_in_boundary_only_utterances": 125,
+      "share_of_word_errors_pct": 2.573075339645945,
+      "wer": 0.2222425545541882,
+      "wer_without_boundary_only": 0.2165240861887552
+    },
+    "whisper_d4": {
+      "merges_per_1000_boundaries": 17.325017325017324,
+      "splits_per_1000_boundaries": 19.190788421557652,
+      "n_boundary_only_utterances": 51,
+      "word_errors_in_boundary_only_utterances": 115,
+      "share_of_word_errors_pct": 3.2024505708716235,
+      "wer": 0.1642801592021593,
+      "wer_without_boundary_only": 0.15901916830596094
+    },
+    "whisper_d5": {
+      "merges_per_1000_boundaries": 14.446399061783676,
+      "splits_per_1000_boundaries": 18.9775574390959,
+      "n_boundary_only_utterances": 65,
+      "word_errors_in_boundary_only_utterances": 144,
+      "share_of_word_errors_pct": 4.278074866310161,
+      "wer": 0.1539869161443799,
+      "wer_without_boundary_only": 0.14739924058740106
+    },
+    "xlsr_d1_trial": {
+      "merges_per_1000_boundaries": 87.31808731808732,
+      "splits_per_1000_boundaries": 56.45290260674876,
+      "n_boundary_only_utterances": 54,
+      "word_errors_in_boundary_only_utterances": 124,
+      "share_of_word_errors_pct": 1.1850152905198776,
+      "wer": 0.4787044238071275,
+      "wer_without_boundary_only": 0.473031703188618
+    },
+    "xlsr_d2": {
+      "merges_per_1000_boundaries": 62.37006237006237,
+      "splits_per_1000_boundaries": 36.03603603603604,
+      "n_boundary_only_utterances": 69,
+      "word_errors_in_boundary_only_utterances": 152,
+      "share_of_word_errors_pct": 1.8408622986556862,
+      "wer": 0.3777391463470424,
+      "wer_without_boundary_only": 0.3707854888146759
+    },
+    "xlsr_d3": {
+      "merges_per_1000_boundaries": 29.958953035876114,
+      "splits_per_1000_boundaries": 21.74956021109867,
+      "n_boundary_only_utterances": 88,
+      "word_errors_in_boundary_only_utterances": 195,
+      "share_of_word_errors_pct": 3.7199542159481114,
+      "wer": 0.2398096893727984,
+      "wer_without_boundary_only": 0.2308888787227229
+    },
+    "xlsr_d4": {
+      "merges_per_1000_boundaries": 18.391172237326085,
+      "splits_per_1000_boundaries": 15.352630737246121,
+      "n_boundary_only_utterances": 65,
+      "word_errors_in_boundary_only_utterances": 141,
+      "share_of_word_errors_pct": 3.6547433903576985,
+      "wer": 0.1764948076307242,
+      "wer_without_boundary_only": 0.17004437531451577
+    },
+    "xlsr_d5": {
+      "merges_per_1000_boundaries": 22.60248414094568,
+      "splits_per_1000_boundaries": 13.86001386001386,
+      "n_boundary_only_utterances": 78,
+      "word_errors_in_boundary_only_utterances": 165,
+      "share_of_word_errors_pct": 4.012645914396887,
+      "wer": 0.18811473534928405,
+      "wer_without_boundary_only": 0.1805663571069125
+    }
+  },
+  "differences_whisper_minus_xlsr": {
+    "d1": {
+      "wer": {
+        "diff": -0.06637998078594631,
+        "ci": [
+          -0.07717836713733127,
+          -0.05458937568356856
+        ]
+      },
+      "wer_neutral": {
+        "diff": -0.0675236744590329,
+        "ci": [
+          -0.07869245368165505,
+          -0.055707113242685735
+        ]
+      },
+      "boundary_rate": {
+        "diff": -0.012847166693320533,
+        "ci": [
+          -0.022121464477770032,
+          -0.002429743896849232
+        ]
+      }
+    },
+    "d2": {
+      "wer": {
+        "diff": -0.0719612059106089,
+        "ci": [
+          -0.08109118876872155,
+          -0.06217951125961367
+        ]
+      },
+      "wer_neutral": {
+        "diff": -0.07136648520060385,
+        "ci": [
+          -0.08071851732612065,
+          -0.06150647342917979
+        ]
+      },
+      "boundary_rate": {
+        "diff": -0.013966629351244736,
+        "ci": [
+          -0.021013366273175384,
+          -0.0054694441536074605
+        ]
+      }
+    },
+    "d3": {
+      "wer": {
+        "diff": -0.01756713481861019,
+        "ci": [
+          -0.02448720825628669,
+          -0.010747724722666297
+        ]
+      },
+      "wer_neutral": {
+        "diff": -0.01436479253396769,
+        "ci": [
+          -0.021291311702439978,
+          -0.007490679819933129
+        ]
+      },
+      "boundary_rate": {
+        "diff": 0.002718695026387337,
+        "ci": [
+          -0.0015961925620419002,
+          0.007109396429546198
+        ]
+      }
+    },
+    "d4": {
+      "wer": {
+        "diff": -0.0122146484285649,
+        "ci": [
+          -0.01800418500723607,
+          -0.006469752023157696
+        ]
+      },
+      "wer_neutral": {
+        "diff": -0.011025207008554833,
+        "ci": [
+          -0.016967757947192443,
+          -0.005052778481022185
+        ]
+      },
+      "boundary_rate": {
+        "diff": 0.0027720027720027768,
+        "ci": [
+          -0.0005837102449782105,
+          0.006151643352941902
+        ]
+      }
+    },
+    "d5": {
+      "wer": {
+        "diff": -0.03412781920490415,
+        "ci": [
+          -0.04005159454637984,
+          -0.02835485940033203
+        ]
+      },
+      "wer_neutral": {
+        "diff": -0.03316711651951143,
+        "ci": [
+          -0.03932685609411697,
+          -0.027176358081710185
+        ]
+      },
+      "boundary_rate": {
+        "diff": -0.0030385415000799623,
+        "ci": [
+          -0.006562458734994569,
+          0.0003725425513279801
+        ]
+      }
+    }
+  },
+  "input_sha256": {
+    "whisper_d1_trial_test.tsv": "9c6a51f450b2e3d4cc347a6c0c4ce467d6d639c8124f5b7bcd444655d1c11ec4",
+    "whisper_d2_test.tsv": "ea8ff9b88852a2c4c96c3d7f26d5f0af021a57d84e0d0a2cc5b460b70d611fc5",
+    "whisper_d3_test.tsv": "118e05def5274b01517fe7ee6e0047faf525505d42533d3e868cc9dd08c33d0a",
+    "whisper_d4_test.tsv": "f05b1bc509da70ae7c004a6f613fa86282f941fc69e386095ecfc2f0f9fa5c7b",
+    "whisper_d5_test.tsv": "0bc978bf437745e40f9e039c6408c7cda194dcb109a7d0b44372ec265e6bf871",
+    "xlsr_d1_trial_test.tsv": "0a2f581e56824179d91d55647a02a8561f383e8492a721c1549afdbf90474950",
+    "xlsr_d2_test.tsv": "bf9f012df6bbad33b937af9d9179ae5ce7e37a1e8041a7f49193d15a0daa4f50",
+    "xlsr_d3_test.tsv": "b3128109fed9f2e1fe7e502c558343871c7d14a2e04fceeb5916a7cfbb45c953",
+    "xlsr_d4_test.tsv": "cdc40bdc96b6e02822f74f4618e8fc8586fb0bca097501996020c3fa402ab6b7",
+    "xlsr_d5_test.tsv": "2242d1c0e3151548c5b04df006c5d7802496b7509efbdbb2748a9e9a014936e1"
+  },
+  "environment": {
+    "skrip": "log_environment.py",
+    "lapis_1_perangkat_keras": {
+      "gpu": {
+        "jumlah_gpu_terdeteksi_torch": 1,
+        "nama": "NVIDIA GeForce RTX 4060 Laptop GPU",
+        "vram_total_mib": 8188,
+        "compute_capability": "sm_89",
+        "jumlah_streaming_multiprocessor": 24
+      },
+      "cpu": {
+        "nama": "13th Gen Intel(R) Core(TM) i7-13700HX",
+        "penanda_keluarga": "Intel64 Family 6 Model 191 Stepping 2, GenuineIntel",
+        "core_fisik": 16,
+        "core_logis": 24
+      },
+      "ram_sistem": {
+        "total_gib": 31.81,
+        "tersedia_saat_pencatatan_gib": 20.92
+      },
+      "penyimpanan": {
+        "PhysicalDisks": [
+          {
+            "FriendlyName": "SAMSUNG MZVL21T0HCLR-00BL2",
+            "MediaType": "SSD",
+            "SizeGB": 953.9
+          }
+        ],
+        "Volumes": [
+          {
+            "DriveLetter": "D",
+            "FileSystemType": "NTFS",
+            "SizeGB": 476.2
+          },
+          {
+            "DriveLetter": "C",
+            "FileSystemType": "NTFS",
+            "SizeGB": 475.8
+          }
+        ]
+      },
+      "sistem_operasi": {
+        "platform": "Windows-11-10.0.26300-SP0",
+        "sistem": "Windows",
+        "rilis": "11",
+        "versi": "10.0.26300",
+        "arsitektur": "AMD64",
+        "nama_host": "Eduardo"
+      }
+    },
+    "lapis_2_perangkat_lunak_terikat_perangkat_keras": {
+      "python": {
+        "versi": "3.12.10",
+        "implementasi": "CPython",
+        "executable": "D:\\_01_Bachelor_Information_System\\_00-SKRIPSI\\skripsi-venv\\Scripts\\python.exe"
+      },
+      "driver_nvidia": {
+        "versi": "610.88",
+        "sumber": "nvidia-smi"
+      },
+      "cuda": {
+        "tersedia": true,
+        "runtime_versi_torch": "13.0",
+        "cudnn_versi_mentah": 92400,
+        "cudnn_versi": "9.24.0"
+      },
+      "pytorch": {
+        "versi": "2.14.0+cu130",
+        "build_cuda": "13.0",
+        "versi_lengkap": "2.14.0+cu130"
+      },
+      "presisi": {
+        "dtype_bawaan": "torch.float32",
+        "float32_matmul_precision": "highest",
+        "bf16_didukung": true
+      },
+      "tf32": {
+        "cuda_matmul_allow_tf32": false,
+        "cudnn_allow_tf32": true,
+        "catatan": "Kedua kanal dilaporkan terpisah karena nilai bawaannya berbeda. Melaporkannya sebagai satu status tunggal adalah penyederhanaan yang keliru."
+      },
+      "determinisme": {
+        "cudnn_deterministic": false,
+        "cudnn_benchmark": false,
+        "use_deterministic_algorithms": false
+      },
+      "pustaka": {
+        "torch": "2.14.0+cu130",
+        "transformers": "5.17.0",
+        "datasets": "5.0.1",
+        "accelerate": "1.15.0",
+        "tokenizers": "0.23.2",
+        "safetensors": "0.8.0",
+        "soundfile": "0.14.0",
+        "jiwer": "4.0.0",
+        "bitsandbytes": "0.50.2",
+        "numpy": "2.5.3",
+        "pandas": "3.0.5",
+        "scipy": "1.18.1",
+        "scikit-learn": "1.9.0",
+        "statsmodels": "0.15.0",
+        "matplotlib": "3.11.1"
+      }
+    },
+    "lapis_3_jejak_eksekusi": {
+      "timestamp_utc": "2026-11-15T11:35:12+00:00",
+      "timestamp_lokal": "2026-11-15T18:35:12+07:00",
+      "random_seed": 42,
+      "vram_puncak_teralokasi_mib": 0.0,
+      "vram_puncak_tercadang_mib": 0.0,
+      "durasi_pengumpulan_detik": 6.277
+    }
+  },
+  "elapsed_seconds": 4.4
+}

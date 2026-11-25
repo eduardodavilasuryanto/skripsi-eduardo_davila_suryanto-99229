@@ -1,0 +1,308 @@
+# Pemantau whisper_d4 dimulai 2026-10-07 00:02:57, potret setiap 30 menit, pemeriksaan proses setiap 60 detik.
+# Kolom GPU: memory.used,memory.free,utilization.gpu,temperature.gpu,power.draw,clocks.sm,clocks.max.sm,clocks_throttle_reasons.active,clocks_throttle_reasons.sw_power_cap,clocks_throttle_reasons.hw_slowdown,clocks_throttle_reasons.hw_thermal_slowdown,clocks_throttle_reasons.sw_thermal_slowdown
+# CPU dan disk: rerata 5 sampel per detik. Proses CPU: persen terhadap seluruh prosesor logis. Peristiwa charger: Kernel-Power 105 sejak potret sebelumnya; potret awal mundur 30 menit.
+
+==== 2026-10-07 00:02:57 | awal ====
+Proses training    : hidup, PID 9108, 26152
+Progres terakhir   : [progres] langkah 1: 26.55 s pada langkah pertama, VRAM puncak training tercadang 4754 MiB, teralokasi 4701 MiB
+Laju 4 jendela     :  s/langkah
+Evaluasi terakhir  : (belum ada)
+Biaya evaluasi     : (belum ada)
+Baris galat di log : 0
+GPU                : 7402 MiB, 555 MiB, 100 %, 74, 84.83 W, 2475 MHz, 3105 MHz, 0x0000000000000000, Not Active, Not Active, Not Active, Not Active
+Daya               : sumber AC, baterai 79%; Power Scheme GUID: 381b4222-f694-41f0-9685-ff5bb260df2e  (Balanced)
+CPU dan disk       : rerata 5 detik: utilitas CPU % 10.6, kinerja CPU % 177.3, waktu CPU % 5.1, disk sibuk % 2.4, disk MB/s 0.2
+Proses CPU         : python total 3.4% (6 proses); teratas: python 3.4%, pwsh 1.0%, taskmgr 0.3%, system 0.2%, nvdisplay.container 0.2%
+Baterai            : AC True, mengisi False 0 mW, menguras False 0 mW, kapasitas 55740 mWh
+Peristiwa charger  : tidak ada sejak 10-06 23:32:57
+
+==== 2026-10-07 00:33:08 | berkala ====
+Proses training    : hidup, PID 9108, 26152
+Progres terakhir   : [progres] langkah 450: 3.58 s/langkah, VRAM puncak training tercadang 6032 MiB, teralokasi 5730 MiB
+Laju 4 jendela     : 3.57, 3.57, 3.58, 3.58 s/langkah
+Evaluasi terakhir  : [evaluasi] langkah 250: WER 0.3398, terbaik 0.3398 pada langkah 250, tanpa perbaikan 0 kali
+Biaya evaluasi     : [evaluasi] langkah 250: 246.6 detik, VRAM tercadang awal 3090 MiB, puncak 5282 MiB, puncak teralokasi 5113 MiB
+Baris galat di log : 0
+GPU                : 7456 MiB, 501 MiB, 100 %, 80, 90.26 W, 2475 MHz, 3105 MHz, 0x0000000000000000, Not Active, Not Active, Not Active, Not Active
+Daya               : sumber AC, baterai 79%; Power Scheme GUID: 381b4222-f694-41f0-9685-ff5bb260df2e  (Balanced)
+CPU dan disk       : rerata 5 detik: utilitas CPU % 8.3, kinerja CPU % 164.9, waktu CPU % 4.2, disk sibuk % 1.5, disk MB/s 0.1
+Proses CPU         : python total 3.1% (10 proses); teratas: python 3.1%, nvcontainer 0.4%, nvdisplay.container 0.2%, taskmgr 0.2%, system 0.1%
+Baterai            : AC True, mengisi False 0 mW, menguras False 0 mW, kapasitas 55740 mWh
+Peristiwa charger  : tidak ada sejak 10-07 00:02:57
+
+==== 2026-10-07 01:03:19 | berkala ====
+Proses training    : hidup, PID 9108, 26152
+Progres terakhir   : [progres] langkah 825: 3.58 s/langkah, VRAM puncak training tercadang 6032 MiB, teralokasi 5730 MiB
+Laju 4 jendela     : 3.56, 3.58, 3.58, 3.58 s/langkah
+Evaluasi terakhir  : [evaluasi] langkah 750: WER 0.2141, terbaik 0.2141 pada langkah 750, tanpa perbaikan 0 kali
+Biaya evaluasi     : [evaluasi] langkah 750: 225.4 detik, VRAM tercadang awal 3050 MiB, puncak 5242 MiB, puncak teralokasi 5113 MiB
+Baris galat di log : 0
+GPU                : 7446 MiB, 511 MiB, 98 %, 77, 88.02 W, 2460 MHz, 3105 MHz, 0x0000000000000000, Not Active, Not Active, Not Active, Not Active
+Daya               : sumber AC, baterai 79%; Power Scheme GUID: 381b4222-f694-41f0-9685-ff5bb260df2e  (Balanced)
+CPU dan disk       : rerata 5 detik: utilitas CPU % 8.9, kinerja CPU % 170.3, waktu CPU % 4.9, disk sibuk % 1.4, disk MB/s 0.1
+Proses CPU         : python total 3.4% (10 proses); teratas: python 3.4%, nvdisplay.container 0.3%, system 0.2%, taskmgr 0.2%, svchost 0.1%
+Baterai            : AC True, mengisi False 0 mW, menguras False 0 mW, kapasitas 55740 mWh
+Peristiwa charger  : tidak ada sejak 10-07 00:33:08
+
+==== 2026-10-07 01:33:30 | berkala ====
+Proses training    : hidup, PID 9108, 26152
+Progres terakhir   : [progres] langkah 1250: 3.57 s/langkah, VRAM puncak training tercadang 6032 MiB, teralokasi 5730 MiB
+Laju 4 jendela     : 3.58, 3.58, 3.57, 3.57 s/langkah
+Evaluasi terakhir  : [evaluasi] langkah 1000: WER 0.1944, terbaik 0.1944 pada langkah 1000, tanpa perbaikan 0 kali
+Biaya evaluasi     : [evaluasi] langkah 1000: 226.5 detik, VRAM tercadang awal 3050 MiB, puncak 5262 MiB, puncak teralokasi 5113 MiB
+Baris galat di log : 0
+GPU                : 6746 MiB, 1211 MiB, 99 %, 78, 85.05 W, 2475 MHz, 3105 MHz, 0x0000000000000000, Not Active, Not Active, Not Active, Not Active
+Daya               : sumber AC, baterai 79%; Power Scheme GUID: 381b4222-f694-41f0-9685-ff5bb260df2e  (Balanced)
+CPU dan disk       : rerata 5 detik: utilitas CPU % 6.3, kinerja CPU % 140.5, waktu CPU % 3.3, disk sibuk % 1.0, disk MB/s 0.0
+Proses CPU         : python total 2.9% (10 proses); teratas: python 2.9%, taskmgr 0.3%, nvdisplay.container 0.3%, system 0.2%, [disunting] 0.1%
+Baterai            : AC True, mengisi False 0 mW, menguras False 0 mW, kapasitas 55740 mWh
+Peristiwa charger  : tidak ada sejak 10-07 01:03:19
+
+==== 2026-10-07 02:03:42 | berkala ====
+Proses training    : hidup, PID 9108, 26152
+Progres terakhir   : [progres] langkah 1650: 3.58 s/langkah, VRAM puncak training tercadang 6032 MiB, teralokasi 5730 MiB
+Laju 4 jendela     : 3.58, 3.58, 3.57, 3.58 s/langkah
+Evaluasi terakhir  : [evaluasi] langkah 1500: WER 0.1789, terbaik 0.1789 pada langkah 1500, tanpa perbaikan 0 kali
+Biaya evaluasi     : [evaluasi] langkah 1500: 225.3 detik, VRAM tercadang awal 3050 MiB, puncak 5262 MiB, puncak teralokasi 5113 MiB
+Baris galat di log : 0
+GPU                : 7459 MiB, 498 MiB, 100 %, 80, 89.82 W, 2475 MHz, 3105 MHz, 0x0000000000000000, Not Active, Not Active, Not Active, Not Active
+Daya               : sumber AC, baterai 79%; Power Scheme GUID: 381b4222-f694-41f0-9685-ff5bb260df2e  (Balanced)
+CPU dan disk       : rerata 5 detik: utilitas CPU % 8.4, kinerja CPU % 165.0, waktu CPU % 6.3, disk sibuk % 1.7, disk MB/s 0.1
+Proses CPU         : python total 3.3% (10 proses); teratas: python 3.3%, nvdisplay.container 0.4%, taskmgr 0.3%, system 0.1%, wpscloudsvr 0.1%
+Baterai            : AC True, mengisi False 0 mW, menguras False 0 mW, kapasitas 55740 mWh
+Peristiwa charger  : tidak ada sejak 10-07 01:33:29
+
+==== 2026-10-07 02:33:52 | berkala ====
+Proses training    : hidup, PID 9108, 26152
+Progres terakhir   : [progres] langkah 2025: 3.58 s/langkah, VRAM puncak training tercadang 6032 MiB, teralokasi 5730 MiB
+Laju 4 jendela     : 3.58, 3.58, 3.58, 3.58 s/langkah
+Evaluasi terakhir  : [evaluasi] langkah 2000: WER 0.1742, terbaik 0.1742 pada langkah 2000, tanpa perbaikan 0 kali
+Biaya evaluasi     : [evaluasi] langkah 2000: 226.6 detik, VRAM tercadang awal 3050 MiB, puncak 5240 MiB, puncak teralokasi 5113 MiB
+Baris galat di log : 0
+GPU                : 7447 MiB, 510 MiB, 97 %, 77, 88.51 W, 2475 MHz, 3105 MHz, 0x0000000000000000, Not Active, Not Active, Not Active, Not Active
+Daya               : sumber AC, baterai 79%; Power Scheme GUID: 381b4222-f694-41f0-9685-ff5bb260df2e  (Balanced)
+CPU dan disk       : rerata 5 detik: utilitas CPU % 9.3, kinerja CPU % 160.7, waktu CPU % 4.2, disk sibuk % 1.4, disk MB/s 0.1
+Proses CPU         : python total 2.5% (10 proses); teratas: python 2.5%, system 0.4%, nvdisplay.container 0.3%, svchost 0.3%, taskmgr 0.2%
+Baterai            : AC True, mengisi False 0 mW, menguras False 0 mW, kapasitas 55740 mWh
+Peristiwa charger  : tidak ada sejak 10-07 02:03:41
+
+==== 2026-10-07 03:04:03 | berkala ====
+Proses training    : hidup, PID 9108, 26152
+Progres terakhir   : [progres] langkah 2475: 3.58 s/langkah, VRAM puncak training tercadang 6032 MiB, teralokasi 5730 MiB
+Laju 4 jendela     : 3.59, 3.58, 3.57, 3.58 s/langkah
+Evaluasi terakhir  : [evaluasi] langkah 2250: WER 0.1746, terbaik 0.1742 pada langkah 2000, tanpa perbaikan 1 kali
+Biaya evaluasi     : [evaluasi] langkah 2250: 226.0 detik, VRAM tercadang awal 3050 MiB, puncak 5262 MiB, puncak teralokasi 5113 MiB
+Baris galat di log : 0
+GPU                : 7469 MiB, 488 MiB, 100 %, 79, 85.39 W, 2460 MHz, 3105 MHz, 0x0000000000000000, Not Active, Not Active, Not Active, Not Active
+Daya               : sumber AC, baterai 79%; Power Scheme GUID: 381b4222-f694-41f0-9685-ff5bb260df2e  (Balanced)
+CPU dan disk       : rerata 5 detik: utilitas CPU % 8.8, kinerja CPU % 157.9, waktu CPU % 6.3, disk sibuk % 1.4, disk MB/s 0.1
+Proses CPU         : python total 3.5% (10 proses); teratas: python 3.5%, nvdisplay.container 0.3%, system 0.2%, taskmgr 0.1%, msedgewebview2 0.0%
+Baterai            : AC True, mengisi False 0 mW, menguras False 0 mW, kapasitas 55740 mWh
+Peristiwa charger  : tidak ada sejak 10-07 02:33:52
+
+==== 2026-10-07 03:33:14 | berkala ====
+Proses training    : hidup, PID 9108, 26152
+Progres terakhir   : [progres] langkah 2825: 3.57 s/langkah, VRAM puncak training tercadang 6032 MiB, teralokasi 5730 MiB
+Laju 4 jendela     : 3.58, 3.57, 3.58, 3.57 s/langkah
+Evaluasi terakhir  : [evaluasi] langkah 2750: WER 0.1724, terbaik 0.1724 pada langkah 2750, tanpa perbaikan 0 kali
+Biaya evaluasi     : [evaluasi] langkah 2750: 226.5 detik, VRAM tercadang awal 3050 MiB, puncak 5260 MiB, puncak teralokasi 5113 MiB
+Baris galat di log : 0
+GPU                : 7429 MiB, 528 MiB, 100 %, 80, 88.33 W, 2475 MHz, 3105 MHz, 0x0000000000000000, Not Active, Not Active, Not Active, Not Active
+Daya               : sumber AC, baterai 79%; Power Scheme GUID: 381b4222-f694-41f0-9685-ff5bb260df2e  (Balanced)
+CPU dan disk       : rerata 5 detik: utilitas CPU % 8.8, kinerja CPU % 164.1, waktu CPU % 4.2, disk sibuk % 1.2, disk MB/s 0.1
+Proses CPU         : python total 2.6% (10 proses); teratas: python 2.6%, system 0.3%, taskmgr 0.2%, nvdisplay.container 0.2%, nvsphelper64 0.1%
+Baterai            : AC True, mengisi False 0 mW, menguras False 0 mW, kapasitas 55740 mWh
+Peristiwa charger  : tidak ada sejak 10-07 03:04:03
+
+==== 2026-10-07 04:03:25 | berkala ====
+Proses training    : hidup, PID 9108, 26152
+Progres terakhir   : [progres] langkah 3250: 3.57 s/langkah, VRAM puncak training tercadang 6032 MiB, teralokasi 5730 MiB
+Laju 4 jendela     : 3.59, 3.57, 3.58, 3.57 s/langkah
+Evaluasi terakhir  : [evaluasi] langkah 3000: WER 0.1704, terbaik 0.1704 pada langkah 3000, tanpa perbaikan 0 kali
+Biaya evaluasi     : [evaluasi] langkah 3000: 225.7 detik, VRAM tercadang awal 3050 MiB, puncak 5242 MiB, puncak teralokasi 5113 MiB
+Baris galat di log : 0
+GPU                : 6750 MiB, 1207 MiB, 83 %, 72, 89.79 W, 2475 MHz, 3105 MHz, 0x0000000000000000, Not Active, Not Active, Not Active, Not Active
+Daya               : sumber AC, baterai 79%; Power Scheme GUID: 381b4222-f694-41f0-9685-ff5bb260df2e  (Balanced)
+CPU dan disk       : rerata 5 detik: utilitas CPU % 8.4, kinerja CPU % 159.8, waktu CPU % 4.0, disk sibuk % 0.8, disk MB/s 0.0
+Proses CPU         : python total 0.7% (10 proses); teratas: python 0.7%, nvdisplay.container 0.4%, taskmgr 0.4%, system 0.3%, wpscloudsvr 0.1%
+Baterai            : AC True, mengisi False 0 mW, menguras False 0 mW, kapasitas 55740 mWh
+Peristiwa charger  : tidak ada sejak 10-07 03:33:14
+
+==== 2026-10-07 04:33:36 | berkala ====
+Proses training    : hidup, PID 9108, 26152
+Progres terakhir   : [progres] langkah 3650: 3.58 s/langkah, VRAM puncak training tercadang 6032 MiB, teralokasi 5730 MiB
+Laju 4 jendela     : 3.58, 3.58, 3.58, 3.58 s/langkah
+Evaluasi terakhir  : [evaluasi] langkah 3500: WER 0.1684, terbaik 0.1663 pada langkah 3250, tanpa perbaikan 1 kali
+Biaya evaluasi     : [evaluasi] langkah 3500: 227.1 detik, VRAM tercadang awal 3050 MiB, puncak 5260 MiB, puncak teralokasi 5119 MiB
+Baris galat di log : 0
+GPU                : 7450 MiB, 507 MiB, 100 %, 80, 88.65 W, 2475 MHz, 3105 MHz, 0x0000000000000000, Not Active, Not Active, Not Active, Not Active
+Daya               : sumber AC, baterai 79%; Power Scheme GUID: 381b4222-f694-41f0-9685-ff5bb260df2e  (Balanced)
+CPU dan disk       : rerata 5 detik: utilitas CPU % 10.0, kinerja CPU % 160.7, waktu CPU % 5.9, disk sibuk % 1.4, disk MB/s 0.6
+Proses CPU         : python total 2.8% (10 proses); teratas: python 2.8%, msmpeng 2.2%, sihost 1.3%, svchost 1.3%, system 0.7%
+Baterai            : AC True, mengisi False 0 mW, menguras False 0 mW, kapasitas 55740 mWh
+Peristiwa charger  : tidak ada sejak 10-07 04:03:25
+
+==== 2026-10-07 05:03:46 | berkala ====
+Proses training    : hidup, PID 9108, 26152
+Progres terakhir   : [progres] langkah 4025: 3.58 s/langkah, VRAM puncak training tercadang 6032 MiB, teralokasi 5730 MiB
+Laju 4 jendela     : 3.58, 3.58, 3.58, 3.58 s/langkah
+Evaluasi terakhir  : [evaluasi] langkah 4000: WER 0.1669, terbaik 0.1657 pada langkah 3750, tanpa perbaikan 1 kali
+Biaya evaluasi     : [evaluasi] langkah 4000: 227.6 detik, VRAM tercadang awal 3050 MiB, puncak 5262 MiB, puncak teralokasi 5186 MiB
+Baris galat di log : 0
+GPU                : 7450 MiB, 507 MiB, 97 %, 77, 88.75 W, 2460 MHz, 3105 MHz, 0x0000000000000000, Not Active, Not Active, Not Active, Not Active
+Daya               : sumber AC, baterai 79%; Power Scheme GUID: 381b4222-f694-41f0-9685-ff5bb260df2e  (Balanced)
+CPU dan disk       : rerata 5 detik: utilitas CPU % 9.2, kinerja CPU % 164.2, waktu CPU % 7.1, disk sibuk % 1.0, disk MB/s 0.1
+Proses CPU         : python total 2.5% (10 proses); teratas: python 2.5%, svchost 0.2%, nvdisplay.container 0.2%, taskmgr 0.2%, system 0.1%
+Baterai            : AC True, mengisi False 0 mW, menguras False 0 mW, kapasitas 55740 mWh
+Peristiwa charger  : tidak ada sejak 10-07 04:33:36
+
+==== 2026-10-07 05:33:57 | berkala ====
+Proses training    : hidup, PID 9108, 26152
+Progres terakhir   : [progres] langkah 4475: 3.59 s/langkah, VRAM puncak training tercadang 6032 MiB, teralokasi 5730 MiB
+Laju 4 jendela     : 3.58, 3.58, 3.58, 3.59 s/langkah
+Evaluasi terakhir  : [evaluasi] langkah 4250: WER 0.1728, terbaik 0.1657 pada langkah 3750, tanpa perbaikan 2 kali
+Biaya evaluasi     : [evaluasi] langkah 4250: 228.9 detik, VRAM tercadang awal 3050 MiB, puncak 5240 MiB, puncak teralokasi 5186 MiB
+Baris galat di log : 0
+GPU                : 7458 MiB, 499 MiB, 100 %, 78, 86.20 W, 2475 MHz, 3105 MHz, 0x0000000000000000, Not Active, Not Active, Not Active, Not Active
+Daya               : sumber AC, baterai 79%; Power Scheme GUID: 381b4222-f694-41f0-9685-ff5bb260df2e  (Balanced)
+CPU dan disk       : rerata 5 detik: utilitas CPU % 8.4, kinerja CPU % 159.7, waktu CPU % 6.5, disk sibuk % 0.9, disk MB/s 0.1
+Proses CPU         : python total 3.6% (10 proses); teratas: python 3.6%, taskmgr 0.3%, nvdisplay.container 0.2%, system 0.1%, wpscloudsvr 0.1%
+Baterai            : AC True, mengisi False 0 mW, menguras False 0 mW, kapasitas 55740 mWh
+Peristiwa charger  : tidak ada sejak 10-07 05:03:46
+
+==== 2026-10-07 06:03:08 | berkala ====
+Proses training    : hidup, PID 9108, 26152
+Progres terakhir   : [progres] langkah 4825: 3.59 s/langkah, VRAM puncak training tercadang 6032 MiB, teralokasi 5730 MiB
+Laju 4 jendela     : 3.58, 3.57, 3.58, 3.59 s/langkah
+Evaluasi terakhir  : [evaluasi] langkah 4750: WER 0.1651, terbaik 0.1641 pada langkah 4500, tanpa perbaikan 1 kali
+Biaya evaluasi     : [evaluasi] langkah 4750: 227.2 detik, VRAM tercadang awal 3050 MiB, puncak 5260 MiB, puncak teralokasi 5113 MiB
+Baris galat di log : 0
+GPU                : 7470 MiB, 487 MiB, 98 %, 77, 89.40 W, 2460 MHz, 3105 MHz, 0x0000000000000000, Not Active, Not Active, Not Active, Not Active
+Daya               : sumber AC, baterai 79%; Power Scheme GUID: 381b4222-f694-41f0-9685-ff5bb260df2e  (Balanced)
+CPU dan disk       : rerata 5 detik: utilitas CPU % 9.1, kinerja CPU % 163.5, waktu CPU % 4.2, disk sibuk % 1.3, disk MB/s 0.0
+Proses CPU         : python total 2.3% (10 proses); teratas: python 2.3%, svchost 0.5%, system 0.4%, nvdisplay.container 0.3%, taskmgr 0.3%
+Baterai            : AC True, mengisi False 0 mW, menguras False 0 mW, kapasitas 55740 mWh
+Peristiwa charger  : tidak ada sejak 10-07 05:33:57
+
+==== 2026-10-07 06:33:19 | berkala ====
+Proses training    : hidup, PID 9108, 26152
+Progres terakhir   : [progres] langkah 5250: 3.58 s/langkah, VRAM puncak training tercadang 6032 MiB, teralokasi 5730 MiB
+Laju 4 jendela     : 3.57, 3.57, 3.58, 3.58 s/langkah
+Evaluasi terakhir  : [evaluasi] langkah 5000: WER 0.1710, terbaik 0.1641 pada langkah 4500, tanpa perbaikan 2 kali
+Biaya evaluasi     : [evaluasi] langkah 5000: 227.9 detik, VRAM tercadang awal 3050 MiB, puncak 5262 MiB, puncak teralokasi 5186 MiB
+Baris galat di log : 0
+GPU                : 6750 MiB, 1207 MiB, 86 %, 73, 92.20 W, 2475 MHz, 3105 MHz, 0x0000000000000000, Not Active, Not Active, Not Active, Not Active
+Daya               : sumber AC, baterai 79%; Power Scheme GUID: 381b4222-f694-41f0-9685-ff5bb260df2e  (Balanced)
+CPU dan disk       : rerata 5 detik: utilitas CPU % 7.9, kinerja CPU % 154.9, waktu CPU % 4.2, disk sibuk % 1.3, disk MB/s 0.0
+Proses CPU         : python total 1.1% (10 proses); teratas: python 1.1%, taskmgr 0.5%, nvcontainer 0.4%, nvdisplay.container 0.2%, system 0.2%
+Baterai            : AC True, mengisi False 0 mW, menguras False 0 mW, kapasitas 55740 mWh
+Peristiwa charger  : tidak ada sejak 10-07 06:03:08
+
+==== 2026-10-07 07:03:30 | berkala ====
+Proses training    : hidup, PID 9108, 26152
+Progres terakhir   : [progres] langkah 5650: 3.58 s/langkah, VRAM puncak training tercadang 6032 MiB, teralokasi 5730 MiB
+Laju 4 jendela     : 3.57, 3.57, 3.58, 3.58 s/langkah
+Evaluasi terakhir  : [evaluasi] langkah 5500: WER 0.1637, terbaik 0.1637 pada langkah 5500, tanpa perbaikan 0 kali
+Biaya evaluasi     : [evaluasi] langkah 5500: 226.4 detik, VRAM tercadang awal 3050 MiB, puncak 5242 MiB, puncak teralokasi 5113 MiB
+Baris galat di log : 0
+GPU                : 7455 MiB, 502 MiB, 100 %, 81, 88.28 W, 2460 MHz, 3105 MHz, 0x0000000000000000, Not Active, Not Active, Not Active, Not Active
+Daya               : sumber AC, baterai 79%; Power Scheme GUID: 381b4222-f694-41f0-9685-ff5bb260df2e  (Balanced)
+CPU dan disk       : rerata 5 detik: utilitas CPU % 9.4, kinerja CPU % 154.2, waktu CPU % 5.1, disk sibuk % 1.1, disk MB/s 0.0
+Proses CPU         : python total 2.8% (10 proses); teratas: python 2.8%, taskmgr 0.3%, nvdisplay.container 0.2%, system 0.2%, svchost 0.1%
+Baterai            : AC True, mengisi False 0 mW, menguras False 0 mW, kapasitas 55740 mWh
+Peristiwa charger  : tidak ada sejak 10-07 06:33:19
+
+==== 2026-10-07 07:33:41 | berkala ====
+Proses training    : hidup, PID 9108, 26152
+Progres terakhir   : [progres] langkah 6025: 3.58 s/langkah, VRAM puncak training tercadang 6032 MiB, teralokasi 5730 MiB
+Laju 4 jendela     : 3.57, 3.58, 3.58, 3.58 s/langkah
+Evaluasi terakhir  : [evaluasi] langkah 6000: WER 0.1641, terbaik 0.1637 pada langkah 5500, tanpa perbaikan 2 kali
+Biaya evaluasi     : [evaluasi] langkah 6000: 227.1 detik, VRAM tercadang awal 3050 MiB, puncak 5262 MiB, puncak teralokasi 5113 MiB
+Baris galat di log : 0
+GPU                : 7453 MiB, 504 MiB, 100 %, 81, 88.37 W, 2475 MHz, 3105 MHz, 0x0000000000000000, Not Active, Not Active, Not Active, Not Active
+Daya               : sumber AC, baterai 79%; Power Scheme GUID: 381b4222-f694-41f0-9685-ff5bb260df2e  (Balanced)
+CPU dan disk       : rerata 5 detik: utilitas CPU % 8.2, kinerja CPU % 162.8, waktu CPU % 3.8, disk sibuk % 1.8, disk MB/s 0.1
+Proses CPU         : python total 3.6% (10 proses); teratas: python 3.6%, msmpeng 0.4%, nvdisplay.container 0.3%, taskmgr 0.2%, system 0.1%
+Baterai            : AC True, mengisi False 0 mW, menguras False 0 mW, kapasitas 55740 mWh
+Peristiwa charger  : tidak ada sejak 10-07 07:03:30
+
+==== 2026-10-07 08:03:52 | berkala ====
+Proses training    : hidup, PID 9108, 26152
+Progres terakhir   : [progres] langkah 6475: 3.58 s/langkah, VRAM puncak training tercadang 6032 MiB, teralokasi 5730 MiB
+Laju 4 jendela     : 3.58, 3.58, 3.59, 3.58 s/langkah
+Evaluasi terakhir  : [evaluasi] langkah 6250: WER 0.1628, terbaik 0.1628 pada langkah 6250, tanpa perbaikan 0 kali
+Biaya evaluasi     : [evaluasi] langkah 6250: 227.4 detik, VRAM tercadang awal 3050 MiB, puncak 5262 MiB, puncak teralokasi 5113 MiB
+Baris galat di log : 0
+GPU                : 7463 MiB, 494 MiB, 98 %, 77, 90.47 W, 2460 MHz, 3105 MHz, 0x0000000000000000, Not Active, Not Active, Not Active, Not Active
+Daya               : sumber AC, baterai 79%; Power Scheme GUID: 381b4222-f694-41f0-9685-ff5bb260df2e  (Balanced)
+CPU dan disk       : rerata 5 detik: utilitas CPU % 9.2, kinerja CPU % 164.9, waktu CPU % 5.5, disk sibuk % 1.2, disk MB/s 0.1
+Proses CPU         : python total 2.5% (10 proses); teratas: python 2.5%, taskmgr 0.3%, system 0.2%, nvdisplay.container 0.1%, msedge 0.0%
+Baterai            : AC True, mengisi False 0 mW, menguras False 0 mW, kapasitas 55740 mWh
+Peristiwa charger  : tidak ada sejak 10-07 07:33:41
+
+==== 2026-10-07 08:34:03 | berkala ====
+Proses training    : hidup, PID 9108, 26152
+Progres terakhir   : [progres] langkah 6850: 3.58 s/langkah, VRAM puncak training tercadang 6032 MiB, teralokasi 5730 MiB
+Laju 4 jendela     : 3.57, 3.56, 3.57, 3.58 s/langkah
+Evaluasi terakhir  : [evaluasi] langkah 6750: WER 0.1613, terbaik 0.1613 pada langkah 6750, tanpa perbaikan 0 kali
+Biaya evaluasi     : [evaluasi] langkah 6750: 226.3 detik, VRAM tercadang awal 3050 MiB, puncak 5262 MiB, puncak teralokasi 5113 MiB
+Baris galat di log : 0
+GPU                : 7453 MiB, 504 MiB, 100 %, 79, 87.08 W, 2460 MHz, 3105 MHz, 0x0000000000000000, Not Active, Not Active, Not Active, Not Active
+Daya               : sumber AC, baterai 79%; Power Scheme GUID: 381b4222-f694-41f0-9685-ff5bb260df2e  (Balanced)
+CPU dan disk       : rerata 5 detik: utilitas CPU % 7.9, kinerja CPU % 161.1, waktu CPU % 5.6, disk sibuk % 0.8, disk MB/s 0.1
+Proses CPU         : python total 3.5% (10 proses); teratas: python 3.5%, taskmgr 0.3%, nvdisplay.container 0.3%, system 0.3%, svchost 0.2%
+Baterai            : AC True, mengisi False 0 mW, menguras False 0 mW, kapasitas 55740 mWh
+Peristiwa charger  : tidak ada sejak 10-07 08:03:52
+
+==== 2026-10-07 09:03:14 | berkala ====
+Proses training    : hidup, PID 9108, 26152
+Progres terakhir   : [progres] langkah 7250: 3.58 s/langkah, VRAM puncak training tercadang 6032 MiB, teralokasi 5730 MiB
+Laju 4 jendela     : 3.57, 3.59, 3.58, 3.58 s/langkah
+Evaluasi terakhir  : [evaluasi] langkah 7000: WER 0.1624, terbaik 0.1613 pada langkah 6750, tanpa perbaikan 1 kali
+Biaya evaluasi     : [evaluasi] langkah 7000: 226.7 detik, VRAM tercadang awal 3050 MiB, puncak 5262 MiB, puncak teralokasi 5113 MiB
+Baris galat di log : 0
+GPU                : 6755 MiB, 1202 MiB, 99 %, 83, 100.68 W, 2070 MHz, 3105 MHz, 0x0000000000000020, Not Active, Not Active, Not Active, Active
+Daya               : sumber AC, baterai 79%; Power Scheme GUID: 381b4222-f694-41f0-9685-ff5bb260df2e  (Balanced)
+CPU dan disk       : rerata 5 detik: utilitas CPU % 9.6, kinerja CPU % 146.3, waktu CPU % 5.4, disk sibuk % 0.8, disk MB/s 0.1
+Proses CPU         : python total 0.7% (10 proses); teratas: python 0.7%, taskmgr 0.4%, nvdisplay.container 0.3%, system 0.2%, nvidia overlay 0.1%
+Baterai            : AC True, mengisi False 0 mW, menguras False 0 mW, kapasitas 55740 mWh
+Peristiwa charger  : tidak ada sejak 10-07 08:34:03
+
+==== 2026-10-07 09:33:25 | berkala ====
+Proses training    : hidup, PID 9108, 26152
+Progres terakhir   : [progres] langkah 7650: 3.58 s/langkah, VRAM puncak training tercadang 6032 MiB, teralokasi 5730 MiB
+Laju 4 jendela     : 3.58, 3.59, 3.58, 3.58 s/langkah
+Evaluasi terakhir  : [evaluasi] langkah 7500: WER 0.1635, terbaik 0.1613 pada langkah 6750, tanpa perbaikan 3 kali
+Biaya evaluasi     : [evaluasi] langkah 7500: 227.5 detik, VRAM tercadang awal 3050 MiB, puncak 5262 MiB, puncak teralokasi 5113 MiB
+Baris galat di log : 0
+GPU                : 7475 MiB, 482 MiB, 98 %, 77, 86.95 W, 2475 MHz, 3105 MHz, 0x0000000000000000, Not Active, Not Active, Not Active, Not Active
+Daya               : sumber AC, baterai 79%; Power Scheme GUID: 381b4222-f694-41f0-9685-ff5bb260df2e  (Balanced)
+CPU dan disk       : rerata 5 detik: utilitas CPU % 8.6, kinerja CPU % 169.2, waktu CPU % 4.5, disk sibuk % 0.6, disk MB/s 0.1
+Proses CPU         : python total 3.3% (10 proses); teratas: python 3.3%, system 0.3%, nvdisplay.container 0.2%, taskmgr 0.2%, svchost 0.1%
+Baterai            : AC True, mengisi False 0 mW, menguras False 0 mW, kapasitas 55740 mWh
+Peristiwa charger  : tidak ada sejak 10-07 09:03:14
+
+==== 2026-10-07 09:42:33 | akhir: proses training sudah keluar ====
+Proses training    : tidak ada
+Progres terakhir   : [progres] langkah 7750: 3.58 s/langkah, VRAM puncak training tercadang 6032 MiB, teralokasi 5730 MiB
+Laju 4 jendela     : 3.58, 3.57, 3.58, 3.58 s/langkah
+Evaluasi terakhir  : [evaluasi] langkah 7750: WER 0.1631, terbaik 0.1613 pada langkah 6750, tanpa perbaikan 4 kali
+Biaya evaluasi     : [evaluasi] langkah 7750: 225.7 detik, VRAM tercadang awal 3050 MiB, puncak 5242 MiB, puncak teralokasi 5113 MiB
+Baris galat di log : 0
+GPU                : 1367 MiB, 6590 MiB, 0 %, 48, 2.26 W, 210 MHz, 3105 MHz, 0x0000000000000001, Not Active, Not Active, Not Active, Not Active
+Daya               : sumber AC, baterai 79%; Power Scheme GUID: 381b4222-f694-41f0-9685-ff5bb260df2e  (Balanced)
+CPU dan disk       : rerata 5 detik: utilitas CPU % 5.3, kinerja CPU % 92.0, waktu CPU % 7.0, disk sibuk % 2.8, disk MB/s 4.0
+Proses CPU         : python total 0.2% (2 proses); teratas: msmpeng 3.8%, svchost 0.8%, system 0.3%, python 0.2%, taskmgr 0.1%
+Baterai            : AC True, mengisi False 0 mW, menguras False 0 mW, kapasitas 55740 mWh
+Peristiwa charger  : tidak ada sejak 10-07 09:33:24
+Laporan run        : global_step 7750, stopped_early True, WER terbaik 0.161316872427984 pada langkah 6750, seconds_per_step 3.577, puncak tercadang 6032 MiB, teralokasi 5730 MiB
+Baris akhir log    :
+    train_peak_reserved_mib     : 6032
+    train_peak_allocated_mib    : 5730
+    evaluation_seconds_total    : 7045.7
+    model_dir                   : D:\_01_Bachelor_Information_System\_00-SKRIPSI\_01_python-scripts\outputs\models\whisper_d4
+    Peringatan determinisme: 1
+    Laporan ditulis ke : D:\_01_Bachelor_Information_System\_00-SKRIPSI\_01_python-scripts\outputs\runs\whisper_d4\run_report.json
+    Durasi eksekusi    : 34823.7 detik
+    ==============================================================================
+

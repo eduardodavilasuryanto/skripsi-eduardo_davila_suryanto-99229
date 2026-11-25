@@ -1,0 +1,89 @@
+{
+  "generated_at": "2026-10-03T15:20:37+07:00",
+  "script": "build_nested_subsets.py",
+  "subset_seed": 42,
+  "level_target_hours": {
+    "d1": 1,
+    "d2": 3,
+    "d3": 10,
+    "d4": 30
+  },
+  "full_pool_level": "d5",
+  "stopping_rule": "awalan terpendek permutasi yang total durasinya mencapai target",
+  "input_sha256": {
+    "train_pool.tsv": "b1e588e892e21fd8a39459c5e7d94e091e558c7e63b7e6a63b37df1de92c429d",
+    "test.tsv": "38b1bf70f1e12e2b5a6097d647ab0e3324446a485d1e8b7ec2ba260028aed347",
+    "validation.tsv": "2546078e2705596de15c6d37bf9ef13fb3c51b50eac05db94ad8a88dd9dbb1e9"
+  },
+  "pool": {
+    "n_utterances": 41293,
+    "hours": 66.134
+  },
+  "levels": {
+    "d1": {
+      "target_hours": 1,
+      "n_utterances": 610,
+      "hours": 1.0,
+      "overshoot_seconds": 0.403,
+      "mean_duration_seconds": 5.902,
+      "n_speakers": 376,
+      "n_unique_transcripts": 609,
+      "test_speakers_in_level_pct": 63.94
+    },
+    "d2": {
+      "target_hours": 3,
+      "n_utterances": 1862,
+      "hours": 3.0,
+      "overshoot_seconds": 0.365,
+      "mean_duration_seconds": 5.8,
+      "n_speakers": 594,
+      "n_unique_transcripts": 1846,
+      "test_speakers_in_level_pct": 89.84
+    },
+    "d3": {
+      "target_hours": 10,
+      "n_utterances": 6234,
+      "hours": 10.001,
+      "overshoot_seconds": 3.702,
+      "mean_duration_seconds": 5.775,
+      "n_speakers": 773,
+      "n_unique_transcripts": 6026,
+      "test_speakers_in_level_pct": 98.03
+    },
+    "d4": {
+      "target_hours": 30,
+      "n_utterances": 18796,
+      "hours": 30.001,
+      "overshoot_seconds": 1.976,
+      "mean_duration_seconds": 5.746,
+      "n_speakers": 864,
+      "n_unique_transcripts": 17093,
+      "test_speakers_in_level_pct": 99.65
+    },
+    "d5": {
+      "target_hours": null,
+      "n_utterances": 41293,
+      "hours": 66.134,
+      "overshoot_seconds": null,
+      "mean_duration_seconds": 5.766,
+      "n_speakers": 917,
+      "n_unique_transcripts": 33813,
+      "test_speakers_in_level_pct": 99.9
+    }
+  },
+  "checks": {
+    "pool_ids_unique": true,
+    "levels_nested": true,
+    "targets_met_at_first_crossing": true,
+    "full_level_equals_pool": true,
+    "pool_utterances_with_held_out_transcript": 0
+  },
+  "output_sha256": {
+    "d1.tsv": "ab01eab11a258208f4811b3678424dcdf80e31b164820018929e6784f27cc6d6",
+    "d2.tsv": "9bb21d52923062c7e2757c056be4a79282054046c42132fc8cd063cac6df3c55",
+    "d3.tsv": "48620ffc4b53fbf43c61cff01019ce8afc2ec322b522c6b4f9ddbd3873765a7b",
+    "d4.tsv": "d12f5ca438da7abeaddd194cc8a8ad625693521de3ed73b67fd41ee3ecdcbaaa",
+    "d5.tsv": "b1e588e892e21fd8a39459c5e7d94e091e558c7e63b7e6a63b37df1de92c429d"
+  },
+  "elapsed_seconds": 0.58
+}

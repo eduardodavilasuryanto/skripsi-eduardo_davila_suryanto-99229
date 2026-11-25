@@ -1,0 +1,22 @@
+==============================================================================
+Mekanisme partisi arsip dan perbandingan subset kerja (Revisi 01 poin 11)
+Waktu mulai        : 2026-11-15T18:34:15+07:00
+Random seed        : tidak dipakai, perhitungan deterministik
+==============================================================================
+asr_javanese_0: 11654 FLAC, 0 berawalan selain '0'
+asr_javanese_1: 11494 FLAC, 0 berawalan selain '1'
+asr_javanese_2: 11587 FLAC, 0 berawalan selain '2'
+asr_javanese_3: 11574 FLAC, 0 berawalan selain '3'
+Metadata berawalan 0-3: 46309; FLAC pada keempat arsip: 46309
+Karakter pertama : khi2 17.81 (p 0.273), porsi 6.13% sampai 6.37%
+Karakter kedua   : khi2 7.75 (p 0.933)
+Penutur: 922 dari 1019 muncul pada subset; 99.79% penutur ber-2+ utterance tersebar ke lebih dari satu arsip
+------------------------------------------------------------------------------
+Panjang transkrip (karakter)       rerata subset   46.850  penuh   46.633  selisih  +0.46%  KS 0.0083 (p 0.0165)
+Panjang transkrip (kata)           rerata subset    6.972  penuh    6.946  selisih  +0.37%  KS 0.0065 (p 0.105)
+Utterance per penutur (corpus)     rerata subset  348.161  penuh  347.594  selisih  +0.16%  KS 0.0042 (p 0.581)
+Pembacaan kalimat pada corpus penuh rerata subset    2.745  penuh    2.738  selisih  +0.28%  KS 0.0043 (p 0.536)
+==============================================================================
+Laporan ditulis ke : D:\_01_Bachelor_Information_System\_00-SKRIPSI\_01_python-scripts\outputs\compare_subset_corpus_report.json
+Durasi eksekusi    : 0.9 detik
+==============================================================================

@@ -1,0 +1,33 @@
+==============================================================================
+Analisis proses pelaksanaan kesepuluh run grid
+Waktu mulai        : 2026-11-25T18:27:26+07:00
+Random seed        : tidak dipakai, perhitungan deterministik
+Ambang lambat      : 1.25 x laju acuan model (kepekaan 1.5 x); evaluasi 1.5 x median model
+==============================================================================
+Run dibaca         : 10; selang terukur dan lama evaluasi cocok dengan laporan run
+------------------------------------------------------------------------------
+run                 jam eval% s/lgk   CV% lambat  +jam clip% T med/max  W med thr    RTF
+whisper_d1_trial   2.52  20.8  3.58   0.3      0  0.00   0.0     78/82   88.2   1 0.0088
+whisper_d2         2.50  19.9  3.58   0.6      0  0.00   3.3     74/79   87.2   0 0.0093
+whisper_d3         3.73  19.9  3.58   0.2      0  0.00  37.0     72/83   85.9   1 0.0077
+whisper_d4         9.67  20.2  3.58   0.2      0  0.00  35.9     78/83   88.5   1 0.0095
+whisper_d5         4.36  20.0  3.57   0.2      0  0.00 100.0     77/86   87.9   2 0.0095
+xlsr_d1_trial      9.96   7.1  2.88  28.9     74  1.21   0.0     70/72   72.3   0 0.0071
+xlsr_d2            4.30   7.2  2.86   2.6      0  0.00   2.8     65/67   70.2   0 0.0062
+xlsr_d3           13.06   7.5  4.72  18.0    313  4.02   2.1     64/66   51.2   0 0.0064
+xlsr_d4            9.14   7.2  2.89  18.0     34  0.46   2.6     66/68   70.1   0 0.0064
+xlsr_d5            4.96   7.2  2.87   1.8      0  0.00   7.1     63/69   70.1   0 0.0045
+------------------------------------------------------------------------------
+whisper : acuan 3.58 s/lgk, ambang 4.47; jendela lambat 0 dari 730 (0 di antara kedua ambang); waktu tambahan 0.00 jam; evaluasi lambat 0 dari 73 (0 di dalam periode lambat)
+          proses 22.79 jam, evaluasi 4.59 jam, inference 13.5 menit; suhu 70.0-86.0 C, daya 81.79-106.6 W, potret terbatas 5 dari 42
+xlsr    : acuan 2.89 s/lgk, ambang 3.61; jendela lambat 421 dari 1630 (11 di antara kedua ambang); waktu tambahan 5.68 jam; evaluasi lambat 40 dari 163 (40 di dalam periode lambat)
+          proses 41.42 jam, evaluasi 3.01 jam, inference 9.2 menit; suhu 56.0-72.0 C, daya 42.7-77.22 W, potret terbatas 0 dari 74
+Grid               : 64.21 jam proses training, 22.7 menit inference, rentang kalender 77.3 jam
+Run pengembangan   : 11 run, 0.87 jam
+Lingkungan         : 1 tanda tangan, 1 keadaan numerik; beda konfigurasi dalam model {'whisper': [], 'xlsr': []}
+Loss               : 0 nilai tak hingga atau NaN, 0 lonjakan sesudah warmup; loss tertinggi sesudah warmup 1.12 x loss akhir warmup
+Energi GPU (kasar) : 4.62 kWh
+==============================================================================
+Laporan ditulis ke : D:\_01_Bachelor_Information_System\_00-SKRIPSI\_01_python-scripts\outputs\results\training_process_report.json
+Durasi eksekusi    : 1.4 detik
+==============================================================================

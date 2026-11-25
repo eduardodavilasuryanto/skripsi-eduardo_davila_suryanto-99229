@@ -1,0 +1,19 @@
+==============================================================================
+Perbandingan bentuk fungsi: AICc, BIC, dependensi, prediksi tertahan (Revisi 01 poin 20)
+Waktu mulai        : 2026-11-15T18:47:50+07:00
+Random seed        : 42
+==============================================================================
+shared_e0       K=6  AIC  -73.566 (+0.000)  AICc  -45.566 (+0.000)  BIC  -71.750 (+0.000)
+separate_e0     K=7  AIC  -71.571 (+1.994)  AICc  -15.571 (+29.994)  BIC  -69.453 (+2.297)
+pure_power_law  K=5  AIC  -73.677 (-0.111)  AICc  -58.677 (-13.111)  BIC  -72.164 (-0.414)
+Korelasi bootstrap antartingkat dalam satu model: 0.40 sampai 0.77; antarmodel pada tingkat sama: 0.35 sampai 0.63
+shared_e0       LOO RMSE 4.41 poin, maks 11.67, titik dalam 2.42; D5 ditahan: whisper_d5 -2.10, xlsr_d5 -4.38
+separate_e0     LOO RMSE 9.74 poin, maks 29.34, titik dalam 2.97; D5 ditahan: whisper_d5 -2.10, xlsr_d5 -4.38
+pure_power_law  LOO RMSE 2.32 poin, maks 4.38, titik dalam 2.05; D5 ditahan: whisper_d5 -2.10, xlsr_d5 -4.38
+------------------------------------------------------------------------------
+tanpa_xlsr_d5              E0 0.0000 [0.0000, 0.0218]  c_w 0.2550  c_x 0.2909  selisih -0.0359 [-0.0458, -0.0241]  bootstrap 10000
+tanpa_xlsr_batas_langkah   E0 0.0719 [0.0517, 0.0887]  c_w 0.3584  c_x 0.3129  selisih +0.0455 [+0.0280, +0.0640]  bootstrap 10000
+==============================================================================
+Laporan ditulis ke : D:\_01_Bachelor_Information_System\_00-SKRIPSI\_01_python-scripts\outputs\results\curve_model_comparison_report.json
+Durasi eksekusi    : 34.4 detik
+==============================================================================

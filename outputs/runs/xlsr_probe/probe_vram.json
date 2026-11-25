@@ -1,0 +1,205 @@
+{
+  "generated_at": "2026-10-03T16:11:58+07:00",
+  "script": "train_asr.py",
+  "mode": "probe_vram",
+  "config_path": "configs\\trial\\xlsr_probe.yaml",
+  "config_sha256": "60886f0a28305ace68d063818c8f9dbde2e055c0850512f074b5860afca42770",
+  "config": {
+    "run_name": "xlsr_probe",
+    "model_family": "xlsr",
+    "pretrained": "facebook/wav2vec2-xls-r-300m",
+    "train_subset": "outputs/subsets/d1.tsv",
+    "validation_split": "outputs/splits/validation.tsv",
+    "seed": 42,
+    "precision": "bf16",
+    "tf32": false,
+    "deterministic": true,
+    "effective_batch_size": 32,
+    "per_device_train_batch_size": 1,
+    "per_device_eval_batch_size": 1,
+    "learning_rate": 0.0003,
+    "warmup_steps": 500,
+    "lr_scheduler_type": "linear",
+    "optim": "adamw_torch",
+    "max_steps": 6000,
+    "eval_steps": 250,
+    "early_stopping_patience": 4,
+    "early_stopping_min_steps": 2000,
+    "gradient_checkpointing": true,
+    "logging_steps": 25,
+    "dataloader_num_workers": 4,
+    "save_only_model": true,
+    "keep_checkpoints": false,
+    "model_overrides": {
+      "attention_dropout": 0.0,
+      "hidden_dropout": 0.0,
+      "feat_proj_dropout": 0.0,
+      "mask_time_prob": 0.05,
+      "layerdrop": 0.0,
+      "ctc_loss_reduction": "mean",
+      "ctc_zero_infinity": true
+    }
+  },
+  "probe": {
+    "budget_mib": 6850,
+    "train": [
+      {
+        "batch": 1,
+        "peak_reserved_mib": 6288,
+        "fits": true
+      },
+      {
+        "batch": 2,
+        "peak_reserved_mib": 6160,
+        "fits": true
+      },
+      {
+        "batch": 4,
+        "peak_reserved_mib": 6840,
+        "fits": true
+      },
+      {
+        "batch": 8,
+        "peak_reserved_mib": 9700,
+        "fits": false
+      }
+    ],
+    "eval": [
+      {
+        "batch": 8,
+        "peak_reserved_mib": 9698,
+        "fits": false
+      }
+    ],
+    "largest_fitting_train_batch": 4,
+    "largest_fitting_eval_batch": null,
+    "longest_utterance_seconds": 28.3
+  },
+  "numerics_state_at_end": {
+    "cuda_matmul_allow_tf32": false,
+    "cudnn_allow_tf32": false,
+    "cudnn_deterministic": true,
+    "cudnn_benchmark": false,
+    "use_deterministic_algorithms": true,
+    "deterministic_warn_only": true,
+    "cublas_workspace_config": ":4096:8"
+  },
+  "determinism_warnings": [
+    "UserWarning: ctc_loss_backward_gpu does not have a deterministic implementation, but you set 'torch.use_deterministic_algorithms(True, warn_only=True)'. You can file an issue at https://github.com/pytorch/pytorch/issues to help us prioritize adding deterministic support for this operation. (Triggered internally at C:\\actions-runner\\_work\\pytorch\\pytorch\\aten\\src\\ATen\\Context.cpp:190.)",
+    "UserWarning: Memory Efficient attention defaults to a non-deterministic algorithm. To explicitly enable determinism call torch.use_deterministic_algorithms(True, warn_only=False). (Triggered internally at C:\\actions-runner\\_work\\pytorch\\pytorch\\aten\\src\\ATen\\native\\transformers\\cuda\\attention_backward.cu:912.)"
+  ],
+  "environment": {
+    "skrip": "log_environment.py",
+    "lapis_1_perangkat_keras": {
+      "gpu": {
+        "jumlah_gpu_terdeteksi_torch": 1,
+        "nama": "NVIDIA GeForce RTX 4060 Laptop GPU",
+        "vram_total_mib": 8188,
+        "compute_capability": "sm_89",
+        "jumlah_streaming_multiprocessor": 24
+      },
+      "cpu": {
+        "nama": "13th Gen Intel(R) Core(TM) i7-13700HX",
+        "penanda_keluarga": "Intel64 Family 6 Model 191 Stepping 2, GenuineIntel",
+        "core_fisik": 16,
+        "core_logis": 24
+      },
+      "ram_sistem": {
+        "total_gib": 31.81,
+        "tersedia_saat_pencatatan_gib": 16.68
+      },
+      "penyimpanan": {
+        "PhysicalDisks": [
+          {
+            "FriendlyName": "SAMSUNG MZVL21T0HCLR-00BL2",
+            "MediaType": "SSD",
+            "SizeGB": 953.9
+          }
+        ],
+        "Volumes": [
+          {
+            "DriveLetter": "D",
+            "FileSystemType": "NTFS",
+            "SizeGB": 476.2
+          },
+          {
+            "DriveLetter": "C",
+            "FileSystemType": "NTFS",
+            "SizeGB": 475.8
+          }
+        ]
+      },
+      "sistem_operasi": {
+        "platform": "Windows-11-10.0.26300-SP0",
+        "sistem": "Windows",
+        "rilis": "11",
+        "versi": "10.0.26300",
+        "arsitektur": "AMD64",
+        "nama_host": "Eduardo"
+      }
+    },
+    "lapis_2_perangkat_lunak_terikat_perangkat_keras": {
+      "python": {
+        "versi": "3.12.10",
+        "implementasi": "CPython",
+        "executable": "D:\\_01_Bachelor_Information_System\\_00-SKRIPSI\\skripsi-venv\\Scripts\\python.exe"
+      },
+      "driver_nvidia": {
+        "versi": "610.88",
+        "sumber": "nvidia-smi"
+      },
+      "cuda": {
+        "tersedia": true,
+        "runtime_versi_torch": "13.0",
+        "cudnn_versi_mentah": 92400,
+        "cudnn_versi": "9.24.0"
+      },
+      "pytorch": {
+        "versi": "2.14.0+cu130",
+        "build_cuda": "13.0",
+        "versi_lengkap": "2.14.0+cu130"
+      },
+      "presisi": {
+        "dtype_bawaan": "torch.float32",
+        "float32_matmul_precision": "highest",
+        "bf16_didukung": true
+      },
+      "tf32": {
+        "cuda_matmul_allow_tf32": false,
+        "cudnn_allow_tf32": false,
+        "catatan": "Kedua kanal dilaporkan terpisah karena nilai bawaannya berbeda. Melaporkannya sebagai satu status tunggal adalah penyederhanaan yang keliru."
+      },
+      "determinisme": {
+        "cudnn_deterministic": true,
+        "cudnn_benchmark": false,
+        "use_deterministic_algorithms": true
+      },
+      "pustaka": {
+        "torch": "2.14.0+cu130",
+        "transformers": "5.17.0",
+        "datasets": "5.0.1",
+        "accelerate": "1.15.0",
+        "tokenizers": "0.23.2",
+        "safetensors": "0.8.0",
+        "soundfile": "0.14.0",
+        "jiwer": "4.0.0",
+        "bitsandbytes": "0.50.2",
+        "numpy": "2.5.3",
+        "pandas": "3.0.5",
+        "scipy": "1.18.1",
+        "scikit-learn": "1.9.0",
+        "statsmodels": "0.15.0",
+        "matplotlib": "3.11.1"
+      }
+    },
+    "lapis_3_jejak_eksekusi": {
+      "timestamp_utc": "2026-10-03T09:18:47+00:00",
+      "timestamp_lokal": "2026-10-03T16:18:47+07:00",
+      "random_seed": 42,
+      "vram_puncak_teralokasi_mib": 8628.7,
+      "vram_puncak_tercadang_mib": 9698.0,
+      "durasi_pengumpulan_detik": 408.627
+    }
+  },
+  "elapsed_seconds": 408.6
+}

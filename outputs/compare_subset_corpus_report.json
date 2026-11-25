@@ -1,0 +1,255 @@
+{
+  "generated_at": "2026-11-15T18:34:15+07:00",
+  "script": "compare_subset_corpus.py",
+  "n_metadata_rows": 185076,
+  "n_subset_rows": 46309,
+  "subset_share_pct": 25.0216127428732,
+  "archive_membership": {
+    "asr_javanese_0": {
+      "n_flac": 11654,
+      "first_char_expected": "0",
+      "n_mismatched": 0
+    },
+    "asr_javanese_1": {
+      "n_flac": 11494,
+      "first_char_expected": "1",
+      "n_mismatched": 0
+    },
+    "asr_javanese_2": {
+      "n_flac": 11587,
+      "first_char_expected": "2",
+      "n_mismatched": 0
+    },
+    "asr_javanese_3": {
+      "n_flac": 11574,
+      "first_char_expected": "3",
+      "n_mismatched": 0
+    }
+  },
+  "n_flac_working_archives": 46309,
+  "id_first_char_uniformity": {
+    "counts": {
+      "0": 11654,
+      "1": 11494,
+      "2": 11587,
+      "3": 11574,
+      "4": 11498,
+      "5": 11531,
+      "6": 11782,
+      "7": 11750,
+      "8": 11629,
+      "9": 11344,
+      "a": 11537,
+      "b": 11591,
+      "c": 11456,
+      "d": 11707,
+      "e": 11498,
+      "f": 11444
+    },
+    "chi2": 17.806911755170844,
+    "df": 15,
+    "p_value": 0.2729528424148763,
+    "max_share_pct": 6.366033413300482,
+    "min_share_pct": 6.129373878838964
+  },
+  "id_second_char_uniformity": {
+    "counts": {
+      "0": 11544,
+      "1": 11457,
+      "2": 11533,
+      "3": 11659,
+      "4": 11605,
+      "5": 11515,
+      "6": 11599,
+      "7": 11517,
+      "8": 11512,
+      "9": 11674,
+      "a": 11701,
+      "b": 11455,
+      "c": 11658,
+      "d": 11605,
+      "e": 11501,
+      "f": 11541
+    },
+    "chi2": 7.750416045300308,
+    "df": 15,
+    "p_value": 0.9333984632157525,
+    "max_share_pct": 6.322267608982256,
+    "min_share_pct": 6.189349240312088
+  },
+  "speakers": {
+    "n_speakers_full": 1019,
+    "n_speakers_in_subset": 922,
+    "pct_speakers_in_subset": 90.48086359175663,
+    "n_speakers_with_two_or_more_utterances": 964,
+    "pct_of_those_spread_over_archives": 99.79253112033194
+  },
+  "comparisons": {
+    "transcript_characters": {
+      "subset_mean": 46.849942775702345,
+      "full_mean": 46.633156108841774,
+      "rest_mean": 46.56081056735391,
+      "subset_median": 44.0,
+      "full_median": 44.0,
+      "relative_mean_difference_pct": 0.46487667777533886,
+      "ks_statistic_subset_vs_rest": 0.008305196986985508,
+      "ks_p_value": 0.016532577420008434,
+      "n_subset": 46309,
+      "n_rest": 138767
+    },
+    "transcript_words": {
+      "subset_mean": 6.9723379904554195,
+      "full_mean": 6.946422010417342,
+      "rest_mean": 6.937773389927,
+      "subset_median": 7.0,
+      "full_median": 7.0,
+      "relative_mean_difference_pct": 0.373083869641267,
+      "ks_statistic_subset_vs_rest": 0.006506845374785852,
+      "ks_p_value": 0.10523730942149834,
+      "n_subset": 46309,
+      "n_rest": 138767
+    },
+    "speaker_total_utterances": {
+      "subset_mean": 348.16081107344144,
+      "full_mean": 347.5935939830124,
+      "rest_mean": 347.4043036168542,
+      "subset_median": 354.0,
+      "full_median": 354.0,
+      "relative_mean_difference_pct": 0.16318398849915533,
+      "ks_statistic_subset_vs_rest": 0.0041695648440011335,
+      "ks_p_value": 0.5805760989647845,
+      "n_subset": 46309,
+      "n_rest": 138767
+    },
+    "sentence_readings_in_full_corpus": {
+      "subset_mean": 2.745211513960569,
+      "full_mean": 2.7375132378050098,
+      "rest_mean": 2.7349441870185274,
+      "subset_median": 2.0,
+      "full_median": 2.0,
+      "relative_mean_difference_pct": 0.28121420745098996,
+      "ks_statistic_subset_vs_rest": 0.004314430651061518,
+      "ks_p_value": 0.5362933591893309,
+      "n_subset": 46309,
+      "n_rest": 138767
+    }
+  },
+  "notes": "durasi tidak dibandingkan karena audio corpus penuh tidak ada di disk; KS dibandingkan antara subset kerja dan dua belas arsip lainnya",
+  "input_sha256": {
+    "utt_spk_text.tsv": "412efacff888be979daa5fc4ea3d816d3daa0af381c005ea97fcf31ac6d8b39a"
+  },
+  "environment": {
+    "skrip": "log_environment.py",
+    "lapis_1_perangkat_keras": {
+      "gpu": {
+        "jumlah_gpu_terdeteksi_torch": 1,
+        "nama": "NVIDIA GeForce RTX 4060 Laptop GPU",
+        "vram_total_mib": 8188,
+        "compute_capability": "sm_89",
+        "jumlah_streaming_multiprocessor": 24
+      },
+      "cpu": {
+        "nama": "13th Gen Intel(R) Core(TM) i7-13700HX",
+        "penanda_keluarga": "Intel64 Family 6 Model 191 Stepping 2, GenuineIntel",
+        "core_fisik": 16,
+        "core_logis": 24
+      },
+      "ram_sistem": {
+        "total_gib": 31.81,
+        "tersedia_saat_pencatatan_gib": 20.82
+      },
+      "penyimpanan": {
+        "PhysicalDisks": [
+          {
+            "FriendlyName": "SAMSUNG MZVL21T0HCLR-00BL2",
+            "MediaType": "SSD",
+            "SizeGB": 953.9
+          }
+        ],
+        "Volumes": [
+          {
+            "DriveLetter": "D",
+            "FileSystemType": "NTFS",
+            "SizeGB": 476.2
+          },
+          {
+            "DriveLetter": "C",
+            "FileSystemType": "NTFS",
+            "SizeGB": 475.8
+          }
+        ]
+      },
+      "sistem_operasi": {
+        "platform": "Windows-11-10.0.26300-SP0",
+        "sistem": "Windows",
+        "rilis": "11",
+        "versi": "10.0.26300",
+        "arsitektur": "AMD64",
+        "nama_host": "Eduardo"
+      }
+    },
+    "lapis_2_perangkat_lunak_terikat_perangkat_keras": {
+      "python": {
+        "versi": "3.12.10",
+        "implementasi": "CPython",
+        "executable": "D:\\_01_Bachelor_Information_System\\_00-SKRIPSI\\skripsi-venv\\Scripts\\python.exe"
+      },
+      "driver_nvidia": {
+        "versi": "610.88",
+        "sumber": "nvidia-smi"
+      },
+      "cuda": {
+        "tersedia": true,
+        "runtime_versi_torch": "13.0",
+        "cudnn_versi_mentah": 92400,
+        "cudnn_versi": "9.24.0"
+      },
+      "pytorch": {
+        "versi": "2.14.0+cu130",
+        "build_cuda": "13.0",
+        "versi_lengkap": "2.14.0+cu130"
+      },
+      "presisi": {
+        "dtype_bawaan": "torch.float32",
+        "float32_matmul_precision": "highest",
+        "bf16_didukung": true
+      },
+      "tf32": {
+        "cuda_matmul_allow_tf32": false,
+        "cudnn_allow_tf32": true,
+        "catatan": "Kedua kanal dilaporkan terpisah karena nilai bawaannya berbeda. Melaporkannya sebagai satu status tunggal adalah penyederhanaan yang keliru."
+      },
+      "determinisme": {
+        "cudnn_deterministic": false,
+        "cudnn_benchmark": false,
+        "use_deterministic_algorithms": false
+      },
+      "pustaka": {
+        "torch": "2.14.0+cu130",
+        "transformers": "5.17.0",
+        "datasets": "5.0.1",
+        "accelerate": "1.15.0",
+        "tokenizers": "0.23.2",
+        "safetensors": "0.8.0",
+        "soundfile": "0.14.0",
+        "jiwer": "4.0.0",
+        "bitsandbytes": "0.50.2",
+        "numpy": "2.5.3",
+        "pandas": "3.0.5",
+        "scipy": "1.18.1",
+        "scikit-learn": "1.9.0",
+        "statsmodels": "0.15.0",
+        "matplotlib": "3.11.1"
+      }
+    },
+    "lapis_3_jejak_eksekusi": {
+      "timestamp_utc": "2026-11-15T11:34:18+00:00",
+      "timestamp_lokal": "2026-11-15T18:34:18+07:00",
+      "random_seed": 42,
+      "vram_puncak_teralokasi_mib": 0.0,
+      "vram_puncak_tercadang_mib": 0.0,
+      "durasi_pengumpulan_detik": 2.746
+    }
+  },
+  "elapsed_seconds": 0.9
+}

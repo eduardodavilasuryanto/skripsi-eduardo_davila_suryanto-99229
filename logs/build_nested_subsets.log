@@ -1,0 +1,24 @@
+==============================================================================
+Pembentukan subset training bersarang D1 sampai D5
+Waktu mulai        : 2026-10-03T15:20:37+07:00
+Training pool      : D:\_01_Bachelor_Information_System\_00-SKRIPSI\_01_python-scripts\outputs\splits\train_pool.tsv
+Random seed        : 42
+Target             : d1 1 jam, d2 3 jam, d3 10 jam, d4 30 jam, d5 seluruh pool
+==============================================================================
+Isi training pool  : 41293 utterance, 66.134 jam
+SHA-256 pool       : b1e588e892e21fd8a39459c5e7d94e091e558c7e63b7e6a63b37df1de92c429d
+d1                 : 610 utterance, 1.0 jam (target 1 jam, lebih 0.403 detik), 376 penutur, utterance test berpenutur tercakup 63.94%
+d2                 : 1862 utterance, 3.0 jam (target 3 jam, lebih 0.365 detik), 594 penutur, utterance test berpenutur tercakup 89.84%
+d3                 : 6234 utterance, 10.001 jam (target 10 jam, lebih 3.702 detik), 773 penutur, utterance test berpenutur tercakup 98.03%
+d4                 : 18796 utterance, 30.001 jam (target 30 jam, lebih 1.976 detik), 864 penutur, utterance test berpenutur tercakup 99.65%
+d5                 : 41293 utterance, 66.134 jam (seluruh pool), 917 penutur, utterance test berpenutur tercakup 99.9%
+Periksa pool_ids_unique                          : True
+Periksa levels_nested                            : True
+Periksa targets_met_at_first_crossing            : True
+Periksa full_level_equals_pool                   : True
+Periksa pool_utterances_with_held_out_transcript : 0
+==============================================================================
+Subset ditulis     : D:\_01_Bachelor_Information_System\_00-SKRIPSI\_01_python-scripts\outputs\subsets
+Laporan ditulis ke : D:\_01_Bachelor_Information_System\_00-SKRIPSI\_01_python-scripts\outputs\build_nested_subsets_report.json
+Durasi eksekusi    : 0.58 detik
+==============================================================================

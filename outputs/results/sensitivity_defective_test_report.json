@@ -1,0 +1,1946 @@
+{
+  "generated_at": "2026-11-15T18:35:15+07:00",
+  "script": "sensitivity_defective_test.py",
+  "seed": 42,
+  "n_bootstrap": 10000,
+  "excluded_test_ids": [
+    "3d653a789b",
+    "174723df08"
+  ],
+  "per_utterance_errors": {
+    "3d653a789b": {
+      "whisper_d1_trial": {
+        "reference_words": 11,
+        "word_errors": 10,
+        "char_errors": 65,
+        "hypothesis_words": 4
+      },
+      "whisper_d2": {
+        "reference_words": 11,
+        "word_errors": 9,
+        "char_errors": 62,
+        "hypothesis_words": 4
+      },
+      "whisper_d3": {
+        "reference_words": 11,
+        "word_errors": 8,
+        "char_errors": 59,
+        "hypothesis_words": 3
+      },
+      "whisper_d4": {
+        "reference_words": 11,
+        "word_errors": 8,
+        "char_errors": 59,
+        "hypothesis_words": 3
+      },
+      "whisper_d5": {
+        "reference_words": 11,
+        "word_errors": 8,
+        "char_errors": 59,
+        "hypothesis_words": 3
+      },
+      "xlsr_d1_trial": {
+        "reference_words": 11,
+        "word_errors": 8,
+        "char_errors": 59,
+        "hypothesis_words": 3
+      },
+      "xlsr_d2": {
+        "reference_words": 11,
+        "word_errors": 8,
+        "char_errors": 59,
+        "hypothesis_words": 3
+      },
+      "xlsr_d3": {
+        "reference_words": 11,
+        "word_errors": 8,
+        "char_errors": 59,
+        "hypothesis_words": 3
+      },
+      "xlsr_d4": {
+        "reference_words": 11,
+        "word_errors": 8,
+        "char_errors": 59,
+        "hypothesis_words": 3
+      },
+      "xlsr_d5": {
+        "reference_words": 11,
+        "word_errors": 8,
+        "char_errors": 59,
+        "hypothesis_words": 3
+      }
+    },
+    "174723df08": {
+      "whisper_d1_trial": {
+        "reference_words": 5,
+        "word_errors": 13,
+        "char_errors": 90,
+        "hypothesis_words": 17
+      },
+      "whisper_d2": {
+        "reference_words": 5,
+        "word_errors": 14,
+        "char_errors": 87,
+        "hypothesis_words": 19
+      },
+      "whisper_d3": {
+        "reference_words": 5,
+        "word_errors": 2,
+        "char_errors": 3,
+        "hypothesis_words": 5
+      },
+      "whisper_d4": {
+        "reference_words": 5,
+        "word_errors": 0,
+        "char_errors": 0,
+        "hypothesis_words": 5
+      },
+      "whisper_d5": {
+        "reference_words": 5,
+        "word_errors": 0,
+        "char_errors": 0,
+        "hypothesis_words": 5
+      },
+      "xlsr_d1_trial": {
+        "reference_words": 5,
+        "word_errors": 12,
+        "char_errors": 44,
+        "hypothesis_words": 14
+      },
+      "xlsr_d2": {
+        "reference_words": 5,
+        "word_errors": 9,
+        "char_errors": 52,
+        "hypothesis_words": 12
+      },
+      "xlsr_d3": {
+        "reference_words": 5,
+        "word_errors": 6,
+        "char_errors": 40,
+        "hypothesis_words": 10
+      },
+      "xlsr_d4": {
+        "reference_words": 5,
+        "word_errors": 6,
+        "char_errors": 35,
+        "hypothesis_words": 10
+      },
+      "xlsr_d5": {
+        "reference_words": 5,
+        "word_errors": 1,
+        "char_errors": 11,
+        "hypothesis_words": 5
+      }
+    }
+  },
+  "matches_published_reports": true,
+  "training_defect": {
+    "id": "05e59eab6d",
+    "status": "tidak diukur; memerlukan pelatihan ulang D5, tidak dikerjakan (I.3 poin 20(a))"
+  },
+  "full": {
+    "n_utterances": 3100,
+    "configs": [
+      {
+        "model": "whisper",
+        "level": "d1",
+        "run_name": "whisper_d1_trial",
+        "hours": 1.0,
+        "n_utterances": 3100,
+        "n_reference_words": 21859,
+        "n_word_errors": 9013,
+        "wer": 0.4123244430211812,
+        "wer_ci": [
+          0.40168573897815874,
+          0.4234945182687461
+        ],
+        "wer_ci_half_width": 0.010904389645293694,
+        "cer": 0.09948408582191406,
+        "cer_ci": [
+          0.09403840807401953,
+          0.10620984386300644
+        ],
+        "cer_ci_half_width": 0.006085717894493456,
+        "hypotheses_sha256": "9c6a51f450b2e3d4cc347a6c0c4ce467d6d639c8124f5b7bcd444655d1c11ec4"
+      },
+      {
+        "model": "whisper",
+        "level": "d2",
+        "run_name": "whisper_d2",
+        "hours": 3.0,
+        "n_utterances": 3100,
+        "n_reference_words": 21859,
+        "n_word_errors": 6684,
+        "wer": 0.3057779404364335,
+        "wer_ci": [
+          0.29669955863709113,
+          0.31555202080815054
+        ],
+        "wer_ci_half_width": 0.009426231085529702,
+        "cer": 0.0718731233280559,
+        "cer_ci": [
+          0.06809558425028522,
+          0.0769126473924674
+        ],
+        "cer_ci_half_width": 0.004408531571091091,
+        "hypotheses_sha256": "ea8ff9b88852a2c4c96c3d7f26d5f0af021a57d84e0d0a2cc5b460b70d611fc5"
+      },
+      {
+        "model": "whisper",
+        "level": "d3",
+        "run_name": "whisper_d3",
+        "hours": 10.001,
+        "n_utterances": 3100,
+        "n_reference_words": 21859,
+        "n_word_errors": 4858,
+        "wer": 0.2222425545541882,
+        "wer_ci": [
+          0.21484539777505138,
+          0.22956573695443652
+        ],
+        "wer_ci_half_width": 0.007360169589692572,
+        "cer": 0.051127368018780366,
+        "cer_ci": [
+          0.04905245856513317,
+          0.053267643062795786
+        ],
+        "cer_ci_half_width": 0.002107592248831308,
+        "hypotheses_sha256": "118e05def5274b01517fe7ee6e0047faf525505d42533d3e868cc9dd08c33d0a"
+      },
+      {
+        "model": "whisper",
+        "level": "d4",
+        "run_name": "whisper_d4",
+        "hours": 30.001,
+        "n_utterances": 3100,
+        "n_reference_words": 21859,
+        "n_word_errors": 3591,
+        "wer": 0.1642801592021593,
+        "wer_ci": [
+          0.15795489921391404,
+          0.17060099177069196
+        ],
+        "wer_ci_half_width": 0.0063230462783889635,
+        "cer": 0.038024785718185294,
+        "cer_ci": [
+          0.03619791834595035,
+          0.03994032627841004
+        ],
+        "cer_ci_half_width": 0.001871203966229848,
+        "hypotheses_sha256": "f05b1bc509da70ae7c004a6f613fa86282f941fc69e386095ecfc2f0f9fa5c7b"
+      },
+      {
+        "model": "whisper",
+        "level": "d5",
+        "run_name": "whisper_d5",
+        "hours": 66.134,
+        "n_utterances": 3100,
+        "n_reference_words": 21859,
+        "n_word_errors": 3366,
+        "wer": 0.1539869161443799,
+        "wer_ci": [
+          0.14765433465083824,
+          0.16023167360376706
+        ],
+        "wer_ci_half_width": 0.006288669476464406,
+        "cer": 0.03551345744390457,
+        "cer_ci": [
+          0.03366887376895625,
+          0.03738554652286301
+        ],
+        "cer_ci_half_width": 0.0018583363769533803,
+        "hypotheses_sha256": "0bc978bf437745e40f9e039c6408c7cda194dcb109a7d0b44372ec265e6bf871"
+      },
+      {
+        "model": "xlsr",
+        "level": "d1",
+        "run_name": "xlsr_d1_trial",
+        "hours": 1.0,
+        "n_utterances": 3100,
+        "n_reference_words": 21859,
+        "n_word_errors": 10464,
+        "wer": 0.4787044238071275,
+        "wer_ci": [
+          0.47003862537135244,
+          0.48706663784545756
+        ],
+        "wer_ci_half_width": 0.008514006237052563,
+        "cer": 0.11107168204400283,
+        "cer_ci": [
+          0.10823389519977067,
+          0.1139565761914604
+        ],
+        "cer_ci_half_width": 0.002861340495844862,
+        "hypotheses_sha256": "0a2f581e56824179d91d55647a02a8561f383e8492a721c1549afdbf90474950"
+      },
+      {
+        "model": "xlsr",
+        "level": "d2",
+        "run_name": "xlsr_d2",
+        "hours": 3.0,
+        "n_utterances": 3100,
+        "n_reference_words": 21859,
+        "n_word_errors": 8257,
+        "wer": 0.3777391463470424,
+        "wer_ci": [
+          0.36938586552648595,
+          0.3858744176065696
+        ],
+        "wer_ci_half_width": 0.008244276040041826,
+        "cer": 0.08455942567014249,
+        "cer_ci": [
+          0.08194286384846076,
+          0.08724713291491298
+        ],
+        "cer_ci_half_width": 0.0026521345332261095,
+        "hypotheses_sha256": "bf9f012df6bbad33b937af9d9179ae5ce7e37a1e8041a7f49193d15a0daa4f50"
+      },
+      {
+        "model": "xlsr",
+        "level": "d3",
+        "run_name": "xlsr_d3",
+        "hours": 10.001,
+        "n_utterances": 3100,
+        "n_reference_words": 21859,
+        "n_word_errors": 5242,
+        "wer": 0.2398096893727984,
+        "wer_ci": [
+          0.23225744666097656,
+          0.24723216913354132
+        ],
+        "wer_ci_half_width": 0.0074873612362823805,
+        "cer": 0.05071791232188677,
+        "cer_ci": [
+          0.04857376895372615,
+          0.05289184790332212
+        ],
+        "cer_ci_half_width": 0.0021590394747979837,
+        "hypotheses_sha256": "b3128109fed9f2e1fe7e502c558343871c7d14a2e04fceeb5916a7cfbb45c953"
+      },
+      {
+        "model": "xlsr",
+        "level": "d4",
+        "run_name": "xlsr_d4",
+        "hours": 30.001,
+        "n_utterances": 3100,
+        "n_reference_words": 21859,
+        "n_word_errors": 3858,
+        "wer": 0.1764948076307242,
+        "wer_ci": [
+          0.16961137992301142,
+          0.1832830211314699
+        ],
+        "wer_ci_half_width": 0.006835820604229242,
+        "cer": 0.03664628487197685,
+        "cer_ci": [
+          0.03477018561975769,
+          0.03859633731449734
+        ],
+        "cer_ci_half_width": 0.0019130758473698238,
+        "hypotheses_sha256": "cdc40bdc96b6e02822f74f4618e8fc8586fb0bca097501996020c3fa402ab6b7"
+      },
+      {
+        "model": "xlsr",
+        "level": "d5",
+        "run_name": "xlsr_d5",
+        "hours": 66.134,
+        "n_utterances": 3100,
+        "n_reference_words": 21859,
+        "n_word_errors": 4112,
+        "wer": 0.18811473534928405,
+        "wer_ci": [
+          0.1810835407807033,
+          0.19483728412451976
+        ],
+        "wer_ci_half_width": 0.00687687167190823,
+        "cer": 0.039437407872468196,
+        "cer_ci": [
+          0.03760623876467151,
+          0.04138287212981457
+        ],
+        "cer_ci_half_width": 0.0018883166825715315,
+        "hypotheses_sha256": "2242d1c0e3151548c5b04df006c5d7802496b7509efbdbb2748a9e9a014936e1"
+      }
+    ],
+    "h1": [
+      {
+        "level": "d1",
+        "hours": 1.0,
+        "difference": "whisper - xlsr",
+        "wer_diff": -0.06637998078594631,
+        "wer_diff_ci": [
+          -0.07717836713733127,
+          -0.05458937568356856
+        ],
+        "wer_diff_p_two_sided": 0.00019998000199980003,
+        "cer_diff": -0.01158759622208877,
+        "cer_diff_ci": [
+          -0.016878067479982092,
+          -0.004993372939347493
+        ],
+        "wer_diff_p_holm": 0.000999900009999,
+        "holm_ci_level": 0.99,
+        "wer_diff_ci_holm_level": [
+          -0.08044984158761267,
+          -0.05125831832729282
+        ],
+        "wer_diff_ci_half_width": 0.011294495726881355,
+        "significant": true,
+        "better_model": "whisper"
+      },
+      {
+        "level": "d2",
+        "hours": 3.0,
+        "difference": "whisper - xlsr",
+        "wer_diff": -0.0719612059106089,
+        "wer_diff_ci": [
+          -0.08109118876872155,
+          -0.06217951125961367
+        ],
+        "wer_diff_p_two_sided": 0.00019998000199980003,
+        "cer_diff": -0.012686302342086592,
+        "cer_diff_ci": [
+          -0.016286800913755707,
+          -0.00794919555516006
+        ],
+        "wer_diff_p_holm": 0.000999900009999,
+        "holm_ci_level": 0.9875,
+        "wer_diff_ci_holm_level": [
+          -0.08338892572983535,
+          -0.05942664509658077
+        ],
+        "wer_diff_ci_half_width": 0.009455838754553941,
+        "significant": true,
+        "better_model": "whisper"
+      },
+      {
+        "level": "d3",
+        "hours": 10.001,
+        "difference": "whisper - xlsr",
+        "wer_diff": -0.01756713481861019,
+        "wer_diff_ci": [
+          -0.02448720825628669,
+          -0.010747724722666297
+        ],
+        "wer_diff_p_two_sided": 0.00019998000199980003,
+        "cer_diff": 0.00040945569689359446,
+        "cer_diff_ci": [
+          -0.0014759660770359462,
+          0.002202076682612489
+        ],
+        "wer_diff_p_holm": 0.000999900009999,
+        "holm_ci_level": 0.9833333333333333,
+        "wer_diff_ci_holm_level": [
+          -0.02585192829085523,
+          -0.009340099316421097
+        ],
+        "wer_diff_ci_half_width": 0.0068697417668101965,
+        "significant": true,
+        "better_model": "whisper"
+      },
+      {
+        "level": "d4",
+        "hours": 30.001,
+        "difference": "whisper - xlsr",
+        "wer_diff": -0.0122146484285649,
+        "wer_diff_ci": [
+          -0.01800418500723607,
+          -0.006469752023157696
+        ],
+        "wer_diff_p_two_sided": 0.00019998000199980003,
+        "cer_diff": 0.0013785008462084414,
+        "cer_diff_ci": [
+          -0.00014135424951657708,
+          0.0029091955891713717
+        ],
+        "wer_diff_p_holm": 0.000999900009999,
+        "holm_ci_level": 0.975,
+        "wer_diff_ci_holm_level": [
+          -0.018801766558787597,
+          -0.00566304178987409
+        ],
+        "wer_diff_ci_half_width": 0.005767216492039186,
+        "significant": true,
+        "better_model": "whisper"
+      },
+      {
+        "level": "d5",
+        "hours": 66.134,
+        "difference": "whisper - xlsr",
+        "wer_diff": -0.03412781920490415,
+        "wer_diff_ci": [
+          -0.04005159454637984,
+          -0.02835485940033203
+        ],
+        "wer_diff_p_two_sided": 0.00019998000199980003,
+        "cer_diff": -0.0039239504285636245,
+        "cer_diff_ci": [
+          -0.005467193974098331,
+          -0.0024675544139871595
+        ],
+        "wer_diff_p_holm": 0.000999900009999,
+        "holm_ci_level": 0.95,
+        "wer_diff_ci_holm_level": [
+          -0.04005159454637984,
+          -0.02835485940033203
+        ],
+        "wer_diff_ci_half_width": 0.0058483675730239045,
+        "significant": true,
+        "better_model": "whisper"
+      }
+    ],
+    "aic": {
+      "separate_minus_shared": 1.99444977493107,
+      "nested_minus_shared": -0.11138701923167105,
+      "primary_model": "shared_e0"
+    },
+    "full_sample": {
+      "shared_e0": {
+        "description": "E0 bersama bagi kedua model (model utama, Subbab 8.0c)",
+        "parameters": {
+          "E0": 0.07488806113731171,
+          "a_whisper": 0.3389768745731138,
+          "c_whisper": 0.3643818946037817,
+          "a_xlsr": 0.41163829656148476,
+          "c_xlsr": 0.35622980398055587
+        },
+        "curve": {
+          "E0_whisper": 0.07488806113731171,
+          "a_whisper": 0.3389768745731138,
+          "c_whisper": 0.3643818946037817,
+          "E0_xlsr": 0.07488806113731171,
+          "a_xlsr": 0.41163829656148476,
+          "c_xlsr": 0.35622980398055587
+        },
+        "n_parameters": 5,
+        "rss": 0.001922807627395591,
+        "aic": -73.56553948129454,
+        "message": "`ftol` termination condition is satisfied.",
+        "points": [
+          {
+            "run_name": "whisper_d1_trial",
+            "model": "whisper",
+            "level": "d1",
+            "hours": 1.0,
+            "observed_wer": 0.4123244430211812,
+            "fitted_wer": 0.41386493571042554,
+            "residual": -0.0015404926892443327
+          },
+          {
+            "run_name": "whisper_d2",
+            "model": "whisper",
+            "level": "d2",
+            "hours": 3.0,
+            "observed_wer": 0.3057779404364335,
+            "fitted_wer": 0.3020396214518787,
+            "residual": 0.003738318984554845
+          },
+          {
+            "run_name": "whisper_d3",
+            "model": "whisper",
+            "level": "d3",
+            "hours": 10.001,
+            "observed_wer": 0.2222425545541882,
+            "fitted_wer": 0.221366044568296,
+            "residual": 0.0008765099858921988
+          },
+          {
+            "run_name": "whisper_d4",
+            "model": "whisper",
+            "level": "d4",
+            "hours": 30.001,
+            "observed_wer": 0.1642801592021593,
+            "fitted_wer": 0.17304670617942242,
+            "residual": -0.008766546977263118
+          },
+          {
+            "run_name": "whisper_d5",
+            "model": "whisper",
+            "level": "d5",
+            "hours": 66.134,
+            "observed_wer": 0.1539869161443799,
+            "fitted_wer": 0.14848169313012768,
+            "residual": 0.005505223014252214
+          },
+          {
+            "run_name": "xlsr_d1_trial",
+            "model": "xlsr",
+            "level": "d1",
+            "hours": 1.0,
+            "observed_wer": 0.4787044238071275,
+            "fitted_wer": 0.4865263576987965,
+            "residual": -0.007821933891668964
+          },
+          {
+            "run_name": "xlsr_d2",
+            "model": "xlsr",
+            "level": "d2",
+            "hours": 3.0,
+            "observed_wer": 0.3777391463470424,
+            "fitted_wer": 0.3532122559237397,
+            "residual": 0.024526890423302694
+          },
+          {
+            "run_name": "xlsr_d3",
+            "model": "xlsr",
+            "level": "d3",
+            "hours": 10.001,
+            "observed_wer": 0.2398096893727984,
+            "fitted_wer": 0.2561349240031815,
+            "residual": -0.0163252346303831
+          },
+          {
+            "run_name": "xlsr_d4",
+            "model": "xlsr",
+            "level": "d4",
+            "hours": 30.001,
+            "observed_wer": 0.1764948076307242,
+            "fitted_wer": 0.19743881875750793,
+            "residual": -0.020944011126783735
+          },
+          {
+            "run_name": "xlsr_d5",
+            "model": "xlsr",
+            "level": "d5",
+            "hours": 66.134,
+            "observed_wer": 0.18811473534928405,
+            "fitted_wer": 0.16736345844194958,
+            "residual": 0.02075127690733447
+          }
+        ]
+      },
+      "separate_e0": {
+        "description": "E0 terpisah per model (pembanding AIC)",
+        "parameters": {
+          "E0_whisper": 0.07192518396783022,
+          "a_whisper": 0.341707582193414,
+          "c_whisper": 0.3583777963739113,
+          "E0_xlsr": 0.07764358854686082,
+          "a_xlsr": 0.40908707475750944,
+          "c_xlsr": 0.36077679143439
+        },
+        "curve": {
+          "E0_whisper": 0.07192518396783022,
+          "a_whisper": 0.341707582193414,
+          "c_whisper": 0.3583777963739113,
+          "E0_xlsr": 0.07764358854686082,
+          "a_xlsr": 0.40908707475750944,
+          "c_xlsr": 0.36077679143439
+        },
+        "n_parameters": 6,
+        "rss": 0.0019217407219916049,
+        "aic": -71.57108970636347,
+        "message": "`ftol` termination condition is satisfied.",
+        "points": [
+          {
+            "run_name": "whisper_d1_trial",
+            "model": "whisper",
+            "level": "d1",
+            "hours": 1.0,
+            "observed_wer": 0.4123244430211812,
+            "fitted_wer": 0.4136327661612442,
+            "residual": -0.0013083231400630169
+          },
+          {
+            "run_name": "whisper_d2",
+            "model": "whisper",
+            "level": "d2",
+            "hours": 3.0,
+            "observed_wer": 0.3057779404364335,
+            "fitted_wer": 0.3024220111518522,
+            "residual": 0.003355929284581338
+          },
+          {
+            "run_name": "whisper_d3",
+            "model": "whisper",
+            "level": "d3",
+            "hours": 10.001,
+            "observed_wer": 0.2222425545541882,
+            "fitted_wer": 0.22163878475454768,
+            "residual": 0.0006037697996405245
+          },
+          {
+            "run_name": "whisper_d4",
+            "model": "whisper",
+            "level": "d4",
+            "hours": 30.001,
+            "observed_wer": 0.1642801592021593,
+            "fitted_wer": 0.1729160199722774,
+            "residual": -0.008635860770118103
+          },
+          {
+            "run_name": "whisper_d5",
+            "model": "whisper",
+            "level": "d5",
+            "hours": 66.134,
+            "observed_wer": 0.1539869161443799,
+            "fitted_wer": 0.14800243131842086,
+            "residual": 0.0059844848259590355
+          },
+          {
+            "run_name": "xlsr_d1_trial",
+            "model": "xlsr",
+            "level": "d1",
+            "hours": 1.0,
+            "observed_wer": 0.4787044238071275,
+            "fitted_wer": 0.48673066330437026,
+            "residual": -0.008026239497242738
+          },
+          {
+            "run_name": "xlsr_d2",
+            "model": "xlsr",
+            "level": "d2",
+            "hours": 3.0,
+            "observed_wer": 0.3777391463470424,
+            "fitted_wer": 0.35286453412952623,
+            "residual": 0.02487461221751619
+          },
+          {
+            "run_name": "xlsr_d3",
+            "model": "xlsr",
+            "level": "d3",
+            "hours": 10.001,
+            "observed_wer": 0.2398096893727984,
+            "fitted_wer": 0.2558910276611083,
+            "residual": -0.016081338288309877
+          },
+          {
+            "run_name": "xlsr_d4",
+            "model": "xlsr",
+            "level": "d4",
+            "hours": 30.001,
+            "observed_wer": 0.1764948076307242,
+            "fitted_wer": 0.1975657557874329,
+            "residual": -0.021070948156708708
+          },
+          {
+            "run_name": "xlsr_d5",
+            "model": "xlsr",
+            "level": "d5",
+            "hours": 66.134,
+            "observed_wer": 0.18811473534928405,
+            "fitted_wer": 0.16781082162455993,
+            "residual": 0.02030391372472412
+          }
+        ]
+      },
+      "pure_power_law": {
+        "description": "Power law murni, kasus bersarang E0 = 0",
+        "parameters": {
+          "a_whisper": 0.40875087965175466,
+          "c_whisper": 0.25498073483335426,
+          "a_xlsr": 0.48148290733166443,
+          "c_xlsr": 0.2642958780486668
+        },
+        "curve": {
+          "E0_whisper": 0.0,
+          "a_whisper": 0.40875087965175466,
+          "c_whisper": 0.25498073483335426,
+          "E0_xlsr": 0.0,
+          "a_xlsr": 0.48148290733166443,
+          "c_xlsr": 0.2642958780486668
+        },
+        "n_parameters": 4,
+        "rss": 0.0023225081989450913,
+        "aic": -73.6769265005262,
+        "message": "`ftol` termination condition is satisfied.",
+        "points": [
+          {
+            "run_name": "whisper_d1_trial",
+            "model": "whisper",
+            "level": "d1",
+            "hours": 1.0,
+            "observed_wer": 0.4123244430211812,
+            "fitted_wer": 0.40875087965175466,
+            "residual": 0.0035735633694265467
+          },
+          {
+            "run_name": "whisper_d2",
+            "model": "whisper",
+            "level": "d2",
+            "hours": 3.0,
+            "observed_wer": 0.3057779404364335,
+            "fitted_wer": 0.30888866533136505,
+            "residual": -0.003110724894931527
+          },
+          {
+            "run_name": "whisper_d3",
+            "model": "whisper",
+            "level": "d3",
+            "hours": 10.001,
+            "observed_wer": 0.2222425545541882,
+            "fitted_wer": 0.22723064034686952,
+            "residual": -0.004988085792681313
+          },
+          {
+            "run_name": "whisper_d4",
+            "model": "whisper",
+            "level": "d4",
+            "hours": 30.001,
+            "observed_wer": 0.1642801592021593,
+            "fitted_wer": 0.17171868188239703,
+            "residual": -0.00743852268023773
+          },
+          {
+            "run_name": "whisper_d5",
+            "model": "whisper",
+            "level": "d5",
+            "hours": 66.134,
+            "observed_wer": 0.1539869161443799,
+            "fitted_wer": 0.14037360370340168,
+            "residual": 0.013613312440978215
+          },
+          {
+            "run_name": "xlsr_d1_trial",
+            "model": "xlsr",
+            "level": "d1",
+            "hours": 1.0,
+            "observed_wer": 0.4787044238071275,
+            "fitted_wer": 0.48148290733166443,
+            "residual": -0.002778483524536912
+          },
+          {
+            "run_name": "xlsr_d2",
+            "model": "xlsr",
+            "level": "d2",
+            "hours": 3.0,
+            "observed_wer": 0.3777391463470424,
+            "fitted_wer": 0.3601469102907769,
+            "residual": 0.01759223605626553
+          },
+          {
+            "run_name": "xlsr_d3",
+            "model": "xlsr",
+            "level": "d3",
+            "hours": 10.001,
+            "observed_wer": 0.2398096893727984,
+            "fitted_wer": 0.2619832458594514,
+            "residual": -0.02217355648665298
+          },
+          {
+            "run_name": "xlsr_d4",
+            "model": "xlsr",
+            "level": "d4",
+            "hours": 30.001,
+            "observed_wer": 0.1764948076307242,
+            "fitted_wer": 0.1959656666428936,
+            "residual": -0.01947085901216941
+          },
+          {
+            "run_name": "xlsr_d5",
+            "model": "xlsr",
+            "level": "d5",
+            "hours": 66.134,
+            "observed_wer": 0.18811473534928405,
+            "fitted_wer": 0.1590193982457459,
+            "residual": 0.02909533710353815
+          }
+        ]
+      }
+    },
+    "bootstrap": {
+      "shared_e0": {
+        "E0": {
+          "estimate": 0.07488806113731171,
+          "ci": [
+            0.06134111054034835,
+            0.08703342854854697
+          ],
+          "bootstrap_median": 0.07479792813320323
+        },
+        "a_whisper": {
+          "estimate": 0.3389768745731138,
+          "ci": [
+            0.3240178615145835,
+            0.3554162044181266
+          ],
+          "bootstrap_median": 0.338956588303051
+        },
+        "c_whisper": {
+          "estimate": 0.3643818946037817,
+          "ci": [
+            0.3367344177795677,
+            0.39336646501273875
+          ],
+          "bootstrap_median": 0.36409770861021945
+        },
+        "a_xlsr": {
+          "estimate": 0.41163829656148476,
+          "ci": [
+            0.3982244897474841,
+            0.42646059725771956
+          ],
+          "bootstrap_median": 0.41181427758715217
+        },
+        "c_xlsr": {
+          "estimate": 0.35622980398055587,
+          "ci": [
+            0.334250238330598,
+            0.3779706812970523
+          ],
+          "bootstrap_median": 0.35610869318453103
+        },
+        "c_whisper_minus_c_xlsr": {
+          "estimate": 0.008152090623225805,
+          "ci": [
+            -0.006258394817103331,
+            0.02385390301064858
+          ],
+          "bootstrap_median": 0.008118035819224378,
+          "p_two_sided": 0.2755724427557244
+        },
+        "share_E0_at_zero_bound": {
+          "whisper": 0.0,
+          "xlsr": 0.0
+        },
+        "n_retried": 0,
+        "n_failed": 0,
+        "n_used": 10000
+      },
+      "separate_e0": {
+        "E0_whisper": {
+          "estimate": 0.07192518396783022,
+          "ci": [
+            0.05172281758065077,
+            0.08873871162665627
+          ],
+          "bootstrap_median": 0.07175272174187347
+        },
+        "a_whisper": {
+          "estimate": 0.341707582193414,
+          "ci": [
+            0.32337028332201867,
+            0.3634894896873598
+          ],
+          "bootstrap_median": 0.34165915248961426
+        },
+        "c_whisper": {
+          "estimate": 0.3583777963739113,
+          "ci": [
+            0.3200548939460104,
+            0.39802474901419327
+          ],
+          "bootstrap_median": 0.3579233165199019
+        },
+        "E0_xlsr": {
+          "estimate": 0.07764358854686082,
+          "ci": [
+            0.060698411460367696,
+            0.09281831126675176
+          ],
+          "bootstrap_median": 0.07746813924039767
+        },
+        "a_xlsr": {
+          "estimate": 0.40908707475750944,
+          "ci": [
+            0.3933488798020729,
+            0.426471922578885
+          ],
+          "bootstrap_median": 0.4092269550189623
+        },
+        "c_xlsr": {
+          "estimate": 0.36077679143439,
+          "ci": [
+            0.33334587143904176,
+            0.3881505930232015
+          ],
+          "bootstrap_median": 0.36080599759547516
+        },
+        "c_whisper_minus_c_xlsr": {
+          "estimate": -0.0023989950604786925,
+          "ci": [
+            -0.04734283505785978,
+            0.042715931951072955
+          ],
+          "bootstrap_median": -0.0025935235795637446,
+          "p_two_sided": 0.9031096890310969
+        },
+        "share_E0_at_zero_bound": {
+          "whisper": 0.0,
+          "xlsr": 0.0
+        },
+        "n_retried": 0,
+        "n_failed": 0,
+        "n_used": 10000
+      }
+    },
+    "decisions": {
+      "model": "shared_e0",
+      "h2_c_ci_entirely_above_zero": {
+        "whisper": true,
+        "xlsr": true
+      },
+      "h2_supported_for_both_models": true,
+      "h3_c_difference_ci_excludes_zero": false,
+      "h3_larger_exponent": null,
+      "e0_ci_reaches_zero": false
+    }
+  },
+  "without_defective": {
+    "n_utterances": 3098,
+    "configs": [
+      {
+        "model": "whisper",
+        "level": "d1",
+        "run_name": "whisper_d1_trial",
+        "hours": 1.0,
+        "n_utterances": 3098,
+        "n_reference_words": 21843,
+        "n_word_errors": 8990,
+        "wer": 0.41157350180835967,
+        "wer_ci": [
+          0.40095182873619,
+          0.4226776744712423
+        ],
+        "wer_ci_half_width": 0.010862922867526159,
+        "cer": 0.09850430269088922,
+        "cer_ci": [
+          0.09319848678605043,
+          0.1049903164949519
+        ],
+        "cer_ci_half_width": 0.0058959148544507345,
+        "hypotheses_sha256": "9c6a51f450b2e3d4cc347a6c0c4ce467d6d639c8124f5b7bcd444655d1c11ec4"
+      },
+      {
+        "model": "whisper",
+        "level": "d2",
+        "run_name": "whisper_d2",
+        "hours": 3.0,
+        "n_utterances": 3098,
+        "n_reference_words": 21843,
+        "n_word_errors": 6661,
+        "wer": 0.30494895389827403,
+        "wer_ci": [
+          0.29605620722375947,
+          0.3146881106128206
+        ],
+        "wer_ci_half_width": 0.009315951694530561,
+        "cer": 0.07091244365523836,
+        "cer_ci": [
+          0.06741377289478936,
+          0.07576568746810153
+        ],
+        "cer_ci_half_width": 0.004175957286656082,
+        "hypotheses_sha256": "ea8ff9b88852a2c4c96c3d7f26d5f0af021a57d84e0d0a2cc5b460b70d611fc5"
+      },
+      {
+        "model": "whisper",
+        "level": "d3",
+        "run_name": "whisper_d3",
+        "hours": 10.001,
+        "n_utterances": 3098,
+        "n_reference_words": 21843,
+        "n_word_errors": 4848,
+        "wer": 0.22194753467930228,
+        "wer_ci": [
+          0.21480138794034598,
+          0.22935004036351392
+        ],
+        "wer_ci_half_width": 0.00727432621158397,
+        "cer": 0.05074443382051632,
+        "cer_ci": [
+          0.048809604976718796,
+          0.0527217970830625
+        ],
+        "cer_ci_half_width": 0.0019560960531718533,
+        "hypotheses_sha256": "118e05def5274b01517fe7ee6e0047faf525505d42533d3e868cc9dd08c33d0a"
+      },
+      {
+        "model": "whisper",
+        "level": "d4",
+        "run_name": "whisper_d4",
+        "hours": 30.001,
+        "n_utterances": 3098,
+        "n_reference_words": 21843,
+        "n_word_errors": 3583,
+        "wer": 0.1640342443803507,
+        "wer_ci": [
+          0.15767009309354105,
+          0.17051429997083886
+        ],
+        "wer_ci_half_width": 0.006422103438648907,
+        "cer": 0.037651960114738425,
+        "cer_ci": [
+          0.03594377376963143,
+          0.03939622075258478
+        ],
+        "cer_ci_half_width": 0.0017262234914766743,
+        "hypotheses_sha256": "f05b1bc509da70ae7c004a6f613fa86282f941fc69e386095ecfc2f0f9fa5c7b"
+      },
+      {
+        "model": "whisper",
+        "level": "d5",
+        "run_name": "whisper_d5",
+        "hours": 66.134,
+        "n_utterances": 3098,
+        "n_reference_words": 21843,
+        "n_word_errors": 3358,
+        "wer": 0.15373346152085338,
+        "wer_ci": [
+          0.14743640109173606,
+          0.16014832914842356
+        ],
+        "wer_ci_half_width": 0.00635596402834375,
+        "cer": 0.03513864226198607,
+        "cer_ci": [
+          0.03340815794514759,
+          0.03687048549219927
+        ],
+        "cer_ci_half_width": 0.001731163773525838,
+        "hypotheses_sha256": "0bc978bf437745e40f9e039c6408c7cda194dcb109a7d0b44372ec265e6bf871"
+      },
+      {
+        "model": "xlsr",
+        "level": "d1",
+        "run_name": "xlsr_d1_trial",
+        "hours": 1.0,
+        "n_utterances": 3098,
+        "n_reference_words": 21843,
+        "n_word_errors": 10444,
+        "wer": 0.478139449709289,
+        "wer_ci": [
+          0.46979976654745864,
+          0.4867273008325831
+        ],
+        "wer_ci_half_width": 0.008463767142562223,
+        "cer": 0.11045622182761917,
+        "cer_ci": [
+          0.10775506950665621,
+          0.11322341823504721
+        ],
+        "cer_ci_half_width": 0.002734174364195499,
+        "hypotheses_sha256": "0a2f581e56824179d91d55647a02a8561f383e8492a721c1549afdbf90474950"
+      },
+      {
+        "model": "xlsr",
+        "level": "d2",
+        "run_name": "xlsr_d2",
+        "hours": 3.0,
+        "n_utterances": 3098,
+        "n_reference_words": 21843,
+        "n_word_errors": 8240,
+        "wer": 0.3772375589433686,
+        "wer_ci": [
+          0.3691901651382075,
+          0.3855536844021665
+        ],
+        "wer_ci_half_width": 0.00818175963197948,
+        "cer": 0.08386832399945363,
+        "cer_ci": [
+          0.0814475420773047,
+          0.08632835622991362
+        ],
+        "cer_ci_half_width": 0.0024404070763044614,
+        "hypotheses_sha256": "bf9f012df6bbad33b937af9d9179ae5ce7e37a1e8041a7f49193d15a0daa4f50"
+      },
+      {
+        "model": "xlsr",
+        "level": "d3",
+        "run_name": "xlsr_d3",
+        "hours": 10.001,
+        "n_utterances": 3098,
+        "n_reference_words": 21843,
+        "n_word_errors": 5228,
+        "wer": 0.23934441239756443,
+        "wer_ci": [
+          0.2319250396355872,
+          0.2467797242284154
+        ],
+        "wer_ci_half_width": 0.007427342296414105,
+        "cer": 0.05008195601693758,
+        "cer_ci": [
+          0.04816991166310486,
+          0.05201832614687269
+        ],
+        "cer_ci_half_width": 0.0019242072418839164,
+        "hypotheses_sha256": "b3128109fed9f2e1fe7e502c558343871c7d14a2e04fceeb5916a7cfbb45c953"
+      },
+      {
+        "model": "xlsr",
+        "level": "d4",
+        "run_name": "xlsr_d4",
+        "hours": 30.001,
+        "n_utterances": 3098,
+        "n_reference_words": 21843,
+        "n_word_errors": 3844,
+        "wer": 0.17598315249736757,
+        "wer_ci": [
+          0.16932351160441872,
+          0.18281163243103224
+        ],
+        "wer_ci_half_width": 0.00674406041330676,
+        "cer": 0.03603332878022128,
+        "cer_ci": [
+          0.03438718532548668,
+          0.03772983748081714
+        ],
+        "cer_ci_half_width": 0.0016713260776652292,
+        "hypotheses_sha256": "cdc40bdc96b6e02822f74f4618e8fc8586fb0bca097501996020c3fa402ab6b7"
+      },
+      {
+        "model": "xlsr",
+        "level": "d5",
+        "run_name": "xlsr_d5",
+        "hours": 66.134,
+        "n_utterances": 3098,
+        "n_reference_words": 21843,
+        "n_word_errors": 4103,
+        "wer": 0.18784049810007783,
+        "wer_ci": [
+          0.18095542649117768,
+          0.1947141735575246
+        ],
+        "wer_ci_half_width": 0.006879373533173458,
+        "cer": 0.03899057505805218,
+        "cer_ci": [
+          0.037258159213428794,
+          0.040737799060129476
+        ],
+        "cer_ci_half_width": 0.0017398199233503407,
+        "hypotheses_sha256": "2242d1c0e3151548c5b04df006c5d7802496b7509efbdbb2748a9e9a014936e1"
+      }
+    ],
+    "h1": [
+      {
+        "level": "d1",
+        "hours": 1.0,
+        "difference": "whisper - xlsr",
+        "wer_diff": -0.06656594790092935,
+        "wer_diff_ci": [
+          -0.07762870897419537,
+          -0.055175428984400254
+        ],
+        "wer_diff_p_two_sided": 0.00019998000199980003,
+        "cer_diff": -0.011951919136729952,
+        "cer_diff_ci": [
+          -0.01725410910736707,
+          -0.005524399910982669
+        ],
+        "wer_diff_p_holm": 0.000999900009999,
+        "holm_ci_level": 0.99,
+        "wer_diff_ci_holm_level": [
+          -0.08089527917798711,
+          -0.051084113100616564
+        ],
+        "wer_diff_ci_half_width": 0.011226639994897557,
+        "significant": true,
+        "better_model": "whisper"
+      },
+      {
+        "level": "d2",
+        "hours": 3.0,
+        "difference": "whisper - xlsr",
+        "wer_diff": -0.07228860504509454,
+        "wer_diff_ci": [
+          -0.08134634311676898,
+          -0.06231289095247514
+        ],
+        "wer_diff_p_two_sided": 0.00019998000199980003,
+        "cer_diff": -0.01295588034421527,
+        "cer_diff_ci": [
+          -0.016532552118488298,
+          -0.008146857883979872
+        ],
+        "wer_diff_p_holm": 0.000999900009999,
+        "holm_ci_level": 0.9875,
+        "wer_diff_ci_holm_level": [
+          -0.08392477403087346,
+          -0.05985237381551017
+        ],
+        "wer_diff_ci_half_width": 0.009516726082146921,
+        "significant": true,
+        "better_model": "whisper"
+      },
+      {
+        "level": "d3",
+        "hours": 10.001,
+        "difference": "whisper - xlsr",
+        "wer_diff": -0.01739687771826215,
+        "wer_diff_ci": [
+          -0.023980614203440498,
+          -0.010744828878510424
+        ],
+        "wer_diff_p_two_sided": 0.00019998000199980003,
+        "cer_diff": 0.0006624778035787399,
+        "cer_diff_ci": [
+          -0.0010870916000947604,
+          0.0023978675952148806
+        ],
+        "wer_diff_p_holm": 0.000999900009999,
+        "holm_ci_level": 0.9833333333333333,
+        "wer_diff_ci_holm_level": [
+          -0.02560405314067872,
+          -0.009284102509236503
+        ],
+        "wer_diff_ci_half_width": 0.006617892662465037,
+        "significant": true,
+        "better_model": "whisper"
+      },
+      {
+        "level": "d4",
+        "hours": 30.001,
+        "difference": "whisper - xlsr",
+        "wer_diff": -0.011948908117016876,
+        "wer_diff_ci": [
+          -0.01769227712147043,
+          -0.006153288581426132
+        ],
+        "wer_diff_p_two_sided": 0.00019998000199980003,
+        "cer_diff": 0.0016186313345171455,
+        "cer_diff_ci": [
+          0.0001635567189932535,
+          0.00305342824482293
+        ],
+        "wer_diff_p_holm": 0.000999900009999,
+        "holm_ci_level": 0.975,
+        "wer_diff_ci_holm_level": [
+          -0.018550768287550385,
+          -0.005366157178943824
+        ],
+        "wer_diff_ci_half_width": 0.005769494270022149,
+        "significant": true,
+        "better_model": "whisper"
+      },
+      {
+        "level": "d5",
+        "hours": 66.134,
+        "difference": "whisper - xlsr",
+        "wer_diff": -0.03410703657922445,
+        "wer_diff_ci": [
+          -0.03993626610398157,
+          -0.02829500836106583
+        ],
+        "wer_diff_p_two_sided": 0.00019998000199980003,
+        "cer_diff": -0.0038519327960661112,
+        "cer_diff_ci": [
+          -0.005327051786930163,
+          -0.0024121575776451056
+        ],
+        "wer_diff_p_holm": 0.000999900009999,
+        "holm_ci_level": 0.95,
+        "wer_diff_ci_holm_level": [
+          -0.03993626610398157,
+          -0.02829500836106583
+        ],
+        "wer_diff_ci_half_width": 0.005820628871457871,
+        "significant": true,
+        "better_model": "whisper"
+      }
+    ],
+    "aic": {
+      "separate_minus_shared": 1.9953146438922715,
+      "nested_minus_shared": -0.10453258619673989,
+      "primary_model": "shared_e0"
+    },
+    "full_sample": {
+      "shared_e0": {
+        "description": "E0 bersama bagi kedua model (model utama, Subbab 8.0c)",
+        "parameters": {
+          "E0": 0.07503103259208024,
+          "a_whisper": 0.33801051889388783,
+          "c_whisper": 0.36485737461937673,
+          "a_xlsr": 0.41095728395365905,
+          "c_xlsr": 0.35703145989923757
+        },
+        "curve": {
+          "E0_whisper": 0.07503103259208024,
+          "a_whisper": 0.33801051889388783,
+          "c_whisper": 0.36485737461937673,
+          "E0_xlsr": 0.07503103259208024,
+          "a_xlsr": 0.41095728395365905,
+          "c_xlsr": 0.35703145989923757
+        },
+        "n_parameters": 5,
+        "rss": 0.0019294977354892507,
+        "aic": -73.53080643607015,
+        "message": "`ftol` termination condition is satisfied.",
+        "points": [
+          {
+            "run_name": "whisper_d1_trial",
+            "model": "whisper",
+            "level": "d1",
+            "hours": 1.0,
+            "observed_wer": 0.41157350180835967,
+            "fitted_wer": 0.4130415514859681,
+            "residual": -0.0014680496776084406
+          },
+          {
+            "run_name": "whisper_d2",
+            "model": "whisper",
+            "level": "d2",
+            "hours": 3.0,
+            "observed_wer": 0.30494895389827403,
+            "fitted_wer": 0.30141674138230945,
+            "residual": 0.0035322125159645834
+          },
+          {
+            "run_name": "whisper_d3",
+            "model": "whisper",
+            "level": "d3",
+            "hours": 10.001,
+            "observed_wer": 0.22194753467930228,
+            "fitted_wer": 0.2209316052035851,
+            "residual": 0.0010159294757171866
+          },
+          {
+            "run_name": "whisper_d4",
+            "model": "whisper",
+            "level": "d4",
+            "hours": 30.001,
+            "observed_wer": 0.1640342443803507,
+            "fitted_wer": 0.1727516834731339,
+            "residual": -0.008717439092783219
+          },
+          {
+            "run_name": "whisper_d5",
+            "model": "whisper",
+            "level": "d5",
+            "hours": 66.134,
+            "observed_wer": 0.15373346152085338,
+            "fitted_wer": 0.14826875093708763,
+            "residual": 0.005464710583765742
+          },
+          {
+            "run_name": "xlsr_d1_trial",
+            "model": "xlsr",
+            "level": "d1",
+            "hours": 1.0,
+            "observed_wer": 0.478139449709289,
+            "fitted_wer": 0.48598831654573926,
+            "residual": -0.007848866836450252
+          },
+          {
+            "run_name": "xlsr_d2",
+            "model": "xlsr",
+            "level": "d2",
+            "hours": 3.0,
+            "observed_wer": 0.3772375589433686,
+            "fitted_wer": 0.35265015966603486,
+            "residual": 0.02458739927733372
+          },
+          {
+            "run_name": "xlsr_d3",
+            "model": "xlsr",
+            "level": "d3",
+            "hours": 10.001,
+            "observed_wer": 0.23934441239756443,
+            "fitted_wer": 0.2556443283967346,
+            "residual": -0.01629991599917019
+          },
+          {
+            "run_name": "xlsr_d4",
+            "model": "xlsr",
+            "level": "d4",
+            "hours": 30.001,
+            "observed_wer": 0.17598315249736757,
+            "fitted_wer": 0.19704590102130046,
+            "residual": -0.02106274852393289
+          },
+          {
+            "run_name": "xlsr_d5",
+            "model": "xlsr",
+            "level": "d5",
+            "hours": 66.134,
+            "observed_wer": 0.18784049810007783,
+            "fitted_wer": 0.1670437298229332,
+            "residual": 0.020796768277144634
+          }
+        ]
+      },
+      "separate_e0": {
+        "description": "E0 terpisah per model (pembanding AIC)",
+        "parameters": {
+          "E0_whisper": 0.07230877574169947,
+          "a_whisper": 0.34051873261957216,
+          "c_whisper": 0.35930624983220216,
+          "E0_xlsr": 0.07755520367731038,
+          "a_xlsr": 0.4086205200629659,
+          "c_xlsr": 0.36121293754454975
+        },
+        "curve": {
+          "E0_whisper": 0.07230877574169947,
+          "a_whisper": 0.34051873261957216,
+          "c_whisper": 0.35930624983220216,
+          "E0_xlsr": 0.07755520367731038,
+          "a_xlsr": 0.4086205200629659,
+          "c_xlsr": 0.36121293754454975
+        },
+        "n_parameters": 6,
+        "rss": 0.0019285939088432872,
+        "aic": -71.53549179217788,
+        "message": "`ftol` termination condition is satisfied.",
+        "points": [
+          {
+            "run_name": "whisper_d1_trial",
+            "model": "whisper",
+            "level": "d1",
+            "hours": 1.0,
+            "observed_wer": 0.41157350180835967,
+            "fitted_wer": 0.41282750836127163,
+            "residual": -0.0012540065529119682
+          },
+          {
+            "run_name": "whisper_d2",
+            "model": "whisper",
+            "level": "d2",
+            "hours": 3.0,
+            "observed_wer": 0.30494895389827403,
+            "fitted_wer": 0.30176949975335415,
+            "residual": 0.00317945414491988
+          },
+          {
+            "run_name": "whisper_d3",
+            "model": "whisper",
+            "level": "d3",
+            "hours": 10.001,
+            "observed_wer": 0.22194753467930228,
+            "fitted_wer": 0.2211828777191665,
+            "residual": 0.0007646569601357789
+          },
+          {
+            "run_name": "whisper_d4",
+            "model": "whisper",
+            "level": "d4",
+            "hours": 30.001,
+            "observed_wer": 0.1640342443803507,
+            "fitted_wer": 0.17263094362089518,
+            "residual": -0.008596699240544486
+          },
+          {
+            "run_name": "whisper_d5",
+            "model": "whisper",
+            "level": "d5",
+            "hours": 66.134,
+            "observed_wer": 0.15373346152085338,
+            "fitted_wer": 0.14782686683245266,
+            "residual": 0.0059065946884007126
+          },
+          {
+            "run_name": "xlsr_d1_trial",
+            "model": "xlsr",
+            "level": "d1",
+            "hours": 1.0,
+            "observed_wer": 0.478139449709289,
+            "fitted_wer": 0.4861757237402763,
+            "residual": -0.008036274030987278
+          },
+          {
+            "run_name": "xlsr_d2",
+            "model": "xlsr",
+            "level": "d2",
+            "hours": 3.0,
+            "observed_wer": 0.3772375589433686,
+            "fitted_wer": 0.35233057423187797,
+            "residual": 0.02490698471149061
+          },
+          {
+            "run_name": "xlsr_d3",
+            "model": "xlsr",
+            "level": "d3",
+            "hours": 10.001,
+            "observed_wer": 0.23934441239756443,
+            "fitted_wer": 0.25542063430534206,
+            "residual": -0.016076221907777632
+          },
+          {
+            "run_name": "xlsr_d4",
+            "model": "xlsr",
+            "level": "d4",
+            "hours": 30.001,
+            "observed_wer": 0.17598315249736757,
+            "fitted_wer": 0.19716304041246716,
+            "residual": -0.021179887915099588
+          },
+          {
+            "run_name": "xlsr_d5",
+            "model": "xlsr",
+            "level": "d5",
+            "hours": 66.134,
+            "observed_wer": 0.18784049810007783,
+            "fitted_wer": 0.16745509895772723,
+            "residual": 0.020385399142350602
+          }
+        ]
+      },
+      "pure_power_law": {
+        "description": "Power law murni, kasus bersarang E0 = 0",
+        "parameters": {
+          "a_whisper": 0.4079066456941335,
+          "c_whisper": 0.25487592367471057,
+          "a_xlsr": 0.4809255859006789,
+          "c_xlsr": 0.2645695812471442
+        },
+        "curve": {
+          "E0_whisper": 0.0,
+          "a_whisper": 0.4079066456941335,
+          "c_whisper": 0.25487592367471057,
+          "E0_xlsr": 0.0,
+          "a_xlsr": 0.4809255859006789,
+          "c_xlsr": 0.2645695812471442
+        },
+        "n_parameters": 4,
+        "rss": 0.002332187036841427,
+        "aic": -73.63533902226689,
+        "message": "`ftol` termination condition is satisfied.",
+        "points": [
+          {
+            "run_name": "whisper_d1_trial",
+            "model": "whisper",
+            "level": "d1",
+            "hours": 1.0,
+            "observed_wer": 0.41157350180835967,
+            "fitted_wer": 0.4079066456941335,
+            "residual": 0.00366685611422618
+          },
+          {
+            "run_name": "whisper_d2",
+            "model": "whisper",
+            "level": "d2",
+            "hours": 3.0,
+            "observed_wer": 0.30494895389827403,
+            "fitted_wer": 0.30828618289657705,
+            "residual": -0.0033372289983030212
+          },
+          {
+            "run_name": "whisper_d3",
+            "model": "whisper",
+            "level": "d3",
+            "hours": 10.001,
+            "observed_wer": 0.22194753467930228,
+            "fitted_wer": 0.2268160530325355,
+            "residual": -0.004868518353233209
+          },
+          {
+            "run_name": "whisper_d4",
+            "model": "whisper",
+            "level": "d4",
+            "hours": 30.001,
+            "observed_wer": 0.1640342443803507,
+            "fitted_wer": 0.1714251140843955,
+            "residual": -0.007390869704044817
+          },
+          {
+            "run_name": "whisper_d5",
+            "model": "whisper",
+            "level": "d5",
+            "hours": 66.134,
+            "observed_wer": 0.15373346152085338,
+            "fitted_wer": 0.1401452333038733,
+            "residual": 0.01358822821698008
+          },
+          {
+            "run_name": "xlsr_d1_trial",
+            "model": "xlsr",
+            "level": "d1",
+            "hours": 1.0,
+            "observed_wer": 0.478139449709289,
+            "fitted_wer": 0.4809255859006789,
+            "residual": -0.0027861361913898985
+          },
+          {
+            "run_name": "xlsr_d2",
+            "model": "xlsr",
+            "level": "d2",
+            "hours": 3.0,
+            "observed_wer": 0.3772375589433686,
+            "fitted_wer": 0.35962188423421854,
+            "residual": 0.017615674709150042
+          },
+          {
+            "run_name": "xlsr_d3",
+            "model": "xlsr",
+            "level": "d3",
+            "hours": 10.001,
+            "observed_wer": 0.23934441239756443,
+            "fitted_wer": 0.2615151250980647,
+            "residual": -0.02217071270050025
+          },
+          {
+            "run_name": "xlsr_d4",
+            "model": "xlsr",
+            "level": "d4",
+            "hours": 30.001,
+            "observed_wer": 0.17598315249736757,
+            "fitted_wer": 0.19555670044475665,
+            "residual": -0.01957354794738908
+          },
+          {
+            "run_name": "xlsr_d5",
+            "model": "xlsr",
+            "level": "d5",
+            "hours": 66.134,
+            "observed_wer": 0.18784049810007783,
+            "fitted_wer": 0.1586532080161255,
+            "residual": 0.029187290083952322
+          }
+        ]
+      }
+    },
+    "bootstrap": {
+      "shared_e0": {
+        "E0": {
+          "estimate": 0.07503103259208024,
+          "ci": [
+            0.061712630113632184,
+            0.08760587613698835
+          ],
+          "bootstrap_median": 0.07497804683917819
+        },
+        "a_whisper": {
+          "estimate": 0.33801051889388783,
+          "ci": [
+            0.3228094275922978,
+            0.35448432567795135
+          ],
+          "bootstrap_median": 0.33789232637455674
+        },
+        "c_whisper": {
+          "estimate": 0.36485737461937673,
+          "ci": [
+            0.337078292750687,
+            0.39363989185898784
+          ],
+          "bootstrap_median": 0.3646086760019646
+        },
+        "a_xlsr": {
+          "estimate": 0.41095728395365905,
+          "ci": [
+            0.39771035565558777,
+            0.425198520150465
+          ],
+          "bootstrap_median": 0.4110365228448545
+        },
+        "c_xlsr": {
+          "estimate": 0.35703145989923757,
+          "ci": [
+            0.3355717186810999,
+            0.37909133323717703
+          ],
+          "bootstrap_median": 0.3570360974177389
+        },
+        "c_whisper_minus_c_xlsr": {
+          "estimate": 0.00782591472013916,
+          "ci": [
+            -0.006658798366511807,
+            0.022723434972650905
+          ],
+          "bootstrap_median": 0.007569239805838374,
+          "p_two_sided": 0.30056994300569945
+        },
+        "share_E0_at_zero_bound": {
+          "whisper": 0.0,
+          "xlsr": 0.0
+        },
+        "n_retried": 0,
+        "n_failed": 0,
+        "n_used": 10000
+      },
+      "separate_e0": {
+        "E0_whisper": {
+          "estimate": 0.07230877574169947,
+          "ci": [
+            0.05275711972820823,
+            0.08869415241189421
+          ],
+          "bootstrap_median": 0.07222648547270295
+        },
+        "a_whisper": {
+          "estimate": 0.34051873261957216,
+          "ci": [
+            0.3225334374078838,
+            0.3618622577841378
+          ],
+          "bootstrap_median": 0.3404957053490323
+        },
+        "c_whisper": {
+          "estimate": 0.35930624983220216,
+          "ci": [
+            0.32185242849654977,
+            0.39885835391584273
+          ],
+          "bootstrap_median": 0.358952826386706
+        },
+        "E0_xlsr": {
+          "estimate": 0.07755520367731038,
+          "ci": [
+            0.06082026860690273,
+            0.09303109177862369
+          ],
+          "bootstrap_median": 0.07760407868652024
+        },
+        "a_xlsr": {
+          "estimate": 0.4086205200629659,
+          "ci": [
+            0.3933046027246476,
+            0.42542478912232323
+          ],
+          "bootstrap_median": 0.408760934638315
+        },
+        "c_xlsr": {
+          "estimate": 0.36121293754454975,
+          "ci": [
+            0.3344759833918484,
+            0.38899973609434113
+          ],
+          "bootstrap_median": 0.3614341721500215
+        },
+        "c_whisper_minus_c_xlsr": {
+          "estimate": -0.0019066877123475878,
+          "ci": [
+            -0.04564649758684282,
+            0.04276583891749628
+          ],
+          "bootstrap_median": -0.0024689791198271305,
+          "p_two_sided": 0.9143085691430857
+        },
+        "share_E0_at_zero_bound": {
+          "whisper": 0.0,
+          "xlsr": 0.0
+        },
+        "n_retried": 0,
+        "n_failed": 0,
+        "n_used": 10000
+      }
+    },
+    "decisions": {
+      "model": "shared_e0",
+      "h2_c_ci_entirely_above_zero": {
+        "whisper": true,
+        "xlsr": true
+      },
+      "h2_supported_for_both_models": true,
+      "h3_c_difference_ci_excludes_zero": false,
+      "h3_larger_exponent": null,
+      "e0_ci_reaches_zero": false
+    }
+  },
+  "input_sha256": {
+    "whisper_d1_trial_test.tsv": "9c6a51f450b2e3d4cc347a6c0c4ce467d6d639c8124f5b7bcd444655d1c11ec4",
+    "whisper_d2_test.tsv": "ea8ff9b88852a2c4c96c3d7f26d5f0af021a57d84e0d0a2cc5b460b70d611fc5",
+    "whisper_d3_test.tsv": "118e05def5274b01517fe7ee6e0047faf525505d42533d3e868cc9dd08c33d0a",
+    "whisper_d4_test.tsv": "f05b1bc509da70ae7c004a6f613fa86282f941fc69e386095ecfc2f0f9fa5c7b",
+    "whisper_d5_test.tsv": "0bc978bf437745e40f9e039c6408c7cda194dcb109a7d0b44372ec265e6bf871",
+    "xlsr_d1_trial_test.tsv": "0a2f581e56824179d91d55647a02a8561f383e8492a721c1549afdbf90474950",
+    "xlsr_d2_test.tsv": "bf9f012df6bbad33b937af9d9179ae5ce7e37a1e8041a7f49193d15a0daa4f50",
+    "xlsr_d3_test.tsv": "b3128109fed9f2e1fe7e502c558343871c7d14a2e04fceeb5916a7cfbb45c953",
+    "xlsr_d4_test.tsv": "cdc40bdc96b6e02822f74f4618e8fc8586fb0bca097501996020c3fa402ab6b7",
+    "xlsr_d5_test.tsv": "2242d1c0e3151548c5b04df006c5d7802496b7509efbdbb2748a9e9a014936e1",
+    "build_nested_subsets_report.json": "a6251798cecb5b45a88b07a7d660ad3efdc25e1520de48fa859f2ba60ded805d",
+    "bootstrap_metrics_report.json": "471a69c663c4622a720debb7840c1dc3e2ab78f6af25ca77a6e63062616d9073",
+    "scaling_curve_report.json": "08a672b557582fbfff55368e1dc3eb8b9dc683d28e47a83e0f3858862b453627"
+  },
+  "environment": {
+    "skrip": "log_environment.py",
+    "lapis_1_perangkat_keras": {
+      "gpu": {
+        "jumlah_gpu_terdeteksi_torch": 1,
+        "nama": "NVIDIA GeForce RTX 4060 Laptop GPU",
+        "vram_total_mib": 8188,
+        "compute_capability": "sm_89",
+        "jumlah_streaming_multiprocessor": 24
+      },
+      "cpu": {
+        "nama": "13th Gen Intel(R) Core(TM) i7-13700HX",
+        "penanda_keluarga": "Intel64 Family 6 Model 191 Stepping 2, GenuineIntel",
+        "core_fisik": 16,
+        "core_logis": 24
+      },
+      "ram_sistem": {
+        "total_gib": 31.81,
+        "tersedia_saat_pencatatan_gib": 21.02
+      },
+      "penyimpanan": {
+        "PhysicalDisks": [
+          {
+            "FriendlyName": "SAMSUNG MZVL21T0HCLR-00BL2",
+            "MediaType": "SSD",
+            "SizeGB": 953.9
+          }
+        ],
+        "Volumes": [
+          {
+            "DriveLetter": "D",
+            "FileSystemType": "NTFS",
+            "SizeGB": 476.2
+          },
+          {
+            "DriveLetter": "C",
+            "FileSystemType": "NTFS",
+            "SizeGB": 475.8
+          }
+        ]
+      },
+      "sistem_operasi": {
+        "platform": "Windows-11-10.0.26300-SP0",
+        "sistem": "Windows",
+        "rilis": "11",
+        "versi": "10.0.26300",
+        "arsitektur": "AMD64",
+        "nama_host": "Eduardo"
+      }
+    },
+    "lapis_2_perangkat_lunak_terikat_perangkat_keras": {
+      "python": {
+        "versi": "3.12.10",
+        "implementasi": "CPython",
+        "executable": "D:\\_01_Bachelor_Information_System\\_00-SKRIPSI\\skripsi-venv\\Scripts\\python.exe"
+      },
+      "driver_nvidia": {
+        "versi": "610.88",
+        "sumber": "nvidia-smi"
+      },
+      "cuda": {
+        "tersedia": true,
+        "runtime_versi_torch": "13.0",
+        "cudnn_versi_mentah": 92400,
+        "cudnn_versi": "9.24.0"
+      },
+      "pytorch": {
+        "versi": "2.14.0+cu130",
+        "build_cuda": "13.0",
+        "versi_lengkap": "2.14.0+cu130"
+      },
+      "presisi": {
+        "dtype_bawaan": "torch.float32",
+        "float32_matmul_precision": "highest",
+        "bf16_didukung": true
+      },
+      "tf32": {
+        "cuda_matmul_allow_tf32": false,
+        "cudnn_allow_tf32": true,
+        "catatan": "Kedua kanal dilaporkan terpisah karena nilai bawaannya berbeda. Melaporkannya sebagai satu status tunggal adalah penyederhanaan yang keliru."
+      },
+      "determinisme": {
+        "cudnn_deterministic": false,
+        "cudnn_benchmark": false,
+        "use_deterministic_algorithms": false
+      },
+      "pustaka": {
+        "torch": "2.14.0+cu130",
+        "transformers": "5.17.0",
+        "datasets": "5.0.1",
+        "accelerate": "1.15.0",
+        "tokenizers": "0.23.2",
+        "safetensors": "0.8.0",
+        "soundfile": "0.14.0",
+        "jiwer": "4.0.0",
+        "bitsandbytes": "0.50.2",
+        "numpy": "2.5.3",
+        "pandas": "3.0.5",
+        "scipy": "1.18.1",
+        "scikit-learn": "1.9.0",
+        "statsmodels": "0.15.0",
+        "matplotlib": "3.11.1"
+      }
+    },
+    "lapis_3_jejak_eksekusi": {
+      "timestamp_utc": "2026-11-15T11:36:34+00:00",
+      "timestamp_lokal": "2026-11-15T18:36:34+07:00",
+      "random_seed": 42,
+      "vram_puncak_teralokasi_mib": 0.0,
+      "vram_puncak_tercadang_mib": 0.0,
+      "durasi_pengumpulan_detik": 79.272
+    }
+  },
+  "elapsed_seconds": 73.5
+}

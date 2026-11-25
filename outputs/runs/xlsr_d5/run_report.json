@@ -1,0 +1,402 @@
+{
+  "generated_at": "2026-10-07T10:38:50+07:00",
+  "script": "train_asr.py",
+  "mode": "train",
+  "config_path": "configs\\xlsr_d5.yaml",
+  "config_sha256": "9caec80c2a486e3f3925ea6888537eb5bfcdf0f4d9b45290a26f875bd1df8204",
+  "config": {
+    "run_name": "xlsr_d5",
+    "model_family": "xlsr",
+    "pretrained": "facebook/wav2vec2-xls-r-300m",
+    "revision": "1a640f32ac3e39899438a2931f9924c02f080a54",
+    "train_subset": "outputs/subsets/d5.tsv",
+    "validation_split": "outputs/splits/validation.tsv",
+    "seed": 42,
+    "precision": "bf16",
+    "tf32": false,
+    "deterministic": true,
+    "effective_batch_size": 32,
+    "per_device_train_batch_size": 2,
+    "per_device_eval_batch_size": 2,
+    "learning_rate": 0.0003,
+    "warmup_steps": 500,
+    "lr_scheduler_type": "linear",
+    "optim": "adamw_torch",
+    "max_steps": 10000,
+    "eval_steps": 250,
+    "early_stopping_patience": 4,
+    "early_stopping_min_steps": 2000,
+    "gradient_checkpointing": true,
+    "logging_steps": 25,
+    "dataloader_num_workers": 4,
+    "save_only_model": true,
+    "keep_checkpoints": false,
+    "model_overrides": {
+      "attention_dropout": 0.0,
+      "hidden_dropout": 0.0,
+      "feat_proj_dropout": 0.0,
+      "mask_time_prob": 0.05,
+      "layerdrop": 0.0,
+      "ctc_loss_reduction": "mean",
+      "ctc_zero_infinity": true
+    }
+  },
+  "result": {
+    "n_train_utterances": 41293,
+    "n_train_utterances_per_epoch": 41280,
+    "steps_per_epoch": 1290,
+    "n_validation_utterances": 1900,
+    "gradient_accumulation_steps": 16,
+    "global_step": 5750,
+    "epochs_completed": 4.46,
+    "stopped_early": true,
+    "best_validation_wer": 0.18585858585858586,
+    "best_step": 4750,
+    "best_model_checkpoint": "D:\\_01_Bachelor_Information_System\\_00-SKRIPSI\\_01_python-scripts\\outputs\\runs\\xlsr_d5\\checkpoints\\checkpoint-4750",
+    "validation_history": [
+      {
+        "step": 250,
+        "wer": 1.0,
+        "cer": 1.0,
+        "eval_seconds": 76.4,
+        "eval_reserved_start_mib": 3810,
+        "eval_peak_reserved_mib": 4740,
+        "eval_peak_allocated_mib": 4383
+      },
+      {
+        "step": 500,
+        "wer": 0.5500935278713056,
+        "cer": 0.1223844848807425,
+        "eval_seconds": 55.0,
+        "eval_reserved_start_mib": 3830,
+        "eval_peak_reserved_mib": 4738,
+        "eval_peak_allocated_mib": 4385
+      },
+      {
+        "step": 750,
+        "wer": 0.4612794612794613,
+        "cer": 0.10092811283723097,
+        "eval_seconds": 55.4,
+        "eval_reserved_start_mib": 3816,
+        "eval_peak_reserved_mib": 4740,
+        "eval_peak_allocated_mib": 4383
+      },
+      {
+        "step": 1000,
+        "wer": 0.3482229704451927,
+        "cer": 0.07506958074138141,
+        "eval_seconds": 54.8,
+        "eval_reserved_start_mib": 3816,
+        "eval_peak_reserved_mib": 4744,
+        "eval_peak_allocated_mib": 4383
+      },
+      {
+        "step": 1250,
+        "wer": 0.3274971941638608,
+        "cer": 0.07058980073849838,
+        "eval_seconds": 55.0,
+        "eval_reserved_start_mib": 3814,
+        "eval_peak_reserved_mib": 4742,
+        "eval_peak_allocated_mib": 4380
+      },
+      {
+        "step": 1500,
+        "wer": 0.30766928544706323,
+        "cer": 0.0667642460330661,
+        "eval_seconds": 54.9,
+        "eval_reserved_start_mib": 3816,
+        "eval_peak_reserved_mib": 4744,
+        "eval_peak_allocated_mib": 4384
+      },
+      {
+        "step": 1750,
+        "wer": 0.29532360643471756,
+        "cer": 0.062395351673818794,
+        "eval_seconds": 54.8,
+        "eval_reserved_start_mib": 3832,
+        "eval_peak_reserved_mib": 4736,
+        "eval_peak_allocated_mib": 4387
+      },
+      {
+        "step": 2000,
+        "wer": 0.2589599700710812,
+        "cer": 0.05501036780767994,
+        "eval_seconds": 55.0,
+        "eval_reserved_start_mib": 3836,
+        "eval_peak_reserved_mib": 4740,
+        "eval_peak_allocated_mib": 4384
+      },
+      {
+        "step": 2250,
+        "wer": 0.25379723157500933,
+        "cer": 0.05355776587605203,
+        "eval_seconds": 55.5,
+        "eval_reserved_start_mib": 3822,
+        "eval_peak_reserved_mib": 4742,
+        "eval_peak_allocated_mib": 4383
+      },
+      {
+        "step": 2500,
+        "wer": 0.25738870183314627,
+        "cer": 0.0532140203807813,
+        "eval_seconds": 55.6,
+        "eval_reserved_start_mib": 3816,
+        "eval_peak_reserved_mib": 4742,
+        "eval_peak_allocated_mib": 4382
+      },
+      {
+        "step": 2750,
+        "wer": 0.24653946876169097,
+        "cer": 0.0517170641916991,
+        "eval_seconds": 54.6,
+        "eval_reserved_start_mib": 3822,
+        "eval_peak_reserved_mib": 4744,
+        "eval_peak_allocated_mib": 4385
+      },
+      {
+        "step": 3000,
+        "wer": 0.23509165731387954,
+        "cer": 0.050064868101526896,
+        "eval_seconds": 55.6,
+        "eval_reserved_start_mib": 3812,
+        "eval_peak_reserved_mib": 4738,
+        "eval_peak_allocated_mib": 4384
+      },
+      {
+        "step": 3250,
+        "wer": 0.22042648709315377,
+        "cer": 0.046283667653548896,
+        "eval_seconds": 54.5,
+        "eval_reserved_start_mib": 3814,
+        "eval_peak_reserved_mib": 4742,
+        "eval_peak_allocated_mib": 4384
+      },
+      {
+        "step": 3500,
+        "wer": 0.23060231949120838,
+        "cer": 0.048567911912444695,
+        "eval_seconds": 55.3,
+        "eval_reserved_start_mib": 3814,
+        "eval_peak_reserved_mib": 4742,
+        "eval_peak_allocated_mib": 4383
+      },
+      {
+        "step": 3750,
+        "wer": 0.2104002992891882,
+        "cer": 0.04485324285064813,
+        "eval_seconds": 55.1,
+        "eval_reserved_start_mib": 3820,
+        "eval_peak_reserved_mib": 4742,
+        "eval_peak_allocated_mib": 4384
+      },
+      {
+        "step": 4000,
+        "wer": 0.20830527497194165,
+        "cer": 0.044343168889923824,
+        "eval_seconds": 54.6,
+        "eval_reserved_start_mib": 3820,
+        "eval_peak_reserved_mib": 4744,
+        "eval_peak_allocated_mib": 4382
+      },
+      {
+        "step": 4250,
+        "wer": 0.20561167227833896,
+        "cer": 0.04334519809720235,
+        "eval_seconds": 55.5,
+        "eval_reserved_start_mib": 3806,
+        "eval_peak_reserved_mib": 4734,
+        "eval_peak_allocated_mib": 4385
+      },
+      {
+        "step": 4500,
+        "wer": 0.19775533108866442,
+        "cer": 0.042724238492842334,
+        "eval_seconds": 54.2,
+        "eval_reserved_start_mib": 3812,
+        "eval_peak_reserved_mib": 4740,
+        "eval_peak_allocated_mib": 4384
+      },
+      {
+        "step": 4750,
+        "wer": 0.18585858585858586,
+        "cer": 0.039852300322677225,
+        "eval_seconds": 55.1,
+        "eval_reserved_start_mib": 3816,
+        "eval_peak_reserved_mib": 4742,
+        "eval_peak_allocated_mib": 4382
+      },
+      {
+        "step": 5000,
+        "wer": 0.19558548447437335,
+        "cer": 0.04112748522448798,
+        "eval_seconds": 55.1,
+        "eval_reserved_start_mib": 3816,
+        "eval_peak_reserved_mib": 4742,
+        "eval_peak_allocated_mib": 4382
+      },
+      {
+        "step": 5250,
+        "wer": 0.19319117096894875,
+        "cer": 0.04079482829358083,
+        "eval_seconds": 54.6,
+        "eval_reserved_start_mib": 3818,
+        "eval_peak_reserved_mib": 4742,
+        "eval_peak_allocated_mib": 4381
+      },
+      {
+        "step": 5500,
+        "wer": 0.1879536101758324,
+        "cer": 0.03934222636195292,
+        "eval_seconds": 54.9,
+        "eval_reserved_start_mib": 3820,
+        "eval_peak_reserved_mib": 4744,
+        "eval_peak_allocated_mib": 4382
+      },
+      {
+        "step": 5750,
+        "wer": 0.18802843247287693,
+        "cer": 0.039852300322677225,
+        "eval_seconds": 54.4,
+        "eval_reserved_start_mib": 3820,
+        "eval_peak_reserved_mib": 4744,
+        "eval_peak_allocated_mib": 4380
+      }
+    ],
+    "train_runtime_seconds": 17828.9,
+    "seconds_per_step": 2.87,
+    "timed_steps": 5727,
+    "first_step_seconds": 24.8,
+    "train_peak_reserved_mib": 6336,
+    "train_peak_allocated_mib": 6103,
+    "evaluation_seconds_total": 1285.7,
+    "model_dir": "D:\\_01_Bachelor_Information_System\\_00-SKRIPSI\\_01_python-scripts\\outputs\\models\\xlsr_d5"
+  },
+  "numerics_state_at_end": {
+    "cuda_matmul_allow_tf32": false,
+    "cudnn_allow_tf32": false,
+    "cudnn_deterministic": true,
+    "cudnn_benchmark": false,
+    "use_deterministic_algorithms": true,
+    "deterministic_warn_only": true,
+    "cublas_workspace_config": ":4096:8",
+    "pytorch_cuda_alloc_conf": "expandable_segments:True"
+  },
+  "determinism_warnings": [
+    "UserWarning: ctc_loss_backward_gpu does not have a deterministic implementation, but you set 'torch.use_deterministic_algorithms(True, warn_only=True)'. You can file an issue at https://github.com/pytorch/pytorch/issues to help us prioritize adding deterministic support for this operation. (Triggered internally at C:\\actions-runner\\_work\\pytorch\\pytorch\\aten\\src\\ATen\\Context.cpp:190.)",
+    "UserWarning: Memory Efficient attention defaults to a non-deterministic algorithm. To explicitly enable determinism call torch.use_deterministic_algorithms(True, warn_only=False). (Triggered internally at C:\\actions-runner\\_work\\pytorch\\pytorch\\aten\\src\\ATen\\native\\transformers\\cuda\\attention_backward.cu:912.)"
+  ],
+  "environment": {
+    "skrip": "log_environment.py",
+    "lapis_1_perangkat_keras": {
+      "gpu": {
+        "jumlah_gpu_terdeteksi_torch": 1,
+        "nama": "NVIDIA GeForce RTX 4060 Laptop GPU",
+        "vram_total_mib": 8188,
+        "compute_capability": "sm_89",
+        "jumlah_streaming_multiprocessor": 24
+      },
+      "cpu": {
+        "nama": "13th Gen Intel(R) Core(TM) i7-13700HX",
+        "penanda_keluarga": "Intel64 Family 6 Model 191 Stepping 2, GenuineIntel",
+        "core_fisik": 16,
+        "core_logis": 24
+      },
+      "ram_sistem": {
+        "total_gib": 31.81,
+        "tersedia_saat_pencatatan_gib": 18.58
+      },
+      "penyimpanan": {
+        "PhysicalDisks": [
+          {
+            "FriendlyName": "SAMSUNG MZVL21T0HCLR-00BL2",
+            "MediaType": "SSD",
+            "SizeGB": 953.9
+          }
+        ],
+        "Volumes": [
+          {
+            "DriveLetter": "D",
+            "FileSystemType": "NTFS",
+            "SizeGB": 476.2
+          },
+          {
+            "DriveLetter": "C",
+            "FileSystemType": "NTFS",
+            "SizeGB": 475.8
+          }
+        ]
+      },
+      "sistem_operasi": {
+        "platform": "Windows-11-10.0.26300-SP0",
+        "sistem": "Windows",
+        "rilis": "11",
+        "versi": "10.0.26300",
+        "arsitektur": "AMD64",
+        "nama_host": "Eduardo"
+      }
+    },
+    "lapis_2_perangkat_lunak_terikat_perangkat_keras": {
+      "python": {
+        "versi": "3.12.10",
+        "implementasi": "CPython",
+        "executable": "D:\\_01_Bachelor_Information_System\\_00-SKRIPSI\\skripsi-venv\\Scripts\\python.exe"
+      },
+      "driver_nvidia": {
+        "versi": "610.88",
+        "sumber": "nvidia-smi"
+      },
+      "cuda": {
+        "tersedia": true,
+        "runtime_versi_torch": "13.0",
+        "cudnn_versi_mentah": 92400,
+        "cudnn_versi": "9.24.0"
+      },
+      "pytorch": {
+        "versi": "2.14.0+cu130",
+        "build_cuda": "13.0",
+        "versi_lengkap": "2.14.0+cu130"
+      },
+      "presisi": {
+        "dtype_bawaan": "torch.float32",
+        "float32_matmul_precision": "highest",
+        "bf16_didukung": true
+      },
+      "tf32": {
+        "cuda_matmul_allow_tf32": false,
+        "cudnn_allow_tf32": false,
+        "catatan": "Kedua kanal dilaporkan terpisah karena nilai bawaannya berbeda. Melaporkannya sebagai satu status tunggal adalah penyederhanaan yang keliru."
+      },
+      "determinisme": {
+        "cudnn_deterministic": true,
+        "cudnn_benchmark": false,
+        "use_deterministic_algorithms": true
+      },
+      "pustaka": {
+        "torch": "2.14.0+cu130",
+        "transformers": "5.17.0",
+        "datasets": "5.0.1",
+        "accelerate": "1.15.0",
+        "tokenizers": "0.23.2",
+        "safetensors": "0.8.0",
+        "soundfile": "0.14.0",
+        "jiwer": "4.0.0",
+        "bitsandbytes": "0.50.2",
+        "numpy": "2.5.3",
+        "pandas": "3.0.5",
+        "scipy": "1.18.1",
+        "scikit-learn": "1.9.0",
+        "statsmodels": "0.15.0",
+        "matplotlib": "3.11.1"
+      }
+    },
+    "lapis_3_jejak_eksekusi": {
+      "timestamp_utc": "2026-10-07T08:36:10+00:00",
+      "timestamp_lokal": "2026-10-07T15:36:10+07:00",
+      "random_seed": 42,
+      "vram_puncak_teralokasi_mib": 3665.44,
+      "vram_puncak_tercadang_mib": 3820.0,
+      "durasi_pengumpulan_detik": 17839.754
+    }
+  },
+  "elapsed_seconds": 17839.8
+}

@@ -1,0 +1,101 @@
+[19] memeriksa: Attention Is All You Need...
+[20] memeriksa: Connectionist temporal classification: Labelling unsegmented...
+[21] memeriksa: wav2vec 2.0: A Framework for Self-Supervised Learning of Spe...
+[22] memeriksa: Unsupervised Cross-lingual Representation Learning for Speec...
+[23] memeriksa: Binary codes capable of correcting deletions, insertions, an...
+[24] memeriksa: From WER and RIL to MER and WIL: improved evaluation measure...
+[25] memeriksa: Bootstrap Methods: Another Look at the Jackknife...
+[26] memeriksa: Statistical Significance Tests for Machine Translation Evalu...
+[27] memeriksa: A Simple Sequentially Rejective Multiple Test Procedure...
+[28] memeriksa: A New Look at the Statistical Model Identification...
+[29] memeriksa: KenLM: Faster and Smaller Language Model Queries...
+[30] memeriksa: LoRA: Low-Rank Adaptation of Large Language Models...
+[31] memeriksa: Deep Neural Networks for Acoustic Modeling in Speech Recogni...
+[32] memeriksa: CRISP-DM: Towards a Standard Process Model for Data Mining...
+[33] memeriksa: A Systematic Literature Review on Applying CRISP-DM Process ...
+[34] memeriksa: CRISP-DM 1.0: Step-by-step data mining guide...
+[35] memeriksa: Towards CRISP-ML(Q): A Machine Learning Process Model with Q...
+[36] memeriksa: CRISP-DM Twenty Years Later: From Data Mining Processes to D...
+[42] memeriksa: From Data Mining to Knowledge Discovery in Databases...
+
+==============================================================================
+RINGKASAN
+==============================================================================
+
+[19] SESUAI (manual)  Attention Is All You Need
+    verifikasi manual: papers.nips.cc laman NIPS 2017: judul dan daftar penulis cocok, volume 30. OpenAlex melaporkan tahun 2025 (cacat indeks, diabaikan). Laman resmi tidak mencantumkan nomor halaman.
+    catatan API: tahun beda: dokumen=2017 sumber=2025
+    sumber arxiv: http://arxiv.org/abs/1706.03762v7 | terbit 2017-06-12 | journal_ref='' | doi=''
+    sumber openalex_match:  | vol 30 | no None | hlm 5998-6008 | 2025
+
+[20] SESUAI  Connectionist temporal classification: Labelling unsegm
+    sumber crossref_doi: Proceedings of the 23rd international conference on Machine learning - ICML '06 | vol None | no None | hlm 369-376 | 2006
+
+[21] SESUAI  wav2vec 2.0: A Framework for Self-Supervised Learning o
+    sumber arxiv: http://arxiv.org/abs/2006.11477v3 | terbit 2020-06-20 | journal_ref='' | doi=''
+    sumber openalex_match: neural information processing systems | vol 33 | no None | hlm 12449-12460 | 2020
+
+[22] SESUAI  Unsupervised Cross-lingual Representation Learning for 
+    sumber crossref_doi: Interspeech 2021 | vol None | no None | hlm 2426-2430 | 2021
+    sumber arxiv: http://arxiv.org/abs/2006.13979v2 | terbit 2020-06-24 | journal_ref='' | doi=''
+
+[23] SESUAI (manual)  Binary codes capable of correcting deletions, insertion
+    verifikasi manual: NASA ADS bibcode 1966SPhD...10..707L: vol. 10, no. 8, hlm. 707-710, 1966. Terjemahan dari Doklady Akademii Nauk SSSR vol. 163, no. 4, hlm. 845-848, 1965.
+    catatan API: tidak ada padanan judul persis pada pencarian Crossref
+    catatan API: tidak ada padanan judul persis pada OpenAlex
+
+[24] SESUAI  From WER and RIL to MER and WIL: improved evaluation me
+    sumber crossref_doi: Interspeech 2004 | vol None | no None | hlm 2765-2768 | 2004
+
+[25] SESUAI (manual)  Bootstrap Methods: Another Look at the Jackknife
+    verifikasi manual: Crossref tidak memuat medan halaman untuk record Project Euclid ini. Rentang 1-26 dikonfirmasi lewat metadata JSTOR 2958830 dan MR0515681.
+    sumber crossref_doi: The Annals of Statistics | vol 7 | no 1 | hlm None | 1979
+
+[26] SESUAI (manual)  Statistical Significance Tests for Machine Translation 
+    verifikasi manual: ACL Anthology W04-3250: hlm. 388-395, Barcelona, Spain, penerbit ACL, medan DOI kosong pada laman resmi.
+    sumber openalex_match:  | vol None | no None | hlm 388-395 | 2004
+
+[27] SESUAI (manual)  A Simple Sequentially Rejective Multiple Test Procedure
+    verifikasi manual: OpenAlex mengonfirmasi vol. 6, hlm. 65-70, 1979, tetapi tidak memuat nomor terbitan. Nomor 2 dikonfirmasi lewat metadata JSTOR 4615733 dan MR0538597.
+    sumber openalex_match: Scandinavian Journal of Statistics | vol 6 | no None | hlm 65-70 | 1979
+
+[28] SESUAI  A New Look at the Statistical Model Identification
+    sumber crossref_doi: IEEE Transactions on Automatic Control | vol 19 | no 6 | hlm 716-723 | 1974
+
+[29] SESUAI (manual)  KenLM: Faster and Smaller Language Model Queries
+    verifikasi manual: ACL Anthology W11-2123: hlm. 187-197, Edinburgh, Scotland, penerbit ACL, medan DOI kosong pada laman resmi.
+    sumber openalex_match:  | vol None | no None | hlm 187-197 | 2011
+
+[30] SESUAI (manual)  LoRA: Low-Rank Adaptation of Large Language Models
+    verifikasi manual: OpenReview forum nZeVKeeFYf9 dan iclr.cc/virtual/2022/poster/6319: terbit sebagai poster ICLR 2022. Pracetak arXiv 2106.09685 v1 17 Juni 2021, v2 16 Oktober 2021, tanpa medan journal-ref.
+    catatan API: tidak ada padanan judul persis pada pencarian Crossref
+    catatan API: tidak ada padanan judul persis pada OpenAlex
+    sumber arxiv: http://arxiv.org/abs/2106.09685v2 | terbit 2021-06-17 | journal_ref='' | doi=''
+
+[31] SESUAI  Deep Neural Networks for Acoustic Modeling in Speech Re
+    sumber crossref_doi: IEEE Signal Processing Magazine | vol 29 | no 6 | hlm 82-97 | 2012
+
+[32] SESUAI (manual)  CRISP-DM: Towards a Standard Process Model for Data Min
+    verifikasi manual: Tidak terindeks Crossref maupun OpenAlex, dan prosidingnya tidak memiliki DOI. Judul, penulis, tahun, dan rentang halaman 29-39 dikonfirmasi lewat rekaman Semantic Scholar CorpusID 1211505 dan berkas prosiding yang beredar luas. Venue: Proceedings of the 4th International Conference on the Practical Applications of Knowledge Discovery and Data Mining, London, 2000. Sebagian literatur menulis tahun 1999, yaitu tahun pengembangan model, bukan tahun terbit makalah ini.
+    catatan API: tidak ada padanan judul persis pada pencarian Crossref
+    catatan API: tidak ada padanan judul persis pada OpenAlex
+
+[33] SESUAI  A Systematic Literature Review on Applying CRISP-DM Pro
+    sumber crossref_doi: Procedia Computer Science | vol 181 | no None | hlm 526-534 | 2021
+
+[34] SESUAI (manual)  CRISP-DM 1.0: Step-by-step data mining guide
+    verifikasi manual: Laporan teknis konsorsium, bukan terbitan berkala, sehingga tidak ber-DOI dan tidak terindeks Crossref maupun OpenAlex. Daftar tujuh penulis, judul, nomor dokumen CRISPWP-0800, dan tahun 2000 dipastikan langsung dari halaman judul dan halaman hak cipta berkas PDF aslinya. Judul aslinya memakai sentence case, yaitu 'Step-by-step data mining guide', bukan Title Case seperti pada banyak sitasi sekunder. Kata pengantar bertanggal Agustus 2000, sedangkan halaman hak cipta menulis '1999, 2000', sehingga sebagian literatur salah menulis tahunnya sebagai 1999. Tautan arsip: http://web.archive.org/web/20101231174706/http://www.crisp-dm.org/CRISPWP-0800.pdf (domain resmi crisp-dm.org sudah tidak aktif).
+    catatan API: tidak ada padanan judul persis pada pencarian Crossref
+    catatan API: tidak ada padanan judul persis pada OpenAlex
+
+[35] SESUAI  Towards CRISP-ML(Q): A Machine Learning Process Model w
+    sumber crossref_doi: Machine Learning and Knowledge Extraction | vol 3 | no 2 | hlm 392-413 | 2021
+
+[36] SESUAI  CRISP-DM Twenty Years Later: From Data Mining Processes
+    sumber crossref_doi: IEEE Transactions on Knowledge and Data Engineering | vol 33 | no 8 | hlm 3048-3061 | 2021
+
+[42] SESUAI (manual)  From Data Mining to Knowledge Discovery in Databases
+    verifikasi manual: doi.org/ra menyatakan DOI terdaftar di Crossref dan doi.org meneruskannya ke laman artikel AAAI OJS, tetapi Crossref REST API mengembalikan HTTP 404 dan OpenAlex tidak memuat rekaman ber-DOI (diperiksa 16 Oktober 2026). Judul, ketiga penulis, vol. 17, no. 3, dan tahun 1996 dipastikan dari laman artikel ojs.aaai.org/aimagazine/index.php/aimagazine/article/view/1230 dan berkas PDF resminya, yang bermetadata 'AI Magazine Volume 17 Number 3 (Fall 1996)', berisi 18 halaman, dan bernomor halaman tercetak 37 sampai 54. Laman OJS menulis tanggal terbit 15 Maret 1996, berlawanan dengan label terbitan Fall 1996, sehingga yang dicantumkan hanya tahunnya.
+    catatan API: sumber gagal diambil: HTTP 404
+
+Laporan lengkap: D:\_01_Bachelor_Information_System\_00-SKRIPSI\_01_python-scripts\outputs\verify_references_report.json

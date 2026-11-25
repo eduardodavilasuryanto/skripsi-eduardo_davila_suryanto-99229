@@ -1,0 +1,27 @@
+==============================================================================
+Audit kebocoran transkrip corpus OpenSLR SLR35
+Waktu mulai        : 2026-09-20T16:28:58+07:00
+Metadata           : D:\_01_Bachelor_Information_System\_00-SKRIPSI\_03_dataset\asr_javanese_0\utt_spk_text.tsv
+Random seed        : 1, 7, 13, 42, 101, 2024, 31337, 60221, 99991, 123457
+Rasio pembagian    : test 0.0670, validation 0.0410
+==============================================================================
+Keanggotaan subset : berkas FLAC pada disk
+
+[corpus_penuh] 185076 utterance
+[corpus_penuh] kalimat unik 96878, rata-rata pembacaan 1.9104, speaker 1019
+[corpus_penuh] random_utterance   kebocoran  70.04% (sd 0.35, rentang 69.56 sampai 70.71), speaker tumpang tindih  99.97%
+[corpus_penuh] speaker_disjoint   kebocoran  68.70% (sd 3.48, rentang 64.36 sampai 73.99), speaker tumpang tindih   0.00%
+[corpus_penuh] text_disjoint      kebocoran   0.00% (sd 0.00, rentang 0.00 sampai 0.00), speaker tumpang tindih  99.97%
+[corpus_penuh] graf speaker-transkrip: 13 komponen, terbesar 118050 utterance (63.78%), kedua 67015 (36.21%), sisa 11 komponen berjumlah 11 utterance (0.006%). Kuota data test 12391 utterance
+
+[subset_kerja] 46309 utterance
+[subset_kerja] kalimat unik 37887, rata-rata pembacaan 1.2223, speaker 922
+[subset_kerja] random_utterance   kebocoran  30.93% (sd 0.68, rentang 29.77 sampai 31.71), speaker tumpang tindih  99.82%
+[subset_kerja] speaker_disjoint   kebocoran  30.36% (sd 1.88, rentang 27.26 sampai 32.85), speaker tumpang tindih   0.00%
+[subset_kerja] text_disjoint      kebocoran   0.00% (sd 0.00, rentang 0.00 sampai 0.00), speaker tumpang tindih  99.91%
+[subset_kerja] graf speaker-transkrip: 61 komponen, terbesar 29479 utterance (63.66%), kedua 16713 (36.09%), sisa 59 komponen berjumlah 117 utterance (0.253%). Kuota data test 3100 utterance
+
+==============================================================================
+Laporan ditulis ke : D:\_01_Bachelor_Information_System\_00-SKRIPSI\_01_python-scripts\outputs\audit_transcript_leakage_report.json
+Durasi eksekusi    : 32.33 detik
+==============================================================================

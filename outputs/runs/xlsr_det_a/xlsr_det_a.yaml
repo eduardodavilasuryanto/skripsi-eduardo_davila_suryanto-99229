@@ -1,0 +1,42 @@
+# Uji determinisme XLS-R 300M, Utang nomor 4 butir (c) dan (e), Sesi 19.
+# xlsr_det_a.yaml dan xlsr_det_b.yaml identik kecuali run_name; deret loss per
+# langkah kedua run dibandingkan pada butir (e). Selain run_name, berbeda dari
+# xlsr_d1_trial.yaml hanya pada max_steps 30, eval_steps 30, dan
+# logging_steps 1. load_config mewajibkan max_steps kelipatan eval_steps,
+# sehingga validation dievaluasi sekali di akhir. Warmup 500 dipertahankan agar
+# pengaturannya sama dengan run percobaan, sehingga ke-30 langkah berada pada
+# fase warmup.
+run_name: xlsr_det_a
+model_family: xlsr
+pretrained: facebook/wav2vec2-xls-r-300m
+revision: 1a640f32ac3e39899438a2931f9924c02f080a54
+train_subset: outputs/subsets/d1.tsv
+validation_split: outputs/splits/validation.tsv
+seed: 42
+precision: bf16
+tf32: false
+deterministic: true
+effective_batch_size: 32
+per_device_train_batch_size: 2
+per_device_eval_batch_size: 2
+learning_rate: 3.0e-4
+warmup_steps: 500
+lr_scheduler_type: linear
+optim: adamw_torch
+max_steps: 30
+eval_steps: 30
+early_stopping_patience: 4
+early_stopping_min_steps: 2000
+gradient_checkpointing: true
+logging_steps: 1
+dataloader_num_workers: 4
+save_only_model: true
+keep_checkpoints: false
+model_overrides:
+  attention_dropout: 0.0
+  hidden_dropout: 0.0
+  feat_proj_dropout: 0.0
+  mask_time_prob: 0.05
+  layerdrop: 0.0
+  ctc_loss_reduction: mean
+  ctc_zero_infinity: true

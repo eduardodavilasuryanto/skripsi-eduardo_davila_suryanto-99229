@@ -1,0 +1,57 @@
+==============================================================================
+LINGKUNGAN EKSEKUSI PENELITIAN
+==============================================================================
+
+LAPIS 1. PERANGKAT KERAS FISIK
+  GPU                               : NVIDIA GeForce RTX 4060 Laptop GPU
+  VRAM total (MiB)                  : 8188
+  Compute capability                : sm_89
+  Jumlah GPU                        : 1
+  CPU                               : 13th Gen Intel(R) Core(TM) i7-13700HX
+  Core fisik / logis                : 16 / 24
+  RAM sistem (GiB)                  : 31.81
+  Sistem operasi                    : Windows-11-10.0.26200-SP0
+  Disk fisik 1                      : SSD, 953.9 GB, SAMSUNG MZVL21T0HCLR-00BL2
+
+LAPIS 2. PERANGKAT LUNAK TERIKAT PERANGKAT KERAS
+  Python                            : 3.12.10
+  Driver NVIDIA                     : 610.88
+  CUDA tersedia                     : True
+  CUDA runtime (torch)              : 13.0
+  cuDNN                             : 9.24.0
+  PyTorch                           : 2.14.0+cu130
+  dtype bawaan                      : torch.float32
+  float32_matmul_precision          : highest
+  bf16 didukung                     : True
+  TF32 matmul                       : False
+  TF32 cuDNN                        : True
+  cudnn.deterministic               : False
+  cudnn.benchmark                   : False
+  deterministic_algorithms          : False
+
+  Versi pustaka penelitian:
+    torch                           : 2.14.0+cu130
+    transformers                    : 5.17.0
+    datasets                        : 5.0.1
+    accelerate                      : 1.15.0
+    tokenizers                      : 0.23.2
+    safetensors                     : 0.8.0
+    soundfile                       : 0.14.0
+    jiwer                           : 4.0.0
+    bitsandbytes                    : 0.50.2
+    numpy                           : 2.5.3
+    pandas                          : 3.0.5
+    scipy                           : 1.18.1
+    scikit-learn                    : 1.9.0
+    statsmodels                     : 0.15.0
+    matplotlib                      : 3.11.1
+
+LAPIS 3. JEJAK EKSEKUSI
+  Timestamp lokal                   : 2026-09-23T05:32:13+07:00
+  Random seed                       : 42
+  VRAM puncak teralokasi (MiB)      : 0.0
+  Durasi pengumpulan (detik)        : 1.512
+
+==============================================================================
+
+Laporan JSON ditulis ke: D:\_01_Bachelor_Information_System\_00-SKRIPSI\_01_python-scripts\outputs\environment_report.json

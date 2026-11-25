@@ -1,0 +1,205 @@
+==============================================================================
+Pelatihan whisper_det_a
+Waktu mulai        : 2026-10-04T10:28:14+07:00
+Konfigurasi        : configs\trial\whisper_det_a.yaml (SHA-256 febdfcf2a9e1eb8f)
+Random seed        : 42
+Model              : openai/whisper-small @ 973afd24965f72e36ca33b3055d56a652f456b4d
+Presisi / TF32     : bf16 / False
+Batch efektif      : 32 = 16 x 2 akumulasi
+run_name: whisper_det_a
+model_family: whisper
+pretrained: openai/whisper-small
+revision: 973afd24965f72e36ca33b3055d56a652f456b4d
+train_subset: outputs/subsets/d1.tsv
+validation_split: outputs/splits/validation.tsv
+seed: 42
+precision: bf16
+tf32: false
+deterministic: true
+effective_batch_size: 32
+per_device_train_batch_size: 16
+per_device_eval_batch_size: 32
+learning_rate: 1.0e-05
+warmup_steps: 500
+lr_scheduler_type: linear
+optim: adamw_torch
+max_steps: 30
+eval_steps: 30
+early_stopping_patience: 4
+early_stopping_min_steps: 2000
+gradient_checkpointing: true
+logging_steps: 1
+dataloader_num_workers: 4
+save_only_model: true
+keep_checkpoints: false
+generation_max_new_tokens: 128
+model_overrides: {}
+
+==============================================================================
+Training           : 610 utterance, 1.000 jam, referensi kosong 0, simbol tak tercantum terhapus []
+Validation         : 1900 utterance, 3.053 jam, referensi kosong 0, simbol tak tercantum terhapus []
+
+Loading weights:   0%|          | 0/479 [00:00<?, ?it/s]
+Loading weights:  25%|██▍       | 118/479 [00:00<00:00, 1005.50it/s]
+Loading weights:  46%|████▌     | 219/479 [00:00<00:00, 487.50it/s] 
+Loading weights: 100%|██████████| 479/479 [00:00<00:00, 1147.50it/s]
+Status numerik     : {'cuda_matmul_allow_tf32': False, 'cudnn_allow_tf32': False, 'cudnn_deterministic': True, 'cudnn_benchmark': False, 'use_deterministic_algorithms': True, 'deterministic_warn_only': True, 'cublas_workspace_config': ':4096:8'}
+D:\_01_Bachelor_Information_System\_00-SKRIPSI\skripsi-venv\Lib\site-packages\torch\autograd\graph.py:1072: UserWarning: Memory Efficient attention defaults to a non-deterministic algorithm. To explicitly enable determinism call torch.use_deterministic_algorithms(True, warn_only=False). (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\native\transformers\cuda\attention_backward.cu:912.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+[progres] langkah 1: 25.05 s pada langkah pertama, VRAM puncak training tercadang 4898 MiB
+{'loss': '5.1', 'grad_norm': '74.23', 'learning_rate': '0', 'epoch': '0.05128'}
+[progres] langkah 2: 3.51 s/langkah, VRAM puncak training tercadang 6296 MiB
+{'loss': '5.51', 'grad_norm': '77.77', 'learning_rate': '2e-08', 'epoch': '0.1026'}
+[progres] langkah 3: 3.58 s/langkah, VRAM puncak training tercadang 6296 MiB
+{'loss': '4.291', 'grad_norm': '52.56', 'learning_rate': '4e-08', 'epoch': '0.1538'}
+[progres] langkah 4: 3.58 s/langkah, VRAM puncak training tercadang 6296 MiB
+{'loss': '4.486', 'grad_norm': '53.67', 'learning_rate': '6e-08', 'epoch': '0.2051'}
+[progres] langkah 5: 3.58 s/langkah, VRAM puncak training tercadang 6296 MiB
+{'loss': '4.641', 'grad_norm': '51.54', 'learning_rate': '8e-08', 'epoch': '0.2564'}
+[progres] langkah 6: 3.59 s/langkah, VRAM puncak training tercadang 6296 MiB
+{'loss': '4.414', 'grad_norm': '51.06', 'learning_rate': '1e-07', 'epoch': '0.3077'}
+[progres] langkah 7: 3.58 s/langkah, VRAM puncak training tercadang 6296 MiB
+{'loss': '4.655', 'grad_norm': '54.76', 'learning_rate': '1.2e-07', 'epoch': '0.359'}
+[progres] langkah 8: 3.59 s/langkah, VRAM puncak training tercadang 6296 MiB
+{'loss': '4.387', 'grad_norm': '54.85', 'learning_rate': '1.4e-07', 'epoch': '0.4103'}
+[progres] langkah 9: 3.59 s/langkah, VRAM puncak training tercadang 6296 MiB
+{'loss': '4.535', 'grad_norm': '52.97', 'learning_rate': '1.6e-07', 'epoch': '0.4615'}
+[progres] langkah 10: 3.59 s/langkah, VRAM puncak training tercadang 6296 MiB
+{'loss': '4.667', 'grad_norm': '47.68', 'learning_rate': '1.8e-07', 'epoch': '0.5128'}
+[progres] langkah 11: 3.59 s/langkah, VRAM puncak training tercadang 6296 MiB
+{'loss': '4.647', 'grad_norm': '53.72', 'learning_rate': '2e-07', 'epoch': '0.5641'}
+[progres] langkah 12: 3.58 s/langkah, VRAM puncak training tercadang 6296 MiB
+{'loss': '4.342', 'grad_norm': '51.59', 'learning_rate': '2.2e-07', 'epoch': '0.6154'}
+[progres] langkah 13: 3.59 s/langkah, VRAM puncak training tercadang 6296 MiB
+{'loss': '4.273', 'grad_norm': '53.16', 'learning_rate': '2.4e-07', 'epoch': '0.6667'}
+[progres] langkah 14: 3.59 s/langkah, VRAM puncak training tercadang 6296 MiB
+{'loss': '4.622', 'grad_norm': '53.84', 'learning_rate': '2.6e-07', 'epoch': '0.7179'}
+[progres] langkah 15: 3.59 s/langkah, VRAM puncak training tercadang 6296 MiB
+{'loss': '4.482', 'grad_norm': '53.47', 'learning_rate': '2.8e-07', 'epoch': '0.7692'}
+[progres] langkah 16: 3.59 s/langkah, VRAM puncak training tercadang 6296 MiB
+{'loss': '4.365', 'grad_norm': '51.87', 'learning_rate': '3e-07', 'epoch': '0.8205'}
+[progres] langkah 17: 3.56 s/langkah, VRAM puncak training tercadang 6296 MiB
+{'loss': '4.274', 'grad_norm': '51.35', 'learning_rate': '3.2e-07', 'epoch': '0.8718'}
+[progres] langkah 18: 3.56 s/langkah, VRAM puncak training tercadang 6296 MiB
+{'loss': '4.399', 'grad_norm': '55.41', 'learning_rate': '3.4e-07', 'epoch': '0.9231'}
+[progres] langkah 19: 3.58 s/langkah, VRAM puncak training tercadang 6296 MiB
+{'loss': '4.357', 'grad_norm': '48.96', 'learning_rate': '3.6e-07', 'epoch': '0.9744'}
+[progres] langkah 20: 0.39 s/langkah, VRAM puncak training tercadang 6296 MiB
+{'loss': '2.385', 'grad_norm': '47.59', 'learning_rate': '3.8e-07', 'epoch': '1'}
+[progres] langkah 21: 3.78 s/langkah, VRAM puncak training tercadang 6296 MiB
+{'loss': '4.117', 'grad_norm': '51.26', 'learning_rate': '4e-07', 'epoch': '1.051'}
+[progres] langkah 22: 3.59 s/langkah, VRAM puncak training tercadang 6296 MiB
+{'loss': '4.161', 'grad_norm': '49.42', 'learning_rate': '4.2e-07', 'epoch': '1.103'}
+[progres] langkah 23: 3.57 s/langkah, VRAM puncak training tercadang 6296 MiB
+{'loss': '4.294', 'grad_norm': '52.4', 'learning_rate': '4.4e-07', 'epoch': '1.154'}
+[progres] langkah 24: 3.58 s/langkah, VRAM puncak training tercadang 6296 MiB
+{'loss': '4.477', 'grad_norm': '53.72', 'learning_rate': '4.6e-07', 'epoch': '1.205'}
+[progres] langkah 25: 3.58 s/langkah, VRAM puncak training tercadang 6296 MiB
+{'loss': '4.165', 'grad_norm': '50.22', 'learning_rate': '4.8e-07', 'epoch': '1.256'}
+[progres] langkah 26: 3.58 s/langkah, VRAM puncak training tercadang 6296 MiB
+{'loss': '4.338', 'grad_norm': '51.72', 'learning_rate': '5e-07', 'epoch': '1.308'}
+[progres] langkah 27: 3.60 s/langkah, VRAM puncak training tercadang 6296 MiB
+{'loss': '4.276', 'grad_norm': '50.84', 'learning_rate': '5.2e-07', 'epoch': '1.359'}
+[progres] langkah 28: 3.69 s/langkah, VRAM puncak training tercadang 6296 MiB
+{'loss': '4.321', 'grad_norm': '48.49', 'learning_rate': '5.4e-07', 'epoch': '1.41'}
+[progres] langkah 29: 3.58 s/langkah, VRAM puncak training tercadang 6296 MiB
+{'loss': '3.899', 'grad_norm': '50.72', 'learning_rate': '5.6e-07', 'epoch': '1.462'}
+[progres] langkah 30: 3.57 s/langkah, VRAM puncak training tercadang 6296 MiB
+{'loss': '4.221', 'grad_norm': '49.23', 'learning_rate': '5.8e-07', 'epoch': '1.513'}
+[transformers] Passing `generation_config` together with generation-related arguments=({'begin_suppress_tokens', 'suppress_tokens'}) is deprecated and will be removed in future versions. Please pass either a `generation_config` object OR all generation parameters explicitly, but not both.
+[transformers] The attention mask is not set with a batched input, and cannot be inferred from input because pad token is same as eos token. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+[transformers] Both `max_new_tokens` (=128) and `max_length`(=448) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[transformers] Both `max_new_tokens` (=128) and `max_length`(=448) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[transformers] Both `max_new_tokens` (=128) and `max_length`(=448) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[transformers] Both `max_new_tokens` (=128) and `max_length`(=448) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[transformers] Both `max_new_tokens` (=128) and `max_length`(=448) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[transformers] Both `max_new_tokens` (=128) and `max_length`(=448) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[transformers] Both `max_new_tokens` (=128) and `max_length`(=448) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[transformers] Both `max_new_tokens` (=128) and `max_length`(=448) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[transformers] Both `max_new_tokens` (=128) and `max_length`(=448) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[transformers] Both `max_new_tokens` (=128) and `max_length`(=448) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[transformers] Both `max_new_tokens` (=128) and `max_length`(=448) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[transformers] Both `max_new_tokens` (=128) and `max_length`(=448) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[transformers] Both `max_new_tokens` (=128) and `max_length`(=448) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[transformers] Both `max_new_tokens` (=128) and `max_length`(=448) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[transformers] Both `max_new_tokens` (=128) and `max_length`(=448) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[transformers] Both `max_new_tokens` (=128) and `max_length`(=448) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[transformers] Both `max_new_tokens` (=128) and `max_length`(=448) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[transformers] Both `max_new_tokens` (=128) and `max_length`(=448) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[transformers] Both `max_new_tokens` (=128) and `max_length`(=448) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[transformers] Both `max_new_tokens` (=128) and `max_length`(=448) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[transformers] Both `max_new_tokens` (=128) and `max_length`(=448) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[transformers] Both `max_new_tokens` (=128) and `max_length`(=448) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[transformers] Both `max_new_tokens` (=128) and `max_length`(=448) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[transformers] Both `max_new_tokens` (=128) and `max_length`(=448) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[transformers] Both `max_new_tokens` (=128) and `max_length`(=448) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[transformers] Both `max_new_tokens` (=128) and `max_length`(=448) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[transformers] Both `max_new_tokens` (=128) and `max_length`(=448) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[transformers] Both `max_new_tokens` (=128) and `max_length`(=448) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[transformers] Both `max_new_tokens` (=128) and `max_length`(=448) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[transformers] Both `max_new_tokens` (=128) and `max_length`(=448) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[transformers] Both `max_new_tokens` (=128) and `max_length`(=448) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[transformers] Both `max_new_tokens` (=128) and `max_length`(=448) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[transformers] Both `max_new_tokens` (=128) and `max_length`(=448) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[transformers] Both `max_new_tokens` (=128) and `max_length`(=448) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[transformers] Both `max_new_tokens` (=128) and `max_length`(=448) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[transformers] Both `max_new_tokens` (=128) and `max_length`(=448) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[transformers] Both `max_new_tokens` (=128) and `max_length`(=448) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[transformers] Both `max_new_tokens` (=128) and `max_length`(=448) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[transformers] Both `max_new_tokens` (=128) and `max_length`(=448) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[transformers] Both `max_new_tokens` (=128) and `max_length`(=448) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[transformers] Both `max_new_tokens` (=128) and `max_length`(=448) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[transformers] Both `max_new_tokens` (=128) and `max_length`(=448) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[transformers] Both `max_new_tokens` (=128) and `max_length`(=448) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[transformers] Both `max_new_tokens` (=128) and `max_length`(=448) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[transformers] Both `max_new_tokens` (=128) and `max_length`(=448) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[transformers] Both `max_new_tokens` (=128) and `max_length`(=448) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[transformers] Both `max_new_tokens` (=128) and `max_length`(=448) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[transformers] Both `max_new_tokens` (=128) and `max_length`(=448) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[transformers] Both `max_new_tokens` (=128) and `max_length`(=448) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[transformers] Both `max_new_tokens` (=128) and `max_length`(=448) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[transformers] Both `max_new_tokens` (=128) and `max_length`(=448) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[transformers] Both `max_new_tokens` (=128) and `max_length`(=448) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[transformers] Both `max_new_tokens` (=128) and `max_length`(=448) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[transformers] Both `max_new_tokens` (=128) and `max_length`(=448) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[transformers] Both `max_new_tokens` (=128) and `max_length`(=448) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[transformers] Both `max_new_tokens` (=128) and `max_length`(=448) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[transformers] Both `max_new_tokens` (=128) and `max_length`(=448) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[transformers] Both `max_new_tokens` (=128) and `max_length`(=448) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[transformers] Both `max_new_tokens` (=128) and `max_length`(=448) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[transformers] Both `max_new_tokens` (=128) and `max_length`(=448) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[transformers] Ignoring clean_up_tokenization_spaces=True for BPE tokenizer WhisperTokenizer. The clean_up_tokenization post-processing step is designed for WordPiece tokenizers and is destructive for BPE (it strips spaces before punctuation). Set clean_up_tokenization_spaces=False to suppress this warning, or set clean_up_tokenization_spaces_for_bpe_even_though_it_will_corrupt_output=True to force cleanup anyway.
+{'eval_loss': '2.125', 'eval_wer': '0.7716', 'eval_cer': '0.2036', 'eval_runtime': '267.6', 'eval_samples_per_second': '7.1', 'eval_steps_per_second': '0.224', 'epoch': '1.513'}
+[evaluasi] langkah 30: WER 0.7716, terbaik 0.7716 pada langkah 30, tanpa perbaikan 0 kali
+[evaluasi] langkah 30: 267.6 detik, VRAM tercadang awal 3528 MiB, puncak 5820 MiB
+
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]
+Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  1.73it/s]
+Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  1.73it/s]
+{'train_runtime': '394.3', 'train_samples_per_second': '2.435', 'train_steps_per_second': '0.076', 'train_loss': '4.37', 'epoch': '1.513'}
+[transformers] There were missing keys in the checkpoint model loaded: ['proj_out.weight'].
+
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]
+Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  1.85it/s]
+Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  1.85it/s]
+==============================================================================
+n_train_utterances          : 610
+n_validation_utterances     : 1900
+gradient_accumulation_steps : 2
+global_step                 : 30
+epochs_completed            : 1.57
+stopped_early               : False
+best_validation_wer         : 0.7715675271230826
+best_step                   : 30
+best_model_checkpoint       : D:\_01_Bachelor_Information_System\_00-SKRIPSI\_01_python-scripts\outputs\runs\whisper_det_a\checkpoints\checkpoint-30
+train_runtime_seconds       : 394.3
+seconds_per_step            : 3.48
+timed_steps                 : 29
+first_step_seconds          : 25.1
+train_peak_reserved_mib     : 6296
+evaluation_seconds_total    : 267.6
+model_dir                   : D:\_01_Bachelor_Information_System\_00-SKRIPSI\_01_python-scripts\outputs\models\whisper_det_a
+Peringatan determinisme: 1
+Laporan ditulis ke : D:\_01_Bachelor_Information_System\_00-SKRIPSI\_01_python-scripts\outputs\runs\whisper_det_a\run_report.json
+Durasi eksekusi    : 400.9 detik
+==============================================================================

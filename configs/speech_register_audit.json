@@ -1,0 +1,8 @@
+{
+  "seed": 42,
+  "random_sample_size": 100,
+  "krama_enrichment_size": 40,
+  "krama_screening_markers": ["kula", "panjenengan", "wonten", "sampun", "boten", "mboten", "menika", "punika", "menawi", "saged", "badhe", "ingkang", "kedah", "dhateng", "taksih", "saweg", "dipun"],
+  "categories": ["ngoko", "krama", "campuran", "tidak_pasti"],
+  "scope": "Written reference register, not dialect, verified speech register or acoustic robustness"
+}

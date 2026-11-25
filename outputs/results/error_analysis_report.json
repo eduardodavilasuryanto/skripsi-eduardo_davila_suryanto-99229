@@ -1,0 +1,1544 @@
+{
+  "generated_at": "2026-10-09T10:04:08+07:00",
+  "script": "error_analysis.py",
+  "seed": 42,
+  "levels": [
+    "d1",
+    "d5"
+  ],
+  "text": "referensi dan hipotesis ternormalisasi (Subbab 3.3.4)",
+  "top_n": 20,
+  "n_random_samples": 25,
+  "random_sample_ids": [
+    "04fc2eeab6",
+    "05231dc743",
+    "0579ef1069",
+    "0770af0630",
+    "0ae4a6b965",
+    "0c179dd00d",
+    "16dd7b5475",
+    "1abd35a947",
+    "1b12c112b0",
+    "1be60782c0",
+    "1ffc6e48bb",
+    "20ab12e546",
+    "2161a7a7cf",
+    "28f5eae603",
+    "2c136e0981",
+    "2dc2f71da5",
+    "2eff9e486d",
+    "309a8edce7",
+    "31511986e8",
+    "32470f8310",
+    "32673fa934",
+    "35b5277db1",
+    "36cd25f063",
+    "3b24c8154a",
+    "3e1de50b71"
+  ],
+  "configs": {
+    "whisper_d1_trial": {
+      "model": "whisper",
+      "level": "d1",
+      "hours": 1.0,
+      "counts": {
+        "reference_words": 21859,
+        "hits": 13744,
+        "substitutions": 7429,
+        "deletions": 686,
+        "insertions": 898
+      },
+      "share_of_errors": {
+        "substitutions": 0.8242538555419949,
+        "deletions": 0.07611228225895929,
+        "insertions": 0.09963386219904583
+      },
+      "wer": 0.4123244430211812,
+      "utterances": {
+        "share_without_error": 0.09096774193548388,
+        "median_utterance_error_rate": 0.4,
+        "share_errors_at_least_reference_length": 0.037096774193548385,
+        "share_empty_hypothesis": 0.0,
+        "share_hypothesis_longer_than_ratio": 0.0016129032258064516,
+        "long_hypothesis_ratio": 2.0
+      },
+      "top_substitutions": [
+        [
+          "nduweni -> duweni",
+          12
+        ],
+        [
+          "biyasane -> biasane",
+          12
+        ],
+        [
+          "akting -> acting",
+          10
+        ],
+        [
+          "yaiku -> iku",
+          9
+        ],
+        [
+          "sawijining -> jining",
+          8
+        ],
+        [
+          "swara -> suara",
+          8
+        ],
+        [
+          "dewi -> dhewi",
+          7
+        ],
+        [
+          "gedhang -> gedang",
+          7
+        ],
+        [
+          "amarga -> amargo",
+          7
+        ],
+        [
+          "limo -> lima",
+          7
+        ],
+        [
+          "bageyan -> bagian",
+          7
+        ],
+        [
+          "mbentuk -> bentuk",
+          6
+        ],
+        [
+          "gedhe -> gede",
+          6
+        ],
+        [
+          "siti -> city",
+          6
+        ],
+        [
+          "dhaerah -> daerah",
+          6
+        ],
+        [
+          "kakao -> kakau",
+          6
+        ],
+        [
+          "jaka -> joko",
+          6
+        ],
+        [
+          "gatra -> gathra",
+          6
+        ],
+        [
+          "nduwe -> duwe",
+          6
+        ],
+        [
+          "sangalas -> las",
+          5
+        ]
+      ],
+      "top_deletions": [
+        [
+          "iki",
+          16
+        ],
+        [
+          "lan",
+          8
+        ],
+        [
+          "khan",
+          8
+        ],
+        [
+          "iku",
+          7
+        ],
+        [
+          "loro",
+          7
+        ],
+        [
+          "kuwi",
+          7
+        ],
+        [
+          "atus",
+          6
+        ],
+        [
+          "wis",
+          6
+        ],
+        [
+          "ngisor",
+          5
+        ],
+        [
+          "ewu",
+          5
+        ],
+        [
+          "pitu",
+          4
+        ],
+        [
+          "mau",
+          4
+        ],
+        [
+          "shah",
+          4
+        ],
+        [
+          "kang",
+          4
+        ],
+        [
+          "enem",
+          4
+        ],
+        [
+          "kanthi",
+          4
+        ],
+        [
+          "eling",
+          4
+        ],
+        [
+          "sing",
+          4
+        ],
+        [
+          "ya",
+          3
+        ],
+        [
+          "ajak",
+          3
+        ]
+      ],
+      "top_insertions": [
+        [
+          "wong",
+          53
+        ],
+        [
+          "dipun",
+          13
+        ],
+        [
+          "ing",
+          12
+        ],
+        [
+          "sawi",
+          10
+        ],
+        [
+          "pulit",
+          10
+        ],
+        [
+          "sak",
+          10
+        ],
+        [
+          "pang",
+          9
+        ],
+        [
+          "nukui",
+          9
+        ],
+        [
+          "merek",
+          9
+        ],
+        [
+          "sapato",
+          9
+        ],
+        [
+          "sepatu",
+          9
+        ],
+        [
+          "liyi",
+          9
+        ],
+        [
+          "di",
+          7
+        ],
+        [
+          "si",
+          7
+        ],
+        [
+          "ya",
+          6
+        ],
+        [
+          "lan",
+          5
+        ],
+        [
+          "pun",
+          4
+        ],
+        [
+          "sang",
+          4
+        ],
+        [
+          "satung",
+          4
+        ],
+        [
+          "bak",
+          4
+        ]
+      ],
+      "worst_utterances": [
+        {
+          "id": "3ea9e0515e",
+          "errors": 61,
+          "reference_words": 11,
+          "reference": "sak derunge wong wong nggunake jeneng bedha bedha kanggo lelara iki",
+          "hypothesis": "sak durunge wong wong wong wong wong wong wong wong wong wong wong wong wong wong wong wong wong wong wong wong wong wong wong wong wong wong wong wong wong wong wong wong wong wong wong wong wong wong wong wong wong wong wong wong wong wong wong wong wong wong wong wong wong wong wong wong wong wong wong wong wong wong"
+        },
+        {
+          "id": "064e855b09",
+          "errors": 52,
+          "reference_words": 7,
+          "reference": "sepatu kulitmu kui merk zapato shoes dudu",
+          "hypothesis": "sepatu pulit nukui merek sapato sepatu pulit nukui merek sapato sepatu pulit nukui merek sapato sepatu pulit nukui merek sapato sepatu pulit nukui merek sapato sepatu pulit nukui merek sapato sepatu pulit nukui merek sapato sepatu pulit nukui merek sapato sepatu pulit nukui merek sapato sepatu pulit nukui merek sapato sepatu pulit nukui"
+        },
+        {
+          "id": "300c90cafa",
+          "errors": 15,
+          "reference_words": 6,
+          "reference": "ussy sulistyawati lunga tanpa pamit kancane",
+          "hypothesis": "louis isi liyi liyi liyi liyi liyi liyi liyi liyi liyi liyi liyi lunga tanpo pamit kanjani"
+        },
+        {
+          "id": "174723df08",
+          "errors": 13,
+          "reference_words": 5,
+          "reference": "ananging dereng kawujud dumugi sapunika",
+          "hypothesis": "ananging dhereng kawujud dumugi sapunika apa menangajah disini mau adhah kegiahka tengah sapunika dimaskanku dimaskanku ili rihah"
+        },
+        {
+          "id": "338f97d227",
+          "errors": 12,
+          "reference_words": 9,
+          "reference": "isinipun cariyosipun pokokipun werni werni dados memper bauwarna isinipun",
+          "hypothesis": "isini pun cari asaipun pakak ipun werne werne dados memper bahwa warna isi ipun"
+        },
+        {
+          "id": "08d2e4c4cd",
+          "errors": 11,
+          "reference_words": 10,
+          "reference": "simfoni iki mainake peranan kabudayan sing wigati jroning lingkungan modhern",
+          "hypothesis": "sinfon iki main nake peran kapbudayan singe wiga ti jronin ningkan mudheren"
+        },
+        {
+          "id": "13194770f9",
+          "errors": 11,
+          "reference_words": 10,
+          "reference": "ziarah kubur asipat kramat amarga dipengaruhi dening mangsa jawa hindhu",
+          "hypothesis": "ciara h gupur asi pek ramat amarga dipengaruhidening mang sajawa hindura"
+        },
+        {
+          "id": "18d04ec1a8",
+          "errors": 10,
+          "reference_words": 10,
+          "reference": "jatiroto dibangun ndhik jamane belanda sing mbangun pabrik gula jatiroto",
+          "hypothesis": "jati rata dibangun dek camane belandasing bangun paprik gula jati rata"
+        },
+        {
+          "id": "3209ae9d8a",
+          "errors": 10,
+          "reference_words": 10,
+          "reference": "remember to lock the door when you leave the house",
+          "hypothesis": "ingat peralatan apalajara apalajara apalajara"
+        },
+        {
+          "id": "346e74be0f",
+          "errors": 10,
+          "reference_words": 10,
+          "reference": "saliyane iku dorce uga wiwit krasa kacondhongan kasengsem dmarang pria",
+          "hypothesis": "saliyane iku dhurja uga wit krosal kacon dungan kaseng sem di marang priya"
+        }
+      ]
+    },
+    "xlsr_d1_trial": {
+      "model": "xlsr",
+      "level": "d1",
+      "hours": 1.0,
+      "counts": {
+        "reference_words": 21859,
+        "hits": 12029,
+        "substitutions": 8617,
+        "deletions": 1213,
+        "insertions": 634
+      },
+      "share_of_errors": {
+        "substitutions": 0.8234900611620795,
+        "deletions": 0.11592125382262997,
+        "insertions": 0.06058868501529052
+      },
+      "wer": 0.4787044238071275,
+      "utterances": {
+        "share_without_error": 0.0467741935483871,
+        "median_utterance_error_rate": 0.4494949494949495,
+        "share_errors_at_least_reference_length": 0.045806451612903226,
+        "share_empty_hypothesis": 0.0,
+        "share_hypothesis_longer_than_ratio": 0.0003225806451612903,
+        "long_hypothesis_ratio": 2.0
+      },
+      "top_substitutions": [
+        [
+          "kutha -> kuta",
+          16
+        ],
+        [
+          "kanthi -> kanti",
+          15
+        ],
+        [
+          "saged -> saget",
+          12
+        ],
+        [
+          "nduweni -> duweni",
+          11
+        ],
+        [
+          "biyasane -> biasane",
+          10
+        ],
+        [
+          "yaiku -> iku",
+          9
+        ],
+        [
+          "dwi -> duwi",
+          8
+        ],
+        [
+          "gedhe -> gede",
+          8
+        ],
+        [
+          "thailand -> tailan",
+          8
+        ],
+        [
+          "limo -> lima",
+          8
+        ],
+        [
+          "dheweke -> deweke",
+          6
+        ],
+        [
+          "tradhisi -> tradisi",
+          6
+        ],
+        [
+          "pulo -> pula",
+          6
+        ],
+        [
+          "dhuwur -> duwur",
+          6
+        ],
+        [
+          "ngrungokne -> grungokne",
+          6
+        ],
+        [
+          "aberdeen -> aberden",
+          6
+        ],
+        [
+          "lajeng -> lajing",
+          5
+        ],
+        [
+          "temple -> templ",
+          5
+        ],
+        [
+          "kaya -> kayo",
+          5
+        ],
+        [
+          "dhaerah -> daerah",
+          5
+        ]
+      ],
+      "top_deletions": [
+        [
+          "atus",
+          11
+        ],
+        [
+          "iki",
+          9
+        ],
+        [
+          "iku",
+          8
+        ],
+        [
+          "lan",
+          8
+        ],
+        [
+          "loro",
+          8
+        ],
+        [
+          "khan",
+          8
+        ],
+        [
+          "ngisor",
+          7
+        ],
+        [
+          "kang",
+          6
+        ],
+        [
+          "you",
+          6
+        ],
+        [
+          "kidul",
+          5
+        ],
+        [
+          "ya",
+          5
+        ],
+        [
+          "tengah",
+          5
+        ],
+        [
+          "maneh",
+          4
+        ],
+        [
+          "mau",
+          4
+        ],
+        [
+          "sung",
+          4
+        ],
+        [
+          "wetan",
+          4
+        ],
+        [
+          "the",
+          4
+        ],
+        [
+          "nagara",
+          4
+        ],
+        [
+          "seneng",
+          4
+        ],
+        [
+          "kupu",
+          4
+        ]
+      ],
+      "top_insertions": [
+        [
+          "dipun",
+          17
+        ],
+        [
+          "di",
+          14
+        ],
+        [
+          "ka",
+          6
+        ],
+        [
+          "ing",
+          5
+        ],
+        [
+          "balik",
+          4
+        ],
+        [
+          "si",
+          4
+        ],
+        [
+          "s",
+          4
+        ],
+        [
+          "ya",
+          4
+        ],
+        [
+          "n",
+          4
+        ],
+        [
+          "ma",
+          4
+        ],
+        [
+          "upa",
+          3
+        ],
+        [
+          "cang",
+          3
+        ],
+        [
+          "ana",
+          3
+        ],
+        [
+          "sa",
+          3
+        ],
+        [
+          "wis",
+          3
+        ],
+        [
+          "sing",
+          3
+        ],
+        [
+          "ter",
+          3
+        ],
+        [
+          "ala",
+          3
+        ],
+        [
+          "kau",
+          3
+        ],
+        [
+          "ken",
+          3
+        ]
+      ],
+      "worst_utterances": [
+        {
+          "id": "34ceb2775e",
+          "errors": 14,
+          "reference_words": 15,
+          "reference": "hiduplah tanahku hiduplah neg riku bangsaku rakyatku semuanya bangunlah jiwanya bangunlah badannya untuk indonesia raya",
+          "hypothesis": "hiduplah tanah ku hidupulah nagriku bang sakurakiyatku samunganya bang unlah jiwanya bang unlah badanya untuk indonesiaraya"
+        },
+        {
+          "id": "013e93d948",
+          "errors": 13,
+          "reference_words": 15,
+          "reference": "banjur wiwit taun sangalas pitu telu sangalas pitu enem lan sangalas sangang puluhan dibangun maneh",
+          "hypothesis": "banjur wiwet taunsa ngalas pitutelusangalas pituknem lan sangalasangang puluan dibangunmaneh"
+        },
+        {
+          "id": "174723df08",
+          "errors": 12,
+          "reference_words": 5,
+          "reference": "ananging dereng kawujud dumugi sapunika",
+          "hypothesis": "ananging derang kawujut dumugi sapunikaapa isii ma adada giataa n imes ka gung is"
+        },
+        {
+          "id": "1ec7a08848",
+          "errors": 12,
+          "reference_words": 15,
+          "reference": "dene luas lantai mezanin balkon ya iku limang ewu rong atus sangang puluh meter persegi",
+          "hypothesis": "dine luwastantey mezaning balkun ya iku limangepura ngado sangang pulumetrh perseki"
+        },
+        {
+          "id": "1fc187230e",
+          "errors": 11,
+          "reference_words": 11,
+          "reference": "stiletto bagian ngarep lancip lan duwe hak sing lancip uga dhuwur",
+          "hypothesis": "stileto bagan ngarap plancipplan duwehak sang aci puga tuwur"
+        },
+        {
+          "id": "03f059866d",
+          "errors": 10,
+          "reference_words": 7,
+          "reference": "grojogan ramsey located in redwood falls minnesota",
+          "hypothesis": "graja an ramse loketit ing rat wut fols mine sata"
+        },
+        {
+          "id": "0826279a92",
+          "errors": 10,
+          "reference_words": 10,
+          "reference": "i encouraged my son to audition for the school play",
+          "hypothesis": "iing korik maisam tua adisien fordus kupklea"
+        },
+        {
+          "id": "0d49e9fa80",
+          "errors": 10,
+          "reference_words": 10,
+          "reference": "wasiate anne uga dirundingake suksesi bretagne saka putri kalorone renee",
+          "hypothesis": "wasiatik ani uga dirunndi ngake sukses ibre dakne saka putri kalo rone rinih"
+        },
+        {
+          "id": "189014c2a8",
+          "errors": 10,
+          "reference_words": 10,
+          "reference": "a plank is a policy position of a political party",
+          "hypothesis": "blang isak polisi posisen a belidi kol parti"
+        },
+        {
+          "id": "18d04ec1a8",
+          "errors": 10,
+          "reference_words": 10,
+          "reference": "jatiroto dibangun ndhik jamane belanda sing mbangun pabrik gula jatiroto",
+          "hypothesis": "cati rata dibangundek camane belandasing bangun pabrek gula jati rata"
+        }
+      ]
+    },
+    "whisper_d5": {
+      "model": "whisper",
+      "level": "d5",
+      "hours": 66.134,
+      "counts": {
+        "reference_words": 21859,
+        "hits": 18765,
+        "substitutions": 2907,
+        "deletions": 187,
+        "insertions": 272
+      },
+      "share_of_errors": {
+        "substitutions": 0.8636363636363636,
+        "deletions": 0.05555555555555555,
+        "insertions": 0.08080808080808081
+      },
+      "wer": 0.1539869161443799,
+      "utterances": {
+        "share_without_error": 0.4706451612903226,
+        "median_utterance_error_rate": 0.1,
+        "share_errors_at_least_reference_length": 0.004193548387096774,
+        "share_empty_hypothesis": 0.0,
+        "share_hypothesis_longer_than_ratio": 0.0,
+        "long_hypothesis_ratio": 2.0
+      },
+      "top_substitutions": [
+        [
+          "limo -> lima",
+          15
+        ],
+        [
+          "boten -> mboten",
+          12
+        ],
+        [
+          "biyasane -> biasane",
+          11
+        ],
+        [
+          "daerah -> dhaerah",
+          9
+        ],
+        [
+          "neng -> ning",
+          5
+        ],
+        [
+          "pada -> padha",
+          5
+        ],
+        [
+          "duwe -> nduwe",
+          5
+        ],
+        [
+          "opo -> apa",
+          5
+        ],
+        [
+          "kupu -> kuku",
+          5
+        ],
+        [
+          "modhel -> model",
+          5
+        ],
+        [
+          "kiro -> kira",
+          5
+        ],
+        [
+          "songolas -> sangalas",
+          5
+        ],
+        [
+          "nduweni -> duweni",
+          4
+        ],
+        [
+          "bagian -> bageyan",
+          4
+        ],
+        [
+          "markus -> marcus",
+          4
+        ],
+        [
+          "kusus -> khusus",
+          4
+        ],
+        [
+          "pendhidhikan -> pendidikan",
+          4
+        ],
+        [
+          "blink -> bling",
+          4
+        ],
+        [
+          "duweni -> nduweni",
+          4
+        ],
+        [
+          "tradisional -> tradhisional",
+          4
+        ]
+      ],
+      "top_deletions": [
+        [
+          "ya",
+          3
+        ],
+        [
+          "dora",
+          3
+        ],
+        [
+          "wiwiti",
+          3
+        ],
+        [
+          "racik",
+          3
+        ],
+        [
+          "naskah",
+          2
+        ],
+        [
+          "teknis",
+          2
+        ],
+        [
+          "gama",
+          2
+        ],
+        [
+          "kala",
+          2
+        ],
+        [
+          "khan",
+          2
+        ],
+        [
+          "man",
+          2
+        ],
+        [
+          "udhek",
+          2
+        ],
+        [
+          "kong",
+          2
+        ],
+        [
+          "e",
+          2
+        ],
+        [
+          "lan",
+          2
+        ],
+        [
+          "cepeng",
+          2
+        ],
+        [
+          "ki",
+          2
+        ],
+        [
+          "no",
+          2
+        ],
+        [
+          "ne",
+          2
+        ],
+        [
+          "tradisional",
+          2
+        ],
+        [
+          "tengen",
+          2
+        ]
+      ],
+      "top_insertions": [
+        [
+          "sak",
+          6
+        ],
+        [
+          "dipun",
+          4
+        ],
+        [
+          "tata",
+          3
+        ],
+        [
+          "a",
+          3
+        ],
+        [
+          "di",
+          3
+        ],
+        [
+          "ting",
+          2
+        ],
+        [
+          "wiji",
+          2
+        ],
+        [
+          "keh",
+          2
+        ],
+        [
+          "ronal",
+          2
+        ],
+        [
+          "abla",
+          2
+        ],
+        [
+          "anak",
+          2
+        ],
+        [
+          "karlah",
+          2
+        ],
+        [
+          "mas",
+          2
+        ],
+        [
+          "rini",
+          2
+        ],
+        [
+          "el",
+          2
+        ],
+        [
+          "gedhe",
+          2
+        ],
+        [
+          "jati",
+          2
+        ],
+        [
+          "modi",
+          2
+        ],
+        [
+          "paku",
+          2
+        ],
+        [
+          "sajadek",
+          2
+        ]
+      ],
+      "worst_utterances": [
+        {
+          "id": "24e890a3b6",
+          "errors": 9,
+          "reference_words": 11,
+          "reference": "garwa asih purwaningtyas hasanah tias tatanka anak kaka bela abi jordi",
+          "hypothesis": "gorwa asih purwaning tyas hasanah tyas tatangko anak kakabela abidjordi"
+        },
+        {
+          "id": "2c00379053",
+          "errors": 8,
+          "reference_words": 10,
+          "reference": "catatan dua website diatas isinya sama hanya beda domain saja",
+          "hypothesis": "tak tatan duwe website di atas isihnya sama hanya badhe dauman saja"
+        },
+        {
+          "id": "3d653a789b",
+          "errors": 8,
+          "reference_words": 11,
+          "reference": "nanging digawene e gamelanku duweni ancas supaya bisa dadi media pembelajaran",
+          "hypothesis": "nanging digawene e"
+        },
+        {
+          "id": "03065cd66d",
+          "errors": 7,
+          "reference_words": 8,
+          "reference": "kutha gedhe nairobi mombasa kisumu nakuru lan eldoret",
+          "hypothesis": "kutha gedhe nerobi membasa lagi sumu nagururan el doret"
+        },
+        {
+          "id": "11adc39bcb",
+          "errors": 7,
+          "reference_words": 9,
+          "reference": "vadim glovatsky patang puluh limo pamain hoki es kazakhstan",
+          "hypothesis": "fadim gluthak glowacky patang puluh lima pemain hokky s kazakhstan"
+        },
+        {
+          "id": "13194770f9",
+          "errors": 7,
+          "reference_words": 10,
+          "reference": "ziarah kubur asipat kramat amarga dipengaruhi dening mangsa jawa hindhu",
+          "hypothesis": "jarah gupu rasi pakramat amarga dipengaruhi dening mang sajawa hindu"
+        },
+        {
+          "id": "18d04ec1a8",
+          "errors": 7,
+          "reference_words": 10,
+          "reference": "jatiroto dibangun ndhik jamane belanda sing mbangun pabrik gula jatiroto",
+          "hypothesis": "jati rata dibangun ndhek camane belanda sing bangun pabrik gula jati rata"
+        },
+        {
+          "id": "2f45abfb34",
+          "errors": 7,
+          "reference_words": 10,
+          "reference": "sesilia ya iku siji sijine ordo amfibi kang pembuahane internal",
+          "hypothesis": "sosilia ya iku siji sijin meh ordu lan pipi kang pembohokane internal"
+        },
+        {
+          "id": "34ceb2775e",
+          "errors": 7,
+          "reference_words": 15,
+          "reference": "hiduplah tanahku hiduplah neg riku bangsaku rakyatku semuanya bangunlah jiwanya bangunlah badannya untuk indonesia raya",
+          "hypothesis": "hiduplah tanahku hiduplah negeriku bangsaku rakiyatku selmuanya bengunlah jiwanya bengunlah badannya untu indonesia raya"
+        },
+        {
+          "id": "01500f42bd",
+          "errors": 6,
+          "reference_words": 7,
+          "reference": "greig sovereignty and the falkland islands crisis",
+          "hypothesis": "grey shofie rey ninty and the valkyrie allen crisis"
+        }
+      ]
+    },
+    "xlsr_d5": {
+      "model": "xlsr",
+      "level": "d5",
+      "hours": 66.134,
+      "counts": {
+        "reference_words": 21859,
+        "hits": 17944,
+        "substitutions": 3554,
+        "deletions": 361,
+        "insertions": 197
+      },
+      "share_of_errors": {
+        "substitutions": 0.8642996108949417,
+        "deletions": 0.08779182879377431,
+        "insertions": 0.04790856031128405
+      },
+      "wer": 0.18811473534928405,
+      "utterances": {
+        "share_without_error": 0.3870967741935484,
+        "median_utterance_error_rate": 0.14285714285714285,
+        "share_errors_at_least_reference_length": 0.006129032258064516,
+        "share_empty_hypothesis": 0.0,
+        "share_hypothesis_longer_than_ratio": 0.0,
+        "long_hypothesis_ratio": 2.0
+      },
+      "top_substitutions": [
+        [
+          "limo -> lima",
+          13
+        ],
+        [
+          "daerah -> dhaerah",
+          9
+        ],
+        [
+          "biyasane -> biasane",
+          9
+        ],
+        [
+          "duwe -> nduwe",
+          6
+        ],
+        [
+          "opo -> apa",
+          6
+        ],
+        [
+          "songolas -> sangalas",
+          6
+        ],
+        [
+          "nduweni -> duweni",
+          5
+        ],
+        [
+          "bageyan -> bagean",
+          5
+        ],
+        [
+          "pada -> padha",
+          5
+        ],
+        [
+          "ndongkol -> ndhongkol",
+          4
+        ],
+        [
+          "neng -> ning",
+          4
+        ],
+        [
+          "kakao -> kakau",
+          4
+        ],
+        [
+          "tradisional -> tradhisional",
+          4
+        ],
+        [
+          "kiro -> kira",
+          4
+        ],
+        [
+          "and -> end",
+          4
+        ],
+        [
+          "ndhuwur -> dhuwur",
+          4
+        ],
+        [
+          "es -> s",
+          4
+        ],
+        [
+          "bedha -> beda",
+          4
+        ],
+        [
+          "ondhe -> onde",
+          4
+        ],
+        [
+          "luksemburg -> luxemburg",
+          4
+        ]
+      ],
+      "top_deletions": [
+        [
+          "racik",
+          4
+        ],
+        [
+          "iki",
+          3
+        ],
+        [
+          "lan",
+          3
+        ],
+        [
+          "dora",
+          3
+        ],
+        [
+          "kupu",
+          3
+        ],
+        [
+          "e",
+          3
+        ],
+        [
+          "khan",
+          3
+        ],
+        [
+          "wiwiti",
+          3
+        ],
+        [
+          "bageyan",
+          3
+        ],
+        [
+          "leb",
+          2
+        ],
+        [
+          "mie",
+          2
+        ],
+        [
+          "heng",
+          2
+        ],
+        [
+          "mas",
+          2
+        ],
+        [
+          "gama",
+          2
+        ],
+        [
+          "man",
+          2
+        ],
+        [
+          "jonge",
+          2
+        ],
+        [
+          "kala",
+          2
+        ],
+        [
+          "gunung",
+          2
+        ],
+        [
+          "guru",
+          2
+        ],
+        [
+          "iku",
+          2
+        ]
+      ],
+      "top_insertions": [
+        [
+          "dipun",
+          7
+        ],
+        [
+          "cang",
+          3
+        ],
+        [
+          "al",
+          3
+        ],
+        [
+          "keh",
+          3
+        ],
+        [
+          "karla",
+          3
+        ],
+        [
+          "angling",
+          3
+        ],
+        [
+          "a",
+          3
+        ],
+        [
+          "pang",
+          3
+        ],
+        [
+          "n",
+          2
+        ],
+        [
+          "bak",
+          2
+        ],
+        [
+          "will",
+          2
+        ],
+        [
+          "mas",
+          2
+        ],
+        [
+          "ibu",
+          2
+        ],
+        [
+          "modi",
+          2
+        ],
+        [
+          "s",
+          2
+        ],
+        [
+          "karang",
+          2
+        ],
+        [
+          "holo",
+          2
+        ],
+        [
+          "aryya",
+          1
+        ],
+        [
+          "rober",
+          1
+        ],
+        [
+          "rangga",
+          1
+        ]
+      ],
+      "worst_utterances": [
+        {
+          "id": "0708eba58e",
+          "errors": 8,
+          "reference_words": 9,
+          "reference": "jeng kelin punika peran nycta ing sitkom prime time",
+          "hypothesis": "jonkelin menika peranikta ing sitcom frintim"
+        },
+        {
+          "id": "0d49e9fa80",
+          "errors": 8,
+          "reference_words": 10,
+          "reference": "wasiate anne uga dirundingake suksesi bretagne saka putri kalorone renee",
+          "hypothesis": "pasyateane uga dirundhingake suksesibregagne saka putri kalo rone rene"
+        },
+        {
+          "id": "2c00379053",
+          "errors": 8,
+          "reference_words": 10,
+          "reference": "catatan dua website diatas isinya sama hanya beda domain saja",
+          "hypothesis": "catatan duwu webst diata sisi nyasamahanya bada duwan saja"
+        },
+        {
+          "id": "3d653a789b",
+          "errors": 8,
+          "reference_words": 11,
+          "reference": "nanging digawene e gamelanku duweni ancas supaya bisa dadi media pembelajaran",
+          "hypothesis": "nanging digawene e"
+        },
+        {
+          "id": "0001bbbc2e",
+          "errors": 7,
+          "reference_words": 10,
+          "reference": "iwak mas iki bisa kanggo praktik cuba cuba ana leb",
+          "hypothesis": "iwakmah siki bisa kanggo praktik cubacuba analep"
+        },
+        {
+          "id": "05d85f5cfe",
+          "errors": 7,
+          "reference_words": 9,
+          "reference": "wiesbaden iku kutha krajan nagara bagian hessen ing jerman",
+          "hypothesis": "mis bagen iku kutha krajaannagara bagean mosen ing joman"
+        },
+        {
+          "id": "0f6a85bb97",
+          "errors": 7,
+          "reference_words": 10,
+          "reference": "ula bajing ngendog antarane limo sampe rolas iji sabene ngendig",
+          "hypothesis": "pula baji ngendhog anarane lima sampe rolas iji saben ngedhig"
+        },
+        {
+          "id": "189014c2a8",
+          "errors": 7,
+          "reference_words": 10,
+          "reference": "a plank is a policy position of a political party",
+          "hypothesis": "lank is a polisi posision of pelitical parti"
+        },
+        {
+          "id": "236aaa944b",
+          "errors": 7,
+          "reference_words": 11,
+          "reference": "lha mbok piknik ki sing adoh sisan menyang the zocalo meksiko",
+          "hypothesis": "lhambok pikniki sing adoh sisan menyang te zokalo mekxiko"
+        },
+        {
+          "id": "26aa616500",
+          "errors": 7,
+          "reference_words": 11,
+          "reference": "ndang solat zuhur sampun jam setengah kalih siang sekedhap malih asar",
+          "hypothesis": "dangsalat juwur sampun jam setengah kali siyang sekedap mali asar"
+        }
+      ]
+    }
+  },
+  "input_sha256": {
+    "whisper_d1_trial_test.tsv": "9c6a51f450b2e3d4cc347a6c0c4ce467d6d639c8124f5b7bcd444655d1c11ec4",
+    "whisper_d2_test.tsv": "ea8ff9b88852a2c4c96c3d7f26d5f0af021a57d84e0d0a2cc5b460b70d611fc5",
+    "whisper_d3_test.tsv": "118e05def5274b01517fe7ee6e0047faf525505d42533d3e868cc9dd08c33d0a",
+    "whisper_d4_test.tsv": "f05b1bc509da70ae7c004a6f613fa86282f941fc69e386095ecfc2f0f9fa5c7b",
+    "whisper_d5_test.tsv": "0bc978bf437745e40f9e039c6408c7cda194dcb109a7d0b44372ec265e6bf871",
+    "xlsr_d1_trial_test.tsv": "0a2f581e56824179d91d55647a02a8561f383e8492a721c1549afdbf90474950",
+    "xlsr_d2_test.tsv": "bf9f012df6bbad33b937af9d9179ae5ce7e37a1e8041a7f49193d15a0daa4f50",
+    "xlsr_d3_test.tsv": "b3128109fed9f2e1fe7e502c558343871c7d14a2e04fceeb5916a7cfbb45c953",
+    "xlsr_d4_test.tsv": "cdc40bdc96b6e02822f74f4618e8fc8586fb0bca097501996020c3fa402ab6b7",
+    "xlsr_d5_test.tsv": "2242d1c0e3151548c5b04df006c5d7802496b7509efbdbb2748a9e9a014936e1",
+    "build_nested_subsets_report.json": "a6251798cecb5b45a88b07a7d660ad3efdc25e1520de48fa859f2ba60ded805d"
+  },
+  "environment": {
+    "skrip": "log_environment.py",
+    "lapis_1_perangkat_keras": {
+      "gpu": {
+        "jumlah_gpu_terdeteksi_torch": 1,
+        "nama": "NVIDIA GeForce RTX 4060 Laptop GPU",
+        "vram_total_mib": 8188,
+        "compute_capability": "sm_89",
+        "jumlah_streaming_multiprocessor": 24
+      },
+      "cpu": {
+        "nama": "13th Gen Intel(R) Core(TM) i7-13700HX",
+        "penanda_keluarga": "Intel64 Family 6 Model 191 Stepping 2, GenuineIntel",
+        "core_fisik": 16,
+        "core_logis": 24
+      },
+      "ram_sistem": {
+        "total_gib": 31.81,
+        "tersedia_saat_pencatatan_gib": 17.04
+      },
+      "penyimpanan": {
+        "PhysicalDisks": [
+          {
+            "FriendlyName": "SAMSUNG MZVL21T0HCLR-00BL2",
+            "MediaType": "SSD",
+            "SizeGB": 953.9
+          }
+        ],
+        "Volumes": [
+          {
+            "DriveLetter": "D",
+            "FileSystemType": "NTFS",
+            "SizeGB": 476.2
+          },
+          {
+            "DriveLetter": "C",
+            "FileSystemType": "NTFS",
+            "SizeGB": 475.8
+          }
+        ]
+      },
+      "sistem_operasi": {
+        "platform": "Windows-11-10.0.26300-SP0",
+        "sistem": "Windows",
+        "rilis": "11",
+        "versi": "10.0.26300",
+        "arsitektur": "AMD64",
+        "nama_host": "Eduardo"
+      }
+    },
+    "lapis_2_perangkat_lunak_terikat_perangkat_keras": {
+      "python": {
+        "versi": "3.12.10",
+        "implementasi": "CPython",
+        "executable": "D:\\_01_Bachelor_Information_System\\_00-SKRIPSI\\skripsi-venv\\Scripts\\python.exe"
+      },
+      "driver_nvidia": {
+        "versi": "610.88",
+        "sumber": "nvidia-smi"
+      },
+      "cuda": {
+        "tersedia": true,
+        "runtime_versi_torch": "13.0",
+        "cudnn_versi_mentah": 92400,
+        "cudnn_versi": "9.24.0"
+      },
+      "pytorch": {
+        "versi": "2.14.0+cu130",
+        "build_cuda": "13.0",
+        "versi_lengkap": "2.14.0+cu130"
+      },
+      "presisi": {
+        "dtype_bawaan": "torch.float32",
+        "float32_matmul_precision": "highest",
+        "bf16_didukung": true
+      },
+      "tf32": {
+        "cuda_matmul_allow_tf32": false,
+        "cudnn_allow_tf32": true,
+        "catatan": "Kedua kanal dilaporkan terpisah karena nilai bawaannya berbeda. Melaporkannya sebagai satu status tunggal adalah penyederhanaan yang keliru."
+      },
+      "determinisme": {
+        "cudnn_deterministic": false,
+        "cudnn_benchmark": false,
+        "use_deterministic_algorithms": false
+      },
+      "pustaka": {
+        "torch": "2.14.0+cu130",
+        "transformers": "5.17.0",
+        "datasets": "5.0.1",
+        "accelerate": "1.15.0",
+        "tokenizers": "0.23.2",
+        "safetensors": "0.8.0",
+        "soundfile": "0.14.0",
+        "jiwer": "4.0.0",
+        "bitsandbytes": "0.50.2",
+        "numpy": "2.5.3",
+        "pandas": "3.0.5",
+        "scipy": "1.18.1",
+        "scikit-learn": "1.9.0",
+        "statsmodels": "0.15.0",
+        "matplotlib": "3.11.1"
+      }
+    },
+    "lapis_3_jejak_eksekusi": {
+      "timestamp_utc": "2026-10-09T03:04:13+00:00",
+      "timestamp_lokal": "2026-10-09T10:04:13+07:00",
+      "random_seed": 42,
+      "vram_puncak_teralokasi_mib": 0.0,
+      "vram_puncak_tercadang_mib": 0.0,
+      "durasi_pengumpulan_detik": 5.588
+    }
+  },
+  "elapsed_seconds": 3.6
+}

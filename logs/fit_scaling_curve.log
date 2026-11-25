@@ -1,0 +1,38 @@
+==============================================================================
+Pencocokan kurva penskalaan WER = E0 + a * D^(-c)
+Waktu mulai        : 2026-10-09T10:03:02+07:00
+Random seed        : 42
+Iterasi bootstrap  : 10000
+Ambang AIC         : E0 terpisah dipakai bila AIC-nya lebih rendah > 2.0
+==============================================================================
+D (jam terukur)    : 1.000, 3.000, 10.001, 30.001, 66.134
+  whisper_d1_trial   WER 0.4123
+  whisper_d2         WER 0.3058
+  whisper_d3         WER 0.2222
+  whisper_d4         WER 0.1643
+  whisper_d5         WER 0.1540
+  xlsr_d1_trial      WER 0.4787
+  xlsr_d2            WER 0.3777
+  xlsr_d3            WER 0.2398
+  xlsr_d4            WER 0.1765
+  xlsr_d5            WER 0.1881
+------------------------------------------------------------------------------
+shared_e0       RSS 0.001923  AIC  -73.566  E0 0.0749, a_whisper 0.3390, c_whisper 0.3644, a_xlsr 0.4116, c_xlsr 0.3562
+separate_e0     RSS 0.001922  AIC  -71.571  E0_whisper 0.0719, a_whisper 0.3417, c_whisper 0.3584, E0_xlsr 0.0776, a_xlsr 0.4091, c_xlsr 0.3608
+pure_power_law  RSS 0.002323  AIC  -73.677  a_whisper 0.4088, c_whisper 0.2550, a_xlsr 0.4815, c_xlsr 0.2643
+AIC E0 terpisah - E0 bersama = +1.994 -> model utama shared_e0
+Bootstrap shared_e0   : 10000 dipakai, 0 dicoba ulang, 0 gagal
+Bootstrap separate_e0 : 10000 dipakai, 0 dicoba ulang, 0 gagal
+------------------------------------------------------------------------------
+  E0                       +0.0749 [+0.0613, +0.0870]
+  a_whisper                +0.3390 [+0.3240, +0.3554]
+  c_whisper                +0.3644 [+0.3367, +0.3934]
+  a_xlsr                   +0.4116 [+0.3982, +0.4265]
+  c_xlsr                   +0.3562 [+0.3343, +0.3780]
+  c_whisper_minus_c_xlsr   +0.0082 [-0.0063, +0.0239]
+H2 (selang c di atas nol): {'whisper': True, 'xlsr': True}
+H3 (selang c_whisper - c_xlsr tanpa nol): False, eksponen lebih besar: None
+==============================================================================
+Laporan ditulis ke : D:\_01_Bachelor_Information_System\_00-SKRIPSI\_01_python-scripts\outputs\results\scaling_curve_report.json
+Durasi eksekusi    : 46.6 detik
+==============================================================================

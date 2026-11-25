@@ -1,0 +1,534 @@
+{
+  "point_exclusion_sensitivity": {
+    "purpose": "kurva E0 bersama dengan dan tanpa titik yang belum konvergen (Revisi 01 poin 17)",
+    "scenarios": {
+      "tanpa_xlsr_d5": {
+        "excluded": [
+          "xlsr_d5"
+        ],
+        "rss": 0.0010371165104243836,
+        "curve": {
+          "E0_whisper": 9.50265381714385e-26,
+          "a_whisper": 0.4087508796617601,
+          "c_whisper": 0.25498073485744827,
+          "E0_xlsr": 9.50265381714385e-26,
+          "a_xlsr": 0.48833483091935725,
+          "c_xlsr": 0.29088623604697794
+        },
+        "E0_ci": [
+          5.14022798638401e-28,
+          0.02183123691598497
+        ],
+        "c_whisper_ci": [
+          0.24565700207000446,
+          0.2829721469094679
+        ],
+        "c_xlsr_ci": [
+          0.2829342503504815,
+          0.31303030902244294
+        ],
+        "c_diff": -0.035905501189529676,
+        "c_diff_ci": [
+          -0.045830936843023945,
+          -0.02411496498529921
+        ],
+        "n_bootstrap_used": 10000
+      },
+      "tanpa_xlsr_batas_langkah": {
+        "excluded": [
+          "xlsr_d1_trial",
+          "xlsr_d3",
+          "xlsr_d4"
+        ],
+        "rss": 0.00012373065864589104,
+        "curve": {
+          "E0_whisper": 0.07192518369812308,
+          "a_whisper": 0.3417075824208826,
+          "c_whisper": 0.3583777957787545,
+          "E0_xlsr": 0.07192518369812308,
+          "a_xlsr": 0.43125892247737035,
+          "c_xlsr": 0.31287808229767927
+        },
+        "E0_ci": [
+          0.05172281964306612,
+          0.08873871181213572
+        ],
+        "c_whisper_ci": [
+          0.3200548865147398,
+          0.3980247479268312
+        ],
+        "c_xlsr_ci": [
+          0.2800645016968834,
+          0.3466323323666799
+        ],
+        "c_diff": 0.04549971348107523,
+        "c_diff_ci": [
+          0.028049132344313183,
+          0.06403518435326402
+        ],
+        "n_bootstrap_used": 10000
+      }
+    }
+  },
+  "generated_at": "2026-11-15T18:47:50+07:00",
+  "script": "curve_model_comparison.py",
+  "seed": 42,
+  "n_bootstrap": 10000,
+  "n_points": 10,
+  "fitting": "least_squares, opsi, kendala, dan titik awal sama dengan fit_scaling_curve.py; c tanpa batas",
+  "assumptions": "AIC, AICc, dan BIC mengandaikan galat normal saling bebas dengan variansi sama; korelasi bootstrap menunjukkan titik tidak saling bebas",
+  "matches_published_rss": true,
+  "information_criteria": {
+    "shared_e0": {
+      "n_parameters": 5,
+      "rss": 0.001922807627395591,
+      "parameters": {
+        "E0": 0.07488806113731171,
+        "a_whisper": 0.3389768745731138,
+        "c_whisper": 0.3643818946037817,
+        "a_xlsr": 0.41163829656148476,
+        "c_xlsr": 0.35622980398055587
+      },
+      "lower_bounds": {
+        "E0": 0.0,
+        "a_whisper": 1e-09,
+        "c_whisper": -Infinity,
+        "a_xlsr": 1e-09,
+        "c_xlsr": -Infinity
+      },
+      "K": 6,
+      "aic": -73.56553948129454,
+      "aicc": -45.565539481294536,
+      "bic": -71.75002892333026,
+      "n_minus_k_minus_1": 3,
+      "delta_aic_vs_shared": 0.0,
+      "delta_aicc_vs_shared": 0.0,
+      "delta_bic_vs_shared": 0.0
+    },
+    "separate_e0": {
+      "n_parameters": 6,
+      "rss": 0.0019217407219916049,
+      "parameters": {
+        "E0_whisper": 0.07192518396783022,
+        "a_whisper": 0.341707582193414,
+        "c_whisper": 0.3583777963739113,
+        "E0_xlsr": 0.07764358854686082,
+        "a_xlsr": 0.40908707475750944,
+        "c_xlsr": 0.36077679143439
+      },
+      "lower_bounds": {
+        "E0_whisper": 0.0,
+        "a_whisper": 1e-09,
+        "c_whisper": -Infinity,
+        "E0_xlsr": 0.0,
+        "a_xlsr": 1e-09,
+        "c_xlsr": -Infinity
+      },
+      "K": 7,
+      "aic": -71.57108970636347,
+      "aicc": -15.571089706363466,
+      "bic": -69.45299405540514,
+      "n_minus_k_minus_1": 2,
+      "delta_aic_vs_shared": 1.99444977493107,
+      "delta_aicc_vs_shared": 29.99444977493107,
+      "delta_bic_vs_shared": 2.2970348679251202
+    },
+    "pure_power_law": {
+      "n_parameters": 4,
+      "rss": 0.0023225081989450913,
+      "parameters": {
+        "a_whisper": 0.40875087965175466,
+        "c_whisper": 0.25498073483335426,
+        "a_xlsr": 0.48148290733166443,
+        "c_xlsr": 0.2642958780486668
+      },
+      "lower_bounds": {
+        "a_whisper": 1e-09,
+        "c_whisper": -Infinity,
+        "a_xlsr": 1e-09,
+        "c_xlsr": -Infinity
+      },
+      "K": 5,
+      "aic": -73.6769265005262,
+      "aicc": -58.67692650052621,
+      "bic": -72.16400103555597,
+      "n_minus_k_minus_1": 4,
+      "delta_aic_vs_shared": -0.11138701923167105,
+      "delta_aicc_vs_shared": -13.111387019231671,
+      "delta_bic_vs_shared": -0.4139721122257072
+    }
+  },
+  "dependence": {
+    "correlation_matrix": {
+      "whisper_d1_trial": {
+        "whisper_d1_trial": 1.0,
+        "whisper_d2": 0.7287422220693657,
+        "whisper_d3": 0.4672929780576107,
+        "whisper_d4": 0.4023901279862684,
+        "whisper_d5": 0.4132184812810146,
+        "xlsr_d1_trial": 0.3512936017744679,
+        "xlsr_d2": 0.3538362051178278,
+        "xlsr_d3": 0.3355523549318761,
+        "xlsr_d4": 0.3234951625032501,
+        "xlsr_d5": 0.32310282305074745
+      },
+      "whisper_d2": {
+        "whisper_d1_trial": 0.7287422220693658,
+        "whisper_d2": 0.9999999999999998,
+        "whisper_d3": 0.5995475642889331,
+        "whisper_d4": 0.52544542703963,
+        "whisper_d5": 0.4988732356102475,
+        "xlsr_d1_trial": 0.3904502756312534,
+        "xlsr_d2": 0.43533238368335475,
+        "xlsr_d3": 0.44382605383884866,
+        "xlsr_d4": 0.4227212863358637,
+        "xlsr_d5": 0.42654991973079637
+      },
+      "whisper_d3": {
+        "whisper_d1_trial": 0.4672929780576107,
+        "whisper_d2": 0.5995475642889331,
+        "whisper_d3": 0.9999999999999999,
+        "whisper_d4": 0.7295326631613652,
+        "whisper_d5": 0.683564737325795,
+        "xlsr_d1_trial": 0.4213868219474462,
+        "xlsr_d2": 0.49319382320597566,
+        "xlsr_d3": 0.5765162957945982,
+        "xlsr_d4": 0.5713156766715038,
+        "xlsr_d5": 0.5649360952922883
+      },
+      "whisper_d4": {
+        "whisper_d1_trial": 0.4023901279862684,
+        "whisper_d2": 0.52544542703963,
+        "whisper_d3": 0.7295326631613653,
+        "whisper_d4": 1.0,
+        "whisper_d5": 0.7705214959427134,
+        "xlsr_d1_trial": 0.41572029538694655,
+        "xlsr_d2": 0.47129685393961934,
+        "xlsr_d3": 0.5762513770959237,
+        "xlsr_d4": 0.6256599336549924,
+        "xlsr_d5": 0.6067510994816535
+      },
+      "whisper_d5": {
+        "whisper_d1_trial": 0.4132184812810146,
+        "whisper_d2": 0.4988732356102475,
+        "whisper_d3": 0.683564737325795,
+        "whisper_d4": 0.7705214959427134,
+        "whisper_d5": 0.9999999999999999,
+        "xlsr_d1_trial": 0.40873252833451024,
+        "xlsr_d2": 0.4524671706615478,
+        "xlsr_d3": 0.5682221343088868,
+        "xlsr_d4": 0.6241359779725795,
+        "xlsr_d5": 0.6059620237743286
+      },
+      "xlsr_d1_trial": {
+        "whisper_d1_trial": 0.3512936017744679,
+        "whisper_d2": 0.3904502756312534,
+        "whisper_d3": 0.4213868219474462,
+        "whisper_d4": 0.41572029538694655,
+        "whisper_d5": 0.40873252833451024,
+        "xlsr_d1_trial": 1.0,
+        "xlsr_d2": 0.6552777721040903,
+        "xlsr_d3": 0.5586276120455864,
+        "xlsr_d4": 0.5130484530500243,
+        "xlsr_d5": 0.5197148357128344
+      },
+      "xlsr_d2": {
+        "whisper_d1_trial": 0.3538362051178278,
+        "whisper_d2": 0.43533238368335475,
+        "whisper_d3": 0.49319382320597566,
+        "whisper_d4": 0.4712968539396194,
+        "whisper_d5": 0.4524671706615478,
+        "xlsr_d1_trial": 0.6552777721040903,
+        "xlsr_d2": 1.0,
+        "xlsr_d3": 0.6418462657451788,
+        "xlsr_d4": 0.5762792380831011,
+        "xlsr_d5": 0.5690840514899878
+      },
+      "xlsr_d3": {
+        "whisper_d1_trial": 0.3355523549318761,
+        "whisper_d2": 0.44382605383884866,
+        "whisper_d3": 0.5765162957945983,
+        "whisper_d4": 0.5762513770959238,
+        "whisper_d5": 0.5682221343088867,
+        "xlsr_d1_trial": 0.5586276120455864,
+        "xlsr_d2": 0.6418462657451788,
+        "xlsr_d3": 1.0,
+        "xlsr_d4": 0.7218346908267989,
+        "xlsr_d5": 0.6985313457971254
+      },
+      "xlsr_d4": {
+        "whisper_d1_trial": 0.32349516250325017,
+        "whisper_d2": 0.42272128633586364,
+        "whisper_d3": 0.571315676671504,
+        "whisper_d4": 0.6256599336549925,
+        "whisper_d5": 0.6241359779725796,
+        "xlsr_d1_trial": 0.5130484530500243,
+        "xlsr_d2": 0.5762792380831012,
+        "xlsr_d3": 0.7218346908267989,
+        "xlsr_d4": 1.0,
+        "xlsr_d5": 0.7452822269141968
+      },
+      "xlsr_d5": {
+        "whisper_d1_trial": 0.32310282305074745,
+        "whisper_d2": 0.42654991973079637,
+        "whisper_d3": 0.5649360952922883,
+        "whisper_d4": 0.6067510994816535,
+        "whisper_d5": 0.6059620237743287,
+        "xlsr_d1_trial": 0.5197148357128343,
+        "xlsr_d2": 0.5690840514899878,
+        "xlsr_d3": 0.6985313457971254,
+        "xlsr_d4": 0.7452822269141967,
+        "xlsr_d5": 1.0
+      }
+    },
+    "same_model_across_levels": {
+      "min": 0.4023901279862684,
+      "max": 0.7705214959427134,
+      "median": 0.5879134011860171
+    },
+    "same_level_across_models": {
+      "d1": 0.3512936017744679,
+      "d2": 0.43533238368335475,
+      "d3": 0.5765162957945982,
+      "d4": 0.6256599336549924,
+      "d5": 0.6059620237743286
+    },
+    "scope": "hanya dependensi lewat data test bersama; dependensi lewat subset training bersarang tidak terukur"
+  },
+  "holdout": {
+    "shared_e0": {
+      "leave_one_out": {
+        "rmse": 0.04411468175344019,
+        "max_abs": 0.11672499051030527,
+        "interior_rmse": 0.02415406102805178,
+        "interior_definition": "D2 sampai D4, prediksi di dalam rentang pencocokan",
+        "errors": {
+          "whisper_d1_trial": 0.017242794014105833,
+          "whisper_d2": -0.0063277665826412255,
+          "whisper_d3": -0.001373973036856574,
+          "whisper_d4": 0.01288266169784233,
+          "whisper_d5": -0.010783851551073975,
+          "xlsr_d1_trial": 0.11672499051030527,
+          "xlsr_d2": -0.041453076867166316,
+          "xlsr_d3": 0.025042159962699984,
+          "xlsr_d4": 0.030775854549906362,
+          "xlsr_d5": -0.04384302302388199
+        }
+      },
+      "d5_held_out": {
+        "errors": {
+          "whisper_d5": -0.020972583764012953,
+          "xlsr_d5": -0.043843022889397204
+        },
+        "rmse": 0.034366116494439304,
+        "curve_fitted_on_d1_to_d4": {
+          "E0_whisper": 1.8241495448553174e-25,
+          "a_whisper": 0.4121413997341836,
+          "c_whisper": 0.26979845866216523,
+          "E0_xlsr": 1.8241495448553174e-25,
+          "a_xlsr": 0.488334830789529,
+          "c_xlsr": 0.29088623576116857
+        }
+      }
+    },
+    "separate_e0": {
+      "leave_one_out": {
+        "rmse": 0.09737386562242017,
+        "max_abs": 0.2933645926290611,
+        "interior_rmse": 0.02974983076987077,
+        "interior_definition": "D2 sampai D4, prediksi di dalam rentang pencocokan",
+        "errors": {
+          "whisper_d1_trial": 0.032886750081060345,
+          "whisper_d2": -0.007466526420471353,
+          "whisper_d3": -0.001065627589907664,
+          "whisper_d4": 0.01300061719224127,
+          "whisper_d5": -0.020972583761184133,
+          "xlsr_d1_trial": 0.2933645926290611,
+          "xlsr_d2": -0.057546823923210755,
+          "xlsr_d3": 0.027698255857340537,
+          "xlsr_d4": 0.03171093876725836,
+          "xlsr_d5": -0.04384302303202542
+        }
+      },
+      "d5_held_out": {
+        "errors": {
+          "whisper_d5": -0.02097258375912131,
+          "xlsr_d5": -0.043843022858842645
+        },
+        "rmse": 0.034366116473456505,
+        "curve_fitted_on_d1_to_d4": {
+          "E0_whisper": 7.979315018194239e-20,
+          "a_whisper": 0.4121413997294553,
+          "c_whisper": 0.2697984586506548,
+          "E0_xlsr": 8.052666576431927e-121,
+          "a_xlsr": 0.4883348307754274,
+          "c_xlsr": 0.2908862357037545
+        }
+      }
+    },
+    "pure_power_law": {
+      "leave_one_out": {
+        "rmse": 0.023238819480847762,
+        "max_abs": 0.0438430228953732,
+        "interior_rmse": 0.020450993414402305,
+        "interior_definition": "D2 sampai D4, prediksi di dalam rentang pencocokan",
+        "errors": {
+          "whisper_d1_trial": -0.01765366901684373,
+          "whisper_d2": 0.004218968257898026,
+          "whisper_d3": 0.006740294556540294,
+          "whisper_d4": 0.011165357571025575,
+          "whisper_d5": -0.020972583763307656,
+          "xlsr_d1_trial": 0.014739625597324113,
+          "xlsr_d2": -0.02385900134696811,
+          "xlsr_d3": 0.029999497310029155,
+          "xlsr_d4": 0.029194871675134154,
+          "xlsr_d5": -0.0438430228953732
+        }
+      },
+      "d5_held_out": {
+        "errors": {
+          "whisper_d5": -0.020972583763307656,
+          "xlsr_d5": -0.0438430229650163
+        },
+        "rmse": 0.03436611654246012,
+        "curve_fitted_on_d1_to_d4": {
+          "E0_whisper": 0.0,
+          "a_whisper": 0.41214139973358027,
+          "c_whisper": 0.269798458660551,
+          "E0_xlsr": 0.0,
+          "a_xlsr": 0.48833483084966073,
+          "c_xlsr": 0.2908862359155886
+        }
+      }
+    }
+  },
+  "nested_name": "pure_power_law",
+  "input_sha256": {
+    "whisper_d1_trial_test.tsv": "9c6a51f450b2e3d4cc347a6c0c4ce467d6d639c8124f5b7bcd444655d1c11ec4",
+    "whisper_d2_test.tsv": "ea8ff9b88852a2c4c96c3d7f26d5f0af021a57d84e0d0a2cc5b460b70d611fc5",
+    "whisper_d3_test.tsv": "118e05def5274b01517fe7ee6e0047faf525505d42533d3e868cc9dd08c33d0a",
+    "whisper_d4_test.tsv": "f05b1bc509da70ae7c004a6f613fa86282f941fc69e386095ecfc2f0f9fa5c7b",
+    "whisper_d5_test.tsv": "0bc978bf437745e40f9e039c6408c7cda194dcb109a7d0b44372ec265e6bf871",
+    "xlsr_d1_trial_test.tsv": "0a2f581e56824179d91d55647a02a8561f383e8492a721c1549afdbf90474950",
+    "xlsr_d2_test.tsv": "bf9f012df6bbad33b937af9d9179ae5ce7e37a1e8041a7f49193d15a0daa4f50",
+    "xlsr_d3_test.tsv": "b3128109fed9f2e1fe7e502c558343871c7d14a2e04fceeb5916a7cfbb45c953",
+    "xlsr_d4_test.tsv": "cdc40bdc96b6e02822f74f4618e8fc8586fb0bca097501996020c3fa402ab6b7",
+    "xlsr_d5_test.tsv": "2242d1c0e3151548c5b04df006c5d7802496b7509efbdbb2748a9e9a014936e1",
+    "build_nested_subsets_report.json": "a6251798cecb5b45a88b07a7d660ad3efdc25e1520de48fa859f2ba60ded805d",
+    "scaling_curve_report.json": "08a672b557582fbfff55368e1dc3eb8b9dc683d28e47a83e0f3858862b453627"
+  },
+  "environment": {
+    "skrip": "log_environment.py",
+    "lapis_1_perangkat_keras": {
+      "gpu": {
+        "jumlah_gpu_terdeteksi_torch": 1,
+        "nama": "NVIDIA GeForce RTX 4060 Laptop GPU",
+        "vram_total_mib": 8188,
+        "compute_capability": "sm_89",
+        "jumlah_streaming_multiprocessor": 24
+      },
+      "cpu": {
+        "nama": "13th Gen Intel(R) Core(TM) i7-13700HX",
+        "penanda_keluarga": "Intel64 Family 6 Model 191 Stepping 2, GenuineIntel",
+        "core_fisik": 16,
+        "core_logis": 24
+      },
+      "ram_sistem": {
+        "total_gib": 31.81,
+        "tersedia_saat_pencatatan_gib": 20.95
+      },
+      "penyimpanan": {
+        "PhysicalDisks": [
+          {
+            "FriendlyName": "SAMSUNG MZVL21T0HCLR-00BL2",
+            "MediaType": "SSD",
+            "SizeGB": 953.9
+          }
+        ],
+        "Volumes": [
+          {
+            "DriveLetter": "D",
+            "FileSystemType": "NTFS",
+            "SizeGB": 476.2
+          },
+          {
+            "DriveLetter": "C",
+            "FileSystemType": "NTFS",
+            "SizeGB": 475.8
+          }
+        ]
+      },
+      "sistem_operasi": {
+        "platform": "Windows-11-10.0.26300-SP0",
+        "sistem": "Windows",
+        "rilis": "11",
+        "versi": "10.0.26300",
+        "arsitektur": "AMD64",
+        "nama_host": "Eduardo"
+      }
+    },
+    "lapis_2_perangkat_lunak_terikat_perangkat_keras": {
+      "python": {
+        "versi": "3.12.10",
+        "implementasi": "CPython",
+        "executable": "D:\\_01_Bachelor_Information_System\\_00-SKRIPSI\\skripsi-venv\\Scripts\\python.exe"
+      },
+      "driver_nvidia": {
+        "versi": "610.88",
+        "sumber": "nvidia-smi"
+      },
+      "cuda": {
+        "tersedia": true,
+        "runtime_versi_torch": "13.0",
+        "cudnn_versi_mentah": 92400,
+        "cudnn_versi": "9.24.0"
+      },
+      "pytorch": {
+        "versi": "2.14.0+cu130",
+        "build_cuda": "13.0",
+        "versi_lengkap": "2.14.0+cu130"
+      },
+      "presisi": {
+        "dtype_bawaan": "torch.float32",
+        "float32_matmul_precision": "highest",
+        "bf16_didukung": true
+      },
+      "tf32": {
+        "cuda_matmul_allow_tf32": false,
+        "cudnn_allow_tf32": true,
+        "catatan": "Kedua kanal dilaporkan terpisah karena nilai bawaannya berbeda. Melaporkannya sebagai satu status tunggal adalah penyederhanaan yang keliru."
+      },
+      "determinisme": {
+        "cudnn_deterministic": false,
+        "cudnn_benchmark": false,
+        "use_deterministic_algorithms": false
+      },
+      "pustaka": {
+        "torch": "2.14.0+cu130",
+        "transformers": "5.17.0",
+        "datasets": "5.0.1",
+        "accelerate": "1.15.0",
+        "tokenizers": "0.23.2",
+        "safetensors": "0.8.0",
+        "soundfile": "0.14.0",
+        "jiwer": "4.0.0",
+        "bitsandbytes": "0.50.2",
+        "numpy": "2.5.3",
+        "pandas": "3.0.5",
+        "scipy": "1.18.1",
+        "scikit-learn": "1.9.0",
+        "statsmodels": "0.15.0",
+        "matplotlib": "3.11.1"
+      }
+    },
+    "lapis_3_jejak_eksekusi": {
+      "timestamp_utc": "2026-11-15T11:48:27+00:00",
+      "timestamp_lokal": "2026-11-15T18:48:27+07:00",
+      "random_seed": 42,
+      "vram_puncak_teralokasi_mib": 0.0,
+      "vram_puncak_tercadang_mib": 0.0,
+      "durasi_pengumpulan_detik": 36.204
+    }
+  },
+  "elapsed_seconds": 34.4
+}

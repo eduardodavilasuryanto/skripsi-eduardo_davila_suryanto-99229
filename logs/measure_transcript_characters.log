@@ -1,0 +1,32 @@
+==============================================================================
+Statistik karakter dan ejaan transkrip, corpus penuh SLR35
+Waktu mulai        : 2026-11-04T20:28:31+07:00
+Random seed        : tidak dipakai, perhitungan deterministik
+Metadata           : D:\_01_Bachelor_Information_System\_00-SKRIPSI\_03_dataset\asr_javanese_0\utt_spk_text.tsv
+==============================================================================
+pct_utterances_with_accent                    naskah     26.9  skrip     26.9  sama
+dheweke_variants                              naskah       17  skrip       17  sama
+word_form_collision_groups                    naskah     2626  skrip     2626  sama
+n_distinct_characters                         naskah       86  skrip       86  sama
+replacement_occurrences                       naskah        4  skrip        4  sama
+replacement_utterances                        naskah        2  skrip        2  sama
+pct_utterances_with_uppercase                 naskah     99.5  skrip     99.5  sama
+utterances_with_punctuation_or_symbol         naskah      845  skrip      845  sama
+utterances_with_digit                         naskah       52  skrip       52  sama
+words_mean                                    naskah      6.9  skrip      6.9  sama
+words_median                                  naskah        7  skrip      7.0  sama
+words_max                                     naskah       24  skrip       24  sama
+transcripts_with_tab                          naskah      ada  skrip        0  BERBEDA
+rare U+00F0 LATIN SMALL LETTER ETH            naskah        1  skrip        1  sama
+rare U+00F2 LATIN SMALL LETTER O WITH GRAVE   naskah        1  skrip        1  sama
+rare U+00A5 YEN SIGN                          naskah        1  skrip        1  sama
+rare U+2014 EM DASH                           naskah        1  skrip        1  sama
+rare U+00C2 LATIN CAPITAL LETTER A WITH CIRCUMFLEX naskah        4  skrip        4  sama
+rare U+FFFD REPLACEMENT CHARACTER             naskah        4  skrip        4  sama
+==============================================================================
+Utterance          : 185076
+Kalimat unik       : 96878
+Berbeda dari naskah: 1 besaran
+Laporan ditulis ke : D:\_01_Bachelor_Information_System\_00-SKRIPSI\_01_python-scripts\outputs\measure_transcript_characters_report.json
+Durasi eksekusi    : 23.5 detik
+==============================================================================

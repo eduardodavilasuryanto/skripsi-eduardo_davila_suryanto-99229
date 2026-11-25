@@ -1,0 +1,103 @@
+# Pemantau whisper_d3 dimulai 2026-10-06 10:19:50, potret setiap 30 menit, pemeriksaan proses setiap 60 detik.
+# Kolom GPU: memory.used,memory.free,utilization.gpu,temperature.gpu,power.draw,clocks.sm,clocks.max.sm,clocks_throttle_reasons.active,clocks_throttle_reasons.sw_power_cap,clocks_throttle_reasons.hw_slowdown,clocks_throttle_reasons.hw_thermal_slowdown,clocks_throttle_reasons.sw_thermal_slowdown
+
+==== 2026-10-06 10:19:50 | awal ====
+Proses training    : hidup, PID 12440, 19660
+Progres terakhir   : [progres] langkah 1: 25.38 s pada langkah pertama, VRAM puncak training tercadang 4754 MiB, teralokasi 4701 MiB
+Laju 4 jendela     :  s/langkah
+Evaluasi terakhir  : (belum ada)
+Biaya evaluasi     : (belum ada)
+Baris galat di log : 0
+GPU                : 7322 MiB, 635 MiB, 100 %, 66, 83.82 W, 2475 MHz, 3105 MHz, 0x0000000000000000, Not Active, Not Active, Not Active, Not Active
+Daya               : sumber AC, baterai 80%; Power Scheme GUID: 381b4222-f694-41f0-9685-ff5bb260df2e  (Balanced)
+
+==== 2026-10-06 10:49:54 | berkala ====
+Proses training    : hidup, PID 12440, 19660
+Progres terakhir   : [progres] langkah 450: 3.59 s/langkah, VRAM puncak training tercadang 5972 MiB, teralokasi 5716 MiB
+Laju 4 jendela     : 3.59, 3.58, 3.58, 3.59 s/langkah
+Evaluasi terakhir  : [evaluasi] langkah 250: WER 0.3432, terbaik 0.3432 pada langkah 250, tanpa perbaikan 0 kali
+Biaya evaluasi     : [evaluasi] langkah 250: 239.3 detik, VRAM tercadang awal 3050 MiB, puncak 5260 MiB, puncak teralokasi 5113 MiB
+Baris galat di log : 0
+GPU                : 7332 MiB, 625 MiB, 100 %, 72, 86.10 W, 2475 MHz, 3105 MHz, 0x0000000000000000, Not Active, Not Active, Not Active, Not Active
+Daya               : sumber AC, baterai 80%; Power Scheme GUID: 381b4222-f694-41f0-9685-ff5bb260df2e  (Balanced)
+
+==== 2026-10-06 11:19:59 | berkala ====
+Proses training    : hidup, PID 12440, 19660
+Progres terakhir   : [progres] langkah 825: 3.58 s/langkah, VRAM puncak training tercadang 5972 MiB, teralokasi 5716 MiB
+Laju 4 jendela     : 3.59, 3.58, 3.58, 3.58 s/langkah
+Evaluasi terakhir  : [evaluasi] langkah 750: WER 0.2433, terbaik 0.2433 pada langkah 750, tanpa perbaikan 0 kali
+Biaya evaluasi     : [evaluasi] langkah 750: 219.9 detik, VRAM tercadang awal 3050 MiB, puncak 5260 MiB, puncak teralokasi 5113 MiB
+Baris galat di log : 0
+GPU                : 7370 MiB, 587 MiB, 100 %, 71, 86.81 W, 2475 MHz, 3105 MHz, 0x0000000000000000, Not Active, Not Active, Not Active, Not Active
+Daya               : sumber AC, baterai 80%; Power Scheme GUID: 381b4222-f694-41f0-9685-ff5bb260df2e  (Balanced)
+
+==== 2026-10-06 11:50:03 | berkala ====
+Proses training    : hidup, PID 12440, 19660
+Progres terakhir   : [progres] langkah 1250: 3.58 s/langkah, VRAM puncak training tercadang 5972 MiB, teralokasi 5716 MiB
+Laju 4 jendela     : 3.58, 3.58, 3.58, 3.58 s/langkah
+Evaluasi terakhir  : [evaluasi] langkah 1000: WER 0.2315, terbaik 0.2315 pada langkah 1000, tanpa perbaikan 0 kali
+Biaya evaluasi     : [evaluasi] langkah 1000: 220.5 detik, VRAM tercadang awal 3050 MiB, puncak 5262 MiB, puncak teralokasi 5113 MiB
+Baris galat di log : 0
+GPU                : 6632 MiB, 1325 MiB, 100 %, 83, 106.60 W, 2220 MHz, 3105 MHz, 0x0000000000000020, Not Active, Not Active, Not Active, Active
+Daya               : sumber AC, baterai 79%; Power Scheme GUID: 381b4222-f694-41f0-9685-ff5bb260df2e  (Balanced)
+
+==== 2026-10-06 12:20:07 | berkala ====
+Proses training    : hidup, PID 12440, 19660
+Progres terakhir   : [progres] langkah 1650: 3.59 s/langkah, VRAM puncak training tercadang 5982 MiB, teralokasi 5716 MiB
+Laju 4 jendela     : 3.59, 3.58, 3.58, 3.59 s/langkah
+Evaluasi terakhir  : [evaluasi] langkah 1500: WER 0.2271, terbaik 0.2271 pada langkah 1500, tanpa perbaikan 0 kali
+Biaya evaluasi     : [evaluasi] langkah 1500: 220.8 detik, VRAM tercadang awal 3050 MiB, puncak 5260 MiB, puncak teralokasi 5113 MiB
+Baris galat di log : 0
+GPU                : 7334 MiB, 623 MiB, 100 %, 72, 85.57 W, 2475 MHz, 3105 MHz, 0x0000000000000000, Not Active, Not Active, Not Active, Not Active
+Daya               : sumber AC, baterai 79%; Power Scheme GUID: 381b4222-f694-41f0-9685-ff5bb260df2e  (Balanced)
+
+==== 2026-10-06 12:50:11 | berkala ====
+Proses training    : hidup, PID 12440, 19660
+Progres terakhir   : [progres] langkah 2025: 3.58 s/langkah, VRAM puncak training tercadang 5982 MiB, teralokasi 5716 MiB
+Laju 4 jendela     : 3.58, 3.58, 3.58, 3.58 s/langkah
+Evaluasi terakhir  : [evaluasi] langkah 2000: WER 0.2209, terbaik 0.2209 pada langkah 2000, tanpa perbaikan 0 kali
+Biaya evaluasi     : [evaluasi] langkah 2000: 220.1 detik, VRAM tercadang awal 3050 MiB, puncak 5260 MiB, puncak teralokasi 5113 MiB
+Baris galat di log : 0
+GPU                : 7354 MiB, 603 MiB, 100 %, 73, 85.88 W, 2475 MHz, 3105 MHz, 0x0000000000000000, Not Active, Not Active, Not Active, Not Active
+Daya               : sumber AC, baterai 79%; Power Scheme GUID: 381b4222-f694-41f0-9685-ff5bb260df2e  (Balanced)
+
+==== 2026-10-06 13:20:15 | berkala ====
+Proses training    : hidup, PID 12440, 19660
+Progres terakhir   : [progres] langkah 2475: 3.58 s/langkah, VRAM puncak training tercadang 5982 MiB, teralokasi 5716 MiB
+Laju 4 jendela     : 3.58, 3.58, 3.58, 3.58 s/langkah
+Evaluasi terakhir  : [evaluasi] langkah 2250: WER 0.2231, terbaik 0.2209 pada langkah 2000, tanpa perbaikan 1 kali
+Biaya evaluasi     : [evaluasi] langkah 2250: 219.6 detik, VRAM tercadang awal 3050 MiB, puncak 5262 MiB, puncak teralokasi 5113 MiB
+Baris galat di log : 0
+GPU                : 7344 MiB, 613 MiB, 100 %, 71, 81.79 W, 2475 MHz, 3105 MHz, 0x0000000000000000, Not Active, Not Active, Not Active, Not Active
+Daya               : sumber AC, baterai 79%; Power Scheme GUID: 381b4222-f694-41f0-9685-ff5bb260df2e  (Balanced)
+
+==== 2026-10-06 13:50:18 | berkala ====
+Proses training    : hidup, PID 12440, 19660
+Progres terakhir   : [progres] langkah 2850: 3.57 s/langkah, VRAM puncak training tercadang 5982 MiB, teralokasi 5716 MiB
+Laju 4 jendela     : 3.58, 3.57, 3.57, 3.57 s/langkah
+Evaluasi terakhir  : [evaluasi] langkah 2750: WER 0.2211, terbaik 0.2209 pada langkah 2000, tanpa perbaikan 3 kali
+Biaya evaluasi     : [evaluasi] langkah 2750: 221.0 detik, VRAM tercadang awal 3050 MiB, puncak 5260 MiB, puncak teralokasi 5113 MiB
+Baris galat di log : 0
+GPU                : 7334 MiB, 623 MiB, 94 %, 74, 85.61 W, 2475 MHz, 3105 MHz, 0x0000000000000000, Not Active, Not Active, Not Active, Not Active
+Daya               : sumber AC, baterai 79%; Power Scheme GUID: 381b4222-f694-41f0-9685-ff5bb260df2e  (Balanced)
+
+==== 2026-10-06 14:03:20 | akhir: proses training sudah keluar ====
+Proses training    : tidak ada
+Progres terakhir   : [progres] langkah 3000: 3.57 s/langkah, VRAM puncak training tercadang 5982 MiB, teralokasi 5716 MiB
+Laju 4 jendela     : 3.57, 3.58, 3.58, 3.57 s/langkah
+Evaluasi terakhir  : [evaluasi] langkah 3000: WER 0.2253, terbaik 0.2209 pada langkah 2000, tanpa perbaikan 4 kali
+Biaya evaluasi     : [evaluasi] langkah 3000: 224.7 detik, VRAM tercadang awal 3050 MiB, puncak 5262 MiB, puncak teralokasi 5113 MiB
+Baris galat di log : 0
+GPU                : 4894 MiB, 3063 MiB, 100 %, 73, 74.88 W, 2475 MHz, 3105 MHz, 0x0000000000000000, Not Active, Not Active, Not Active, Not Active
+Daya               : sumber AC, baterai 79%; Power Scheme GUID: 381b4222-f694-41f0-9685-ff5bb260df2e  (Balanced)
+Laporan run        : global_step 3000, stopped_early True, WER terbaik 0.220875420875421 pada langkah 2000, seconds_per_step 3.579, puncak tercadang 5982 MiB, teralokasi 5716 MiB
+Baris akhir log    :
+    train_peak_reserved_mib     : 5982
+    train_peak_allocated_mib    : 5716
+    evaluation_seconds_total    : 2668.9
+    model_dir                   : D:\_01_Bachelor_Information_System\_00-SKRIPSI\_01_python-scripts\outputs\models\whisper_d3
+    Peringatan determinisme: 1
+    Laporan ditulis ke : D:\_01_Bachelor_Information_System\_00-SKRIPSI\_01_python-scripts\outputs\runs\whisper_d3\run_report.json
+    Durasi eksekusi    : 13444.7 detik
+    ==============================================================================
+

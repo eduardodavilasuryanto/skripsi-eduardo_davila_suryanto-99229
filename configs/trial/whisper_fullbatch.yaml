@@ -1,0 +1,37 @@
+# Uji perubahan train_asr.py Sesi 20, DraftResearch.md Lampiran B.12 dan B.14.
+# Nilai identik dengan whisper_det_a.yaml kecuali run_name, sehingga
+# perbedaannya dengan run whisper_det_a ulangan Sesi 20 hanya kode: setiap
+# epoch memakai kelipatan 32 utterance yang diacak ulang, loss dirata-ratakan
+# atas akumulasi gradien, dan puncak VRAM teralokasi ikut dicatat. D1 menjadi
+# 19 langkah per epoch, sehingga 30 langkah melewati batas epoch pada langkah 19.
+# Perubahan didukung bila tidak ada langkah yang jauh lebih singkat daripada
+# langkah lain, epoch 1,0 jatuh pada langkah 19, dan loss sekitar separuh
+# loss whisper_det_a.
+run_name: whisper_fullbatch
+model_family: whisper
+pretrained: openai/whisper-small
+revision: 973afd24965f72e36ca33b3055d56a652f456b4d
+train_subset: outputs/subsets/d1.tsv
+validation_split: outputs/splits/validation.tsv
+seed: 42
+precision: bf16
+tf32: false
+deterministic: true
+effective_batch_size: 32
+per_device_train_batch_size: 16
+per_device_eval_batch_size: 32
+learning_rate: 1.0e-5
+warmup_steps: 500
+lr_scheduler_type: linear
+optim: adamw_torch
+max_steps: 30
+eval_steps: 30
+early_stopping_patience: 4
+early_stopping_min_steps: 2000
+gradient_checkpointing: true
+logging_steps: 1
+dataloader_num_workers: 4
+save_only_model: true
+keep_checkpoints: false
+generation_max_new_tokens: 128
+model_overrides: {}

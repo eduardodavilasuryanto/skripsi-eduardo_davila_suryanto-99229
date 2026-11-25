@@ -1,0 +1,1191 @@
+{
+  "generated_at": "2026-10-16T04:45:13.471554+00:00",
+  "source_document": "_02_context-MD-files/bab-2.md (baris 616-640)",
+  "results": [
+    {
+      "ref": "19",
+      "claimed_title": "Attention Is All You Need",
+      "status": "SESUAI (manual)",
+      "issues": [],
+      "notes": [
+        "tahun beda: dokumen=2017 sumber=2025"
+      ],
+      "manual_source": "papers.nips.cc laman NIPS 2017: judul dan daftar penulis cocok, volume 30. OpenAlex melaporkan tahun 2025 (cacat indeks, diabaikan). Laman resmi tidak mencantumkan nomor halaman.",
+      "sources": {
+        "arxiv": {
+          "id": "http://arxiv.org/abs/1706.03762v7",
+          "title": "Attention Is All You Need",
+          "published": "2017-06-12T17:57:34Z",
+          "updated": "2023-08-02T00:41:18Z",
+          "authors": [
+            "Ashish Vaswani",
+            "Noam Shazeer",
+            "Niki Parmar",
+            "Jakob Uszkoreit",
+            "Llion Jones",
+            "Aidan N. Gomez",
+            "Lukasz Kaiser",
+            "Illia Polosukhin"
+          ],
+          "comment": "15 pages, 5 figures",
+          "journal_ref": "",
+          "doi": ""
+        },
+        "crossref_search": [
+          {
+            "title": "Is Attention All You Need?",
+            "container": "From Human Attention to Computational Attention",
+            "authors": [
+              "Patrick Mineault"
+            ],
+            "year": 2025,
+            "volume": null,
+            "issue": null,
+            "pages": "297-314",
+            "doi": "10.1007/978-3-031-84300-6_13",
+            "type": "book-chapter",
+            "publisher": "Springer Nature Switzerland"
+          },
+          {
+            "title": "Attention Is All You Need: An Analysis Of The Valuation Of Artificial Intelligence Tokens",
+            "container": "",
+            "authors": [
+              "Mfon Akpan"
+            ],
+            "year": 2024,
+            "volume": null,
+            "issue": null,
+            "pages": null,
+            "doi": "10.2139/ssrn.4993784",
+            "type": "posted-content",
+            "publisher": "Elsevier BV"
+          },
+          {
+            "title": "Attention is All You Need... Unless You Are a CISO: The Inherent Incompatibility Between Transformer Architectures and Zero-Trust Environments",
+            "container": "",
+            "authors": [
+              "Giuseppe Canale"
+            ],
+            "year": 2026,
+            "volume": null,
+            "issue": null,
+            "pages": null,
+            "doi": "10.2139/ssrn.5967774",
+            "type": "posted-content",
+            "publisher": "Elsevier BV"
+          }
+        ],
+        "openalex_search": [
+          {
+            "title": "Attention Is All You Need",
+            "container": "",
+            "authors": [
+              "Ashish Vaswani",
+              "Noam Shazeer",
+              "Niki Parmar",
+              "Jakob Uszkoreit",
+              "Llion Jones",
+              "Aidan N. Gomez",
+              "Łukasz Kaiser",
+              "Illia Polosukhin"
+            ],
+            "year": 2025,
+            "volume": "30",
+            "issue": null,
+            "pages": "5998-6008",
+            "doi": "10.65215/2q58a426",
+            "type": "preprint",
+            "openalex_id": "https://openalex.org/W2626778328"
+          },
+          {
+            "title": "Attention Is All You Need In Speech Separation",
+            "container": "IEEE International Conference on Acoustics Speech and Signal Processing",
+            "authors": [
+              "Cem Subakan",
+              "Mirco Ravanelli",
+              "Samuele Cornell",
+              "Mirko Bronzi",
+              "Jianyuan Zhong"
+            ],
+            "year": 2021,
+            "volume": null,
+            "issue": null,
+            "pages": "21-25",
+            "doi": "10.1109/icassp39728.2021.9413901",
+            "type": "conference-paper",
+            "openalex_id": "https://openalex.org/W3163652268"
+          },
+          {
+            "title": "Channel Attention Is All You Need for Video Frame Interpolation",
+            "container": "Proceedings of the AAAI Conference on Artificial Intelligence",
+            "authors": [
+              "Myungsub Choi",
+              "Heewon Kim",
+              "Bohyung Han",
+              "Ning Xu",
+              "Kyoung Mu Lee"
+            ],
+            "year": 2020,
+            "volume": "34",
+            "issue": "07",
+            "pages": "10663-10671",
+            "doi": "10.1609/aaai.v34i07.6693",
+            "type": "conference-paper",
+            "openalex_id": "https://openalex.org/W2997150500"
+          },
+          {
+            "title": "Attention is all you need: utilizing attention in AI-enabled drug discovery",
+            "container": "Briefings in Bioinformatics",
+            "authors": [
+              "Yang Zhang",
+              "Caiqi Liu",
+              "Mujiexin Liu",
+              "Tianyuan Liu",
+              "Hao Lin",
+              "Huang Cheng-bing",
+              "Ning Lin"
+            ],
+            "year": 2023,
+            "volume": "25",
+            "issue": "1",
+            "pages": null,
+            "doi": "10.1093/bib/bbad467",
+            "type": "article",
+            "openalex_id": "https://openalex.org/W4390678101"
+          },
+          {
+            "title": "Attention Is All You Need",
+            "container": "Routledge eBooks",
+            "authors": [
+              "J. M. Bishop",
+              "Gabriel Seiberth"
+            ],
+            "year": 2025,
+            "volume": null,
+            "issue": null,
+            "pages": "151-163",
+            "doi": "10.1201/9781003561460-19",
+            "type": "book-chapter",
+            "openalex_id": "https://openalex.org/W4415754031"
+          }
+        ],
+        "openalex_match": {
+          "title": "Attention Is All You Need",
+          "container": "",
+          "authors": [
+            "Ashish Vaswani",
+            "Noam Shazeer",
+            "Niki Parmar",
+            "Jakob Uszkoreit",
+            "Llion Jones",
+            "Aidan N. Gomez",
+            "Łukasz Kaiser",
+            "Illia Polosukhin"
+          ],
+          "year": 2025,
+          "volume": "30",
+          "issue": null,
+          "pages": "5998-6008",
+          "doi": "10.65215/2q58a426",
+          "type": "preprint",
+          "openalex_id": "https://openalex.org/W2626778328"
+        }
+      }
+    },
+    {
+      "ref": "20",
+      "claimed_title": "Connectionist temporal classification: Labelling unsegmented sequence data with recurrent neural networks",
+      "status": "SESUAI",
+      "issues": [],
+      "notes": [],
+      "manual_source": "",
+      "sources": {
+        "crossref_doi": {
+          "title": "Connectionist temporal classification",
+          "container": "Proceedings of the 23rd international conference on Machine learning - ICML '06",
+          "authors": [
+            "Alex Graves",
+            "Santiago Fernández",
+            "Faustino Gomez",
+            "Jürgen Schmidhuber"
+          ],
+          "year": 2006,
+          "volume": null,
+          "issue": null,
+          "pages": "369-376",
+          "doi": "10.1145/1143844.1143891",
+          "type": "proceedings-article",
+          "publisher": "ACM Press"
+        }
+      }
+    },
+    {
+      "ref": "21",
+      "claimed_title": "wav2vec 2.0: A Framework for Self-Supervised Learning of Speech Representations",
+      "status": "SESUAI",
+      "issues": [],
+      "notes": [],
+      "manual_source": "",
+      "sources": {
+        "arxiv": {
+          "id": "http://arxiv.org/abs/2006.11477v3",
+          "title": "wav2vec 2.0: A Framework for Self-Supervised Learning of Speech Representations",
+          "published": "2020-06-20T02:35:02Z",
+          "updated": "2020-10-22T06:09:10Z",
+          "authors": [
+            "Alexei Baevski",
+            "Henry Zhou",
+            "Abdelrahman Mohamed",
+            "Michael Auli"
+          ],
+          "comment": "",
+          "journal_ref": "",
+          "doi": ""
+        },
+        "crossref_search": [
+          {
+            "title": "CCC-WAV2VEC 2.0: Clustering AIDED Cross Contrastive Self-Supervised Learning of Speech Representations",
+            "container": "2022 IEEE Spoken Language Technology Workshop (SLT)",
+            "authors": [
+              "Vasista Sai Lodagala",
+              "Sreyan Ghosh",
+              "S. Umesh"
+            ],
+            "year": 2023,
+            "volume": null,
+            "issue": null,
+            "pages": "1-8",
+            "doi": "10.1109/slt54892.2023.10022552",
+            "type": "proceedings-article",
+            "publisher": "IEEE"
+          },
+          {
+            "title": "",
+            "container": "",
+            "authors": [],
+            "year": 2022,
+            "volume": null,
+            "issue": null,
+            "pages": null,
+            "doi": "10.61686/jzpac71904",
+            "type": "grant",
+            "publisher": "Dutch Research Council (NWO)"
+          },
+          {
+            "title": "Self-Supervised Wav2Vec Representations Integrated with Transformers for Speech-to-Text Applications",
+            "container": "Procedia Computer Science",
+            "authors": [
+              "Mohammed Hameed Ahmed AlTaei",
+              "Mohamed Fadlalla Elhaj Hamad",
+              "Omar Al Hashimi",
+              "Ameer Hakim Samawi"
+            ],
+            "year": 2026,
+            "volume": "275",
+            "issue": null,
+            "pages": "550-557",
+            "doi": "10.1016/j.procs.2026.01.064",
+            "type": "journal-article",
+            "publisher": "Elsevier BV"
+          }
+        ],
+        "openalex_search": [
+          {
+            "title": "wav2vec 2.0: A Framework for Self-Supervised Learning of Speech Representations",
+            "container": "neural information processing systems",
+            "authors": [
+              "Alexei Baevski",
+              "Yuhao Zhou",
+              "Abdelrahman Mohamed",
+              "Michael Auli"
+            ],
+            "year": 2020,
+            "volume": "33",
+            "issue": null,
+            "pages": "12449-12460",
+            "doi": null,
+            "type": "article",
+            "openalex_id": "https://openalex.org/W3099782249"
+          }
+        ],
+        "openalex_match": {
+          "title": "wav2vec 2.0: A Framework for Self-Supervised Learning of Speech Representations",
+          "container": "neural information processing systems",
+          "authors": [
+            "Alexei Baevski",
+            "Yuhao Zhou",
+            "Abdelrahman Mohamed",
+            "Michael Auli"
+          ],
+          "year": 2020,
+          "volume": "33",
+          "issue": null,
+          "pages": "12449-12460",
+          "doi": null,
+          "type": "article",
+          "openalex_id": "https://openalex.org/W3099782249"
+        }
+      }
+    },
+    {
+      "ref": "22",
+      "claimed_title": "Unsupervised Cross-lingual Representation Learning for Speech Recognition",
+      "status": "SESUAI",
+      "issues": [],
+      "notes": [],
+      "manual_source": "",
+      "sources": {
+        "crossref_doi": {
+          "title": "Unsupervised Cross-Lingual Representation Learning for Speech Recognition",
+          "container": "Interspeech 2021",
+          "authors": [
+            "Alexis Conneau",
+            "Alexei Baevski",
+            "Ronan Collobert",
+            "Abdelrahman Mohamed",
+            "Michael Auli"
+          ],
+          "year": 2021,
+          "volume": null,
+          "issue": null,
+          "pages": "2426-2430",
+          "doi": "10.21437/interspeech.2021-329",
+          "type": "proceedings-article",
+          "publisher": "ISCA"
+        },
+        "arxiv": {
+          "id": "http://arxiv.org/abs/2006.13979v2",
+          "title": "Unsupervised Cross-lingual Representation Learning for Speech Recognition",
+          "published": "2020-06-24T18:25:05Z",
+          "updated": "2020-12-15T23:19:19Z",
+          "authors": [
+            "Alexis Conneau",
+            "Alexei Baevski",
+            "Ronan Collobert",
+            "Abdelrahman Mohamed",
+            "Michael Auli"
+          ],
+          "comment": "",
+          "journal_ref": "",
+          "doi": ""
+        }
+      }
+    },
+    {
+      "ref": "23",
+      "claimed_title": "Binary codes capable of correcting deletions, insertions, and reversals",
+      "status": "SESUAI (manual)",
+      "issues": [],
+      "notes": [
+        "tidak ada padanan judul persis pada pencarian Crossref",
+        "tidak ada padanan judul persis pada OpenAlex"
+      ],
+      "manual_source": "NASA ADS bibcode 1966SPhD...10..707L: vol. 10, no. 8, hlm. 707-710, 1966. Terjemahan dari Doklady Akademii Nauk SSSR vol. 163, no. 4, hlm. 845-848, 1965.",
+      "sources": {
+        "crossref_search": [
+          {
+            "title": "Codes capable of correcting bursts of insertions and deletions",
+            "container": "Proceedings of 1994 IEEE International Symposium on Information Theory",
+            "authors": [
+              "P.A.H. Bours"
+            ],
+            "year": null,
+            "volume": null,
+            "issue": null,
+            "pages": "63",
+            "doi": "10.1109/isit.1994.394907",
+            "type": "proceedings-article",
+            "publisher": "IEEE"
+          },
+          {
+            "title": "Codes correcting bursts of deletions/insertions and tandem duplications",
+            "container": "",
+            "authors": [
+              "Tuan Thanh Nguyen"
+            ],
+            "year": null,
+            "volume": null,
+            "issue": null,
+            "pages": null,
+            "doi": "10.32657/10220/47179",
+            "type": "dissertation",
+            "publisher": "Nanyang Technological University"
+          },
+          {
+            "title": "Perfect Binary Codes Capable of Correcting Equal Multiple Deletions",
+            "container": "2021 IEEE International Symposium on Information Theory (ISIT)",
+            "authors": [
+              "Kento Nakada"
+            ],
+            "year": 2021,
+            "volume": null,
+            "issue": null,
+            "pages": "2661-2665",
+            "doi": "10.1109/isit45174.2021.9517840",
+            "type": "proceedings-article",
+            "publisher": "IEEE"
+          }
+        ],
+        "openalex_search": [
+          {
+            "error": "jaringan: HTTP Error 400: Bad Request"
+          }
+        ]
+      }
+    },
+    {
+      "ref": "24",
+      "claimed_title": "From WER and RIL to MER and WIL: improved evaluation measures for connected speech recognition",
+      "status": "SESUAI",
+      "issues": [],
+      "notes": [],
+      "manual_source": "",
+      "sources": {
+        "crossref_doi": {
+          "title": "From WER and RIL to MER and WIL: improved evaluation measures for connected speech recognition",
+          "container": "Interspeech 2004",
+          "authors": [
+            "Andrew Cameron Morris",
+            "Viktoria Maier",
+            "Phil Green"
+          ],
+          "year": 2004,
+          "volume": null,
+          "issue": null,
+          "pages": "2765-2768",
+          "doi": "10.21437/interspeech.2004-668",
+          "type": "proceedings-article",
+          "publisher": "ISCA"
+        }
+      }
+    },
+    {
+      "ref": "25",
+      "claimed_title": "Bootstrap Methods: Another Look at the Jackknife",
+      "status": "SESUAI (manual)",
+      "issues": [],
+      "notes": [],
+      "manual_source": "Crossref tidak memuat medan halaman untuk record Project Euclid ini. Rentang 1-26 dikonfirmasi lewat metadata JSTOR 2958830 dan MR0515681.",
+      "sources": {
+        "crossref_doi": {
+          "title": "Bootstrap Methods: Another Look at the Jackknife",
+          "container": "The Annals of Statistics",
+          "authors": [
+            "B. Efron"
+          ],
+          "year": 1979,
+          "volume": "7",
+          "issue": "1",
+          "pages": null,
+          "doi": "10.1214/aos/1176344552",
+          "type": "journal-article",
+          "publisher": "Institute of Mathematical Statistics"
+        }
+      }
+    },
+    {
+      "ref": "26",
+      "claimed_title": "Statistical Significance Tests for Machine Translation Evaluation",
+      "status": "SESUAI (manual)",
+      "issues": [],
+      "notes": [],
+      "manual_source": "ACL Anthology W04-3250: hlm. 388-395, Barcelona, Spain, penerbit ACL, medan DOI kosong pada laman resmi.",
+      "sources": {
+        "crossref_search": [
+          {
+            "title": "Randomized Significance Tests in Machine Translation",
+            "container": "Proceedings of the Ninth Workshop on Statistical Machine Translation",
+            "authors": [
+              "Yvette Graham",
+              "Nitika Mathur",
+              "Timothy Baldwin"
+            ],
+            "year": 2014,
+            "volume": null,
+            "issue": null,
+            "pages": "266-274",
+            "doi": "10.3115/v1/w14-3333",
+            "type": "proceedings-article",
+            "publisher": "Association for Computational Linguistics"
+          },
+          {
+            "title": "Significance tests of automatic machine translation evaluation metrics",
+            "container": "Machine Translation",
+            "authors": [
+              "Ying Zhang",
+              "Stephan Vogel"
+            ],
+            "year": 2010,
+            "volume": "24",
+            "issue": "1",
+            "pages": "51-65",
+            "doi": "10.1007/s10590-010-9073-6",
+            "type": "journal-article",
+            "publisher": "Springer Science and Business Media LLC"
+          },
+          {
+            "title": "Evaluation",
+            "container": "Statistical Machine Translation",
+            "authors": [],
+            "year": 2009,
+            "volume": null,
+            "issue": null,
+            "pages": "217-246",
+            "doi": "10.1017/cbo9780511815829.009",
+            "type": "book-chapter",
+            "publisher": "Cambridge University Press"
+          }
+        ],
+        "openalex_search": [
+          {
+            "title": "Statistical Significance Tests for Machine Translation Evaluation.",
+            "container": "",
+            "authors": [
+              "Philipp Koehn"
+            ],
+            "year": 2004,
+            "volume": null,
+            "issue": null,
+            "pages": "388-395",
+            "doi": null,
+            "type": "article",
+            "openalex_id": "https://openalex.org/W222053410"
+          }
+        ],
+        "openalex_match": {
+          "title": "Statistical Significance Tests for Machine Translation Evaluation.",
+          "container": "",
+          "authors": [
+            "Philipp Koehn"
+          ],
+          "year": 2004,
+          "volume": null,
+          "issue": null,
+          "pages": "388-395",
+          "doi": null,
+          "type": "article",
+          "openalex_id": "https://openalex.org/W222053410"
+        }
+      }
+    },
+    {
+      "ref": "27",
+      "claimed_title": "A Simple Sequentially Rejective Multiple Test Procedure",
+      "status": "SESUAI (manual)",
+      "issues": [],
+      "notes": [],
+      "manual_source": "OpenAlex mengonfirmasi vol. 6, hlm. 65-70, 1979, tetapi tidak memuat nomor terbitan. Nomor 2 dikonfirmasi lewat metadata JSTOR 4615733 dan MR0538597.",
+      "sources": {
+        "crossref_search": [
+          {
+            "title": "Correction: An Improved Sequentially Rejective Bonferroni Test Procedure",
+            "container": "Biometrics",
+            "authors": [],
+            "year": 1987,
+            "volume": "43",
+            "issue": "3",
+            "pages": "737",
+            "doi": "10.2307/2532027",
+            "type": "journal-article",
+            "publisher": "JSTOR"
+          },
+          {
+            "title": "An Improved Sequentially Rejective Bonferroni Test Procedure",
+            "container": "Biometrics",
+            "authors": [
+              "Burt S. Holland",
+              "Margaret DiPonzio Copenhaver"
+            ],
+            "year": 1987,
+            "volume": "43",
+            "issue": "2",
+            "pages": "417",
+            "doi": "10.2307/2531823",
+            "type": "journal-article",
+            "publisher": "JSTOR"
+          },
+          {
+            "title": "A sequentially rejective test procedure based on a modified Bonferroni inequality",
+            "container": "Biometrika",
+            "authors": [
+              "DROR M. ROM"
+            ],
+            "year": 1990,
+            "volume": "77",
+            "issue": "3",
+            "pages": "663-665",
+            "doi": "10.1093/biomet/77.3.663",
+            "type": "journal-article",
+            "publisher": "Oxford University Press (OUP)"
+          }
+        ],
+        "openalex_search": [
+          {
+            "title": "A Simple Sequentially Rejective Multiple Test Procedure",
+            "container": "Scandinavian Journal of Statistics",
+            "authors": [
+              "Sture Holm"
+            ],
+            "year": 1979,
+            "volume": "6",
+            "issue": null,
+            "pages": "65-70",
+            "doi": "10.2307/4615733",
+            "type": "article",
+            "openalex_id": "https://openalex.org/W2121044470"
+          }
+        ],
+        "openalex_match": {
+          "title": "A Simple Sequentially Rejective Multiple Test Procedure",
+          "container": "Scandinavian Journal of Statistics",
+          "authors": [
+            "Sture Holm"
+          ],
+          "year": 1979,
+          "volume": "6",
+          "issue": null,
+          "pages": "65-70",
+          "doi": "10.2307/4615733",
+          "type": "article",
+          "openalex_id": "https://openalex.org/W2121044470"
+        }
+      }
+    },
+    {
+      "ref": "28",
+      "claimed_title": "A New Look at the Statistical Model Identification",
+      "status": "SESUAI",
+      "issues": [],
+      "notes": [],
+      "manual_source": "",
+      "sources": {
+        "crossref_doi": {
+          "title": "A new look at the statistical model identification",
+          "container": "IEEE Transactions on Automatic Control",
+          "authors": [
+            "H. Akaike"
+          ],
+          "year": 1974,
+          "volume": "19",
+          "issue": "6",
+          "pages": "716-723",
+          "doi": "10.1109/tac.1974.1100705",
+          "type": "journal-article",
+          "publisher": "Institute of Electrical and Electronics Engineers (IEEE)"
+        }
+      }
+    },
+    {
+      "ref": "29",
+      "claimed_title": "KenLM: Faster and Smaller Language Model Queries",
+      "status": "SESUAI (manual)",
+      "issues": [],
+      "notes": [],
+      "manual_source": "ACL Anthology W11-2123: hlm. 187-197, Edinburgh, Scotland, penerbit ACL, medan DOI kosong pada laman resmi.",
+      "sources": {
+        "crossref_search": [
+          {
+            "title": "Smaller and Faster Robotic Grasp Detection Model Via Knowledge Distillation and Unequal Feature Encoding_supp1-3421790.mp4",
+            "container": "",
+            "authors": [
+              "Lu Chen"
+            ],
+            "year": null,
+            "volume": null,
+            "issue": null,
+            "pages": null,
+            "doi": "10.1109/lra.2024.3421790/mm1",
+            "type": "component",
+            "publisher": "Institute of Electrical and Electronics Engineers (IEEE)"
+          },
+          {
+            "title": "Figure 1: Smaller fragments grow faster.",
+            "container": "",
+            "authors": [],
+            "year": null,
+            "volume": null,
+            "issue": null,
+            "pages": null,
+            "doi": "10.7717/peerj.13158/fig-1",
+            "type": "component",
+            "publisher": "PeerJ"
+          },
+          {
+            "title": "Hummingbird: A Smaller and Faster Large Language Model Accelerator on Embedded FPGA",
+            "container": "2025 IEEE/ACM International Conference On Computer Aided Design (ICCAD)",
+            "authors": [
+              "Jindong Li",
+              "Tenglong Li",
+              "Ruiqi Chen",
+              "Guobin Shen",
+              "Dongcheng Zhao",
+              "Qian Zhang",
+              "Yi Zeng"
+            ],
+            "year": 2025,
+            "volume": null,
+            "issue": null,
+            "pages": "1-9",
+            "doi": "10.1109/iccad66269.2025.11241002",
+            "type": "proceedings-article",
+            "publisher": "IEEE"
+          }
+        ],
+        "openalex_search": [
+          {
+            "title": "KenLM: Faster and Smaller Language Model Queries",
+            "container": "",
+            "authors": [
+              "Kenneth Heafield"
+            ],
+            "year": 2011,
+            "volume": null,
+            "issue": null,
+            "pages": "187-197",
+            "doi": null,
+            "type": "article",
+            "openalex_id": "https://openalex.org/W2134800885"
+          }
+        ],
+        "openalex_match": {
+          "title": "KenLM: Faster and Smaller Language Model Queries",
+          "container": "",
+          "authors": [
+            "Kenneth Heafield"
+          ],
+          "year": 2011,
+          "volume": null,
+          "issue": null,
+          "pages": "187-197",
+          "doi": null,
+          "type": "article",
+          "openalex_id": "https://openalex.org/W2134800885"
+        }
+      }
+    },
+    {
+      "ref": "30",
+      "claimed_title": "LoRA: Low-Rank Adaptation of Large Language Models",
+      "status": "SESUAI (manual)",
+      "issues": [],
+      "notes": [
+        "tidak ada padanan judul persis pada pencarian Crossref",
+        "tidak ada padanan judul persis pada OpenAlex"
+      ],
+      "manual_source": "OpenReview forum nZeVKeeFYf9 dan iclr.cc/virtual/2022/poster/6319: terbit sebagai poster ICLR 2022. Pracetak arXiv 2106.09685 v1 17 Juni 2021, v2 16 Oktober 2021, tanpa medan journal-ref.",
+      "sources": {
+        "arxiv": {
+          "id": "http://arxiv.org/abs/2106.09685v2",
+          "title": "LoRA: Low-Rank Adaptation of Large Language Models",
+          "published": "2021-06-17T17:37:18Z",
+          "updated": "2021-10-16T18:40:34Z",
+          "authors": [
+            "Edward J. Hu",
+            "Yelong Shen",
+            "Phillip Wallis",
+            "Zeyuan Allen-Zhu",
+            "Yuanzhi Li",
+            "Shean Wang",
+            "Lu Wang",
+            "Weizhu Chen"
+          ],
+          "comment": "Draft V2 includes better baselines, experiments on GLUE, and more on adapter latency",
+          "journal_ref": "",
+          "doi": ""
+        },
+        "crossref_search": [
+          {
+            "title": "ID-LoRA: Intrinsic Dimension-Based Pruning with Low-Rank Adaptation for Vision-Language Models",
+            "container": "",
+            "authors": [
+              "Jessica Liang",
+              "Jianbo Shi"
+            ],
+            "year": 2025,
+            "volume": null,
+            "issue": null,
+            "pages": null,
+            "doi": "10.36227/techrxiv.176521385.54906010/v1",
+            "type": "posted-content",
+            "publisher": "Institute of Electrical and Electronics Engineers (IEEE)"
+          },
+          {
+            "title": "Energy-Efficient Training of Large Language Models Through Sparse Attention and Low-Rank Adaptation (LoRA-S)",
+            "container": "International Research Journal of Scientific Reports and Reviews",
+            "authors": [
+              "Anjani Kumar Tiwari",
+              "Pawar Harish"
+            ],
+            "year": 2026,
+            "volume": "2",
+            "issue": "1",
+            "pages": "19-42",
+            "doi": "10.66542/irjsrr.v2.i1.000022",
+            "type": "journal-article",
+            "publisher": "Kalp Squad Group"
+          },
+          {
+            "title": "C-LoRA: Contextual Low-Rank Adaptation for Uncertainty Estimation in Large Language Models",
+            "container": "Advances in Neural Information Processing Systems 38",
+            "authors": [
+              "Amir Hossein Rahmati",
+              "Sanket Jantre",
+              "Weifeng Zhang",
+              "Yucheng Wang",
+              "Byung-Jun Yoon",
+              "Nathan Urban",
+              "Xiaoning Qian"
+            ],
+            "year": 2025,
+            "volume": null,
+            "issue": null,
+            "pages": "75152-75178",
+            "doi": "10.52202/085713-2263",
+            "type": "proceedings-article",
+            "publisher": "Neural Information Processing Systems Foundation, Inc. (NeurIPS)"
+          }
+        ],
+        "openalex_search": [
+          {
+            "title": "QA-LoRA: Quantization-Aware Low-Rank Adaptation of Large Language Models",
+            "container": "arXiv (Cornell University)",
+            "authors": [
+              "Yuhui Xu",
+              "Lingxi Xie",
+              "Xiaotao Gu",
+              "Xin Chen",
+              "Heng Chang",
+              "Hengheng Zhang",
+              "Chen, Zhengsu",
+              "Xiaopeng Zhang",
+              "Qi Chuan Tian"
+            ],
+            "year": 2023,
+            "volume": null,
+            "issue": null,
+            "pages": null,
+            "doi": "10.48550/arxiv.2309.14717",
+            "type": "preprint",
+            "openalex_id": "https://openalex.org/W4387156572"
+          },
+          {
+            "title": "Bayesian-LoRA: Probabilistic Low-Rank Adaptation of Large Language Models",
+            "container": "arXiv (Cornell University)",
+            "authors": [
+              "Moule Lin",
+              "Shuhao Guan",
+              "Andrea Patanè",
+              "David Gregg",
+              "Goetz Botterweck"
+            ],
+            "year": 2026,
+            "volume": null,
+            "issue": null,
+            "pages": null,
+            "doi": null,
+            "type": "preprint",
+            "openalex_id": "https://openalex.org/W7126281377"
+          },
+          {
+            "title": "Bayesian-LoRA: Probabilistic Low-Rank Adaptation of Large Language Models",
+            "container": "arXiv (Cornell University)",
+            "authors": [
+              "Moule Lin",
+              "Shuhao Guan",
+              "Andrea Patanè",
+              "David Gregg",
+              "Goetz Botterweck"
+            ],
+            "year": 2026,
+            "volume": null,
+            "issue": null,
+            "pages": null,
+            "doi": "10.48550/arxiv.2601.21003",
+            "type": "preprint",
+            "openalex_id": "https://openalex.org/W7126239332"
+          },
+          {
+            "title": "Leech-LoRA: Low-Rank Lattice Adaptation for Large Language Models",
+            "container": "Zenodo (CERN European Organization for Nuclear Research)",
+            "authors": [
+              "A. Kornienko"
+            ],
+            "year": 2026,
+            "volume": null,
+            "issue": null,
+            "pages": null,
+            "doi": "10.5281/zenodo.18798801",
+            "type": "preprint",
+            "openalex_id": "https://openalex.org/W7131886414"
+          },
+          {
+            "title": "Bayesian-LoRA: Probabilistic Low-Rank Adaptation of Large Language Models",
+            "container": "Zenodo (CERN European Organization for Nuclear Research)",
+            "authors": [
+              "Moule Lin",
+              "Shuhao Guan",
+              "Andrea Patanè",
+              "David Gregg",
+              "Goetz Botterweck"
+            ],
+            "year": 2026,
+            "volume": null,
+            "issue": null,
+            "pages": null,
+            "doi": "10.5281/zenodo.20430144",
+            "type": "conference-paper",
+            "openalex_id": "https://openalex.org/W7162674695"
+          }
+        ]
+      }
+    },
+    {
+      "ref": "31",
+      "claimed_title": "Deep Neural Networks for Acoustic Modeling in Speech Recognition: The Shared Views of Four Research Groups",
+      "status": "SESUAI",
+      "issues": [],
+      "notes": [],
+      "manual_source": "",
+      "sources": {
+        "crossref_doi": {
+          "title": "Deep Neural Networks for Acoustic Modeling in Speech Recognition: The Shared Views of Four Research Groups",
+          "container": "IEEE Signal Processing Magazine",
+          "authors": [
+            "Geoffrey Hinton",
+            "Li Deng",
+            "Dong Yu",
+            "George Dahl",
+            "Abdel-rahman Mohamed",
+            "Navdeep Jaitly",
+            "Andrew Senior",
+            "Vincent Vanhoucke",
+            "Patrick Nguyen",
+            "Tara Sainath",
+            "Brian Kingsbury"
+          ],
+          "year": 2012,
+          "volume": "29",
+          "issue": "6",
+          "pages": "82-97",
+          "doi": "10.1109/msp.2012.2205597",
+          "type": "journal-article",
+          "publisher": "Institute of Electrical and Electronics Engineers (IEEE)"
+        }
+      }
+    },
+    {
+      "ref": "32",
+      "claimed_title": "CRISP-DM: Towards a Standard Process Model for Data Mining",
+      "status": "SESUAI (manual)",
+      "issues": [],
+      "notes": [
+        "tidak ada padanan judul persis pada pencarian Crossref",
+        "tidak ada padanan judul persis pada OpenAlex"
+      ],
+      "manual_source": "Tidak terindeks Crossref maupun OpenAlex, dan prosidingnya tidak memiliki DOI. Judul, penulis, tahun, dan rentang halaman 29-39 dikonfirmasi lewat rekaman Semantic Scholar CorpusID 1211505 dan berkas prosiding yang beredar luas. Venue: Proceedings of the 4th International Conference on the Practical Applications of Knowledge Discovery and Data Mining, London, 2000. Sebagian literatur menulis tahun 1999, yaitu tahun pengembangan model, bukan tahun terbit makalah ini.",
+      "sources": {
+        "crossref_search": [
+          {
+            "title": "A Process Model for Data Mining—CRISP-DM",
+            "container": "Customer and Business Analytics",
+            "authors": [],
+            "year": 2012,
+            "volume": null,
+            "issue": null,
+            "pages": "43-56",
+            "doi": "10.1201/b12040-8",
+            "type": "book-chapter",
+            "publisher": "Chapman and Hall/CRC"
+          },
+          {
+            "title": "Forecasting the Enrolment of Bank Term Deposits: A case study approach with Cross-Industry Standard Process for Data Mining (CRISP-DM) methodology.",
+            "container": "",
+            "authors": [
+              "Sezai Tunca"
+            ],
+            "year": 2024,
+            "volume": null,
+            "issue": null,
+            "pages": null,
+            "doi": "10.21203/rs.3.rs-3921578/v1",
+            "type": "posted-content",
+            "publisher": "Research Square Platform LLC"
+          },
+          {
+            "title": "Sentiment Classification of The Capsule Hotel Guest Reviews using Cross-Industry Standard Process for Data Mining (CRISP-DM)",
+            "container": "JURNAL MEDIA INFORMATIKA BUDIDARMA",
+            "authors": [
+              "Yerik Afrianto Singgalen"
+            ],
+            "year": 2024,
+            "volume": "8",
+            "issue": "1",
+            "pages": "632",
+            "doi": "10.30865/mib.v8i1.7329",
+            "type": "journal-article",
+            "publisher": "STMIK Budi Darma"
+          }
+        ],
+        "openalex_search": []
+      }
+    },
+    {
+      "ref": "33",
+      "claimed_title": "A Systematic Literature Review on Applying CRISP-DM Process Model",
+      "status": "SESUAI",
+      "issues": [],
+      "notes": [],
+      "manual_source": "",
+      "sources": {
+        "crossref_doi": {
+          "title": "A Systematic Literature Review on Applying CRISP-DM Process Model",
+          "container": "Procedia Computer Science",
+          "authors": [
+            "Christoph Schröer",
+            "Felix Kruse",
+            "Jorge Marx Gómez"
+          ],
+          "year": 2021,
+          "volume": "181",
+          "issue": null,
+          "pages": "526-534",
+          "doi": "10.1016/j.procs.2021.01.199",
+          "type": "journal-article",
+          "publisher": "Elsevier BV"
+        }
+      }
+    },
+    {
+      "ref": "34",
+      "claimed_title": "CRISP-DM 1.0: Step-by-step data mining guide",
+      "status": "SESUAI (manual)",
+      "issues": [],
+      "notes": [
+        "tidak ada padanan judul persis pada pencarian Crossref",
+        "tidak ada padanan judul persis pada OpenAlex"
+      ],
+      "manual_source": "Laporan teknis konsorsium, bukan terbitan berkala, sehingga tidak ber-DOI dan tidak terindeks Crossref maupun OpenAlex. Daftar tujuh penulis, judul, nomor dokumen CRISPWP-0800, dan tahun 2000 dipastikan langsung dari halaman judul dan halaman hak cipta berkas PDF aslinya. Judul aslinya memakai sentence case, yaitu 'Step-by-step data mining guide', bukan Title Case seperti pada banyak sitasi sekunder. Kata pengantar bertanggal Agustus 2000, sedangkan halaman hak cipta menulis '1999, 2000', sehingga sebagian literatur salah menulis tahunnya sebagai 1999. Tautan arsip: http://web.archive.org/web/20101231174706/http://www.crisp-dm.org/CRISPWP-0800.pdf (domain resmi crisp-dm.org sudah tidak aktif).",
+      "sources": {
+        "crossref_search": [
+          {
+            "title": "A Step-by-Step Guide to Qualitative Data Coding",
+            "container": "",
+            "authors": [
+              "Philip Adu"
+            ],
+            "year": 2019,
+            "volume": null,
+            "issue": null,
+            "pages": null,
+            "doi": "10.4324/9781351044516",
+            "type": "book",
+            "publisher": "Routledge"
+          },
+          {
+            "title": "A Step-by-Step Guide to Qualitative Data Coding",
+            "container": "",
+            "authors": [
+              "Philip Adu"
+            ],
+            "year": 2026,
+            "volume": null,
+            "issue": null,
+            "pages": null,
+            "doi": "10.4324/9781003565802",
+            "type": "monograph",
+            "publisher": "Routledge"
+          },
+          {
+            "title": "A Process Model for Data Mining—CRISP-DM",
+            "container": "Customer and Business Analytics",
+            "authors": [],
+            "year": 2012,
+            "volume": null,
+            "issue": null,
+            "pages": "43-56",
+            "doi": "10.1201/b12040-8",
+            "type": "book-chapter",
+            "publisher": "Chapman and Hall/CRC"
+          }
+        ],
+        "openalex_search": []
+      }
+    },
+    {
+      "ref": "35",
+      "claimed_title": "Towards CRISP-ML(Q): A Machine Learning Process Model with Quality Assurance Methodology",
+      "status": "SESUAI",
+      "issues": [],
+      "notes": [],
+      "manual_source": "",
+      "sources": {
+        "crossref_doi": {
+          "title": "Towards CRISP-ML(Q): A Machine Learning Process Model with Quality Assurance Methodology",
+          "container": "Machine Learning and Knowledge Extraction",
+          "authors": [
+            "Stefan Studer",
+            "Thanh Binh Bui",
+            "Christian Drescher",
+            "Alexander Hanuschkin",
+            "Ludwig Winkler",
+            "Steven Peters",
+            "Klaus-Robert Müller"
+          ],
+          "year": 2021,
+          "volume": "3",
+          "issue": "2",
+          "pages": "392-413",
+          "doi": "10.3390/make3020020",
+          "type": "journal-article",
+          "publisher": "MDPI AG"
+        }
+      }
+    },
+    {
+      "ref": "36",
+      "claimed_title": "CRISP-DM Twenty Years Later: From Data Mining Processes to Data Science Trajectories",
+      "status": "SESUAI",
+      "issues": [],
+      "notes": [],
+      "manual_source": "",
+      "sources": {
+        "crossref_doi": {
+          "title": "CRISP-DM Twenty Years Later: From Data Mining Processes to Data Science Trajectories",
+          "container": "IEEE Transactions on Knowledge and Data Engineering",
+          "authors": [
+            "Fernando Martinez-Plumed",
+            "Lidia Contreras-Ochando",
+            "Cesar Ferri",
+            "Jose Hernandez-Orallo",
+            "Meelis Kull",
+            "Nicolas Lachiche",
+            "Maria Jose Ramirez-Quintana",
+            "Peter Flach"
+          ],
+          "year": 2021,
+          "volume": "33",
+          "issue": "8",
+          "pages": "3048-3061",
+          "doi": "10.1109/tkde.2019.2962680",
+          "type": "journal-article",
+          "publisher": "Institute of Electrical and Electronics Engineers (IEEE)"
+        }
+      }
+    },
+    {
+      "ref": "42",
+      "claimed_title": "From Data Mining to Knowledge Discovery in Databases",
+      "status": "SESUAI (manual)",
+      "issues": [],
+      "notes": [
+        "sumber gagal diambil: HTTP 404"
+      ],
+      "manual_source": "doi.org/ra menyatakan DOI terdaftar di Crossref dan doi.org meneruskannya ke laman artikel AAAI OJS, tetapi Crossref REST API mengembalikan HTTP 404 dan OpenAlex tidak memuat rekaman ber-DOI (diperiksa 16 Oktober 2026). Judul, ketiga penulis, vol. 17, no. 3, dan tahun 1996 dipastikan dari laman artikel ojs.aaai.org/aimagazine/index.php/aimagazine/article/view/1230 dan berkas PDF resminya, yang bermetadata 'AI Magazine Volume 17 Number 3 (Fall 1996)', berisi 18 halaman, dan bernomor halaman tercetak 37 sampai 54. Laman OJS menulis tanggal terbit 15 Maret 1996, berlawanan dengan label terbitan Fall 1996, sehingga yang dicantumkan hanya tahunnya.",
+      "sources": {
+        "crossref_doi": {
+          "error": "HTTP 404"
+        }
+      }
+    }
+  ]
+}

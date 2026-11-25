@@ -1,0 +1,44 @@
+==============================================================================
+Audit tumpang tindih transkrip setelah normalisasi (Revisi 01 poin 13)
+Waktu mulai        : 2026-11-14T09:49:37+07:00
+Random seed        : tidak dipakai, perhitungan deterministik
+==============================================================================
+mentah  test       dalam train_pool:     0 utterance (0.00%), 0 kunci bersama
+mentah  test       dalam validation:     0 utterance (0.00%), 0 kunci bersama
+mentah  validation dalam train_pool:     0 utterance (0.00%), 0 kunci bersama
+mentah  test       dalam d1        :     0 utterance (0.00%), 0 kunci bersama
+mentah  test       dalam d2        :     0 utterance (0.00%), 0 kunci bersama
+mentah  test       dalam d3        :     0 utterance (0.00%), 0 kunci bersama
+mentah  test       dalam d4        :     0 utterance (0.00%), 0 kunci bersama
+mentah  test       dalam d5        :     0 utterance (0.00%), 0 kunci bersama
+ringan  test       dalam train_pool:     0 utterance (0.00%), 0 kunci bersama
+ringan  test       dalam validation:     0 utterance (0.00%), 0 kunci bersama
+ringan  validation dalam train_pool:     0 utterance (0.00%), 0 kunci bersama
+ringan  test       dalam d1        :     0 utterance (0.00%), 0 kunci bersama
+ringan  test       dalam d2        :     0 utterance (0.00%), 0 kunci bersama
+ringan  test       dalam d3        :     0 utterance (0.00%), 0 kunci bersama
+ringan  test       dalam d4        :     0 utterance (0.00%), 0 kunci bersama
+ringan  test       dalam d5        :     0 utterance (0.00%), 0 kunci bersama
+akhir   test       dalam train_pool:     7 utterance (0.23%), 7 kunci bersama
+akhir   test       dalam validation:     1 utterance (0.03%), 1 kunci bersama
+akhir   validation dalam train_pool:     8 utterance (0.42%), 6 kunci bersama
+akhir   test       dalam d1        :     0 utterance (0.00%), 0 kunci bersama
+akhir   test       dalam d2        :     0 utterance (0.00%), 0 kunci bersama
+akhir   test       dalam d3        :     3 utterance (0.10%), 3 kunci bersama
+akhir   test       dalam d4        :     6 utterance (0.19%), 6 kunci bersama
+akhir   test       dalam d5        :     7 utterance (0.23%), 7 kunci bersama
+  whisper_d1_trial   tanpa   0: WER 0.4123 -> 0.4123
+  whisper_d2         tanpa   0: WER 0.3058 -> 0.3058
+  whisper_d3         tanpa   3: WER 0.2222 -> 0.2222
+  whisper_d4         tanpa   6: WER 0.1643 -> 0.1642
+  whisper_d5         tanpa   7: WER 0.1540 -> 0.1538
+  xlsr_d1_trial      tanpa   0: WER 0.4787 -> 0.4787
+  xlsr_d2            tanpa   0: WER 0.3777 -> 0.3777
+  xlsr_d3            tanpa   3: WER 0.2398 -> 0.2398
+  xlsr_d4            tanpa   6: WER 0.1765 -> 0.1762
+  xlsr_d5            tanpa   7: WER 0.1881 -> 0.1880
+==============================================================================
+Tabrakan kunci akhir: 16
+Laporan ditulis ke : D:\_01_Bachelor_Information_System\_00-SKRIPSI\_01_python-scripts\outputs\results\audit_normalized_overlap_report.json
+Durasi eksekusi    : 7.9 detik
+==============================================================================

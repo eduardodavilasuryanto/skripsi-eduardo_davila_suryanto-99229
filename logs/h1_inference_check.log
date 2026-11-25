@@ -1,0 +1,17 @@
+==============================================================================
+Pemeriksaan prosedur inferensi H1 (Revisi 01 poin 23)
+Waktu mulai        : 2026-11-15T18:34:56+07:00
+Random seed        : 42
+Iterasi            : bootstrap 10000, permutasi 10000
+==============================================================================
+Holm analysis_common = statsmodels = laporan terbit: True
+d1: selisih -0.0664  marginal [-0.0772, -0.0546]  Bonferroni 99% [-0.0804, -0.0513]  p permutasi Holm 0.0005  | CER p permutasi Holm 0.0005 Bonferroni [-0.0180, -0.0024]
+d2: selisih -0.0720  marginal [-0.0811, -0.0622]  Bonferroni 99% [-0.0836, -0.0591]  p permutasi Holm 0.0005  | CER p permutasi Holm 0.0005 Bonferroni [-0.0172, -0.0062]
+d3: selisih -0.0176  marginal [-0.0245, -0.0107]  Bonferroni 99% [-0.0265, -0.0084]  p permutasi Holm 0.0005  | CER p permutasi Holm 0.6742 Bonferroni [-0.0020, +0.0028]
+d4: selisih -0.0122  marginal [-0.0180, -0.0065]  Bonferroni 99% [-0.0198, -0.0047]  p permutasi Holm 0.0005  | CER p permutasi Holm 0.1472 Bonferroni [-0.0006, +0.0034]
+d5: selisih -0.0341  marginal [-0.0401, -0.0284]  Bonferroni 99% [-0.0419, -0.0265]  p permutasi Holm 0.0005  | CER p permutasi Holm 0.0005 Bonferroni [-0.0059, -0.0020]
+Kelima selang simultan WER tidak memuat nol: True
+==============================================================================
+Laporan ditulis ke : D:\_01_Bachelor_Information_System\_00-SKRIPSI\_01_python-scripts\outputs\results\h1_inference_check_report.json
+Durasi eksekusi    : 6.4 detik
+==============================================================================

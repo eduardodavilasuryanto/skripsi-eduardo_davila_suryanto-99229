@@ -1,0 +1,37 @@
+# Probe VRAM XLS-R 300M, run percobaan Milestone 1 (Utang nomor 4).
+# Mode --probe-vram tidak memakai per_device_train_batch_size maupun
+# per_device_eval_batch_size; keduanya hanya pengisi agar konfigurasi lolos
+# pemeriksaan. model_overrides mengikuti resep fine-tuning XLS-R Hugging Face.
+run_name: xlsr_probe
+model_family: xlsr
+pretrained: facebook/wav2vec2-xls-r-300m
+train_subset: outputs/subsets/d1.tsv
+validation_split: outputs/splits/validation.tsv
+seed: 42
+precision: bf16
+tf32: false
+deterministic: true
+effective_batch_size: 32
+per_device_train_batch_size: 1
+per_device_eval_batch_size: 1
+learning_rate: 3.0e-4
+warmup_steps: 500
+lr_scheduler_type: linear
+optim: adamw_torch
+max_steps: 6000
+eval_steps: 250
+early_stopping_patience: 4
+early_stopping_min_steps: 2000
+gradient_checkpointing: true
+logging_steps: 25
+dataloader_num_workers: 4
+save_only_model: true
+keep_checkpoints: false
+model_overrides:
+  attention_dropout: 0.0
+  hidden_dropout: 0.0
+  feat_proj_dropout: 0.0
+  mask_time_prob: 0.05
+  layerdrop: 0.0
+  ctc_loss_reduction: mean
+  ctc_zero_infinity: true

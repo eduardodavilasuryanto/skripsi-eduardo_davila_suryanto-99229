@@ -1,0 +1,18 @@
+==============================================================================
+Durasi komponen graf penutur dan transkrip pada subset kerja
+Waktu mulai        : 2026-10-03T15:39:00+07:00
+Berkas pembagian   : D:\_01_Bachelor_Information_System\_00-SKRIPSI\_01_python-scripts\outputs\splits
+Laporan audit      : D:\_01_Bachelor_Information_System\_00-SKRIPSI\_01_python-scripts\outputs\audit_transcript_leakage_report.json
+Random seed        : tidak dipakai, perhitungan deterministik
+==============================================================================
+Subset kerja       : 46309 utterance, 74.239 jam
+Komponen           : 61
+largest            : 1 komponen, 29479 utterance (63.66%), 51.201 jam = 3072.1 menit, sisa bila jadi test 23.037 jam
+second             : 1 komponen, 16713 utterance (36.09%), 22.829 jam = 1369.7 menit, sisa bila jadi test 51.41 jam
+remaining          : 59 komponen, 117 utterance (0.25%), 0.208 jam = 12.5 menit
+Periksa utterance_ids_unique        : True
+Periksa component_sizes_match_audit : True
+==============================================================================
+Laporan ditulis ke : D:\_01_Bachelor_Information_System\_00-SKRIPSI\_01_python-scripts\outputs\measure_component_durations_report.json
+Durasi eksekusi    : 0.36 detik
+==============================================================================

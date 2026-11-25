@@ -1,0 +1,11 @@
+model,level,train_peak_reserved_mib,train_peak_allocated_mib,eval_peak_reserved_mib_max,eval_peak_allocated_mib_max,gpu_headroom_mib,gpu_memory_free_min_mib,inference_peak_reserved_mib
+whisper,d1,5970,5711,5280,5186,2218,553.0,3538.0
+whisper,d2,5972,5711,5282,5188,2216,728.0,3538.0
+whisper,d3,5982,5716,5262,5186,2206,587.0,3538.0
+whisper,d4,6032,5730,5282,5186,2156,482.0,3538.0
+whisper,d5,6052,5758,5304,5188,2136,601.0,3538.0
+xlsr,d1,6334,6051,4546,4388,1854,421.0,2378.0
+xlsr,d2,6334,6051,4766,4388,1854,605.0,2378.0
+xlsr,d3,6316,6053,4588,4389,1872,268.0,2378.0
+xlsr,d4,6318,6051,4568,4390,1870,164.0,2378.0
+xlsr,d5,6336,6103,4744,4387,1852,214.0,2378.0

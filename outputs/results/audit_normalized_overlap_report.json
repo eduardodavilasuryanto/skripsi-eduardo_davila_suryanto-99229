@@ -1,0 +1,437 @@
+{
+  "generated_at": "2026-11-14T09:49:37+07:00",
+  "script": "audit_normalized_overlap.py",
+  "keys": {
+    "mentah": "transkrip berkas pembagian, kunci pengelompokan build_text_disjoint_split.py",
+    "ringan": "audit_transcript_leakage.normalise_text: NFC, casefold, perapatan spasi",
+    "akhir": "asr_common.normalize_text: teks yang dinilai WER (Subbab 3.3.4)"
+  },
+  "unique_keys": {
+    "test": {
+      "mentah": 2533,
+      "ringan": 2533,
+      "akhir": 2533
+    },
+    "validation": {
+      "mentah": 1526,
+      "ringan": 1526,
+      "akhir": 1526
+    },
+    "train_pool": {
+      "mentah": 33813,
+      "ringan": 33813,
+      "akhir": 33774
+    }
+  },
+  "overlap": {
+    "mentah": {
+      "test_in_train_pool": {
+        "n_utterances": 3100,
+        "n_overlapping": 0,
+        "pct_overlapping": 0.0,
+        "n_shared_keys": 0,
+        "overlapping_ids": []
+      },
+      "test_in_validation": {
+        "n_utterances": 3100,
+        "n_overlapping": 0,
+        "pct_overlapping": 0.0,
+        "n_shared_keys": 0,
+        "overlapping_ids": []
+      },
+      "validation_in_train_pool": {
+        "n_utterances": 1900,
+        "n_overlapping": 0,
+        "pct_overlapping": 0.0,
+        "n_shared_keys": 0,
+        "overlapping_ids": []
+      },
+      "test_in_d1": {
+        "n_utterances": 3100,
+        "n_overlapping": 0,
+        "pct_overlapping": 0.0,
+        "n_shared_keys": 0,
+        "overlapping_ids": []
+      },
+      "test_in_d2": {
+        "n_utterances": 3100,
+        "n_overlapping": 0,
+        "pct_overlapping": 0.0,
+        "n_shared_keys": 0,
+        "overlapping_ids": []
+      },
+      "test_in_d3": {
+        "n_utterances": 3100,
+        "n_overlapping": 0,
+        "pct_overlapping": 0.0,
+        "n_shared_keys": 0,
+        "overlapping_ids": []
+      },
+      "test_in_d4": {
+        "n_utterances": 3100,
+        "n_overlapping": 0,
+        "pct_overlapping": 0.0,
+        "n_shared_keys": 0,
+        "overlapping_ids": []
+      },
+      "test_in_d5": {
+        "n_utterances": 3100,
+        "n_overlapping": 0,
+        "pct_overlapping": 0.0,
+        "n_shared_keys": 0,
+        "overlapping_ids": []
+      }
+    },
+    "ringan": {
+      "test_in_train_pool": {
+        "n_utterances": 3100,
+        "n_overlapping": 0,
+        "pct_overlapping": 0.0,
+        "n_shared_keys": 0,
+        "overlapping_ids": []
+      },
+      "test_in_validation": {
+        "n_utterances": 3100,
+        "n_overlapping": 0,
+        "pct_overlapping": 0.0,
+        "n_shared_keys": 0,
+        "overlapping_ids": []
+      },
+      "validation_in_train_pool": {
+        "n_utterances": 1900,
+        "n_overlapping": 0,
+        "pct_overlapping": 0.0,
+        "n_shared_keys": 0,
+        "overlapping_ids": []
+      },
+      "test_in_d1": {
+        "n_utterances": 3100,
+        "n_overlapping": 0,
+        "pct_overlapping": 0.0,
+        "n_shared_keys": 0,
+        "overlapping_ids": []
+      },
+      "test_in_d2": {
+        "n_utterances": 3100,
+        "n_overlapping": 0,
+        "pct_overlapping": 0.0,
+        "n_shared_keys": 0,
+        "overlapping_ids": []
+      },
+      "test_in_d3": {
+        "n_utterances": 3100,
+        "n_overlapping": 0,
+        "pct_overlapping": 0.0,
+        "n_shared_keys": 0,
+        "overlapping_ids": []
+      },
+      "test_in_d4": {
+        "n_utterances": 3100,
+        "n_overlapping": 0,
+        "pct_overlapping": 0.0,
+        "n_shared_keys": 0,
+        "overlapping_ids": []
+      },
+      "test_in_d5": {
+        "n_utterances": 3100,
+        "n_overlapping": 0,
+        "pct_overlapping": 0.0,
+        "n_shared_keys": 0,
+        "overlapping_ids": []
+      }
+    },
+    "akhir": {
+      "test_in_train_pool": {
+        "n_utterances": 3100,
+        "n_overlapping": 7,
+        "pct_overlapping": 0.22580645161290322,
+        "n_shared_keys": 7,
+        "overlapping_ids": [
+          "008e9ebc39",
+          "064e855b09",
+          "0a1f391654",
+          "123b15a93c",
+          "1ba44a0ca2",
+          "2cb41ea3fd",
+          "2ed7bed144"
+        ]
+      },
+      "test_in_validation": {
+        "n_utterances": 3100,
+        "n_overlapping": 1,
+        "pct_overlapping": 0.03225806451612903,
+        "n_shared_keys": 1,
+        "overlapping_ids": [
+          "3af1fdb530"
+        ]
+      },
+      "validation_in_train_pool": {
+        "n_utterances": 1900,
+        "n_overlapping": 8,
+        "pct_overlapping": 0.42105263157894735,
+        "n_shared_keys": 6,
+        "overlapping_ids": [
+          "014055930b",
+          "024996aeb2",
+          "05118efcbe",
+          "1568e686f3",
+          "157ce08777",
+          "20d24a7f3a",
+          "253860a1a8",
+          "39c8eab641"
+        ]
+      },
+      "test_in_d1": {
+        "n_utterances": 3100,
+        "n_overlapping": 0,
+        "pct_overlapping": 0.0,
+        "n_shared_keys": 0,
+        "overlapping_ids": []
+      },
+      "test_in_d2": {
+        "n_utterances": 3100,
+        "n_overlapping": 0,
+        "pct_overlapping": 0.0,
+        "n_shared_keys": 0,
+        "overlapping_ids": []
+      },
+      "test_in_d3": {
+        "n_utterances": 3100,
+        "n_overlapping": 3,
+        "pct_overlapping": 0.0967741935483871,
+        "n_shared_keys": 3,
+        "overlapping_ids": [
+          "064e855b09",
+          "0a1f391654",
+          "2cb41ea3fd"
+        ]
+      },
+      "test_in_d4": {
+        "n_utterances": 3100,
+        "n_overlapping": 6,
+        "pct_overlapping": 0.1935483870967742,
+        "n_shared_keys": 6,
+        "overlapping_ids": [
+          "008e9ebc39",
+          "064e855b09",
+          "0a1f391654",
+          "123b15a93c",
+          "2cb41ea3fd",
+          "2ed7bed144"
+        ]
+      },
+      "test_in_d5": {
+        "n_utterances": 3100,
+        "n_overlapping": 7,
+        "pct_overlapping": 0.22580645161290322,
+        "n_shared_keys": 7,
+        "overlapping_ids": [
+          "008e9ebc39",
+          "064e855b09",
+          "0a1f391654",
+          "123b15a93c",
+          "1ba44a0ca2",
+          "2cb41ea3fd",
+          "2ed7bed144"
+        ]
+      }
+    }
+  },
+  "n_collisions_final_key": 16,
+  "sensitivity_without_test_overlap": {
+    "whisper_d1_trial": {
+      "n_excluded": 0,
+      "wer_all": 0.4123244430211812,
+      "wer_without": 0.4123244430211812,
+      "cer_all": 0.09948408582191406,
+      "cer_without": 0.09948408582191406
+    },
+    "whisper_d2": {
+      "n_excluded": 0,
+      "wer_all": 0.3057779404364335,
+      "wer_without": 0.3057779404364335,
+      "cer_all": 0.0718731233280559,
+      "cer_without": 0.0718731233280559
+    },
+    "whisper_d3": {
+      "n_excluded": 3,
+      "wer_all": 0.2222425545541882,
+      "wer_without": 0.2221815184540709,
+      "cer_all": 0.051127368018780366,
+      "cer_without": 0.05109693459373805
+    },
+    "whisper_d4": {
+      "n_excluded": 6,
+      "wer_all": 0.1642801592021593,
+      "wer_without": 0.16423725705903924,
+      "cer_all": 0.038024785718185294,
+      "cer_without": 0.038004539488077006
+    },
+    "whisper_d5": {
+      "n_excluded": 7,
+      "wer_all": 0.1539869161443799,
+      "wer_without": 0.15375796762507452,
+      "cer_all": 0.03551345744390457,
+      "cer_without": 0.03548029708251836
+    },
+    "xlsr_d1_trial": {
+      "n_excluded": 0,
+      "wer_all": 0.4787044238071275,
+      "wer_without": 0.4787044238071275,
+      "cer_all": 0.11107168204400283,
+      "cer_without": 0.11107168204400283
+    },
+    "xlsr_d2": {
+      "n_excluded": 0,
+      "wer_all": 0.3777391463470424,
+      "wer_without": 0.3777391463470424,
+      "cer_all": 0.08455942567014249,
+      "cer_without": 0.08455942567014249
+    },
+    "xlsr_d3": {
+      "n_excluded": 3,
+      "wer_all": 0.2398096893727984,
+      "wer_without": 0.23981133803461854,
+      "cer_all": 0.05071791232188677,
+      "cer_without": 0.05070078137806677
+    },
+    "xlsr_d4": {
+      "n_excluded": 6,
+      "wer_all": 0.1764948076307242,
+      "wer_without": 0.1762009534286762,
+      "cer_all": 0.03664628487197685,
+      "cer_without": 0.036562021439509956
+    },
+    "xlsr_d5": {
+      "n_excluded": 7,
+      "wer_all": 0.18811473534928405,
+      "wer_without": 0.188013023341129,
+      "cer_all": 0.039437407872468196,
+      "cer_without": 0.039398996047106456
+    }
+  },
+  "input_sha256": {
+    "test.tsv": "38b1bf70f1e12e2b5a6097d647ab0e3324446a485d1e8b7ec2ba260028aed347",
+    "validation.tsv": "2546078e2705596de15c6d37bf9ef13fb3c51b50eac05db94ad8a88dd9dbb1e9",
+    "train_pool.tsv": "b1e588e892e21fd8a39459c5e7d94e091e558c7e63b7e6a63b37df1de92c429d",
+    "d1.tsv": "ab01eab11a258208f4811b3678424dcdf80e31b164820018929e6784f27cc6d6",
+    "d2.tsv": "9bb21d52923062c7e2757c056be4a79282054046c42132fc8cd063cac6df3c55",
+    "d3.tsv": "48620ffc4b53fbf43c61cff01019ce8afc2ec322b522c6b4f9ddbd3873765a7b",
+    "d4.tsv": "d12f5ca438da7abeaddd194cc8a8ad625693521de3ed73b67fd41ee3ecdcbaaa",
+    "d5.tsv": "b1e588e892e21fd8a39459c5e7d94e091e558c7e63b7e6a63b37df1de92c429d"
+  },
+  "environment": {
+    "skrip": "log_environment.py",
+    "lapis_1_perangkat_keras": {
+      "gpu": {
+        "jumlah_gpu_terdeteksi_torch": 1,
+        "nama": "NVIDIA GeForce RTX 4060 Laptop GPU",
+        "vram_total_mib": 8188,
+        "compute_capability": "sm_89",
+        "jumlah_streaming_multiprocessor": 24
+      },
+      "cpu": {
+        "nama": "13th Gen Intel(R) Core(TM) i7-13700HX",
+        "penanda_keluarga": "Intel64 Family 6 Model 191 Stepping 2, GenuineIntel",
+        "core_fisik": 16,
+        "core_logis": 24
+      },
+      "ram_sistem": {
+        "total_gib": 31.81,
+        "tersedia_saat_pencatatan_gib": 20.17
+      },
+      "penyimpanan": {
+        "PhysicalDisks": [
+          {
+            "FriendlyName": "SAMSUNG MZVL21T0HCLR-00BL2",
+            "MediaType": "SSD",
+            "SizeGB": 953.9
+          }
+        ],
+        "Volumes": [
+          {
+            "DriveLetter": "D",
+            "FileSystemType": "NTFS",
+            "SizeGB": 476.2
+          },
+          {
+            "DriveLetter": "C",
+            "FileSystemType": "NTFS",
+            "SizeGB": 475.8
+          }
+        ]
+      },
+      "sistem_operasi": {
+        "platform": "Windows-11-10.0.26300-SP0",
+        "sistem": "Windows",
+        "rilis": "11",
+        "versi": "10.0.26300",
+        "arsitektur": "AMD64",
+        "nama_host": "Eduardo"
+      }
+    },
+    "lapis_2_perangkat_lunak_terikat_perangkat_keras": {
+      "python": {
+        "versi": "3.12.10",
+        "implementasi": "CPython",
+        "executable": "D:\\_01_Bachelor_Information_System\\_00-SKRIPSI\\skripsi-venv\\Scripts\\python.exe"
+      },
+      "driver_nvidia": {
+        "versi": "610.88",
+        "sumber": "nvidia-smi"
+      },
+      "cuda": {
+        "tersedia": true,
+        "runtime_versi_torch": "13.0",
+        "cudnn_versi_mentah": 92400,
+        "cudnn_versi": "9.24.0"
+      },
+      "pytorch": {
+        "versi": "2.14.0+cu130",
+        "build_cuda": "13.0",
+        "versi_lengkap": "2.14.0+cu130"
+      },
+      "presisi": {
+        "dtype_bawaan": "torch.float32",
+        "float32_matmul_precision": "highest",
+        "bf16_didukung": true
+      },
+      "tf32": {
+        "cuda_matmul_allow_tf32": false,
+        "cudnn_allow_tf32": true,
+        "catatan": "Kedua kanal dilaporkan terpisah karena nilai bawaannya berbeda. Melaporkannya sebagai satu status tunggal adalah penyederhanaan yang keliru."
+      },
+      "determinisme": {
+        "cudnn_deterministic": false,
+        "cudnn_benchmark": false,
+        "use_deterministic_algorithms": false
+      },
+      "pustaka": {
+        "torch": "2.14.0+cu130",
+        "transformers": "5.17.0",
+        "datasets": "5.0.1",
+        "accelerate": "1.15.0",
+        "tokenizers": "0.23.2",
+        "safetensors": "0.8.0",
+        "soundfile": "0.14.0",
+        "jiwer": "4.0.0",
+        "bitsandbytes": "0.50.2",
+        "numpy": "2.5.3",
+        "pandas": "3.0.5",
+        "scipy": "1.18.1",
+        "scikit-learn": "1.9.0",
+        "statsmodels": "0.15.0",
+        "matplotlib": "3.11.1"
+      }
+    },
+    "lapis_3_jejak_eksekusi": {
+      "timestamp_utc": "2026-11-14T02:49:47+00:00",
+      "timestamp_lokal": "2026-11-14T09:49:47+07:00",
+      "random_seed": 42,
+      "vram_puncak_teralokasi_mib": 0.0,
+      "vram_puncak_tercadang_mib": 0.0,
+      "durasi_pengumpulan_detik": 9.614
+    }
+  },
+  "elapsed_seconds": 7.9
+}

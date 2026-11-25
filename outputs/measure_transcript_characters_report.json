@@ -1,0 +1,281 @@
+{
+  "generated_at": "2026-11-04T20:28:31+07:00",
+  "script": "measure_transcript_characters.py",
+  "seed": null,
+  "population": "corpus_penuh",
+  "metadata_path": "D:\\_01_Bachelor_Information_System\\_00-SKRIPSI\\_03_dataset\\asr_javanese_0\\utt_spk_text.tsv",
+  "metadata_sha256": "412efacff888be979daa5fc4ea3d816d3daa0af381c005ea97fcf31ac6d8b39a",
+  "statistics": {
+    "n_utterances": 185076,
+    "n_unique_transcripts": 96878,
+    "accent": {
+      "pct_utterances_any_diacritic": 26.910026151418876,
+      "pct_utterances_listed_examples_casefold": 26.909485832847047,
+      "pct_utterances_listed_examples_case_sensitive": 26.76035790702198,
+      "listed_examples": [
+        "é",
+        "è",
+        "ê",
+        "å",
+        "â"
+      ]
+    },
+    "dheweke": {
+      "letter_words": [
+        "dheweke",
+        "dhewekè",
+        "dheweké",
+        "dhewèkè",
+        "dhewéke",
+        "dhewéké",
+        "dhèweké",
+        "dhèwèke",
+        "dhèwèkè",
+        "dhèwèké",
+        "dhèwéké",
+        "dhèwêké",
+        "dhéweké",
+        "dhéwéke",
+        "dhéwékè",
+        "dhéwéké",
+        "dhêwêké"
+      ],
+      "raw_words_casefold": [
+        "Dheweke",
+        "Dhewekè",
+        "Dheweké",
+        "Dhewéke",
+        "Dhewéké",
+        "Dhèweké",
+        "Dhèwèke",
+        "Dhèwèkè",
+        "Dhèwèké",
+        "Dhèwêké",
+        "Dhéweké",
+        "Dhéwéke",
+        "Dhéwékè",
+        "Dhéwéké",
+        "Dhêwêké",
+        "dheweke",
+        "dhewekè",
+        "dheweké",
+        "dhewèkè",
+        "dhèwèkè",
+        "dhèwèké",
+        "dhèwéké",
+        "dhèwêké",
+        "dhéwékè",
+        "dhéwéké"
+      ],
+      "raw_forms_matching_letter_word": [
+        "Dheweke",
+        "Dhewekè",
+        "Dheweké",
+        "Dhewéke",
+        "Dhewéké",
+        "Dhèweké",
+        "Dhèwèke",
+        "Dhèwèkè",
+        "Dhèwèké",
+        "Dhèwêké",
+        "Dhéweké",
+        "Dhéwéke",
+        "Dhéwékè",
+        "Dhéwéké",
+        "Dhêwêké",
+        "dheweke",
+        "dhewekè",
+        "dheweké",
+        "dhewèkè",
+        "dhèwèkè",
+        "dhèwèké",
+        "dhèwéké",
+        "dhèwêké",
+        "dhéwékè",
+        "dhéwéké"
+      ]
+    },
+    "collisions": {
+      "letter_words": {
+        "n_distinct_forms": 54512,
+        "n_forms_with_diacritic": 6215,
+        "n_forms_colliding": 5834,
+        "n_collision_groups": 2626,
+        "n_forms_colliding_with_diacritic": 3287
+      },
+      "raw_words": {
+        "n_distinct_forms": 63495,
+        "n_forms_with_diacritic": 7098,
+        "n_forms_colliding": 6401,
+        "n_collision_groups": 2908,
+        "n_forms_colliding_with_diacritic": 3596
+      }
+    },
+    "characters": {
+      "n_distinct_all": 86,
+      "n_distinct_excluding_whitespace": 85,
+      "whitespace_characters": [
+        "U+0020 SPACE"
+      ],
+      "rare_at_most_4": {
+        "U+0037 DIGIT SEVEN": 1,
+        "U+00A5 YEN SIGN": 1,
+        "U+00F0 LATIN SMALL LETTER ETH": 1,
+        "U+00F2 LATIN SMALL LETTER O WITH GRAVE": 1,
+        "U+2014 EM DASH": 1,
+        "U+201C LEFT DOUBLE QUOTATION MARK": 1,
+        "U+201D RIGHT DOUBLE QUOTATION MARK": 1,
+        "U+007E TILDE": 2,
+        "U+2013 EN DASH": 3,
+        "U+0039 DIGIT NINE": 4,
+        "U+00C2 LATIN CAPITAL LETTER A WITH CIRCUMFLEX": 4,
+        "U+FFFD REPLACEMENT CHARACTER": 4
+      },
+      "listed_rare_examples": {
+        "U+00F0 LATIN SMALL LETTER ETH": 1,
+        "U+00F2 LATIN SMALL LETTER O WITH GRAVE": 1,
+        "U+00A5 YEN SIGN": 1,
+        "U+2014 EM DASH": 1,
+        "U+00C2 LATIN CAPITAL LETTER A WITH CIRCUMFLEX": 4,
+        "U+FFFD REPLACEMENT CHARACTER": 4
+      }
+    },
+    "replacement_character": {
+      "occurrences": 4,
+      "utterances": 2
+    },
+    "other": {
+      "pct_utterances_with_uppercase": 99.54937431109381,
+      "utterances_with_punctuation": 840,
+      "utterances_with_punctuation_or_symbol": 845,
+      "utterances_with_digit": 52,
+      "words_mean": 6.946422010417342,
+      "words_median": 7.0,
+      "words_max": 24
+    },
+    "metadata_lines": {
+      "n_lines": 185076,
+      "lines_by_tab_count": {
+        "2": 185076
+      },
+      "lines_with_tab_in_transcript": 0
+    }
+  },
+  "naskah_comparison": {
+    "pct_utterances_with_accent": {
+      "naskah": 26.9,
+      "letak": "DraftResearch.md 3.5b; bab-3.md 3.1",
+      "skrip": 26.9,
+      "sama": true
+    },
+    "dheweke_variants": {
+      "naskah": 17,
+      "letak": "DraftResearch.md 3.5b",
+      "skrip": 17,
+      "sama": true
+    },
+    "word_form_collision_groups": {
+      "naskah": 2626,
+      "letak": "DraftResearch.md 3.5b",
+      "skrip": 2626,
+      "sama": true
+    },
+    "n_distinct_characters": {
+      "naskah": 86,
+      "letak": "DraftResearch.md 3.5c; bab-3.md 3.1 dan 3.3.4",
+      "skrip": 86,
+      "sama": true
+    },
+    "replacement_occurrences": {
+      "naskah": 4,
+      "letak": "DraftResearch.md 3.5c",
+      "skrip": 4,
+      "sama": true
+    },
+    "replacement_utterances": {
+      "naskah": 2,
+      "letak": "DraftResearch.md 3.5c; bab-3.md 3.3.4",
+      "skrip": 2,
+      "sama": true
+    },
+    "pct_utterances_with_uppercase": {
+      "naskah": 99.5,
+      "letak": "DraftResearch.md 3.5",
+      "skrip": 99.5,
+      "sama": true
+    },
+    "utterances_with_punctuation_or_symbol": {
+      "naskah": 845,
+      "letak": "DraftResearch.md 3.5",
+      "skrip": 845,
+      "sama": true
+    },
+    "utterances_with_digit": {
+      "naskah": 52,
+      "letak": "DraftResearch.md 3.5; bab-3.md 3.3.4",
+      "skrip": 52,
+      "sama": true
+    },
+    "words_mean": {
+      "naskah": 6.9,
+      "letak": "DraftResearch.md 3.5",
+      "skrip": 6.9,
+      "sama": true
+    },
+    "words_median": {
+      "naskah": 7,
+      "letak": "DraftResearch.md 3.5",
+      "skrip": 7.0,
+      "sama": true
+    },
+    "words_max": {
+      "naskah": 24,
+      "letak": "DraftResearch.md 3.5",
+      "skrip": 24,
+      "sama": true
+    },
+    "transcripts_with_tab": {
+      "naskah": "ada",
+      "letak": "bab-3.md 3.3.1 dan 3.6.1",
+      "skrip": 0,
+      "sama": false
+    },
+    "rare U+00F0 LATIN SMALL LETTER ETH": {
+      "naskah": 1,
+      "letak": "DraftResearch.md 3.5c",
+      "skrip": 1,
+      "sama": true
+    },
+    "rare U+00F2 LATIN SMALL LETTER O WITH GRAVE": {
+      "naskah": 1,
+      "letak": "DraftResearch.md 3.5c",
+      "skrip": 1,
+      "sama": true
+    },
+    "rare U+00A5 YEN SIGN": {
+      "naskah": 1,
+      "letak": "DraftResearch.md 3.5c",
+      "skrip": 1,
+      "sama": true
+    },
+    "rare U+2014 EM DASH": {
+      "naskah": 1,
+      "letak": "DraftResearch.md 3.5c",
+      "skrip": 1,
+      "sama": true
+    },
+    "rare U+00C2 LATIN CAPITAL LETTER A WITH CIRCUMFLEX": {
+      "naskah": 4,
+      "letak": "DraftResearch.md 3.5c",
+      "skrip": 4,
+      "sama": true
+    },
+    "rare U+FFFD REPLACEMENT CHARACTER": {
+      "naskah": 4,
+      "letak": "DraftResearch.md 3.5c",
+      "skrip": 4,
+      "sama": true
+    }
+  },
+  "elapsed_seconds": 23.5
+}

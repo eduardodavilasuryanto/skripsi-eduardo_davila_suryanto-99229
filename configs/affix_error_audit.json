@@ -1,0 +1,14 @@
+{
+  "digraphs": ["ng", "ny", "dh", "th"],
+  "prefixes": {
+    "di": ["wujudke", "kontrak", "arani", "gawe", "sebut", "kenal", "jupuk", "wiwiti", "pangan", "tandur", "tulis", "jaga", "tambah", "masak", "olah"],
+    "dipun": ["paringi", "wastani", "olah", "produksi", "sebat", "remeni", "dhahar", "damel", "kumbah", "sembah", "rayu", "wiwiti", "layani", "sukani", "pendhet", "serat", "tata", "jagi", "bantu"]
+  },
+  "suffixes": {
+    "ake": ["nyebab", "ditemok", "nggunak", "ngasil", "digunak", "ngleksanak", "ngetok", "nerus", "njlentreh", "disiar", "nggambar", "digambar", "ngedeg", "nerang", "ngumpul", "nyritak", "nyediak", "ngilang"],
+    "aken": ["katimbul", "ngawonten", "dipunkempal", "dipunlebet", "miyos", "kagambar", "dipunpanggih", "dipunmanfaat", "nyempit", "dipunsajik", "dipunpasar", "dipunginak", "dipunwonten", "dipunsambung", "dipunkembang", "ngginak", "nindak", "nerus", "nglebet", "ngempal", "nyambung", "nglajeng", "mujud"],
+    "ipun": ["piyambak", "panjenengan", "asal", "isin", "kekalih", "salajeng", "gesang", "inggil", "papan", "asman", "satunggal", "tengen", "asil", "payon", "irung", "dinten", "putran", "tebih", "wonten"],
+    "ne": ["impi", "siji", "cita", "kanca", "isi", "rasa", "werna", "garwa", "bojo", "ibu", "rupa", "griya", "asu", "guna"]
+  },
+  "alternatives": {"di": ["dipun"], "dipun": ["di"], "ake": ["aken", "ke"], "aken": ["ake", "ke"], "ipun": ["e", "ne"], "ne": ["e", "ipun"]}
+}

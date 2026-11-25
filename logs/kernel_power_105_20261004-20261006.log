@@ -1,0 +1,16 @@
+# Peristiwa sambung-putus charger (Kernel-Power 105) dari log System Windows, diekspor 2026-10-06 14:30:50 (Sesi 22)
+# untuk Lampiran B.15; log Windows dapat terhapus sehingga peristiwa ini disalin. Perintah:
+# Get-WinEvent -FilterHashtable @{LogName='System'; ProviderName='Microsoft-Windows-Kernel-Power'; Id=105; StartTime=[datetime]'2026-10-04 00:00'; EndTime=[datetime]'2026-10-06 23:59'}
+# Waktu lokal (WIB). Kapasitas dalam mWh.
+2026-10-04 04:37:45	AcOnline=false	RemainingCapacity=0	FullChargeCapacity=0
+2026-10-04 05:19:03	AcOnline=true	RemainingCapacity=26810	FullChargeCapacity=70550
+2026-10-05 06:50:48	AcOnline=false	RemainingCapacity=0	FullChargeCapacity=0
+2026-10-05 08:09:23	AcOnline=true	RemainingCapacity=18350	FullChargeCapacity=70550
+2026-10-05 13:31:13	AcOnline=false	RemainingCapacity=56450	FullChargeCapacity=70550
+2026-10-05 13:32:04	AcOnline=true	RemainingCapacity=54330	FullChargeCapacity=70550
+2026-10-05 21:08:27	AcOnline=false	RemainingCapacity=54330	FullChargeCapacity=70550
+2026-10-05 21:10:12	AcOnline=true	RemainingCapacity=54330	FullChargeCapacity=70550
+2026-10-05 21:10:13	AcOnline=false	RemainingCapacity=54330	FullChargeCapacity=70550
+2026-10-05 21:10:20	AcOnline=true	RemainingCapacity=54330	FullChargeCapacity=70550
+2026-10-06 08:27:09	AcOnline=false	RemainingCapacity=53620	FullChargeCapacity=70550
+2026-10-06 08:28:12	AcOnline=true	RemainingCapacity=52210	FullChargeCapacity=70550

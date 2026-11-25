@@ -1,0 +1,17 @@
+Started 2026-11-25T04:27:35.699484+00:00; config=D:\_01_Bachelor_Information_System\_00-SKRIPSI\_01_python-scripts\configs\audio_annotation_audit.json
+Config SHA-256=ab1f7425bb798426c5d7f7d6b74bf93ccd61da4d548f5fc9370b8d6e63cb163c; seed=42; CPU only
+{"confirmed_test_defect_ids": ["3d653a789b", "174723df08"], "dbfs_floor": -120.0, "frame_ms": 20, "high_floor_examples_per_archive_split": 2, "known_recorder_message": "No more tokens. Restart app with internet connection for more.", "lower_percentile": 20, "max_audio_words_per_second_flag": 8.0, "min_audio_words_per_second_flag": 0.3, "min_normalized_words_for_rate_flag": 4, "near_full_scale_fraction": 0.999, "random_examples_per_archive_split": 4, "seed": 42, "upper_percentile": 80}
+Scanned train_pool: 5000/41293
+Scanned train_pool: 10000/41293
+Scanned train_pool: 15000/41293
+Scanned train_pool: 20000/41293
+Scanned train_pool: 25000/41293
+Scanned train_pool: 30000/41293
+Scanned train_pool: 35000/41293
+Scanned train_pool: 40000/41293
+Scanned train_pool: 41293/41293
+Scanned validation: 1900/1900
+Scanned test: 3100/3100
+Scanned excluded: 16/16
+{"diacritic_variant_groups": 3, "format_counts": {"FLAC 16000 1 PCM_16": 46309}, "identical_pcm_conflicting_normalized_transcript_groups": 0, "identical_pcm_groups": 0, "included_summary": {"flag_counts": {"low_reference_word_rate": 8, "previously_confirmed_test_defect": 2, "recorder_message": 1, "same_prompt_differing_diacritics": 7}, "frame_contrast_db_median": 24.026434113655988, "low_frame_dbfs_q10_q50_q90": [-60.95237171201792, -53.34320165317244, -40.81928051396824], "n": 46293, "near_full_scale_utterances": 3675}, "pending_listening_queue_size": 81}
+Completed 2026-11-25T04:39:37.831753+00:00; outputs=D:\_01_Bachelor_Information_System\_00-SKRIPSI\_01_python-scripts\outputs\results

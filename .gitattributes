@@ -1,0 +1,5 @@
+# Simpan setiap berkas byte demi byte, tanpa konversi akhir baris.
+# core.autocrlf=true pada mesin ini akan mengubah LF menjadi CRLF saat
+# checkout, padahal outputs/splits/*.tsv mengunci sepuluh konfigurasi dan
+# harus tetap identik byte demi byte dengan keluaran skrip penghasilnya.
+* -text

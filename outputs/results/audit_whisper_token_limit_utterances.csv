@@ -1,0 +1,4 @@
+run_name,id,reference_words,stored_text_tokens,regenerated_128_text_tokens,regenerated_444_text_tokens,stored_hypothesis_words,hypothesis_444_words,reproduced_at_128
+whisper_d1_trial,064e855b09,7,128,128,291,53,121,True
+whisper_d1_trial,3ea9e0515e,11,128,128,444,64,222,True
+whisper_d2,3ea9e0515e,11,128,128,444,64,222,True

@@ -1,0 +1,25 @@
+==============================================================================
+Galat batas kata (Revisi 01 poin 33)
+Waktu mulai        : 2026-11-15T18:35:06+07:00
+Random seed        : 42
+==============================================================================
+whisper_d1_trial   gabung   59.8  pisah  71.1 per 1000 batas; hanya-batas  66 utt (1.7% galat kata); WER 0.4123 -> 0.4055
+whisper_d2         gabung   40.5  pisah  44.0 per 1000 batas; hanya-batas  63 utt (2.1% galat kata); WER 0.3058 -> 0.2994
+whisper_d3         gabung   28.3  pisah  26.1 per 1000 batas; hanya-batas  58 utt (2.6% galat kata); WER 0.2222 -> 0.2165
+whisper_d4         gabung   17.3  pisah  19.2 per 1000 batas; hanya-batas  51 utt (3.2% galat kata); WER 0.1643 -> 0.1590
+whisper_d5         gabung   14.4  pisah  19.0 per 1000 batas; hanya-batas  65 utt (4.3% galat kata); WER 0.1540 -> 0.1474
+xlsr_d1_trial      gabung   87.3  pisah  56.5 per 1000 batas; hanya-batas  54 utt (1.2% galat kata); WER 0.4787 -> 0.4730
+xlsr_d2            gabung   62.4  pisah  36.0 per 1000 batas; hanya-batas  69 utt (1.8% galat kata); WER 0.3777 -> 0.3708
+xlsr_d3            gabung   30.0  pisah  21.7 per 1000 batas; hanya-batas  88 utt (3.7% galat kata); WER 0.2398 -> 0.2309
+xlsr_d4            gabung   18.4  pisah  15.4 per 1000 batas; hanya-batas  65 utt (3.7% galat kata); WER 0.1765 -> 0.1700
+xlsr_d5            gabung   22.6  pisah  13.9 per 1000 batas; hanya-batas  78 utt (4.0% galat kata); WER 0.1881 -> 0.1806
+------------------------------------------------------------------------------
+d1: selisih WER -0.0664  tanpa hanya-batas -0.0675 [-0.0787, -0.0557]  laju galat batas -0.0128 [-0.0221, -0.0024]
+d2: selisih WER -0.0720  tanpa hanya-batas -0.0714 [-0.0807, -0.0615]  laju galat batas -0.0140 [-0.0210, -0.0055]
+d3: selisih WER -0.0176  tanpa hanya-batas -0.0144 [-0.0213, -0.0075]  laju galat batas +0.0027 [-0.0016, +0.0071]
+d4: selisih WER -0.0122  tanpa hanya-batas -0.0110 [-0.0170, -0.0051]  laju galat batas +0.0028 [-0.0006, +0.0062]
+d5: selisih WER -0.0341  tanpa hanya-batas -0.0332 [-0.0393, -0.0272]  laju galat batas -0.0030 [-0.0066, +0.0004]
+==============================================================================
+Laporan ditulis ke : D:\_01_Bachelor_Information_System\_00-SKRIPSI\_01_python-scripts\outputs\results\error_boundary_report.json
+Durasi eksekusi    : 4.4 detik
+==============================================================================

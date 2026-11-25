@@ -1,0 +1,23 @@
+==============================================================================
+Kebutuhan jam data bagi WER sasaran (Revisi 01 poin 3)
+Waktu mulai        : 2026-11-15T18:34:21+07:00
+Random seed        : 42
+Iterasi bootstrap  : 10000
+==============================================================================
+Bootstrap E0 bersama cocok dengan scaling_curve_bootstrap.csv: True
+shared_e0       WER   40%: Whisper   1.12 jam [1.03; 1.23]  XLS-R   1.94 [1.82; 2.07]  rasio 1.73 [1.59; 1.88]
+shared_e0       WER   30%: Whisper   3.08 jam [2.79; 3.39]  XLS-R   5.44 [4.99; 5.94]  rasio 1.77 [1.64; 1.92]
+shared_e0       WER   25%: Whisper   6.13 jam [5.48; 6.85]  XLS-R  11.02 [9.90; 12.29]  rasio 1.80 [1.65; 1.96]
+shared_e0       WER   20%: Whisper  15.42 jam [13.43; 17.73]  XLS-R  28.31 [24.59; 32.76]  rasio 1.84 [1.65; 2.05]
+pure_power_law  WER   40%: Whisper   1.09 jam [1.01; 1.21]  XLS-R   2.02 [1.88; 2.16]  rasio 1.85 [1.68; 2.01]
+pure_power_law  WER   30%: Whisper   3.36 jam [3.04; 3.72]  XLS-R   5.99 [5.49; 6.52]  rasio 1.78 [1.64; 1.93]
+pure_power_law  WER   25%: Whisper   6.88 jam [6.17; 7.65]  XLS-R  11.94 [10.78; 13.22]  rasio 1.74 [1.61; 1.88]
+pure_power_law  WER   20%: Whisper  16.50 jam [14.58; 18.66]  XLS-R  27.77 [24.60; 31.43]  rasio 1.68 [1.54; 1.85]
+interpolation   WER   40%: Whisper   1.14 jam [1.03; 1.26]  XLS-R   2.35 [2.16; 2.56]  rasio 2.07 [1.86; 2.30]
+interpolation   WER   30%: Whisper   3.26 jam [2.90; 3.70]  XLS-R   5.91 [5.55; 6.29]  rasio 1.81 [1.62; 2.01]
+interpolation   WER   25%: Whisper   6.70 jam [6.02; 7.43]  XLS-R   9.15 [8.58; 9.76]  rasio 1.36 [1.26; 1.49]
+interpolation   WER   20%: Whisper  15.24 jam [13.41; 17.19]  XLS-R  19.95 [17.76; 22.36]  rasio 1.31 [1.19; 1.45]
+==============================================================================
+Laporan ditulis ke : D:\_01_Bachelor_Information_System\_00-SKRIPSI\_01_python-scripts\outputs\results\data_requirement_report.json
+Durasi eksekusi    : 29.9 detik
+==============================================================================

@@ -1,0 +1,17 @@
+pasangan,id,transkrip_mentah,bentuk_mentah_pada_bagian_lain,jumlah_utterance_bagian_lain,kunci_akhir
+test_dalam_train_pool,008e9ebc39,Wonten pinten tipe kamar teng nggene Hotel Four Seasons,Wonten pinten tipe kamar teng nggene Hotel Four Seasons?,1,wonten pinten tipe kamar teng nggene hotel four seasons
+test_dalam_train_pool,064e855b09,Sepatu kulitmu kui merk Zapato Shoes dudu?,Sepatu kulitmu kui merk Zapato Shoes dudu,2,sepatu kulitmu kui merk zapato shoes dudu
+test_dalam_train_pool,0a1f391654,Piro rega tiket Asiana Airlines tujuan Korea?,Piro rega tiket Asiana Airlines tujuan Korea,2,piro rega tiket asiana airlines tujuan korea
+test_dalam_train_pool,123b15a93c,Dodol topi ning Pantai Dreamland opo payu?,Dodol topi ning Pantai Dreamland opo payu,1,dodol topi ning pantai dreamland opo payu
+test_dalam_train_pool,1ba44a0ca2,Wong loro mau banjur dipèk murid anak déning Semar,Wong loro mau banjur dipèk murid / anak déning Semar,1,wong loro mau banjur dipek murid anak dening semar
+test_dalam_train_pool,2cb41ea3fd,Iki dhuwit sakmiliar apa temen dhuwit kabeh?,Iki dhuwit sakmiliar apa temen dhuwit kabeh,2,iki dhuwit sakmiliar apa temen dhuwit kabeh
+test_dalam_train_pool,2ed7bed144,Pijet tiga welas menit biayanipun pinten?,Pijet tiga welas menit biayanipun pinten,2,pijet tiga welas menit biayanipun pinten
+validation_dalam_train_pool,014055930b,Batu biduri Bulan putih biru moon stone,Batu biduri Bulan putih/biru moon stone,1,batu biduri bulan putih biru moon stone
+validation_dalam_train_pool,024996aeb2,Pantai Gading dikalahaken dening sinten?,Pantai Gading dikalahaken dening sinten,1,pantai gading dikalahaken dening sinten
+validation_dalam_train_pool,05118efcbe,Pantai Gading dikalahaken dening sinten?,Pantai Gading dikalahaken dening sinten,1,pantai gading dikalahaken dening sinten
+validation_dalam_train_pool,1568e686f3,Dinten sang hyang Buddha mangkat angsal manuju ing Nibbana Nirwana,Dinten sang hyang Buddha mangkat angsal manuju ing Nibbana/Nirwana,1,dinten sang hyang buddha mangkat angsal manuju ing nibbana nirwana
+validation_dalam_train_pool,157ce08777,Apocope ya iku tembung kang wis ilang aksara/wandané kang buri,Apocope ya iku tembung kang wis ilang aksara wandané kang buri,1,apocope ya iku tembung kang wis ilang aksara wandane kang buri
+validation_dalam_train_pool,20d24a7f3a,Satpam Bunga Rampai ageng dhuwur gagah pikantuk tiyang pundi?,Satpam Bunga Rampai ageng dhuwur gagah pikantuk tiyang pundi,1,satpam bunga rampai ageng dhuwur gagah pikantuk tiyang pundi
+validation_dalam_train_pool,253860a1a8,Gigi Hadid sakmenika dados modelipun Victoria's Secret saking taun kepungkur,Gigi Hadid sakmenika dados modelipun Victorias Secret saking taun kepungkur,1,gigi hadid sakmenika dados modelipun victorias secret saking taun kepungkur
+validation_dalam_train_pool,39c8eab641,Dinten sang hyang Buddha mangkat angsal manuju ing Nibbana Nirwana,Dinten sang hyang Buddha mangkat angsal manuju ing Nibbana/Nirwana,1,dinten sang hyang buddha mangkat angsal manuju ing nibbana nirwana
+test_dalam_validation,3af1fdb530,Njenengan kapan badhe teng dalem e Christian Bale?,Njenengan kapan badhe teng dalem e Christian Bale,1,njenengan kapan badhe teng dalem e christian bale

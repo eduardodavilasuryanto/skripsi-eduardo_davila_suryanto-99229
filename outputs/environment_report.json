@@ -1,0 +1,113 @@
+{
+  "skrip": "log_environment.py",
+  "lapis_1_perangkat_keras": {
+    "gpu": {
+      "jumlah_gpu_terdeteksi_torch": 1,
+      "nama": "NVIDIA GeForce RTX 4060 Laptop GPU",
+      "vram_total_mib": 8188,
+      "compute_capability": "sm_89",
+      "jumlah_streaming_multiprocessor": 24
+    },
+    "cpu": {
+      "nama": "13th Gen Intel(R) Core(TM) i7-13700HX",
+      "penanda_keluarga": "Intel64 Family 6 Model 191 Stepping 2, GenuineIntel",
+      "core_fisik": 16,
+      "core_logis": 24
+    },
+    "ram_sistem": {
+      "total_gib": 31.81,
+      "tersedia_saat_pencatatan_gib": 16.85
+    },
+    "penyimpanan": {
+      "PhysicalDisks": [
+        {
+          "FriendlyName": "SAMSUNG MZVL21T0HCLR-00BL2",
+          "MediaType": "SSD",
+          "SizeGB": 953.9
+        }
+      ],
+      "Volumes": [
+        {
+          "DriveLetter": "D",
+          "FileSystemType": "NTFS",
+          "SizeGB": 476.2
+        },
+        {
+          "DriveLetter": "C",
+          "FileSystemType": "NTFS",
+          "SizeGB": 475.8
+        }
+      ]
+    },
+    "sistem_operasi": {
+      "platform": "Windows-11-10.0.26200-SP0",
+      "sistem": "Windows",
+      "rilis": "11",
+      "versi": "10.0.26200",
+      "arsitektur": "AMD64",
+      "nama_host": "Eduardo"
+    }
+  },
+  "lapis_2_perangkat_lunak_terikat_perangkat_keras": {
+    "python": {
+      "versi": "3.12.10",
+      "implementasi": "CPython",
+      "executable": "D:\\_01_Bachelor_Information_System\\_00-SKRIPSI\\skripsi-venv\\Scripts\\python.exe"
+    },
+    "driver_nvidia": {
+      "versi": "610.88",
+      "sumber": "nvidia-smi"
+    },
+    "cuda": {
+      "tersedia": true,
+      "runtime_versi_torch": "13.0",
+      "cudnn_versi_mentah": 92400,
+      "cudnn_versi": "9.24.0"
+    },
+    "pytorch": {
+      "versi": "2.14.0+cu130",
+      "build_cuda": "13.0",
+      "versi_lengkap": "2.14.0+cu130"
+    },
+    "presisi": {
+      "dtype_bawaan": "torch.float32",
+      "float32_matmul_precision": "highest",
+      "bf16_didukung": true
+    },
+    "tf32": {
+      "cuda_matmul_allow_tf32": false,
+      "cudnn_allow_tf32": true,
+      "catatan": "Kedua kanal dilaporkan terpisah karena nilai bawaannya berbeda. Melaporkannya sebagai satu status tunggal adalah penyederhanaan yang keliru."
+    },
+    "determinisme": {
+      "cudnn_deterministic": false,
+      "cudnn_benchmark": false,
+      "use_deterministic_algorithms": false
+    },
+    "pustaka": {
+      "torch": "2.14.0+cu130",
+      "transformers": "5.17.0",
+      "datasets": "5.0.1",
+      "accelerate": "1.15.0",
+      "tokenizers": "0.23.2",
+      "safetensors": "0.8.0",
+      "soundfile": "0.14.0",
+      "jiwer": "4.0.0",
+      "bitsandbytes": "0.50.2",
+      "numpy": "2.5.3",
+      "pandas": "3.0.5",
+      "scipy": "1.18.1",
+      "scikit-learn": "1.9.0",
+      "statsmodels": "0.15.0",
+      "matplotlib": "3.11.1"
+    }
+  },
+  "lapis_3_jejak_eksekusi": {
+    "timestamp_utc": "2026-09-22T22:32:13+00:00",
+    "timestamp_lokal": "2026-09-23T05:32:13+07:00",
+    "random_seed": 42,
+    "vram_puncak_teralokasi_mib": 0.0,
+    "vram_puncak_tercadang_mib": 0.0,
+    "durasi_pengumpulan_detik": 1.512
+  }
+}

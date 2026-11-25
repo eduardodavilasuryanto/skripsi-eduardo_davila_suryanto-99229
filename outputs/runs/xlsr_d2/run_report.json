@@ -1,0 +1,375 @@
+{
+  "generated_at": "2026-10-05T13:15:35+07:00",
+  "script": "train_asr.py",
+  "mode": "train",
+  "config_path": "configs\\xlsr_d2.yaml",
+  "config_sha256": "9a358a86d2bfcac3631b046f5143b44c1e4c39a6e78373bde0cd4eb4e18035b5",
+  "config": {
+    "run_name": "xlsr_d2",
+    "model_family": "xlsr",
+    "pretrained": "facebook/wav2vec2-xls-r-300m",
+    "revision": "1a640f32ac3e39899438a2931f9924c02f080a54",
+    "train_subset": "outputs/subsets/d2.tsv",
+    "validation_split": "outputs/splits/validation.tsv",
+    "seed": 42,
+    "precision": "bf16",
+    "tf32": false,
+    "deterministic": true,
+    "effective_batch_size": 32,
+    "per_device_train_batch_size": 2,
+    "per_device_eval_batch_size": 2,
+    "learning_rate": 0.0003,
+    "warmup_steps": 500,
+    "lr_scheduler_type": "linear",
+    "optim": "adamw_torch",
+    "max_steps": 10000,
+    "eval_steps": 250,
+    "early_stopping_patience": 4,
+    "early_stopping_min_steps": 2000,
+    "gradient_checkpointing": true,
+    "logging_steps": 25,
+    "dataloader_num_workers": 4,
+    "save_only_model": true,
+    "keep_checkpoints": false,
+    "model_overrides": {
+      "attention_dropout": 0.0,
+      "hidden_dropout": 0.0,
+      "feat_proj_dropout": 0.0,
+      "mask_time_prob": 0.05,
+      "layerdrop": 0.0,
+      "ctc_loss_reduction": "mean",
+      "ctc_zero_infinity": true
+    }
+  },
+  "result": {
+    "n_train_utterances": 1862,
+    "n_train_utterances_per_epoch": 1856,
+    "steps_per_epoch": 58,
+    "n_validation_utterances": 1900,
+    "gradient_accumulation_steps": 16,
+    "global_step": 5000,
+    "epochs_completed": 86.21,
+    "stopped_early": true,
+    "best_validation_wer": 0.37762813318368876,
+    "best_step": 4000,
+    "best_model_checkpoint": "D:\\_01_Bachelor_Information_System\\_00-SKRIPSI\\_01_python-scripts\\outputs\\runs\\xlsr_d2\\checkpoints\\checkpoint-4000",
+    "validation_history": [
+      {
+        "step": 250,
+        "wer": 1.0,
+        "cer": 1.0,
+        "eval_seconds": 76.6,
+        "eval_reserved_start_mib": 3812,
+        "eval_peak_reserved_mib": 4764,
+        "eval_peak_allocated_mib": 4382
+      },
+      {
+        "step": 500,
+        "wer": 0.5484474373363262,
+        "cer": 0.12307197587128395,
+        "eval_seconds": 54.3,
+        "eval_reserved_start_mib": 3814,
+        "eval_peak_reserved_mib": 4762,
+        "eval_peak_allocated_mib": 4383
+      },
+      {
+        "step": 750,
+        "wer": 0.4679386457164235,
+        "cer": 0.1039885566015768,
+        "eval_seconds": 54.8,
+        "eval_reserved_start_mib": 3814,
+        "eval_peak_reserved_mib": 4760,
+        "eval_peak_allocated_mib": 4383
+      },
+      {
+        "step": 1000,
+        "wer": 0.44668911335578004,
+        "cer": 0.09898761407360589,
+        "eval_seconds": 54.4,
+        "eval_reserved_start_mib": 3810,
+        "eval_peak_reserved_mib": 4760,
+        "eval_peak_allocated_mib": 4383
+      },
+      {
+        "step": 1250,
+        "wer": 0.44219977553310885,
+        "cer": 0.09910958828160518,
+        "eval_seconds": 54.8,
+        "eval_reserved_start_mib": 3814,
+        "eval_peak_reserved_mib": 4762,
+        "eval_peak_allocated_mib": 4384
+      },
+      {
+        "step": 1500,
+        "wer": 0.429105873550318,
+        "cer": 0.09571648758635219,
+        "eval_seconds": 54.4,
+        "eval_reserved_start_mib": 3808,
+        "eval_peak_reserved_mib": 4758,
+        "eval_peak_allocated_mib": 4382
+      },
+      {
+        "step": 1750,
+        "wer": 0.42364384586606807,
+        "cer": 0.09312176352527639,
+        "eval_seconds": 54.8,
+        "eval_reserved_start_mib": 3812,
+        "eval_peak_reserved_mib": 4760,
+        "eval_peak_allocated_mib": 4384
+      },
+      {
+        "step": 2000,
+        "wer": 0.41608679386457165,
+        "cer": 0.09174678154419347,
+        "eval_seconds": 54.4,
+        "eval_reserved_start_mib": 3816,
+        "eval_peak_reserved_mib": 4764,
+        "eval_peak_allocated_mib": 4384
+      },
+      {
+        "step": 2250,
+        "wer": 0.4008230452674897,
+        "cer": 0.0891742346118448,
+        "eval_seconds": 55.3,
+        "eval_reserved_start_mib": 3814,
+        "eval_peak_reserved_mib": 4760,
+        "eval_peak_allocated_mib": 4383
+      },
+      {
+        "step": 2500,
+        "wer": 0.40329218106995884,
+        "cer": 0.09134759322710488,
+        "eval_seconds": 55.2,
+        "eval_reserved_start_mib": 3812,
+        "eval_peak_reserved_mib": 4762,
+        "eval_peak_allocated_mib": 4383
+      },
+      {
+        "step": 2750,
+        "wer": 0.42312008978675647,
+        "cer": 0.09397558298127141,
+        "eval_seconds": 55.1,
+        "eval_reserved_start_mib": 3810,
+        "eval_peak_reserved_mib": 4760,
+        "eval_peak_allocated_mib": 4384
+      },
+      {
+        "step": 3000,
+        "wer": 0.4105499438832772,
+        "cer": 0.0922125012474635,
+        "eval_seconds": 55.3,
+        "eval_reserved_start_mib": 3810,
+        "eval_peak_reserved_mib": 4760,
+        "eval_peak_allocated_mib": 4384
+      },
+      {
+        "step": 3250,
+        "wer": 0.39551066217732883,
+        "cer": 0.08889702050275551,
+        "eval_seconds": 54.4,
+        "eval_reserved_start_mib": 3808,
+        "eval_peak_reserved_mib": 4756,
+        "eval_peak_allocated_mib": 4388
+      },
+      {
+        "step": 3500,
+        "wer": 0.3977553310886644,
+        "cer": 0.0902387367907477,
+        "eval_seconds": 55.2,
+        "eval_reserved_start_mib": 3812,
+        "eval_peak_reserved_mib": 4762,
+        "eval_peak_allocated_mib": 4383
+      },
+      {
+        "step": 3750,
+        "wer": 0.3957351290684624,
+        "cer": 0.08819844094785048,
+        "eval_seconds": 55.1,
+        "eval_reserved_start_mib": 3820,
+        "eval_peak_reserved_mib": 4764,
+        "eval_peak_allocated_mib": 4383
+      },
+      {
+        "step": 4000,
+        "wer": 0.37762813318368876,
+        "cer": 0.0849605801536875,
+        "eval_seconds": 54.3,
+        "eval_reserved_start_mib": 3810,
+        "eval_peak_reserved_mib": 4758,
+        "eval_peak_allocated_mib": 4382
+      },
+      {
+        "step": 4250,
+        "wer": 0.37777777777777777,
+        "cer": 0.08329729549915173,
+        "eval_seconds": 55.2,
+        "eval_reserved_start_mib": 3814,
+        "eval_peak_reserved_mib": 4762,
+        "eval_peak_allocated_mib": 4386
+      },
+      {
+        "step": 4500,
+        "wer": 0.3854096520763187,
+        "cer": 0.08521561713404965,
+        "eval_seconds": 54.7,
+        "eval_reserved_start_mib": 3816,
+        "eval_peak_reserved_mib": 4766,
+        "eval_peak_allocated_mib": 4384
+      },
+      {
+        "step": 4750,
+        "wer": 0.38608305274971944,
+        "cer": 0.08685672465985829,
+        "eval_seconds": 54.8,
+        "eval_reserved_start_mib": 3816,
+        "eval_peak_reserved_mib": 4764,
+        "eval_peak_allocated_mib": 4385
+      },
+      {
+        "step": 5000,
+        "wer": 0.38009726898615787,
+        "cer": 0.08592528525331826,
+        "eval_seconds": 54.9,
+        "eval_reserved_start_mib": 3808,
+        "eval_peak_reserved_mib": 4758,
+        "eval_peak_allocated_mib": 4386
+      }
+    ],
+    "train_runtime_seconds": 15478.4,
+    "seconds_per_step": 2.865,
+    "timed_steps": 4980,
+    "first_step_seconds": 24.0,
+    "train_peak_reserved_mib": 6334,
+    "train_peak_allocated_mib": 6051,
+    "evaluation_seconds_total": 1117.8,
+    "model_dir": "D:\\_01_Bachelor_Information_System\\_00-SKRIPSI\\_01_python-scripts\\outputs\\models\\xlsr_d2"
+  },
+  "numerics_state_at_end": {
+    "cuda_matmul_allow_tf32": false,
+    "cudnn_allow_tf32": false,
+    "cudnn_deterministic": true,
+    "cudnn_benchmark": false,
+    "use_deterministic_algorithms": true,
+    "deterministic_warn_only": true,
+    "cublas_workspace_config": ":4096:8",
+    "pytorch_cuda_alloc_conf": "expandable_segments:True"
+  },
+  "determinism_warnings": [
+    "UserWarning: ctc_loss_backward_gpu does not have a deterministic implementation, but you set 'torch.use_deterministic_algorithms(True, warn_only=True)'. You can file an issue at https://github.com/pytorch/pytorch/issues to help us prioritize adding deterministic support for this operation. (Triggered internally at C:\\actions-runner\\_work\\pytorch\\pytorch\\aten\\src\\ATen\\Context.cpp:190.)",
+    "UserWarning: Memory Efficient attention defaults to a non-deterministic algorithm. To explicitly enable determinism call torch.use_deterministic_algorithms(True, warn_only=False). (Triggered internally at C:\\actions-runner\\_work\\pytorch\\pytorch\\aten\\src\\ATen\\native\\transformers\\cuda\\attention_backward.cu:912.)"
+  ],
+  "environment": {
+    "skrip": "log_environment.py",
+    "lapis_1_perangkat_keras": {
+      "gpu": {
+        "jumlah_gpu_terdeteksi_torch": 1,
+        "nama": "NVIDIA GeForce RTX 4060 Laptop GPU",
+        "vram_total_mib": 8188,
+        "compute_capability": "sm_89",
+        "jumlah_streaming_multiprocessor": 24
+      },
+      "cpu": {
+        "nama": "13th Gen Intel(R) Core(TM) i7-13700HX",
+        "penanda_keluarga": "Intel64 Family 6 Model 191 Stepping 2, GenuineIntel",
+        "core_fisik": 16,
+        "core_logis": 24
+      },
+      "ram_sistem": {
+        "total_gib": 31.81,
+        "tersedia_saat_pencatatan_gib": 18.92
+      },
+      "penyimpanan": {
+        "PhysicalDisks": [
+          {
+            "FriendlyName": "SAMSUNG MZVL21T0HCLR-00BL2",
+            "MediaType": "SSD",
+            "SizeGB": 953.9
+          }
+        ],
+        "Volumes": [
+          {
+            "DriveLetter": "D",
+            "FileSystemType": "NTFS",
+            "SizeGB": 476.2
+          },
+          {
+            "DriveLetter": "C",
+            "FileSystemType": "NTFS",
+            "SizeGB": 475.8
+          }
+        ]
+      },
+      "sistem_operasi": {
+        "platform": "Windows-11-10.0.26300-SP0",
+        "sistem": "Windows",
+        "rilis": "11",
+        "versi": "10.0.26300",
+        "arsitektur": "AMD64",
+        "nama_host": "Eduardo"
+      }
+    },
+    "lapis_2_perangkat_lunak_terikat_perangkat_keras": {
+      "python": {
+        "versi": "3.12.10",
+        "implementasi": "CPython",
+        "executable": "D:\\_01_Bachelor_Information_System\\_00-SKRIPSI\\skripsi-venv\\Scripts\\python.exe"
+      },
+      "driver_nvidia": {
+        "versi": "610.88",
+        "sumber": "nvidia-smi"
+      },
+      "cuda": {
+        "tersedia": true,
+        "runtime_versi_torch": "13.0",
+        "cudnn_versi_mentah": 92400,
+        "cudnn_versi": "9.24.0"
+      },
+      "pytorch": {
+        "versi": "2.14.0+cu130",
+        "build_cuda": "13.0",
+        "versi_lengkap": "2.14.0+cu130"
+      },
+      "presisi": {
+        "dtype_bawaan": "torch.float32",
+        "float32_matmul_precision": "highest",
+        "bf16_didukung": true
+      },
+      "tf32": {
+        "cuda_matmul_allow_tf32": false,
+        "cudnn_allow_tf32": false,
+        "catatan": "Kedua kanal dilaporkan terpisah karena nilai bawaannya berbeda. Melaporkannya sebagai satu status tunggal adalah penyederhanaan yang keliru."
+      },
+      "determinisme": {
+        "cudnn_deterministic": true,
+        "cudnn_benchmark": false,
+        "use_deterministic_algorithms": true
+      },
+      "pustaka": {
+        "torch": "2.14.0+cu130",
+        "transformers": "5.17.0",
+        "datasets": "5.0.1",
+        "accelerate": "1.15.0",
+        "tokenizers": "0.23.2",
+        "safetensors": "0.8.0",
+        "soundfile": "0.14.0",
+        "jiwer": "4.0.0",
+        "bitsandbytes": "0.50.2",
+        "numpy": "2.5.3",
+        "pandas": "3.0.5",
+        "scipy": "1.18.1",
+        "scikit-learn": "1.9.0",
+        "statsmodels": "0.15.0",
+        "matplotlib": "3.11.1"
+      }
+    },
+    "lapis_3_jejak_eksekusi": {
+      "timestamp_utc": "2026-10-05T10:33:42+00:00",
+      "timestamp_lokal": "2026-10-05T17:33:42+07:00",
+      "random_seed": 42,
+      "vram_puncak_teralokasi_mib": 3670.9,
+      "vram_puncak_tercadang_mib": 3808.0,
+      "durasi_pengumpulan_detik": 15487.852
+    }
+  },
+  "elapsed_seconds": 15487.9
+}

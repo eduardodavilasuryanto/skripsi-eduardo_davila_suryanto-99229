@@ -1,0 +1,5 @@
+__pycache__/
+# Bobot model dan checkpoint berukuran gigabita; yang dilacak hanya konfigurasi,
+# log, laporan, dan hipotesis.
+outputs/models/
+outputs/runs/*/checkpoints/

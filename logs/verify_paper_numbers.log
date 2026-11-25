@@ -1,0 +1,25 @@
+==============================================================================
+Pemeriksaan angka paper terhadap keluaran skrip
+Waktu mulai        : 2026-11-09T22:20:14+07:00
+Random seed        : tidak dipakai, pemeriksaan deterministik
+Paper              : paper.md
+Akhiran baris      : 472 CRLF, 0 LF tunggal, 0 CR tunggal
+Bagian diperiksa   : abstrak, abstract, 1, 2.1, 2.2, 2.3, 2.4, 2.5, 3, 3.1, 3.2, 3.3, 3.4, 3.5, 3.6, 3.7, 4, ketersediaan
+Sumber dibaca      : 57 berkas
+==============================================================================
+Tabel 1   COCOK
+Tabel 2   COCOK
+Tabel 3   COCOK
+Tabel 4   COCOK
+Tabel 5   COCOK
+Abstrak abstrak  : 249 kata (batas 250), 5 kata kunci
+Abstrak abstract : 248 kata (batas 250), 5 kata kunci
+==============================================================================
+Klaim cocok        : 195 dari 195
+Tabel cocok        : 5 dari 5
+Bilangan tanpa klaim: 0
+Rujukan            : 20 entri, 44 sitasi, cocok dengan registri
+Hasil              : seluruh angka cocok
+Laporan ditulis ke : D:\_01_Bachelor_Information_System\_00-SKRIPSI\_01_python-scripts\outputs\verify_paper_numbers_report.json
+Durasi eksekusi    : 0.4 detik
+==============================================================================

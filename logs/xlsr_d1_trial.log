@@ -1,0 +1,1183 @@
+==============================================================================
+Pelatihan xlsr_d1_trial
+Waktu mulai        : 2026-10-04T14:45:42+07:00
+Konfigurasi        : configs\trial\xlsr_d1_trial.yaml (SHA-256 bc5425b5a16099e5)
+Random seed        : 42
+Model              : facebook/wav2vec2-xls-r-300m @ 1a640f32ac3e39899438a2931f9924c02f080a54
+Presisi / TF32     : bf16 / False
+Batch efektif      : 32 = 2 x 16 akumulasi
+run_name: xlsr_d1_trial
+model_family: xlsr
+pretrained: facebook/wav2vec2-xls-r-300m
+revision: 1a640f32ac3e39899438a2931f9924c02f080a54
+train_subset: outputs/subsets/d1.tsv
+validation_split: outputs/splits/validation.tsv
+seed: 42
+precision: bf16
+tf32: false
+deterministic: true
+effective_batch_size: 32
+per_device_train_batch_size: 2
+per_device_eval_batch_size: 2
+learning_rate: 0.0003
+warmup_steps: 500
+lr_scheduler_type: linear
+optim: adamw_torch
+max_steps: 10000
+eval_steps: 250
+early_stopping_patience: 4
+early_stopping_min_steps: 2000
+gradient_checkpointing: true
+logging_steps: 25
+dataloader_num_workers: 4
+save_only_model: true
+keep_checkpoints: false
+model_overrides:
+  attention_dropout: 0.0
+  hidden_dropout: 0.0
+  feat_proj_dropout: 0.0
+  mask_time_prob: 0.05
+  layerdrop: 0.0
+  ctc_loss_reduction: mean
+  ctc_zero_infinity: true
+
+==============================================================================
+Training           : 610 utterance, 1.000 jam, referensi kosong 0, simbol tak tercantum terhapus []
+Validation         : 1900 utterance, 3.053 jam, referensi kosong 0, simbol tak tercantum terhapus []
+Per epoch          : 608 dari 610 utterance, 19 langkah penuh, 2 utterance disisihkan bergantian
+
+Loading weights:   0%|          | 0/422 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 422/422 [00:00<00:00, 46479.77it/s]
+[transformers] Wav2Vec2ForCTC LOAD REPORT from: facebook/wav2vec2-xls-r-300m
+Key                          | Status     | 
+-----------------------------+------------+-
+quantizer.weight_proj.weight | UNEXPECTED | 
+quantizer.weight_proj.bias   | UNEXPECTED | 
+project_q.bias               | UNEXPECTED | 
+project_hid.bias             | UNEXPECTED | 
+project_q.weight             | UNEXPECTED | 
+quantizer.codevectors        | UNEXPECTED | 
+project_hid.weight           | UNEXPECTED | 
+lm_head.bias                 | MISSING    | 
+lm_head.weight               | MISSING    | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+Status numerik     : {'cuda_matmul_allow_tf32': False, 'cudnn_allow_tf32': False, 'cudnn_deterministic': True, 'cudnn_benchmark': False, 'use_deterministic_algorithms': True, 'deterministic_warn_only': True, 'cublas_workspace_config': ':4096:8', 'pytorch_cuda_alloc_conf': 'expandable_segments:True'}
+[transformers] The tokenizer has new PAD/BOS/EOS tokens that differ from the model config and generation config. The model config and generation config were aligned accordingly, being updated with the tokenizer's values. Updated tokens: {'eos_token_id': None, 'bos_token_id': None}.
+D:\_01_Bachelor_Information_System\_00-SKRIPSI\skripsi-venv\Lib\site-packages\torch\autograd\graph.py:1072: UserWarning: ctc_loss_backward_gpu does not have a deterministic implementation, but you set 'torch.use_deterministic_algorithms(True, warn_only=True)'. You can file an issue at https://github.com/pytorch/pytorch/issues to help us prioritize adding deterministic support for this operation. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\Context.cpp:190.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+D:\_01_Bachelor_Information_System\_00-SKRIPSI\skripsi-venv\Lib\site-packages\torch\autograd\graph.py:1072: UserWarning: Memory Efficient attention defaults to a non-deterministic algorithm. To explicitly enable determinism call torch.use_deterministic_algorithms(True, warn_only=False). (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\native\transformers\cuda\attention_backward.cu:912.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+[progres] langkah 1: 24.57 s pada langkah pertama, VRAM puncak training tercadang 6142 MiB, teralokasi 6038 MiB
+{'loss': '17.54', 'grad_norm': '9.701', 'learning_rate': '0', 'epoch': '0.05263'}
+[progres] langkah 25: 2.84 s/langkah, VRAM puncak training tercadang 6212 MiB, teralokasi 6048 MiB
+{'loss': '17.29', 'grad_norm': '15.12', 'learning_rate': '1.44e-05', 'epoch': '1.316'}
+[progres] langkah 50: 2.86 s/langkah, VRAM puncak training tercadang 6212 MiB, teralokasi 6048 MiB
+{'loss': '10.2', 'grad_norm': '18.22', 'learning_rate': '2.94e-05', 'epoch': '2.632'}
+[progres] langkah 75: 2.84 s/langkah, VRAM puncak training tercadang 6212 MiB, teralokasi 6048 MiB
+{'loss': '4.732', 'grad_norm': '11.63', 'learning_rate': '4.44e-05', 'epoch': '3.947'}
+[progres] langkah 100: 2.83 s/langkah, VRAM puncak training tercadang 6212 MiB, teralokasi 6048 MiB
+{'loss': '3.794', 'grad_norm': '6.457', 'learning_rate': '5.94e-05', 'epoch': '5.263'}
+[progres] langkah 125: 2.86 s/langkah, VRAM puncak training tercadang 6212 MiB, teralokasi 6049 MiB
+{'loss': '3.329', 'grad_norm': '2.745', 'learning_rate': '7.44e-05', 'epoch': '6.579'}
+[progres] langkah 150: 2.87 s/langkah, VRAM puncak training tercadang 6214 MiB, teralokasi 6049 MiB
+{'loss': '3.082', 'grad_norm': '1.795', 'learning_rate': '8.94e-05', 'epoch': '7.895'}
+[progres] langkah 175: 2.85 s/langkah, VRAM puncak training tercadang 6214 MiB, teralokasi 6049 MiB
+{'loss': '2.976', 'grad_norm': '0.4654', 'learning_rate': '0.0001044', 'epoch': '9.211'}
+[progres] langkah 200: 2.81 s/langkah, VRAM puncak training tercadang 6214 MiB, teralokasi 6050 MiB
+{'loss': '2.945', 'grad_norm': '0.2607', 'learning_rate': '0.0001194', 'epoch': '10.53'}
+[progres] langkah 225: 2.83 s/langkah, VRAM puncak training tercadang 6214 MiB, teralokasi 6050 MiB
+{'loss': '2.921', 'grad_norm': '0.2589', 'learning_rate': '0.0001344', 'epoch': '11.84'}
+[progres] langkah 250: 2.84 s/langkah, VRAM puncak training tercadang 6214 MiB, teralokasi 6050 MiB
+{'loss': '2.904', 'grad_norm': '0.5208', 'learning_rate': '0.0001494', 'epoch': '13.16'}
+{'eval_loss': '2.916', 'eval_wer': '1', 'eval_cer': '1', 'eval_runtime': '76.12', 'eval_samples_per_second': '24.96', 'eval_steps_per_second': '12.48', 'epoch': '13.16'}
+[evaluasi] langkah 250: WER 1.0000, terbaik 1.0000 pada langkah 250, tanpa perbaikan 0 kali
+[evaluasi] langkah 250: 76.1 detik, VRAM tercadang awal 3766 MiB, puncak 4536 MiB, puncak teralokasi 4386 MiB
+
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]
+Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  1.70it/s]
+Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  1.70it/s]
+[progres] langkah 275: 2.82 s/langkah, VRAM puncak training tercadang 6292 MiB, teralokasi 6050 MiB
+{'loss': '2.859', 'grad_norm': '0.3828', 'learning_rate': '0.0001644', 'epoch': '14.47'}
+[progres] langkah 300: 2.84 s/langkah, VRAM puncak training tercadang 6292 MiB, teralokasi 6050 MiB
+{'loss': '2.442', 'grad_norm': '2.679', 'learning_rate': '0.0001794', 'epoch': '15.79'}
+[progres] langkah 325: 2.79 s/langkah, VRAM puncak training tercadang 6292 MiB, teralokasi 6050 MiB
+{'loss': '1.403', 'grad_norm': '1.379', 'learning_rate': '0.0001944', 'epoch': '17.11'}
+[progres] langkah 350: 2.95 s/langkah, VRAM puncak training tercadang 6292 MiB, teralokasi 6050 MiB
+{'loss': '0.7845', 'grad_norm': '0.9111', 'learning_rate': '0.0002094', 'epoch': '18.42'}
+[progres] langkah 375: 2.88 s/langkah, VRAM puncak training tercadang 6292 MiB, teralokasi 6050 MiB
+{'loss': '0.5546', 'grad_norm': '0.7754', 'learning_rate': '0.0002244', 'epoch': '19.74'}
+[progres] langkah 400: 2.84 s/langkah, VRAM puncak training tercadang 6292 MiB, teralokasi 6050 MiB
+{'loss': '0.4181', 'grad_norm': '0.5363', 'learning_rate': '0.0002394', 'epoch': '21.05'}
+[progres] langkah 425: 2.83 s/langkah, VRAM puncak training tercadang 6292 MiB, teralokasi 6050 MiB
+{'loss': '0.3369', 'grad_norm': '0.626', 'learning_rate': '0.0002544', 'epoch': '22.37'}
+[progres] langkah 450: 2.79 s/langkah, VRAM puncak training tercadang 6292 MiB, teralokasi 6050 MiB
+{'loss': '0.2883', 'grad_norm': '0.7486', 'learning_rate': '0.0002694', 'epoch': '23.68'}
+[progres] langkah 475: 2.93 s/langkah, VRAM puncak training tercadang 6294 MiB, teralokasi 6050 MiB
+{'loss': '0.2564', 'grad_norm': '0.757', 'learning_rate': '0.0002844', 'epoch': '25'}
+[progres] langkah 500: 2.87 s/langkah, VRAM puncak training tercadang 6294 MiB, teralokasi 6050 MiB
+{'loss': '0.2146', 'grad_norm': '0.5517', 'learning_rate': '0.0002994', 'epoch': '26.32'}
+{'eval_loss': '0.7438', 'eval_wer': '0.655', 'eval_cer': '0.155', 'eval_runtime': '54.74', 'eval_samples_per_second': '34.71', 'eval_steps_per_second': '17.35', 'epoch': '26.32'}
+[evaluasi] langkah 500: WER 0.6550, terbaik 0.6550 pada langkah 500, tanpa perbaikan 0 kali
+[evaluasi] langkah 500: 54.7 detik, VRAM tercadang awal 3768 MiB, puncak 4538 MiB, puncak teralokasi 4385 MiB
+
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]
+Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  1.75it/s]
+Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  1.75it/s]
+[progres] langkah 525: 2.88 s/langkah, VRAM puncak training tercadang 6294 MiB, teralokasi 6050 MiB
+{'loss': '0.2092', 'grad_norm': '0.5789', 'learning_rate': '0.0002992', 'epoch': '27.63'}
+[progres] langkah 550: 2.85 s/langkah, VRAM puncak training tercadang 6294 MiB, teralokasi 6050 MiB
+{'loss': '0.1867', 'grad_norm': '0.6961', 'learning_rate': '0.0002985', 'epoch': '28.95'}
+[progres] langkah 575: 2.83 s/langkah, VRAM puncak training tercadang 6294 MiB, teralokasi 6050 MiB
+{'loss': '0.1686', 'grad_norm': '0.5325', 'learning_rate': '0.0002977', 'epoch': '30.26'}
+[progres] langkah 600: 2.82 s/langkah, VRAM puncak training tercadang 6294 MiB, teralokasi 6050 MiB
+{'loss': '0.17', 'grad_norm': '0.6939', 'learning_rate': '0.0002969', 'epoch': '31.58'}
+[progres] langkah 625: 2.82 s/langkah, VRAM puncak training tercadang 6294 MiB, teralokasi 6050 MiB
+{'loss': '0.1505', 'grad_norm': '0.907', 'learning_rate': '0.0002961', 'epoch': '32.89'}
+[progres] langkah 650: 2.82 s/langkah, VRAM puncak training tercadang 6294 MiB, teralokasi 6050 MiB
+{'loss': '0.1468', 'grad_norm': '0.3413', 'learning_rate': '0.0002953', 'epoch': '34.21'}
+[progres] langkah 675: 2.86 s/langkah, VRAM puncak training tercadang 6294 MiB, teralokasi 6050 MiB
+{'loss': '0.1398', 'grad_norm': '0.5599', 'learning_rate': '0.0002945', 'epoch': '35.53'}
+[progres] langkah 700: 2.84 s/langkah, VRAM puncak training tercadang 6294 MiB, teralokasi 6050 MiB
+{'loss': '0.1268', 'grad_norm': '0.5012', 'learning_rate': '0.0002937', 'epoch': '36.84'}
+[progres] langkah 725: 2.84 s/langkah, VRAM puncak training tercadang 6294 MiB, teralokasi 6050 MiB
+{'loss': '0.1153', 'grad_norm': '0.7094', 'learning_rate': '0.0002929', 'epoch': '38.16'}
+[progres] langkah 750: 2.85 s/langkah, VRAM puncak training tercadang 6294 MiB, teralokasi 6050 MiB
+{'loss': '0.1144', 'grad_norm': '0.4001', 'learning_rate': '0.0002921', 'epoch': '39.47'}
+{'eval_loss': '0.7968', 'eval_wer': '0.609', 'eval_cer': '0.1412', 'eval_runtime': '54.33', 'eval_samples_per_second': '34.97', 'eval_steps_per_second': '17.48', 'epoch': '39.47'}
+[evaluasi] langkah 750: WER 0.6090, terbaik 0.6090 pada langkah 750, tanpa perbaikan 0 kali
+[evaluasi] langkah 750: 54.3 detik, VRAM tercadang awal 3774 MiB, puncak 4542 MiB, puncak teralokasi 4384 MiB
+
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]
+Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  1.72it/s]
+Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  1.72it/s]
+[progres] langkah 775: 2.86 s/langkah, VRAM puncak training tercadang 6294 MiB, teralokasi 6050 MiB
+{'loss': '0.1111', 'grad_norm': '0.4733', 'learning_rate': '0.0002913', 'epoch': '40.79'}
+[progres] langkah 800: 2.81 s/langkah, VRAM puncak training tercadang 6294 MiB, teralokasi 6050 MiB
+{'loss': '0.09558', 'grad_norm': '0.432', 'learning_rate': '0.0002906', 'epoch': '42.11'}
+[progres] langkah 825: 2.86 s/langkah, VRAM puncak training tercadang 6294 MiB, teralokasi 6050 MiB
+{'loss': '0.1059', 'grad_norm': '0.7625', 'learning_rate': '0.0002898', 'epoch': '43.42'}
+[progres] langkah 850: 5.52 s/langkah, VRAM puncak training tercadang 6294 MiB, teralokasi 6050 MiB
+{'loss': '0.1047', 'grad_norm': '0.5823', 'learning_rate': '0.000289', 'epoch': '44.74'}
+[progres] langkah 875: 5.27 s/langkah, VRAM puncak training tercadang 6314 MiB, teralokasi 6050 MiB
+{'loss': '0.09538', 'grad_norm': '0.5937', 'learning_rate': '0.0002882', 'epoch': '46.05'}
+[progres] langkah 900: 5.13 s/langkah, VRAM puncak training tercadang 6314 MiB, teralokasi 6050 MiB
+{'loss': '0.09418', 'grad_norm': '0.3613', 'learning_rate': '0.0002874', 'epoch': '47.37'}
+[progres] langkah 925: 5.16 s/langkah, VRAM puncak training tercadang 6314 MiB, teralokasi 6050 MiB
+{'loss': '0.09492', 'grad_norm': '0.4224', 'learning_rate': '0.0002866', 'epoch': '48.68'}
+[progres] langkah 950: 5.05 s/langkah, VRAM puncak training tercadang 6314 MiB, teralokasi 6050 MiB
+{'loss': '0.09973', 'grad_norm': '0.3989', 'learning_rate': '0.0002858', 'epoch': '50'}
+[progres] langkah 975: 3.35 s/langkah, VRAM puncak training tercadang 6314 MiB, teralokasi 6050 MiB
+{'loss': '0.09721', 'grad_norm': '0.4388', 'learning_rate': '0.000285', 'epoch': '51.32'}
+[progres] langkah 1000: 2.83 s/langkah, VRAM puncak training tercadang 6314 MiB, teralokasi 6050 MiB
+{'loss': '0.08897', 'grad_norm': '0.4964', 'learning_rate': '0.0002842', 'epoch': '52.63'}
+{'eval_loss': '0.8419', 'eval_wer': '0.5933', 'eval_cer': '0.1362', 'eval_runtime': '69.42', 'eval_samples_per_second': '27.37', 'eval_steps_per_second': '13.68', 'epoch': '52.63'}
+[evaluasi] langkah 1000: WER 0.5933, terbaik 0.5933 pada langkah 1000, tanpa perbaikan 0 kali
+[evaluasi] langkah 1000: 69.4 detik, VRAM tercadang awal 3764 MiB, puncak 4536 MiB, puncak teralokasi 4385 MiB
+
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]
+Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  1.33it/s]
+Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  1.33it/s]
+[progres] langkah 1025: 4.16 s/langkah, VRAM puncak training tercadang 6314 MiB, teralokasi 6050 MiB
+{'loss': '0.08611', 'grad_norm': '0.4229', 'learning_rate': '0.0002835', 'epoch': '53.95'}
+[progres] langkah 1050: 2.83 s/langkah, VRAM puncak training tercadang 6314 MiB, teralokasi 6050 MiB
+{'loss': '0.08841', 'grad_norm': '0.3884', 'learning_rate': '0.0002827', 'epoch': '55.26'}
+[progres] langkah 1075: 2.80 s/langkah, VRAM puncak training tercadang 6314 MiB, teralokasi 6050 MiB
+{'loss': '0.08276', 'grad_norm': '0.4045', 'learning_rate': '0.0002819', 'epoch': '56.58'}
+[progres] langkah 1100: 2.86 s/langkah, VRAM puncak training tercadang 6314 MiB, teralokasi 6050 MiB
+{'loss': '0.08133', 'grad_norm': '0.3474', 'learning_rate': '0.0002811', 'epoch': '57.89'}
+[progres] langkah 1125: 3.60 s/langkah, VRAM puncak training tercadang 6314 MiB, teralokasi 6050 MiB
+{'loss': '0.08168', 'grad_norm': '0.4133', 'learning_rate': '0.0002803', 'epoch': '59.21'}
+[progres] langkah 1150: 2.73 s/langkah, VRAM puncak training tercadang 6314 MiB, teralokasi 6050 MiB
+{'loss': '0.08119', 'grad_norm': '0.4896', 'learning_rate': '0.0002795', 'epoch': '60.53'}
+[progres] langkah 1175: 2.90 s/langkah, VRAM puncak training tercadang 6314 MiB, teralokasi 6050 MiB
+{'loss': '0.0745', 'grad_norm': '0.4853', 'learning_rate': '0.0002787', 'epoch': '61.84'}
+[progres] langkah 1200: 3.14 s/langkah, VRAM puncak training tercadang 6314 MiB, teralokasi 6050 MiB
+{'loss': '0.07737', 'grad_norm': '0.3557', 'learning_rate': '0.0002779', 'epoch': '63.16'}
+[progres] langkah 1225: 2.81 s/langkah, VRAM puncak training tercadang 6314 MiB, teralokasi 6050 MiB
+{'loss': '0.07598', 'grad_norm': '0.2558', 'learning_rate': '0.0002771', 'epoch': '64.47'}
+[progres] langkah 1250: 3.10 s/langkah, VRAM puncak training tercadang 6314 MiB, teralokasi 6050 MiB
+{'loss': '0.0743', 'grad_norm': '0.6159', 'learning_rate': '0.0002763', 'epoch': '65.79'}
+{'eval_loss': '0.8786', 'eval_wer': '0.5797', 'eval_cer': '0.1334', 'eval_runtime': '55.25', 'eval_samples_per_second': '34.39', 'eval_steps_per_second': '17.19', 'epoch': '65.79'}
+[evaluasi] langkah 1250: WER 0.5797, terbaik 0.5797 pada langkah 1250, tanpa perbaikan 0 kali
+[evaluasi] langkah 1250: 55.3 detik, VRAM tercadang awal 3774 MiB, puncak 4542 MiB, puncak teralokasi 4383 MiB
+
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]
+Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  1.38it/s]
+Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  1.38it/s]
+[progres] langkah 1275: 2.89 s/langkah, VRAM puncak training tercadang 6314 MiB, teralokasi 6050 MiB
+{'loss': '0.06519', 'grad_norm': '0.3427', 'learning_rate': '0.0002756', 'epoch': '67.11'}
+[progres] langkah 1300: 2.83 s/langkah, VRAM puncak training tercadang 6314 MiB, teralokasi 6050 MiB
+{'loss': '0.06655', 'grad_norm': '0.9921', 'learning_rate': '0.0002748', 'epoch': '68.42'}
+[progres] langkah 1325: 2.87 s/langkah, VRAM puncak training tercadang 6314 MiB, teralokasi 6050 MiB
+{'loss': '0.06945', 'grad_norm': '0.2818', 'learning_rate': '0.000274', 'epoch': '69.74'}
+[progres] langkah 1350: 2.79 s/langkah, VRAM puncak training tercadang 6314 MiB, teralokasi 6050 MiB
+{'loss': '0.06779', 'grad_norm': '0.3347', 'learning_rate': '0.0002732', 'epoch': '71.05'}
+[progres] langkah 1375: 3.75 s/langkah, VRAM puncak training tercadang 6314 MiB, teralokasi 6050 MiB
+{'loss': '0.06349', 'grad_norm': '0.2952', 'learning_rate': '0.0002724', 'epoch': '72.37'}
+[progres] langkah 1400: 2.85 s/langkah, VRAM puncak training tercadang 6314 MiB, teralokasi 6050 MiB
+{'loss': '0.06932', 'grad_norm': '0.6055', 'learning_rate': '0.0002716', 'epoch': '73.68'}
+[progres] langkah 1425: 2.86 s/langkah, VRAM puncak training tercadang 6314 MiB, teralokasi 6050 MiB
+{'loss': '0.06438', 'grad_norm': '0.3424', 'learning_rate': '0.0002708', 'epoch': '75'}
+[progres] langkah 1450: 2.81 s/langkah, VRAM puncak training tercadang 6314 MiB, teralokasi 6050 MiB
+{'loss': '0.06081', 'grad_norm': '0.6525', 'learning_rate': '0.00027', 'epoch': '76.32'}
+[progres] langkah 1475: 2.85 s/langkah, VRAM puncak training tercadang 6314 MiB, teralokasi 6050 MiB
+{'loss': '0.06316', 'grad_norm': '0.5411', 'learning_rate': '0.0002692', 'epoch': '77.63'}
+[progres] langkah 1500: 2.83 s/langkah, VRAM puncak training tercadang 6314 MiB, teralokasi 6050 MiB
+{'loss': '0.06135', 'grad_norm': '0.3242', 'learning_rate': '0.0002685', 'epoch': '78.95'}
+{'eval_loss': '0.842', 'eval_wer': '0.5799', 'eval_cer': '0.1329', 'eval_runtime': '55.35', 'eval_samples_per_second': '34.33', 'eval_steps_per_second': '17.16', 'epoch': '78.95'}
+[evaluasi] langkah 1500: WER 0.5799, terbaik 0.5797 pada langkah 1250, tanpa perbaikan 1 kali
+[evaluasi] langkah 1500: 55.3 detik, VRAM tercadang awal 3772 MiB, puncak 4542 MiB, puncak teralokasi 4382 MiB
+
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]
+Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  1.77it/s]
+Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  1.77it/s]
+[progres] langkah 1525: 4.81 s/langkah, VRAM puncak training tercadang 6314 MiB, teralokasi 6050 MiB
+{'loss': '0.05516', 'grad_norm': '0.3085', 'learning_rate': '0.0002677', 'epoch': '80.26'}
+[progres] langkah 1550: 6.12 s/langkah, VRAM puncak training tercadang 6314 MiB, teralokasi 6050 MiB
+{'loss': '0.05359', 'grad_norm': '0.6987', 'learning_rate': '0.0002669', 'epoch': '81.58'}
+[progres] langkah 1575: 4.71 s/langkah, VRAM puncak training tercadang 6314 MiB, teralokasi 6050 MiB
+{'loss': '0.05797', 'grad_norm': '0.468', 'learning_rate': '0.0002661', 'epoch': '82.89'}
+[progres] langkah 1600: 3.68 s/langkah, VRAM puncak training tercadang 6314 MiB, teralokasi 6050 MiB
+{'loss': '0.05095', 'grad_norm': '0.1864', 'learning_rate': '0.0002653', 'epoch': '84.21'}
+[progres] langkah 1625: 4.07 s/langkah, VRAM puncak training tercadang 6314 MiB, teralokasi 6050 MiB
+{'loss': '0.05309', 'grad_norm': '0.3025', 'learning_rate': '0.0002645', 'epoch': '85.53'}
+[progres] langkah 1650: 3.41 s/langkah, VRAM puncak training tercadang 6314 MiB, teralokasi 6050 MiB
+{'loss': '0.05195', 'grad_norm': '0.365', 'learning_rate': '0.0002637', 'epoch': '86.84'}
+[progres] langkah 1675: 2.90 s/langkah, VRAM puncak training tercadang 6314 MiB, teralokasi 6050 MiB
+{'loss': '0.05206', 'grad_norm': '0.172', 'learning_rate': '0.0002629', 'epoch': '88.16'}
+[progres] langkah 1700: 2.88 s/langkah, VRAM puncak training tercadang 6314 MiB, teralokasi 6050 MiB
+{'loss': '0.05516', 'grad_norm': '0.2943', 'learning_rate': '0.0002621', 'epoch': '89.47'}
+[progres] langkah 1725: 2.83 s/langkah, VRAM puncak training tercadang 6314 MiB, teralokasi 6050 MiB
+{'loss': '0.05705', 'grad_norm': '0.2436', 'learning_rate': '0.0002613', 'epoch': '90.79'}
+[progres] langkah 1750: 2.87 s/langkah, VRAM puncak training tercadang 6314 MiB, teralokasi 6050 MiB
+{'loss': '0.0439', 'grad_norm': '0.3183', 'learning_rate': '0.0002606', 'epoch': '92.11'}
+{'eval_loss': '0.874', 'eval_wer': '0.5678', 'eval_cer': '0.1332', 'eval_runtime': '54.47', 'eval_samples_per_second': '34.88', 'eval_steps_per_second': '17.44', 'epoch': '92.11'}
+[evaluasi] langkah 1750: WER 0.5678, terbaik 0.5678 pada langkah 1750, tanpa perbaikan 0 kali
+[evaluasi] langkah 1750: 54.5 detik, VRAM tercadang awal 3764 MiB, puncak 4538 MiB, puncak teralokasi 4386 MiB
+
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]
+Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  1.69it/s]
+Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  1.69it/s]
+[progres] langkah 1775: 2.90 s/langkah, VRAM puncak training tercadang 6314 MiB, teralokasi 6050 MiB
+{'loss': '0.04308', 'grad_norm': '0.3453', 'learning_rate': '0.0002598', 'epoch': '93.42'}
+[progres] langkah 1800: 2.83 s/langkah, VRAM puncak training tercadang 6314 MiB, teralokasi 6050 MiB
+{'loss': '0.05211', 'grad_norm': '0.3141', 'learning_rate': '0.000259', 'epoch': '94.74'}
+[progres] langkah 1825: 2.85 s/langkah, VRAM puncak training tercadang 6314 MiB, teralokasi 6050 MiB
+{'loss': '0.0513', 'grad_norm': '0.5649', 'learning_rate': '0.0002582', 'epoch': '96.05'}
+[progres] langkah 1850: 2.83 s/langkah, VRAM puncak training tercadang 6314 MiB, teralokasi 6050 MiB
+{'loss': '0.04208', 'grad_norm': '0.2893', 'learning_rate': '0.0002574', 'epoch': '97.37'}
+[progres] langkah 1875: 2.82 s/langkah, VRAM puncak training tercadang 6314 MiB, teralokasi 6050 MiB
+{'loss': '0.04656', 'grad_norm': '0.3831', 'learning_rate': '0.0002566', 'epoch': '98.68'}
+[progres] langkah 1900: 2.96 s/langkah, VRAM puncak training tercadang 6314 MiB, teralokasi 6050 MiB
+{'loss': '0.05353', 'grad_norm': '0.5753', 'learning_rate': '0.0002558', 'epoch': '100'}
+[progres] langkah 1925: 2.85 s/langkah, VRAM puncak training tercadang 6314 MiB, teralokasi 6050 MiB
+{'loss': '0.04625', 'grad_norm': '0.3512', 'learning_rate': '0.000255', 'epoch': '101.3'}
+[progres] langkah 1950: 2.86 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6050 MiB
+{'loss': '0.04687', 'grad_norm': '0.2803', 'learning_rate': '0.0002542', 'epoch': '102.6'}
+[progres] langkah 1975: 2.85 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6050 MiB
+{'loss': '0.04199', 'grad_norm': '0.1875', 'learning_rate': '0.0002535', 'epoch': '103.9'}
+[progres] langkah 2000: 2.87 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6050 MiB
+{'loss': '0.04431', 'grad_norm': '0.4745', 'learning_rate': '0.0002527', 'epoch': '105.3'}
+{'eval_loss': '0.8971', 'eval_wer': '0.5602', 'eval_cer': '0.1273', 'eval_runtime': '55.06', 'eval_samples_per_second': '34.51', 'eval_steps_per_second': '17.25', 'epoch': '105.3'}
+[evaluasi] langkah 2000: WER 0.5602, terbaik 0.5602 pada langkah 2000, tanpa perbaikan 0 kali
+[evaluasi] langkah 2000: 55.1 detik, VRAM tercadang awal 3766 MiB, puncak 4538 MiB, puncak teralokasi 4382 MiB
+
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]
+Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  1.70it/s]
+Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  1.70it/s]
+[progres] langkah 2025: 2.81 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6050 MiB
+{'loss': '0.03883', 'grad_norm': '0.4147', 'learning_rate': '0.0002519', 'epoch': '106.6'}
+[progres] langkah 2050: 2.90 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6050 MiB
+{'loss': '0.04044', 'grad_norm': '0.132', 'learning_rate': '0.0002511', 'epoch': '107.9'}
+[progres] langkah 2075: 2.85 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6050 MiB
+{'loss': '0.03493', 'grad_norm': '0.2055', 'learning_rate': '0.0002503', 'epoch': '109.2'}
+[progres] langkah 2100: 2.86 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6050 MiB
+{'loss': '0.03602', 'grad_norm': '0.1273', 'learning_rate': '0.0002495', 'epoch': '110.5'}
+[progres] langkah 2125: 3.32 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6050 MiB
+{'loss': '0.03693', 'grad_norm': '0.2651', 'learning_rate': '0.0002487', 'epoch': '111.8'}
+[progres] langkah 2150: 3.30 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6050 MiB
+{'loss': '0.03893', 'grad_norm': '0.3364', 'learning_rate': '0.0002479', 'epoch': '113.2'}
+[progres] langkah 2175: 2.89 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6050 MiB
+{'loss': '0.04382', 'grad_norm': '0.2825', 'learning_rate': '0.0002471', 'epoch': '114.5'}
+[progres] langkah 2200: 2.85 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6050 MiB
+{'loss': '0.03866', 'grad_norm': '0.3449', 'learning_rate': '0.0002463', 'epoch': '115.8'}
+[progres] langkah 2225: 2.86 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6050 MiB
+{'loss': '0.03539', 'grad_norm': '0.1554', 'learning_rate': '0.0002456', 'epoch': '117.1'}
+[progres] langkah 2250: 2.91 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6050 MiB
+{'loss': '0.03213', 'grad_norm': '0.3193', 'learning_rate': '0.0002448', 'epoch': '118.4'}
+{'eval_loss': '0.9302', 'eval_wer': '0.5651', 'eval_cer': '0.1289', 'eval_runtime': '54.92', 'eval_samples_per_second': '34.6', 'eval_steps_per_second': '17.3', 'epoch': '118.4'}
+[evaluasi] langkah 2250: WER 0.5651, terbaik 0.5602 pada langkah 2000, tanpa perbaikan 1 kali
+[evaluasi] langkah 2250: 54.9 detik, VRAM tercadang awal 3772 MiB, puncak 4542 MiB, puncak teralokasi 4382 MiB
+
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]
+Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  1.69it/s]
+Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  1.69it/s]
+[progres] langkah 2275: 2.87 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6050 MiB
+{'loss': '0.03214', 'grad_norm': '0.3294', 'learning_rate': '0.000244', 'epoch': '119.7'}
+[progres] langkah 2300: 3.04 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6050 MiB
+{'loss': '0.03058', 'grad_norm': '0.3414', 'learning_rate': '0.0002432', 'epoch': '121.1'}
+[progres] langkah 2325: 2.86 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6050 MiB
+{'loss': '0.03505', 'grad_norm': '0.2203', 'learning_rate': '0.0002424', 'epoch': '122.4'}
+[progres] langkah 2350: 2.84 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6050 MiB
+{'loss': '0.03172', 'grad_norm': '0.3087', 'learning_rate': '0.0002416', 'epoch': '123.7'}
+[progres] langkah 2375: 2.97 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6050 MiB
+{'loss': '0.03692', 'grad_norm': '0.2669', 'learning_rate': '0.0002408', 'epoch': '125'}
+[progres] langkah 2400: 2.89 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6050 MiB
+{'loss': '0.02914', 'grad_norm': '0.1764', 'learning_rate': '0.00024', 'epoch': '126.3'}
+[progres] langkah 2425: 2.85 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.0295', 'grad_norm': '0.4352', 'learning_rate': '0.0002392', 'epoch': '127.6'}
+[progres] langkah 2450: 2.84 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.02703', 'grad_norm': '0.295', 'learning_rate': '0.0002385', 'epoch': '128.9'}
+[progres] langkah 2475: 3.45 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.02587', 'grad_norm': '0.3692', 'learning_rate': '0.0002377', 'epoch': '130.3'}
+[progres] langkah 2500: 2.96 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.02915', 'grad_norm': '0.2178', 'learning_rate': '0.0002369', 'epoch': '131.6'}
+{'eval_loss': '0.9087', 'eval_wer': '0.55', 'eval_cer': '0.1258', 'eval_runtime': '77.06', 'eval_samples_per_second': '24.66', 'eval_steps_per_second': '12.33', 'epoch': '131.6'}
+[evaluasi] langkah 2500: WER 0.5500, terbaik 0.5500 pada langkah 2500, tanpa perbaikan 0 kali
+[evaluasi] langkah 2500: 77.1 detik, VRAM tercadang awal 3772 MiB, puncak 4540 MiB, puncak teralokasi 4385 MiB
+
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]
+Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  1.39it/s]
+Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  1.39it/s]
+[progres] langkah 2525: 3.93 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.02594', 'grad_norm': '0.3098', 'learning_rate': '0.0002361', 'epoch': '132.9'}
+[progres] langkah 2550: 2.88 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.0274', 'grad_norm': '0.2066', 'learning_rate': '0.0002353', 'epoch': '134.2'}
+[progres] langkah 2575: 2.90 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.02558', 'grad_norm': '0.2277', 'learning_rate': '0.0002345', 'epoch': '135.5'}
+[progres] langkah 2600: 2.83 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.02606', 'grad_norm': '0.3117', 'learning_rate': '0.0002337', 'epoch': '136.8'}
+[progres] langkah 2625: 2.95 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.02586', 'grad_norm': '0.4051', 'learning_rate': '0.0002329', 'epoch': '138.2'}
+[progres] langkah 2650: 3.12 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.0236', 'grad_norm': '0.247', 'learning_rate': '0.0002321', 'epoch': '139.5'}
+[progres] langkah 2675: 2.81 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.02672', 'grad_norm': '0.2892', 'learning_rate': '0.0002313', 'epoch': '140.8'}
+[progres] langkah 2700: 2.87 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.02106', 'grad_norm': '0.2042', 'learning_rate': '0.0002306', 'epoch': '142.1'}
+[progres] langkah 2725: 4.50 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.02881', 'grad_norm': '0.1198', 'learning_rate': '0.0002298', 'epoch': '143.4'}
+[progres] langkah 2750: 3.13 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.02865', 'grad_norm': '0.4148', 'learning_rate': '0.000229', 'epoch': '144.7'}
+{'eval_loss': '0.8847', 'eval_wer': '0.5402', 'eval_cer': '0.1271', 'eval_runtime': '54.67', 'eval_samples_per_second': '34.76', 'eval_steps_per_second': '17.38', 'epoch': '144.7'}
+[evaluasi] langkah 2750: WER 0.5402, terbaik 0.5402 pada langkah 2750, tanpa perbaikan 0 kali
+[evaluasi] langkah 2750: 54.7 detik, VRAM tercadang awal 3776 MiB, puncak 4542 MiB, puncak teralokasi 4384 MiB
+
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]
+Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  1.65it/s]
+Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  1.63it/s]
+[progres] langkah 2775: 2.92 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.0253', 'grad_norm': '0.1609', 'learning_rate': '0.0002282', 'epoch': '146.1'}
+[progres] langkah 2800: 2.83 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.0283', 'grad_norm': '0.2', 'learning_rate': '0.0002274', 'epoch': '147.4'}
+[progres] langkah 2825: 3.51 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.02628', 'grad_norm': '0.2308', 'learning_rate': '0.0002266', 'epoch': '148.7'}
+[progres] langkah 2850: 2.84 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.02627', 'grad_norm': '0.2504', 'learning_rate': '0.0002258', 'epoch': '150'}
+[progres] langkah 2875: 2.81 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.02396', 'grad_norm': '0.5158', 'learning_rate': '0.000225', 'epoch': '151.3'}
+[progres] langkah 2900: 2.90 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.02263', 'grad_norm': '0.3508', 'learning_rate': '0.0002242', 'epoch': '152.6'}
+[progres] langkah 2925: 2.89 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.02281', 'grad_norm': '0.2952', 'learning_rate': '0.0002235', 'epoch': '153.9'}
+[progres] langkah 2950: 2.84 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.02317', 'grad_norm': '0.2444', 'learning_rate': '0.0002227', 'epoch': '155.3'}
+[progres] langkah 2975: 2.83 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.02593', 'grad_norm': '0.2057', 'learning_rate': '0.0002219', 'epoch': '156.6'}
+[progres] langkah 3000: 2.83 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.02194', 'grad_norm': '0.1197', 'learning_rate': '0.0002211', 'epoch': '157.9'}
+{'eval_loss': '0.9086', 'eval_wer': '0.5294', 'eval_cer': '0.1235', 'eval_runtime': '56.45', 'eval_samples_per_second': '33.66', 'eval_steps_per_second': '16.83', 'epoch': '157.9'}
+[evaluasi] langkah 3000: WER 0.5294, terbaik 0.5294 pada langkah 3000, tanpa perbaikan 0 kali
+[evaluasi] langkah 3000: 56.5 detik, VRAM tercadang awal 3770 MiB, puncak 4542 MiB, puncak teralokasi 4385 MiB
+
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]
+Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  1.71it/s]
+Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  1.71it/s]
+[progres] langkah 3025: 2.83 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.0219', 'grad_norm': '0.3484', 'learning_rate': '0.0002203', 'epoch': '159.2'}
+[progres] langkah 3050: 2.83 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.02263', 'grad_norm': '0.2095', 'learning_rate': '0.0002195', 'epoch': '160.5'}
+[progres] langkah 3075: 5.25 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.02274', 'grad_norm': '0.2707', 'learning_rate': '0.0002187', 'epoch': '161.8'}
+[progres] langkah 3100: 6.28 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.02617', 'grad_norm': '0.2363', 'learning_rate': '0.0002179', 'epoch': '163.2'}
+[progres] langkah 3125: 6.29 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.02133', 'grad_norm': '0.1117', 'learning_rate': '0.0002171', 'epoch': '164.5'}
+[progres] langkah 3150: 6.25 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.01838', 'grad_norm': '0.733', 'learning_rate': '0.0002163', 'epoch': '165.8'}
+[progres] langkah 3175: 6.22 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.02038', 'grad_norm': '0.1882', 'learning_rate': '0.0002156', 'epoch': '167.1'}
+[progres] langkah 3200: 6.14 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.02147', 'grad_norm': '0.2046', 'learning_rate': '0.0002148', 'epoch': '168.4'}
+[progres] langkah 3225: 6.02 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.02209', 'grad_norm': '0.1598', 'learning_rate': '0.000214', 'epoch': '169.7'}
+[progres] langkah 3250: 6.16 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.02', 'grad_norm': '0.2849', 'learning_rate': '0.0002132', 'epoch': '171.1'}
+{'eval_loss': '0.8909', 'eval_wer': '0.5297', 'eval_cer': '0.1241', 'eval_runtime': '104.3', 'eval_samples_per_second': '18.22', 'eval_steps_per_second': '9.109', 'epoch': '171.1'}
+[evaluasi] langkah 3250: WER 0.5297, terbaik 0.5294 pada langkah 3000, tanpa perbaikan 1 kali
+[evaluasi] langkah 3250: 104.3 detik, VRAM tercadang awal 3764 MiB, puncak 4536 MiB, puncak teralokasi 4387 MiB
+
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]
+Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  1.30it/s]
+Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  1.30it/s]
+[progres] langkah 3275: 2.87 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.0176', 'grad_norm': '0.4579', 'learning_rate': '0.0002124', 'epoch': '172.4'}
+[progres] langkah 3300: 2.82 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.02063', 'grad_norm': '0.2322', 'learning_rate': '0.0002116', 'epoch': '173.7'}
+[progres] langkah 3325: 2.85 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.02149', 'grad_norm': '0.2135', 'learning_rate': '0.0002108', 'epoch': '175'}
+[progres] langkah 3350: 3.23 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.01679', 'grad_norm': '0.2462', 'learning_rate': '0.00021', 'epoch': '176.3'}
+[progres] langkah 3375: 2.87 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.01934', 'grad_norm': '0.2656', 'learning_rate': '0.0002092', 'epoch': '177.6'}
+[progres] langkah 3400: 2.84 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.01699', 'grad_norm': '0.2112', 'learning_rate': '0.0002085', 'epoch': '178.9'}
+[progres] langkah 3425: 2.86 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.01912', 'grad_norm': '0.2576', 'learning_rate': '0.0002077', 'epoch': '180.3'}
+[progres] langkah 3450: 2.88 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.02032', 'grad_norm': '0.3092', 'learning_rate': '0.0002069', 'epoch': '181.6'}
+[progres] langkah 3475: 2.86 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.01656', 'grad_norm': '0.1639', 'learning_rate': '0.0002061', 'epoch': '182.9'}
+[progres] langkah 3500: 3.06 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.0178', 'grad_norm': '0.2594', 'learning_rate': '0.0002053', 'epoch': '184.2'}
+{'eval_loss': '0.9675', 'eval_wer': '0.5283', 'eval_cer': '0.1231', 'eval_runtime': '54.55', 'eval_samples_per_second': '34.83', 'eval_steps_per_second': '17.42', 'epoch': '184.2'}
+[evaluasi] langkah 3500: WER 0.5283, terbaik 0.5283 pada langkah 3500, tanpa perbaikan 0 kali
+[evaluasi] langkah 3500: 54.5 detik, VRAM tercadang awal 3768 MiB, puncak 4540 MiB, puncak teralokasi 4384 MiB
+
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]
+Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  1.73it/s]
+Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  1.73it/s]
+[progres] langkah 3525: 2.85 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.01962', 'grad_norm': '0.2835', 'learning_rate': '0.0002045', 'epoch': '185.5'}
+[progres] langkah 3550: 2.85 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.01592', 'grad_norm': '0.1797', 'learning_rate': '0.0002037', 'epoch': '186.8'}
+[progres] langkah 3575: 2.85 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.01497', 'grad_norm': '0.3184', 'learning_rate': '0.0002029', 'epoch': '188.2'}
+[progres] langkah 3600: 2.89 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.01463', 'grad_norm': '0.4047', 'learning_rate': '0.0002021', 'epoch': '189.5'}
+[progres] langkah 3625: 2.85 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.01989', 'grad_norm': '0.4874', 'learning_rate': '0.0002013', 'epoch': '190.8'}
+[progres] langkah 3650: 2.88 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.01856', 'grad_norm': '0.4911', 'learning_rate': '0.0002006', 'epoch': '192.1'}
+[progres] langkah 3675: 2.84 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.01609', 'grad_norm': '0.3093', 'learning_rate': '0.0001998', 'epoch': '193.4'}
+[progres] langkah 3700: 4.75 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.01736', 'grad_norm': '0.1883', 'learning_rate': '0.000199', 'epoch': '194.7'}
+[progres] langkah 3725: 4.81 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.01776', 'grad_norm': '0.1164', 'learning_rate': '0.0001982', 'epoch': '196.1'}
+[progres] langkah 3750: 2.82 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.01911', 'grad_norm': '0.2293', 'learning_rate': '0.0001974', 'epoch': '197.4'}
+{'eval_loss': '0.9284', 'eval_wer': '0.5232', 'eval_cer': '0.1232', 'eval_runtime': '54.76', 'eval_samples_per_second': '34.7', 'eval_steps_per_second': '17.35', 'epoch': '197.4'}
+[evaluasi] langkah 3750: WER 0.5232, terbaik 0.5232 pada langkah 3750, tanpa perbaikan 0 kali
+[evaluasi] langkah 3750: 54.8 detik, VRAM tercadang awal 3768 MiB, puncak 4540 MiB, puncak teralokasi 4384 MiB
+
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]
+Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  1.71it/s]
+Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  1.71it/s]
+[progres] langkah 3775: 2.85 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.0174', 'grad_norm': '0.2249', 'learning_rate': '0.0001966', 'epoch': '198.7'}
+[progres] langkah 3800: 2.90 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.02374', 'grad_norm': '0.3043', 'learning_rate': '0.0001958', 'epoch': '200'}
+[progres] langkah 3825: 2.89 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.01548', 'grad_norm': '0.2346', 'learning_rate': '0.000195', 'epoch': '201.3'}
+[progres] langkah 3850: 2.83 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.01454', 'grad_norm': '0.2223', 'learning_rate': '0.0001942', 'epoch': '202.6'}
+[progres] langkah 3875: 2.84 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.0162', 'grad_norm': '0.3505', 'learning_rate': '0.0001935', 'epoch': '203.9'}
+[progres] langkah 3900: 2.85 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.01711', 'grad_norm': '0.205', 'learning_rate': '0.0001927', 'epoch': '205.3'}
+[progres] langkah 3925: 2.90 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.01471', 'grad_norm': '0.3223', 'learning_rate': '0.0001919', 'epoch': '206.6'}
+[progres] langkah 3950: 2.91 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.01575', 'grad_norm': '0.3098', 'learning_rate': '0.0001911', 'epoch': '207.9'}
+[progres] langkah 3975: 2.85 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.01823', 'grad_norm': '0.2039', 'learning_rate': '0.0001903', 'epoch': '209.2'}
+[progres] langkah 4000: 2.89 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.01435', 'grad_norm': '0.1844', 'learning_rate': '0.0001895', 'epoch': '210.5'}
+{'eval_loss': '0.9583', 'eval_wer': '0.5374', 'eval_cer': '0.1262', 'eval_runtime': '54.61', 'eval_samples_per_second': '34.79', 'eval_steps_per_second': '17.39', 'epoch': '210.5'}
+[evaluasi] langkah 4000: WER 0.5374, terbaik 0.5232 pada langkah 3750, tanpa perbaikan 1 kali
+[evaluasi] langkah 4000: 54.6 detik, VRAM tercadang awal 3770 MiB, puncak 4540 MiB, puncak teralokasi 4384 MiB
+
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]
+Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  1.65it/s]
+Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  1.65it/s]
+[progres] langkah 4025: 5.61 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.01942', 'grad_norm': '0.2499', 'learning_rate': '0.0001887', 'epoch': '211.8'}
+[progres] langkah 4050: 5.49 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.01788', 'grad_norm': '0.2395', 'learning_rate': '0.0001879', 'epoch': '213.2'}
+[progres] langkah 4075: 4.04 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.01416', 'grad_norm': '0.2224', 'learning_rate': '0.0001871', 'epoch': '214.5'}
+[progres] langkah 4100: 2.94 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.01407', 'grad_norm': '0.1677', 'learning_rate': '0.0001863', 'epoch': '215.8'}
+[progres] langkah 4125: 2.86 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.01404', 'grad_norm': '0.3306', 'learning_rate': '0.0001856', 'epoch': '217.1'}
+[progres] langkah 4150: 2.86 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.01356', 'grad_norm': '0.3356', 'learning_rate': '0.0001848', 'epoch': '218.4'}
+[progres] langkah 4175: 2.84 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.01209', 'grad_norm': '0.1853', 'learning_rate': '0.000184', 'epoch': '219.7'}
+[progres] langkah 4200: 2.87 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.01391', 'grad_norm': '0.1387', 'learning_rate': '0.0001832', 'epoch': '221.1'}
+[progres] langkah 4225: 3.06 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.01361', 'grad_norm': '0.1818', 'learning_rate': '0.0001824', 'epoch': '222.4'}
+[progres] langkah 4250: 4.14 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.01494', 'grad_norm': '0.1402', 'learning_rate': '0.0001816', 'epoch': '223.7'}
+{'eval_loss': '0.9687', 'eval_wer': '0.5313', 'eval_cer': '0.1241', 'eval_runtime': '102.5', 'eval_samples_per_second': '18.53', 'eval_steps_per_second': '9.267', 'epoch': '223.7'}
+[evaluasi] langkah 4250: WER 0.5313, terbaik 0.5232 pada langkah 3750, tanpa perbaikan 2 kali
+[evaluasi] langkah 4250: 102.5 detik, VRAM tercadang awal 3772 MiB, puncak 4544 MiB, puncak teralokasi 4383 MiB
+
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]
+Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  1.39it/s]
+Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  1.39it/s]
+[progres] langkah 4275: 5.19 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.01302', 'grad_norm': '0.2445', 'learning_rate': '0.0001808', 'epoch': '225'}
+[progres] langkah 4300: 5.09 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.01333', 'grad_norm': '0.6657', 'learning_rate': '0.00018', 'epoch': '226.3'}
+[progres] langkah 4325: 5.32 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.01162', 'grad_norm': '0.2153', 'learning_rate': '0.0001792', 'epoch': '227.6'}
+[progres] langkah 4350: 5.09 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.01424', 'grad_norm': '0.07668', 'learning_rate': '0.0001785', 'epoch': '228.9'}
+[progres] langkah 4375: 3.47 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.01581', 'grad_norm': '0.1673', 'learning_rate': '0.0001777', 'epoch': '230.3'}
+[progres] langkah 4400: 2.86 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.01238', 'grad_norm': '0.06963', 'learning_rate': '0.0001769', 'epoch': '231.6'}
+[progres] langkah 4425: 2.89 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.01263', 'grad_norm': '0.2542', 'learning_rate': '0.0001761', 'epoch': '232.9'}
+[progres] langkah 4450: 2.86 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.01082', 'grad_norm': '0.1576', 'learning_rate': '0.0001753', 'epoch': '234.2'}
+[progres] langkah 4475: 2.89 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.01144', 'grad_norm': '0.2862', 'learning_rate': '0.0001745', 'epoch': '235.5'}
+[progres] langkah 4500: 4.06 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.01364', 'grad_norm': '0.1898', 'learning_rate': '0.0001737', 'epoch': '236.8'}
+{'eval_loss': '0.9608', 'eval_wer': '0.5217', 'eval_cer': '0.1229', 'eval_runtime': '103.4', 'eval_samples_per_second': '18.37', 'eval_steps_per_second': '9.184', 'epoch': '236.8'}
+[evaluasi] langkah 4500: WER 0.5217, terbaik 0.5217 pada langkah 4500, tanpa perbaikan 0 kali
+[evaluasi] langkah 4500: 103.4 detik, VRAM tercadang awal 3770 MiB, puncak 4540 MiB, puncak teralokasi 4384 MiB
+
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]
+Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  1.41it/s]
+Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  1.41it/s]
+[progres] langkah 4525: 5.01 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.0104', 'grad_norm': '0.1685', 'learning_rate': '0.0001729', 'epoch': '238.2'}
+[progres] langkah 4550: 5.27 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.009068', 'grad_norm': '0.1784', 'learning_rate': '0.0001721', 'epoch': '239.5'}
+[progres] langkah 4575: 5.22 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.01023', 'grad_norm': '0.139', 'learning_rate': '0.0001713', 'epoch': '240.8'}
+[progres] langkah 4600: 5.30 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.008561', 'grad_norm': '0.359', 'learning_rate': '0.0001706', 'epoch': '242.1'}
+[progres] langkah 4625: 5.24 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.01089', 'grad_norm': '0.1404', 'learning_rate': '0.0001698', 'epoch': '243.4'}
+[progres] langkah 4650: 4.38 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.01061', 'grad_norm': '0.1552', 'learning_rate': '0.000169', 'epoch': '244.7'}
+[progres] langkah 4675: 2.93 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.01151', 'grad_norm': '0.09786', 'learning_rate': '0.0001682', 'epoch': '246.1'}
+[progres] langkah 4700: 2.88 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.008917', 'grad_norm': '0.3171', 'learning_rate': '0.0001674', 'epoch': '247.4'}
+[progres] langkah 4725: 2.90 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.009843', 'grad_norm': '0.2121', 'learning_rate': '0.0001666', 'epoch': '248.7'}
+[progres] langkah 4750: 2.85 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.01371', 'grad_norm': '0.3035', 'learning_rate': '0.0001658', 'epoch': '250'}
+{'eval_loss': '0.9396', 'eval_wer': '0.5154', 'eval_cer': '0.1215', 'eval_runtime': '54.61', 'eval_samples_per_second': '34.79', 'eval_steps_per_second': '17.4', 'epoch': '250'}
+[evaluasi] langkah 4750: WER 0.5154, terbaik 0.5154 pada langkah 4750, tanpa perbaikan 0 kali
+[evaluasi] langkah 4750: 54.6 detik, VRAM tercadang awal 3766 MiB, puncak 4538 MiB, puncak teralokasi 4386 MiB
+
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]
+Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  1.59it/s]
+Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  1.59it/s]
+[progres] langkah 4775: 2.84 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.009982', 'grad_norm': '0.2295', 'learning_rate': '0.000165', 'epoch': '251.3'}
+[progres] langkah 4800: 2.84 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.0102', 'grad_norm': '0.2191', 'learning_rate': '0.0001642', 'epoch': '252.6'}
+[progres] langkah 4825: 2.85 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.009742', 'grad_norm': '0.1102', 'learning_rate': '0.0001635', 'epoch': '253.9'}
+[progres] langkah 4850: 2.87 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.01283', 'grad_norm': '0.2398', 'learning_rate': '0.0001627', 'epoch': '255.3'}
+[progres] langkah 4875: 2.89 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.01033', 'grad_norm': '0.1436', 'learning_rate': '0.0001619', 'epoch': '256.6'}
+[progres] langkah 4900: 2.87 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.008697', 'grad_norm': '0.1905', 'learning_rate': '0.0001611', 'epoch': '257.9'}
+[progres] langkah 4925: 2.88 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.00888', 'grad_norm': '0.07967', 'learning_rate': '0.0001603', 'epoch': '259.2'}
+[progres] langkah 4950: 2.88 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.01166', 'grad_norm': '0.1418', 'learning_rate': '0.0001595', 'epoch': '260.5'}
+[progres] langkah 4975: 2.89 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.00885', 'grad_norm': '0.2095', 'learning_rate': '0.0001587', 'epoch': '261.8'}
+[progres] langkah 5000: 2.86 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.008341', 'grad_norm': '0.1093', 'learning_rate': '0.0001579', 'epoch': '263.2'}
+{'eval_loss': '1.012', 'eval_wer': '0.5193', 'eval_cer': '0.1212', 'eval_runtime': '54.75', 'eval_samples_per_second': '34.7', 'eval_steps_per_second': '17.35', 'epoch': '263.2'}
+[evaluasi] langkah 5000: WER 0.5193, terbaik 0.5154 pada langkah 4750, tanpa perbaikan 1 kali
+[evaluasi] langkah 5000: 54.8 detik, VRAM tercadang awal 3768 MiB, puncak 4542 MiB, puncak teralokasi 4382 MiB
+
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]
+Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  1.70it/s]
+Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  1.70it/s]
+[progres] langkah 5025: 2.91 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.01039', 'grad_norm': '0.08515', 'learning_rate': '0.0001571', 'epoch': '264.5'}
+[progres] langkah 5050: 2.85 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.00763', 'grad_norm': '0.1075', 'learning_rate': '0.0001563', 'epoch': '265.8'}
+[progres] langkah 5075: 2.85 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.008484', 'grad_norm': '0.2718', 'learning_rate': '0.0001556', 'epoch': '267.1'}
+[progres] langkah 5100: 2.90 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.01034', 'grad_norm': '0.1535', 'learning_rate': '0.0001548', 'epoch': '268.4'}
+[progres] langkah 5125: 2.87 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.01049', 'grad_norm': '0.2492', 'learning_rate': '0.000154', 'epoch': '269.7'}
+[progres] langkah 5150: 2.90 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.008853', 'grad_norm': '0.0842', 'learning_rate': '0.0001532', 'epoch': '271.1'}
+[progres] langkah 5175: 2.85 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.008088', 'grad_norm': '0.1836', 'learning_rate': '0.0001524', 'epoch': '272.4'}
+[progres] langkah 5200: 2.83 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.01209', 'grad_norm': '0.2471', 'learning_rate': '0.0001516', 'epoch': '273.7'}
+[progres] langkah 5225: 2.90 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.01052', 'grad_norm': '0.1086', 'learning_rate': '0.0001508', 'epoch': '275'}
+[progres] langkah 5250: 2.87 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.008172', 'grad_norm': '0.1494', 'learning_rate': '0.00015', 'epoch': '276.3'}
+{'eval_loss': '1.043', 'eval_wer': '0.5251', 'eval_cer': '0.1249', 'eval_runtime': '54.83', 'eval_samples_per_second': '34.65', 'eval_steps_per_second': '17.33', 'epoch': '276.3'}
+[evaluasi] langkah 5250: WER 0.5251, terbaik 0.5154 pada langkah 4750, tanpa perbaikan 2 kali
+[evaluasi] langkah 5250: 54.8 detik, VRAM tercadang awal 3774 MiB, puncak 4542 MiB, puncak teralokasi 4388 MiB
+
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]
+Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  1.73it/s]
+Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  1.73it/s]
+[progres] langkah 5275: 2.88 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.01056', 'grad_norm': '0.1893', 'learning_rate': '0.0001492', 'epoch': '277.6'}
+[progres] langkah 5300: 2.86 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.007719', 'grad_norm': '0.094', 'learning_rate': '0.0001485', 'epoch': '278.9'}
+[progres] langkah 5325: 2.85 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.008393', 'grad_norm': '0.1119', 'learning_rate': '0.0001477', 'epoch': '280.3'}
+[progres] langkah 5350: 4.71 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.009931', 'grad_norm': '0.03931', 'learning_rate': '0.0001469', 'epoch': '281.6'}
+[progres] langkah 5375: 5.42 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.009822', 'grad_norm': '0.0548', 'learning_rate': '0.0001461', 'epoch': '282.9'}
+[progres] langkah 5400: 5.16 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.008404', 'grad_norm': '0.105', 'learning_rate': '0.0001453', 'epoch': '284.2'}
+[progres] langkah 5425: 5.34 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.007747', 'grad_norm': '0.2321', 'learning_rate': '0.0001445', 'epoch': '285.5'}
+[progres] langkah 5450: 5.21 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.007884', 'grad_norm': '0.3169', 'learning_rate': '0.0001437', 'epoch': '286.8'}
+[progres] langkah 5475: 5.52 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.00696', 'grad_norm': '0.4429', 'learning_rate': '0.0001429', 'epoch': '288.2'}
+[progres] langkah 5500: 5.27 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.007005', 'grad_norm': '0.04089', 'learning_rate': '0.0001421', 'epoch': '289.5'}
+{'eval_loss': '1.073', 'eval_wer': '0.5134', 'eval_cer': '0.1207', 'eval_runtime': '103.1', 'eval_samples_per_second': '18.43', 'eval_steps_per_second': '9.217', 'epoch': '289.5'}
+[evaluasi] langkah 5500: WER 0.5134, terbaik 0.5134 pada langkah 5500, tanpa perbaikan 0 kali
+[evaluasi] langkah 5500: 103.1 detik, VRAM tercadang awal 3772 MiB, puncak 4542 MiB, puncak teralokasi 4383 MiB
+
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]
+Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  1.32it/s]
+Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  1.32it/s]
+[progres] langkah 5525: 5.70 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.006723', 'grad_norm': '0.0946', 'learning_rate': '0.0001413', 'epoch': '290.8'}
+[progres] langkah 5550: 5.05 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.0074', 'grad_norm': '0.05371', 'learning_rate': '0.0001406', 'epoch': '292.1'}
+[progres] langkah 5575: 5.31 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.005408', 'grad_norm': '0.1296', 'learning_rate': '0.0001398', 'epoch': '293.4'}
+[progres] langkah 5600: 5.29 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.006564', 'grad_norm': '0.2038', 'learning_rate': '0.000139', 'epoch': '294.7'}
+[progres] langkah 5625: 5.33 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.009844', 'grad_norm': '0.07662', 'learning_rate': '0.0001382', 'epoch': '296.1'}
+[progres] langkah 5650: 5.23 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.00629', 'grad_norm': '0.07998', 'learning_rate': '0.0001374', 'epoch': '297.4'}
+[progres] langkah 5675: 5.32 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.005897', 'grad_norm': '0.3284', 'learning_rate': '0.0001366', 'epoch': '298.7'}
+[progres] langkah 5700: 5.08 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.006842', 'grad_norm': '0.1599', 'learning_rate': '0.0001358', 'epoch': '300'}
+[progres] langkah 5725: 5.64 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.007735', 'grad_norm': '0.1006', 'learning_rate': '0.000135', 'epoch': '301.3'}
+[progres] langkah 5750: 5.27 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.007246', 'grad_norm': '0.1419', 'learning_rate': '0.0001342', 'epoch': '302.6'}
+{'eval_loss': '1.045', 'eval_wer': '0.5192', 'eval_cer': '0.1226', 'eval_runtime': '102.9', 'eval_samples_per_second': '18.46', 'eval_steps_per_second': '9.23', 'epoch': '302.6'}
+[evaluasi] langkah 5750: WER 0.5192, terbaik 0.5134 pada langkah 5500, tanpa perbaikan 1 kali
+[evaluasi] langkah 5750: 102.9 detik, VRAM tercadang awal 3766 MiB, puncak 4540 MiB, puncak teralokasi 4385 MiB
+
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]
+Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  1.30it/s]
+Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  1.30it/s]
+[progres] langkah 5775: 6.13 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.005388', 'grad_norm': '0.06328', 'learning_rate': '0.0001335', 'epoch': '303.9'}
+[progres] langkah 5800: 5.45 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.005992', 'grad_norm': '0.07757', 'learning_rate': '0.0001327', 'epoch': '305.3'}
+[progres] langkah 5825: 5.31 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.005631', 'grad_norm': '0.04621', 'learning_rate': '0.0001319', 'epoch': '306.6'}
+[progres] langkah 5850: 5.35 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.006678', 'grad_norm': '0.2917', 'learning_rate': '0.0001311', 'epoch': '307.9'}
+[progres] langkah 5875: 5.21 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.005734', 'grad_norm': '0.2341', 'learning_rate': '0.0001303', 'epoch': '309.2'}
+[progres] langkah 5900: 5.17 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.00483', 'grad_norm': '0.1395', 'learning_rate': '0.0001295', 'epoch': '310.5'}
+[progres] langkah 5925: 5.29 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.006638', 'grad_norm': '0.05791', 'learning_rate': '0.0001287', 'epoch': '311.8'}
+[progres] langkah 5950: 5.19 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.007179', 'grad_norm': '0.04193', 'learning_rate': '0.0001279', 'epoch': '313.2'}
+[progres] langkah 5975: 5.49 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.00682', 'grad_norm': '0.2652', 'learning_rate': '0.0001271', 'epoch': '314.5'}
+[progres] langkah 6000: 5.12 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.007049', 'grad_norm': '0.1272', 'learning_rate': '0.0001263', 'epoch': '315.8'}
+{'eval_loss': '0.973', 'eval_wer': '0.5108', 'eval_cer': '0.1199', 'eval_runtime': '105.4', 'eval_samples_per_second': '18.03', 'eval_steps_per_second': '9.016', 'epoch': '315.8'}
+[evaluasi] langkah 6000: WER 0.5108, terbaik 0.5108 pada langkah 6000, tanpa perbaikan 0 kali
+[evaluasi] langkah 6000: 105.4 detik, VRAM tercadang awal 3768 MiB, puncak 4540 MiB, puncak teralokasi 4381 MiB
+
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]
+Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  1.31it/s]
+Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  1.31it/s]
+[progres] langkah 6025: 6.16 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.005115', 'grad_norm': '0.0645', 'learning_rate': '0.0001256', 'epoch': '317.1'}
+[progres] langkah 6050: 6.09 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.005382', 'grad_norm': '0.1364', 'learning_rate': '0.0001248', 'epoch': '318.4'}
+[progres] langkah 6075: 6.34 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.005281', 'grad_norm': '0.1133', 'learning_rate': '0.000124', 'epoch': '319.7'}
+[progres] langkah 6100: 6.28 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.005514', 'grad_norm': '0.1053', 'learning_rate': '0.0001232', 'epoch': '321.1'}
+[progres] langkah 6125: 5.99 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.004506', 'grad_norm': '0.1432', 'learning_rate': '0.0001224', 'epoch': '322.4'}
+[progres] langkah 6150: 5.39 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.005761', 'grad_norm': '0.1094', 'learning_rate': '0.0001216', 'epoch': '323.7'}
+[progres] langkah 6175: 5.20 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.006134', 'grad_norm': '0.2949', 'learning_rate': '0.0001208', 'epoch': '325'}
+[progres] langkah 6200: 5.28 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.005553', 'grad_norm': '0.08713', 'learning_rate': '0.00012', 'epoch': '326.3'}
+[progres] langkah 6225: 3.22 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.005986', 'grad_norm': '0.446', 'learning_rate': '0.0001192', 'epoch': '327.6'}
+[progres] langkah 6250: 2.88 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.005907', 'grad_norm': '0.105', 'learning_rate': '0.0001185', 'epoch': '328.9'}
+{'eval_loss': '1.03', 'eval_wer': '0.5091', 'eval_cer': '0.1219', 'eval_runtime': '54.94', 'eval_samples_per_second': '34.58', 'eval_steps_per_second': '17.29', 'epoch': '328.9'}
+[evaluasi] langkah 6250: WER 0.5091, terbaik 0.5091 pada langkah 6250, tanpa perbaikan 0 kali
+[evaluasi] langkah 6250: 54.9 detik, VRAM tercadang awal 3768 MiB, puncak 4538 MiB, puncak teralokasi 4384 MiB
+
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]
+Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  1.58it/s]
+Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  1.57it/s]
+[progres] langkah 6275: 2.81 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.00691', 'grad_norm': '0.4635', 'learning_rate': '0.0001177', 'epoch': '330.3'}
+[progres] langkah 6300: 2.89 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.007763', 'grad_norm': '0.1648', 'learning_rate': '0.0001169', 'epoch': '331.6'}
+[progres] langkah 6325: 2.90 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.008792', 'grad_norm': '0.09529', 'learning_rate': '0.0001161', 'epoch': '332.9'}
+[progres] langkah 6350: 2.88 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.006497', 'grad_norm': '0.1608', 'learning_rate': '0.0001153', 'epoch': '334.2'}
+[progres] langkah 6375: 2.86 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.006309', 'grad_norm': '0.3209', 'learning_rate': '0.0001145', 'epoch': '335.5'}
+[progres] langkah 6400: 2.86 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.005358', 'grad_norm': '0.1056', 'learning_rate': '0.0001137', 'epoch': '336.8'}
+[progres] langkah 6425: 2.90 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.003769', 'grad_norm': '0.06291', 'learning_rate': '0.0001129', 'epoch': '338.2'}
+[progres] langkah 6450: 2.89 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.008117', 'grad_norm': '0.08294', 'learning_rate': '0.0001121', 'epoch': '339.5'}
+[progres] langkah 6475: 2.91 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.007754', 'grad_norm': '0.4679', 'learning_rate': '0.0001113', 'epoch': '340.8'}
+[progres] langkah 6500: 2.85 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.005672', 'grad_norm': '0.3434', 'learning_rate': '0.0001106', 'epoch': '342.1'}
+{'eval_loss': '0.9851', 'eval_wer': '0.5067', 'eval_cer': '0.1211', 'eval_runtime': '54.52', 'eval_samples_per_second': '34.85', 'eval_steps_per_second': '17.42', 'epoch': '342.1'}
+[evaluasi] langkah 6500: WER 0.5067, terbaik 0.5067 pada langkah 6500, tanpa perbaikan 0 kali
+[evaluasi] langkah 6500: 54.5 detik, VRAM tercadang awal 3772 MiB, puncak 4542 MiB, puncak teralokasi 4384 MiB
+
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]
+Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  1.74it/s]
+Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  1.74it/s]
+[progres] langkah 6525: 2.86 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.00544', 'grad_norm': '0.07056', 'learning_rate': '0.0001098', 'epoch': '343.4'}
+[progres] langkah 6550: 2.87 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.005112', 'grad_norm': '0.08238', 'learning_rate': '0.000109', 'epoch': '344.7'}
+[progres] langkah 6575: 2.91 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.005121', 'grad_norm': '0.08079', 'learning_rate': '0.0001082', 'epoch': '346.1'}
+[progres] langkah 6600: 2.91 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.006235', 'grad_norm': '0.114', 'learning_rate': '0.0001074', 'epoch': '347.4'}
+[progres] langkah 6625: 2.84 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.004171', 'grad_norm': '0.01273', 'learning_rate': '0.0001066', 'epoch': '348.7'}
+[progres] langkah 6650: 2.89 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.004204', 'grad_norm': '0.02898', 'learning_rate': '0.0001058', 'epoch': '350'}
+[progres] langkah 6675: 2.90 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.004838', 'grad_norm': '0.1477', 'learning_rate': '0.000105', 'epoch': '351.3'}
+[progres] langkah 6700: 2.92 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.004634', 'grad_norm': '0.1725', 'learning_rate': '0.0001042', 'epoch': '352.6'}
+[progres] langkah 6725: 2.89 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.006954', 'grad_norm': '0.2007', 'learning_rate': '0.0001035', 'epoch': '353.9'}
+[progres] langkah 6750: 2.89 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.006293', 'grad_norm': '0.1349', 'learning_rate': '0.0001027', 'epoch': '355.3'}
+{'eval_loss': '0.9599', 'eval_wer': '0.5086', 'eval_cer': '0.1218', 'eval_runtime': '54.9', 'eval_samples_per_second': '34.61', 'eval_steps_per_second': '17.3', 'epoch': '355.3'}
+[evaluasi] langkah 6750: WER 0.5086, terbaik 0.5067 pada langkah 6500, tanpa perbaikan 1 kali
+[evaluasi] langkah 6750: 54.9 detik, VRAM tercadang awal 3764 MiB, puncak 4534 MiB, puncak teralokasi 4385 MiB
+
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]
+Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  1.72it/s]
+Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  1.72it/s]
+[progres] langkah 6775: 2.84 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.008254', 'grad_norm': '0.09215', 'learning_rate': '0.0001019', 'epoch': '356.6'}
+[progres] langkah 6800: 2.88 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.005445', 'grad_norm': '0.117', 'learning_rate': '0.0001011', 'epoch': '357.9'}
+[progres] langkah 6825: 2.88 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.005649', 'grad_norm': '0.103', 'learning_rate': '0.0001003', 'epoch': '359.2'}
+[progres] langkah 6850: 2.88 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.008221', 'grad_norm': '0.2705', 'learning_rate': '9.951e-05', 'epoch': '360.5'}
+[progres] langkah 6875: 2.85 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.00436', 'grad_norm': '0.1061', 'learning_rate': '9.872e-05', 'epoch': '361.8'}
+[progres] langkah 6900: 2.91 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.004405', 'grad_norm': '0.0692', 'learning_rate': '9.793e-05', 'epoch': '363.2'}
+[progres] langkah 6925: 2.92 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.004638', 'grad_norm': '0.1008', 'learning_rate': '9.714e-05', 'epoch': '364.5'}
+[progres] langkah 6950: 2.88 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.004258', 'grad_norm': '0.1038', 'learning_rate': '9.635e-05', 'epoch': '365.8'}
+[progres] langkah 6975: 2.88 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.003973', 'grad_norm': '0.05213', 'learning_rate': '9.556e-05', 'epoch': '367.1'}
+[progres] langkah 7000: 2.87 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.004101', 'grad_norm': '0.08109', 'learning_rate': '9.477e-05', 'epoch': '368.4'}
+{'eval_loss': '1.033', 'eval_wer': '0.5019', 'eval_cer': '0.1192', 'eval_runtime': '54.57', 'eval_samples_per_second': '34.82', 'eval_steps_per_second': '17.41', 'epoch': '368.4'}
+[evaluasi] langkah 7000: WER 0.5019, terbaik 0.5019 pada langkah 7000, tanpa perbaikan 0 kali
+[evaluasi] langkah 7000: 54.6 detik, VRAM tercadang awal 3766 MiB, puncak 4536 MiB, puncak teralokasi 4386 MiB
+
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]
+Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  1.64it/s]
+Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  1.64it/s]
+[progres] langkah 7025: 2.84 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.004035', 'grad_norm': '0.2564', 'learning_rate': '9.398e-05', 'epoch': '369.7'}
+[progres] langkah 7050: 2.85 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.005367', 'grad_norm': '0.1795', 'learning_rate': '9.319e-05', 'epoch': '371.1'}
+[progres] langkah 7075: 2.88 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.006001', 'grad_norm': '0.07892', 'learning_rate': '9.24e-05', 'epoch': '372.4'}
+[progres] langkah 7100: 2.85 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.003714', 'grad_norm': '0.07992', 'learning_rate': '9.161e-05', 'epoch': '373.7'}
+[progres] langkah 7125: 2.89 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.005891', 'grad_norm': '0.0787', 'learning_rate': '9.082e-05', 'epoch': '375'}
+[progres] langkah 7150: 2.95 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.004205', 'grad_norm': '0.1256', 'learning_rate': '9.003e-05', 'epoch': '376.3'}
+[progres] langkah 7175: 2.89 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.004241', 'grad_norm': '0.09767', 'learning_rate': '8.924e-05', 'epoch': '377.6'}
+[progres] langkah 7200: 2.87 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.00688', 'grad_norm': '0.08994', 'learning_rate': '8.845e-05', 'epoch': '378.9'}
+[progres] langkah 7225: 2.86 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.003659', 'grad_norm': '0.1823', 'learning_rate': '8.766e-05', 'epoch': '380.3'}
+[progres] langkah 7250: 2.85 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.005433', 'grad_norm': '0.1412', 'learning_rate': '8.687e-05', 'epoch': '381.6'}
+{'eval_loss': '1.066', 'eval_wer': '0.5085', 'eval_cer': '0.1211', 'eval_runtime': '54.67', 'eval_samples_per_second': '34.75', 'eval_steps_per_second': '17.38', 'epoch': '381.6'}
+[evaluasi] langkah 7250: WER 0.5085, terbaik 0.5019 pada langkah 7000, tanpa perbaikan 1 kali
+[evaluasi] langkah 7250: 54.7 detik, VRAM tercadang awal 3770 MiB, puncak 4538 MiB, puncak teralokasi 4384 MiB
+
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]
+Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  1.58it/s]
+Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  1.58it/s]
+[progres] langkah 7275: 2.85 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.006016', 'grad_norm': '0.2418', 'learning_rate': '8.608e-05', 'epoch': '382.9'}
+[progres] langkah 7300: 2.83 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.004151', 'grad_norm': '0.0196', 'learning_rate': '8.529e-05', 'epoch': '384.2'}
+[progres] langkah 7325: 2.83 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.003966', 'grad_norm': '0.03162', 'learning_rate': '8.451e-05', 'epoch': '385.5'}
+[progres] langkah 7350: 2.92 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.004781', 'grad_norm': '0.02366', 'learning_rate': '8.372e-05', 'epoch': '386.8'}
+[progres] langkah 7375: 2.89 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.003841', 'grad_norm': '0.01168', 'learning_rate': '8.293e-05', 'epoch': '388.2'}
+[progres] langkah 7400: 2.86 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.006752', 'grad_norm': '0.1707', 'learning_rate': '8.214e-05', 'epoch': '389.5'}
+[progres] langkah 7425: 2.86 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.00278', 'grad_norm': '0.06199', 'learning_rate': '8.135e-05', 'epoch': '390.8'}
+[progres] langkah 7450: 2.86 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.003359', 'grad_norm': '0.3671', 'learning_rate': '8.056e-05', 'epoch': '392.1'}
+[progres] langkah 7475: 2.92 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.005384', 'grad_norm': '0.2302', 'learning_rate': '7.977e-05', 'epoch': '393.4'}
+[progres] langkah 7500: 2.88 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.004327', 'grad_norm': '0.005784', 'learning_rate': '7.898e-05', 'epoch': '394.7'}
+{'eval_loss': '1.067', 'eval_wer': '0.5014', 'eval_cer': '0.1192', 'eval_runtime': '54.93', 'eval_samples_per_second': '34.59', 'eval_steps_per_second': '17.3', 'epoch': '394.7'}
+[evaluasi] langkah 7500: WER 0.5014, terbaik 0.5014 pada langkah 7500, tanpa perbaikan 0 kali
+[evaluasi] langkah 7500: 54.9 detik, VRAM tercadang awal 3776 MiB, puncak 4544 MiB, puncak teralokasi 4381 MiB
+
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]
+Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  1.68it/s]
+Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  1.68it/s]
+[progres] langkah 7525: 2.85 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.003394', 'grad_norm': '0.1214', 'learning_rate': '7.819e-05', 'epoch': '396.1'}
+[progres] langkah 7550: 2.81 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.002733', 'grad_norm': '0.00511', 'learning_rate': '7.74e-05', 'epoch': '397.4'}
+[progres] langkah 7575: 2.83 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.008074', 'grad_norm': '0.156', 'learning_rate': '7.661e-05', 'epoch': '398.7'}
+[progres] langkah 7600: 2.86 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.005329', 'grad_norm': '0.542', 'learning_rate': '7.582e-05', 'epoch': '400'}
+[progres] langkah 7625: 2.92 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.005045', 'grad_norm': '0.04237', 'learning_rate': '7.503e-05', 'epoch': '401.3'}
+[progres] langkah 7650: 2.88 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.002273', 'grad_norm': '0.168', 'learning_rate': '7.424e-05', 'epoch': '402.6'}
+[progres] langkah 7675: 2.88 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.003902', 'grad_norm': '0.1116', 'learning_rate': '7.345e-05', 'epoch': '403.9'}
+[progres] langkah 7700: 2.90 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.003328', 'grad_norm': '0.04229', 'learning_rate': '7.266e-05', 'epoch': '405.3'}
+[progres] langkah 7725: 2.88 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.004912', 'grad_norm': '0.4259', 'learning_rate': '7.187e-05', 'epoch': '406.6'}
+[progres] langkah 7750: 2.93 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.004765', 'grad_norm': '0.1264', 'learning_rate': '7.108e-05', 'epoch': '407.9'}
+{'eval_loss': '0.9699', 'eval_wer': '0.5', 'eval_cer': '0.1206', 'eval_runtime': '54.7', 'eval_samples_per_second': '34.73', 'eval_steps_per_second': '17.37', 'epoch': '407.9'}
+[evaluasi] langkah 7750: WER 0.5000, terbaik 0.5000 pada langkah 7750, tanpa perbaikan 0 kali
+[evaluasi] langkah 7750: 54.7 detik, VRAM tercadang awal 3780 MiB, puncak 4546 MiB, puncak teralokasi 4384 MiB
+
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]
+Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  1.75it/s]
+Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  1.75it/s]
+[progres] langkah 7775: 2.85 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.00513', 'grad_norm': '0.01319', 'learning_rate': '7.029e-05', 'epoch': '409.2'}
+[progres] langkah 7800: 2.83 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.003727', 'grad_norm': '0.4919', 'learning_rate': '6.951e-05', 'epoch': '410.5'}
+[progres] langkah 7825: 2.85 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.003024', 'grad_norm': '0.03447', 'learning_rate': '6.872e-05', 'epoch': '411.8'}
+[progres] langkah 7850: 2.91 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.005197', 'grad_norm': '0.123', 'learning_rate': '6.793e-05', 'epoch': '413.2'}
+[progres] langkah 7875: 2.86 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.003519', 'grad_norm': '0.1896', 'learning_rate': '6.714e-05', 'epoch': '414.5'}
+[progres] langkah 7900: 2.91 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.002808', 'grad_norm': '0.1085', 'learning_rate': '6.635e-05', 'epoch': '415.8'}
+[progres] langkah 7925: 2.89 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.002825', 'grad_norm': '0.08627', 'learning_rate': '6.556e-05', 'epoch': '417.1'}
+[progres] langkah 7950: 2.86 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.003615', 'grad_norm': '0.05364', 'learning_rate': '6.477e-05', 'epoch': '418.4'}
+[progres] langkah 7975: 2.86 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.002405', 'grad_norm': '0.01416', 'learning_rate': '6.398e-05', 'epoch': '419.7'}
+[progres] langkah 8000: 2.91 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.001989', 'grad_norm': '0.05584', 'learning_rate': '6.319e-05', 'epoch': '421.1'}
+{'eval_loss': '1.015', 'eval_wer': '0.4938', 'eval_cer': '0.1178', 'eval_runtime': '54.72', 'eval_samples_per_second': '34.73', 'eval_steps_per_second': '17.36', 'epoch': '421.1'}
+[evaluasi] langkah 8000: WER 0.4938, terbaik 0.4938 pada langkah 8000, tanpa perbaikan 0 kali
+[evaluasi] langkah 8000: 54.7 detik, VRAM tercadang awal 3768 MiB, puncak 4540 MiB, puncak teralokasi 4383 MiB
+
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]
+Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  1.68it/s]
+Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  1.68it/s]
+[progres] langkah 8025: 2.85 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.002299', 'grad_norm': '0.017', 'learning_rate': '6.24e-05', 'epoch': '422.4'}
+[progres] langkah 8050: 2.86 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.002842', 'grad_norm': '0.07659', 'learning_rate': '6.161e-05', 'epoch': '423.7'}
+[progres] langkah 8075: 2.86 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.001713', 'grad_norm': '0.02393', 'learning_rate': '6.082e-05', 'epoch': '425'}
+[progres] langkah 8100: 2.89 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.003058', 'grad_norm': '0.6499', 'learning_rate': '6.003e-05', 'epoch': '426.3'}
+[progres] langkah 8125: 2.89 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.002713', 'grad_norm': '0.06369', 'learning_rate': '5.924e-05', 'epoch': '427.6'}
+[progres] langkah 8150: 2.89 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.00203', 'grad_norm': '0.1396', 'learning_rate': '5.845e-05', 'epoch': '428.9'}
+[progres] langkah 8175: 2.89 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.002796', 'grad_norm': '0.05347', 'learning_rate': '5.766e-05', 'epoch': '430.3'}
+[progres] langkah 8200: 2.85 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.001302', 'grad_norm': '0.006925', 'learning_rate': '5.687e-05', 'epoch': '431.6'}
+[progres] langkah 8225: 2.89 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.00253', 'grad_norm': '0.04424', 'learning_rate': '5.608e-05', 'epoch': '432.9'}
+[progres] langkah 8250: 2.91 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.003872', 'grad_norm': '0.06405', 'learning_rate': '5.529e-05', 'epoch': '434.2'}
+{'eval_loss': '1.065', 'eval_wer': '0.5033', 'eval_cer': '0.1189', 'eval_runtime': '54.71', 'eval_samples_per_second': '34.73', 'eval_steps_per_second': '17.36', 'epoch': '434.2'}
+[evaluasi] langkah 8250: WER 0.5033, terbaik 0.4938 pada langkah 8000, tanpa perbaikan 1 kali
+[evaluasi] langkah 8250: 54.7 detik, VRAM tercadang awal 3772 MiB, puncak 4542 MiB, puncak teralokasi 4382 MiB
+
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]
+Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  1.54it/s]
+Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  1.54it/s]
+[progres] langkah 8275: 2.86 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.001605', 'grad_norm': '0.04247', 'learning_rate': '5.451e-05', 'epoch': '435.5'}
+[progres] langkah 8300: 2.83 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.001735', 'grad_norm': '0.01207', 'learning_rate': '5.372e-05', 'epoch': '436.8'}
+[progres] langkah 8325: 2.94 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.001921', 'grad_norm': '0.1636', 'learning_rate': '5.293e-05', 'epoch': '438.2'}
+[progres] langkah 8350: 2.85 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.002395', 'grad_norm': '0.01407', 'learning_rate': '5.214e-05', 'epoch': '439.5'}
+[progres] langkah 8375: 2.87 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.003089', 'grad_norm': '0.02483', 'learning_rate': '5.135e-05', 'epoch': '440.8'}
+[progres] langkah 8400: 2.90 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.002589', 'grad_norm': '0.001365', 'learning_rate': '5.056e-05', 'epoch': '442.1'}
+[progres] langkah 8425: 2.92 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.002189', 'grad_norm': '0.06159', 'learning_rate': '4.977e-05', 'epoch': '443.4'}
+[progres] langkah 8450: 2.92 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.002171', 'grad_norm': '0.08769', 'learning_rate': '4.898e-05', 'epoch': '444.7'}
+[progres] langkah 8475: 2.87 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.001732', 'grad_norm': '0.2149', 'learning_rate': '4.819e-05', 'epoch': '446.1'}
+[progres] langkah 8500: 2.88 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.002646', 'grad_norm': '0.1364', 'learning_rate': '4.74e-05', 'epoch': '447.4'}
+{'eval_loss': '1.044', 'eval_wer': '0.4961', 'eval_cer': '0.1176', 'eval_runtime': '54.68', 'eval_samples_per_second': '34.74', 'eval_steps_per_second': '17.37', 'epoch': '447.4'}
+[evaluasi] langkah 8500: WER 0.4961, terbaik 0.4938 pada langkah 8000, tanpa perbaikan 2 kali
+[evaluasi] langkah 8500: 54.7 detik, VRAM tercadang awal 3774 MiB, puncak 4542 MiB, puncak teralokasi 4386 MiB
+
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]
+Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  1.69it/s]
+Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  1.69it/s]
+[progres] langkah 8525: 2.84 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.002381', 'grad_norm': '0.003837', 'learning_rate': '4.661e-05', 'epoch': '448.7'}
+[progres] langkah 8550: 2.88 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.002546', 'grad_norm': '0.005958', 'learning_rate': '4.582e-05', 'epoch': '450'}
+[progres] langkah 8575: 2.85 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.001602', 'grad_norm': '0.1077', 'learning_rate': '4.503e-05', 'epoch': '451.3'}
+[progres] langkah 8600: 2.81 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.002042', 'grad_norm': '0.1059', 'learning_rate': '4.424e-05', 'epoch': '452.6'}
+[progres] langkah 8625: 2.89 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.00165', 'grad_norm': '0.01752', 'learning_rate': '4.345e-05', 'epoch': '453.9'}
+[progres] langkah 8650: 2.91 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.001647', 'grad_norm': '0.04351', 'learning_rate': '4.266e-05', 'epoch': '455.3'}
+[progres] langkah 8675: 2.92 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.001089', 'grad_norm': '0.01781', 'learning_rate': '4.187e-05', 'epoch': '456.6'}
+[progres] langkah 8700: 2.91 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.0009681', 'grad_norm': '0.008822', 'learning_rate': '4.108e-05', 'epoch': '457.9'}
+[progres] langkah 8725: 2.91 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.001045', 'grad_norm': '0.005639', 'learning_rate': '4.029e-05', 'epoch': '459.2'}
+[progres] langkah 8750: 2.92 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.001698', 'grad_norm': '0.03878', 'learning_rate': '3.951e-05', 'epoch': '460.5'}
+{'eval_loss': '1.087', 'eval_wer': '0.4892', 'eval_cer': '0.1148', 'eval_runtime': '54.49', 'eval_samples_per_second': '34.87', 'eval_steps_per_second': '17.43', 'epoch': '460.5'}
+[evaluasi] langkah 8750: WER 0.4892, terbaik 0.4892 pada langkah 8750, tanpa perbaikan 0 kali
+[evaluasi] langkah 8750: 54.5 detik, VRAM tercadang awal 3774 MiB, puncak 4546 MiB, puncak teralokasi 4384 MiB
+
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]
+Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  1.73it/s]
+Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  1.73it/s]
+[progres] langkah 8775: 2.90 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.001259', 'grad_norm': '0.07409', 'learning_rate': '3.872e-05', 'epoch': '461.8'}
+[progres] langkah 8800: 2.84 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.001679', 'grad_norm': '0.0004536', 'learning_rate': '3.793e-05', 'epoch': '463.2'}
+[progres] langkah 8825: 2.86 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.001523', 'grad_norm': '0.04034', 'learning_rate': '3.714e-05', 'epoch': '464.5'}
+[progres] langkah 8850: 2.87 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.001904', 'grad_norm': '0.007058', 'learning_rate': '3.635e-05', 'epoch': '465.8'}
+[progres] langkah 8875: 2.84 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.001372', 'grad_norm': '0.2926', 'learning_rate': '3.556e-05', 'epoch': '467.1'}
+[progres] langkah 8900: 2.92 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.001447', 'grad_norm': '0.01282', 'learning_rate': '3.477e-05', 'epoch': '468.4'}
+[progres] langkah 8925: 2.87 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.001414', 'grad_norm': '0.1943', 'learning_rate': '3.398e-05', 'epoch': '469.7'}
+[progres] langkah 8950: 2.87 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.0005122', 'grad_norm': '0.004068', 'learning_rate': '3.319e-05', 'epoch': '471.1'}
+[progres] langkah 8975: 2.87 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.00162', 'grad_norm': '0.1897', 'learning_rate': '3.24e-05', 'epoch': '472.4'}
+[progres] langkah 9000: 2.84 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.001938', 'grad_norm': '0.08807', 'learning_rate': '3.161e-05', 'epoch': '473.7'}
+{'eval_loss': '1.08', 'eval_wer': '0.4868', 'eval_cer': '0.1156', 'eval_runtime': '54.98', 'eval_samples_per_second': '34.56', 'eval_steps_per_second': '17.28', 'epoch': '473.7'}
+[evaluasi] langkah 9000: WER 0.4868, terbaik 0.4868 pada langkah 9000, tanpa perbaikan 0 kali
+[evaluasi] langkah 9000: 55.0 detik, VRAM tercadang awal 3768 MiB, puncak 4538 MiB, puncak teralokasi 4382 MiB
+
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]
+Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  1.72it/s]
+Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  1.72it/s]
+[progres] langkah 9025: 2.85 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.001664', 'grad_norm': '0.02364', 'learning_rate': '3.082e-05', 'epoch': '475'}
+[progres] langkah 9050: 2.82 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.001995', 'grad_norm': '0.009767', 'learning_rate': '3.003e-05', 'epoch': '476.3'}
+[progres] langkah 9075: 2.84 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.002407', 'grad_norm': '0.00816', 'learning_rate': '2.924e-05', 'epoch': '477.6'}
+[progres] langkah 9100: 2.84 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.002465', 'grad_norm': '0.04739', 'learning_rate': '2.845e-05', 'epoch': '478.9'}
+[progres] langkah 9125: 2.84 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.0007247', 'grad_norm': '0.01329', 'learning_rate': '2.766e-05', 'epoch': '480.3'}
+[progres] langkah 9150: 2.86 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.001699', 'grad_norm': '0.05687', 'learning_rate': '2.687e-05', 'epoch': '481.6'}
+[progres] langkah 9175: 2.85 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.001733', 'grad_norm': '0.03811', 'learning_rate': '2.608e-05', 'epoch': '482.9'}
+[progres] langkah 9200: 2.83 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.001254', 'grad_norm': '0.002075', 'learning_rate': '2.529e-05', 'epoch': '484.2'}
+[progres] langkah 9225: 2.87 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.001586', 'grad_norm': '0.1537', 'learning_rate': '2.451e-05', 'epoch': '485.5'}
+[progres] langkah 9250: 2.90 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.001713', 'grad_norm': '0.00596', 'learning_rate': '2.372e-05', 'epoch': '486.8'}
+{'eval_loss': '1.072', 'eval_wer': '0.4949', 'eval_cer': '0.1159', 'eval_runtime': '54.76', 'eval_samples_per_second': '34.7', 'eval_steps_per_second': '17.35', 'epoch': '486.8'}
+[evaluasi] langkah 9250: WER 0.4949, terbaik 0.4868 pada langkah 9000, tanpa perbaikan 1 kali
+[evaluasi] langkah 9250: 54.8 detik, VRAM tercadang awal 3768 MiB, puncak 4538 MiB, puncak teralokasi 4386 MiB
+
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]
+Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  1.65it/s]
+Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  1.65it/s]
+[progres] langkah 9275: 2.85 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.0004178', 'grad_norm': '0.03462', 'learning_rate': '2.293e-05', 'epoch': '488.2'}
+[progres] langkah 9300: 2.81 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.001836', 'grad_norm': '0.1166', 'learning_rate': '2.214e-05', 'epoch': '489.5'}
+[progres] langkah 9325: 2.89 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.001447', 'grad_norm': '0.03112', 'learning_rate': '2.135e-05', 'epoch': '490.8'}
+[progres] langkah 9350: 2.90 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.001334', 'grad_norm': '0.01759', 'learning_rate': '2.056e-05', 'epoch': '492.1'}
+[progres] langkah 9375: 2.91 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.001744', 'grad_norm': '0.04557', 'learning_rate': '1.977e-05', 'epoch': '493.4'}
+[progres] langkah 9400: 2.86 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.001245', 'grad_norm': '0.06737', 'learning_rate': '1.898e-05', 'epoch': '494.7'}
+[progres] langkah 9425: 2.86 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.001183', 'grad_norm': '0.03835', 'learning_rate': '1.819e-05', 'epoch': '496.1'}
+[progres] langkah 9450: 2.91 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.002493', 'grad_norm': '0.1419', 'learning_rate': '1.74e-05', 'epoch': '497.4'}
+[progres] langkah 9475: 2.89 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.0009397', 'grad_norm': '0.007718', 'learning_rate': '1.661e-05', 'epoch': '498.7'}
+[progres] langkah 9500: 2.90 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.0008019', 'grad_norm': '0.008492', 'learning_rate': '1.582e-05', 'epoch': '500'}
+{'eval_loss': '1.064', 'eval_wer': '0.4839', 'eval_cer': '0.1139', 'eval_runtime': '54.95', 'eval_samples_per_second': '34.58', 'eval_steps_per_second': '17.29', 'epoch': '500'}
+[evaluasi] langkah 9500: WER 0.4839, terbaik 0.4839 pada langkah 9500, tanpa perbaikan 0 kali
+[evaluasi] langkah 9500: 55.0 detik, VRAM tercadang awal 3766 MiB, puncak 4538 MiB, puncak teralokasi 4384 MiB
+
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]
+Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  1.66it/s]
+Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  1.66it/s]
+[progres] langkah 9525: 2.86 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.001004', 'grad_norm': '0.03755', 'learning_rate': '1.503e-05', 'epoch': '501.3'}
+[progres] langkah 9550: 2.89 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.001527', 'grad_norm': '0.002094', 'learning_rate': '1.424e-05', 'epoch': '502.6'}
+[progres] langkah 9575: 2.89 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.00139', 'grad_norm': '0.04244', 'learning_rate': '1.345e-05', 'epoch': '503.9'}
+[progres] langkah 9600: 2.92 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.001343', 'grad_norm': '0.05511', 'learning_rate': '1.266e-05', 'epoch': '505.3'}
+[progres] langkah 9625: 2.87 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.001047', 'grad_norm': '0.003068', 'learning_rate': '1.187e-05', 'epoch': '506.6'}
+[progres] langkah 9650: 2.86 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.0006906', 'grad_norm': '0.006955', 'learning_rate': '1.108e-05', 'epoch': '507.9'}
+[progres] langkah 9675: 2.89 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.00116', 'grad_norm': '0.1027', 'learning_rate': '1.029e-05', 'epoch': '509.2'}
+[progres] langkah 9700: 2.87 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.001507', 'grad_norm': '0.067', 'learning_rate': '9.505e-06', 'epoch': '510.5'}
+[progres] langkah 9725: 2.94 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.001486', 'grad_norm': '0.0008004', 'learning_rate': '8.716e-06', 'epoch': '511.8'}
+[progres] langkah 9750: 2.96 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.0007408', 'grad_norm': '0.04002', 'learning_rate': '7.926e-06', 'epoch': '513.2'}
+{'eval_loss': '1.071', 'eval_wer': '0.4834', 'eval_cer': '0.1132', 'eval_runtime': '54.53', 'eval_samples_per_second': '34.84', 'eval_steps_per_second': '17.42', 'epoch': '513.2'}
+[evaluasi] langkah 9750: WER 0.4834, terbaik 0.4834 pada langkah 9750, tanpa perbaikan 0 kali
+[evaluasi] langkah 9750: 54.5 detik, VRAM tercadang awal 3768 MiB, puncak 4540 MiB, puncak teralokasi 4383 MiB
+
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]
+Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  1.74it/s]
+Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  1.74it/s]
+[progres] langkah 9775: 2.85 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.001717', 'grad_norm': '0.1067', 'learning_rate': '7.137e-06', 'epoch': '514.5'}
+[progres] langkah 9800: 2.83 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.001272', 'grad_norm': '0.1424', 'learning_rate': '6.347e-06', 'epoch': '515.8'}
+[progres] langkah 9825: 2.88 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.0009701', 'grad_norm': '0.005587', 'learning_rate': '5.558e-06', 'epoch': '517.1'}
+[progres] langkah 9850: 2.92 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.00139', 'grad_norm': '0.06792', 'learning_rate': '4.768e-06', 'epoch': '518.4'}
+[progres] langkah 9875: 2.87 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.001744', 'grad_norm': '0.001698', 'learning_rate': '3.979e-06', 'epoch': '519.7'}
+[progres] langkah 9900: 2.88 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.001681', 'grad_norm': '0.008311', 'learning_rate': '3.189e-06', 'epoch': '521.1'}
+[progres] langkah 9925: 2.86 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.001163', 'grad_norm': '0.1972', 'learning_rate': '2.4e-06', 'epoch': '522.4'}
+[progres] langkah 9950: 2.94 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.0006005', 'grad_norm': '0.004513', 'learning_rate': '1.611e-06', 'epoch': '523.7'}
+[progres] langkah 9975: 2.90 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.00102', 'grad_norm': '0.007632', 'learning_rate': '8.211e-07', 'epoch': '525'}
+[progres] langkah 10000: 2.83 s/langkah, VRAM puncak training tercadang 6334 MiB, teralokasi 6051 MiB
+{'loss': '0.001071', 'grad_norm': '0.002257', 'learning_rate': '3.158e-08', 'epoch': '526.3'}
+{'eval_loss': '1.068', 'eval_wer': '0.4835', 'eval_cer': '0.1133', 'eval_runtime': '55.03', 'eval_samples_per_second': '34.53', 'eval_steps_per_second': '17.26', 'epoch': '526.3'}
+[evaluasi] langkah 10000: WER 0.4835, terbaik 0.4834 pada langkah 9750, tanpa perbaikan 1 kali
+[evaluasi] langkah 10000: 55.0 detik, VRAM tercadang awal 3772 MiB, puncak 4542 MiB, puncak teralokasi 4384 MiB
+
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]
+Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  1.70it/s]
+Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  1.70it/s]
+{'train_runtime': '3.586e+04', 'train_samples_per_second': '8.923', 'train_steps_per_second': '0.279', 'train_loss': '0.1799', 'epoch': '526.3'}
+
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]
+Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  1.32it/s]
+Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  1.32it/s]
+==============================================================================
+n_train_utterances          : 610
+n_train_utterances_per_epoch: 608
+steps_per_epoch             : 19
+n_validation_utterances     : 1900
+gradient_accumulation_steps : 16
+global_step                 : 10000
+epochs_completed            : 526.32
+stopped_early               : False
+best_validation_wer         : 0.48342686120463896
+best_step                   : 9750
+best_model_checkpoint       : D:\_01_Bachelor_Information_System\_00-SKRIPSI\_01_python-scripts\outputs\runs\xlsr_d1_trial\checkpoints\checkpoint-9750
+train_runtime_seconds       : 35860.6
+seconds_per_step            : 3.326
+timed_steps                 : 9960
+first_step_seconds          : 24.6
+train_peak_reserved_mib     : 6334
+train_peak_allocated_mib    : 6051
+evaluation_seconds_total    : 2543.6
+model_dir                   : D:\_01_Bachelor_Information_System\_00-SKRIPSI\_01_python-scripts\outputs\models\xlsr_d1_trial
+Peringatan determinisme: 2
+Laporan ditulis ke : D:\_01_Bachelor_Information_System\_00-SKRIPSI\_01_python-scripts\outputs\runs\xlsr_d1_trial\run_report.json
+Durasi eksekusi    : 35870.3 detik
+==============================================================================

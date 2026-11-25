@@ -1,0 +1,51 @@
+==============================================================================
+Bootstrap berkelompok penutur dan prompt (Revisi 01 poin 22)
+Waktu mulai        : 2026-11-14T11:44:35+07:00
+Random seed        : 42
+Iterasi bootstrap  : 10000
+==============================================================================
+penutur : 684 kelompok, rerata 4.53, maks 17 utterance
+prompt  : 2533 kelompok, rerata 1.22, maks 5 utterance
+------------------------------------------------------------------------------
+[penutur] lebar selang WER terhadap tingkat utterance: 1.19 sampai 1.51 kali
+[penutur] H1 d1: [-0.0770, -0.0549] (utterance [-0.0772, -0.0546]) p_holm 0.0010; CER [-0.0166, -0.0051]
+[penutur] H1 d2: [-0.0813, -0.0620] (utterance [-0.0811, -0.0622]) p_holm 0.0010; CER [-0.0164, -0.0078]
+[penutur] H1 d3: [-0.0243, -0.0108] (utterance [-0.0245, -0.0107]) p_holm 0.0010; CER [-0.0015, +0.0023]
+[penutur] H1 d4: [-0.0179, -0.0064] (utterance [-0.0180, -0.0065]) p_holm 0.0010; CER [-0.0001, +0.0029]
+[penutur] H1 d5: [-0.0401, -0.0282] (utterance [-0.0401, -0.0284]) p_holm 0.0010; CER [-0.0054, -0.0025]
+[penutur] E0                       [+0.0585, +0.0901] (utterance [+0.0613, +0.0870])
+[penutur] a_whisper                [+0.3237, +0.3560] (utterance [+0.3240, +0.3554])
+[penutur] c_whisper                [+0.3364, +0.3935] (utterance [+0.3367, +0.3934])
+[penutur] a_xlsr                   [+0.3975, +0.4271] (utterance [+0.3982, +0.4265])
+[penutur] c_xlsr                   [+0.3342, +0.3774] (utterance [+0.3343, +0.3780])
+[penutur] c_whisper_minus_c_xlsr   [-0.0055, +0.0233] (utterance [-0.0063, +0.0239])
+[penutur] putusan: {'model': 'shared_e0', 'h2_c_ci_entirely_above_zero': {'whisper': True, 'xlsr': True}, 'h2_supported_for_both_models': True, 'h3_c_difference_ci_excludes_zero': False, 'h3_larger_exponent': None, 'e0_ci_reaches_zero': False}
+------------------------------------------------------------------------------
+[prompt] lebar selang WER terhadap tingkat utterance: 1.08 sampai 1.16 kali
+[prompt] H1 d1: [-0.0780, -0.0541] (utterance [-0.0772, -0.0546]) p_holm 0.0010; CER [-0.0169, -0.0049]
+[prompt] H1 d2: [-0.0817, -0.0616] (utterance [-0.0811, -0.0622]) p_holm 0.0010; CER [-0.0163, -0.0078]
+[prompt] H1 d3: [-0.0248, -0.0103] (utterance [-0.0245, -0.0107]) p_holm 0.0010; CER [-0.0015, +0.0023]
+[prompt] H1 d4: [-0.0184, -0.0060] (utterance [-0.0180, -0.0065]) p_holm 0.0010; CER [-0.0003, +0.0029]
+[prompt] H1 d5: [-0.0403, -0.0280] (utterance [-0.0401, -0.0284]) p_holm 0.0010; CER [-0.0055, -0.0024]
+[prompt] E0                       [+0.0606, +0.0879] (utterance [+0.0613, +0.0870])
+[prompt] a_whisper                [+0.3230, +0.3568] (utterance [+0.3240, +0.3554])
+[prompt] c_whisper                [+0.3359, +0.3951] (utterance [+0.3367, +0.3934])
+[prompt] a_xlsr                   [+0.3974, +0.4271] (utterance [+0.3982, +0.4265])
+[prompt] c_xlsr                   [+0.3333, +0.3793] (utterance [+0.3343, +0.3780])
+[prompt] c_whisper_minus_c_xlsr   [-0.0068, +0.0244] (utterance [-0.0063, +0.0239])
+[prompt] putusan: {'model': 'shared_e0', 'h2_c_ci_entirely_above_zero': {'whisper': True, 'xlsr': True}, 'h2_supported_for_both_models': True, 'h3_c_difference_ci_excludes_zero': False, 'h3_larger_exponent': None, 'e0_ci_reaches_zero': False}
+------------------------------------------------------------------------------
+residual whisper_d1_trial   -0.0015  2x setengah lebar: utterance 0.0218, penutur 0.0260, prompt 0.0235
+residual whisper_d2         +0.0037  2x setengah lebar: utterance 0.0189, penutur 0.0227, prompt 0.0204
+residual whisper_d3         +0.0009  2x setengah lebar: utterance 0.0147, penutur 0.0204, prompt 0.0164
+residual whisper_d4         -0.0088  2x setengah lebar: utterance 0.0126, penutur 0.0187, prompt 0.0147
+residual whisper_d5         +0.0055  2x setengah lebar: utterance 0.0126, penutur 0.0189, prompt 0.0145
+residual xlsr_d1_trial      -0.0078  2x setengah lebar: utterance 0.0170, penutur 0.0238, prompt 0.0185
+residual xlsr_d2            +0.0245  2x setengah lebar: utterance 0.0165, penutur 0.0215, prompt 0.0179
+residual xlsr_d3            -0.0163  2x setengah lebar: utterance 0.0150, penutur 0.0201, prompt 0.0164
+residual xlsr_d4            -0.0209  2x setengah lebar: utterance 0.0137, penutur 0.0201, prompt 0.0154
+residual xlsr_d5            +0.0208  2x setengah lebar: utterance 0.0138, penutur 0.0199, prompt 0.0151
+==============================================================================
+Laporan ditulis ke : D:\_01_Bachelor_Information_System\_00-SKRIPSI\_01_python-scripts\outputs\results\cluster_bootstrap_report.json
+Durasi eksekusi    : 127.5 detik
+==============================================================================

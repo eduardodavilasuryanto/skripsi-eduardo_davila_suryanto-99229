@@ -1,0 +1,40 @@
+# Uji perubahan train_asr.py Sesi 20, DraftResearch.md Lampiran B.12 sampai B.14.
+# Nilai identik dengan xlsr_det_a.yaml kecuali run_name, dijalankan dengan
+# allocator bawaan. Perubahan B.12 dan B.14 didukung bila tidak ada langkah
+# yang jauh lebih singkat dan loss sekitar seperenam belas loss xlsr_det_a.
+# Dugaan fragmentasi B.13 didukung bila puncak teralokasi tetap jauh di bawah
+# puncak tercadang yang naik melampaui VRAM fisik.
+run_name: xlsr_fullbatch
+model_family: xlsr
+pretrained: facebook/wav2vec2-xls-r-300m
+revision: 1a640f32ac3e39899438a2931f9924c02f080a54
+train_subset: outputs/subsets/d1.tsv
+validation_split: outputs/splits/validation.tsv
+seed: 42
+precision: bf16
+tf32: false
+deterministic: true
+effective_batch_size: 32
+per_device_train_batch_size: 2
+per_device_eval_batch_size: 2
+learning_rate: 3.0e-4
+warmup_steps: 500
+lr_scheduler_type: linear
+optim: adamw_torch
+max_steps: 30
+eval_steps: 30
+early_stopping_patience: 4
+early_stopping_min_steps: 2000
+gradient_checkpointing: true
+logging_steps: 1
+dataloader_num_workers: 4
+save_only_model: true
+keep_checkpoints: false
+model_overrides:
+  attention_dropout: 0.0
+  hidden_dropout: 0.0
+  feat_proj_dropout: 0.0
+  mask_time_prob: 0.05
+  layerdrop: 0.0
+  ctc_loss_reduction: mean
+  ctc_zero_infinity: true

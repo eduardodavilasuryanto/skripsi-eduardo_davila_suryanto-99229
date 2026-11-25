@@ -1,0 +1,14 @@
+==============================================================================
+Bahan analisis kesalahan kualitatif D1 dan D5
+Waktu mulai        : 2026-10-09T10:04:08+07:00
+Random seed        : 42 (sampel acak 25 utterance)
+==============================================================================
+whisper_d1_trial   WER 0.4123  S 82.4% D 7.6% I 10.0%  tanpa galat 9.1%  kosong 0.0%  panjang>2x 0.2%
+xlsr_d1_trial      WER 0.4787  S 82.3% D 11.6% I 6.1%  tanpa galat 4.7%  kosong 0.0%  panjang>2x 0.0%
+whisper_d5         WER 0.1540  S 86.4% D 5.6% I 8.1%  tanpa galat 47.1%  kosong 0.0%  panjang>2x 0.0%
+xlsr_d5            WER 0.1881  S 86.4% D 8.8% I 4.8%  tanpa galat 38.7%  kosong 0.0%  panjang>2x 0.0%
+==============================================================================
+Laporan ditulis ke : D:\_01_Bachelor_Information_System\_00-SKRIPSI\_01_python-scripts\outputs\results\error_analysis_report.json
+Sampel ditulis ke  : D:\_01_Bachelor_Information_System\_00-SKRIPSI\_01_python-scripts\outputs\results\error_analysis_samples.tsv
+Durasi eksekusi    : 3.6 detik
+==============================================================================

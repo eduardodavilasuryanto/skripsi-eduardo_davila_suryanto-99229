@@ -1,0 +1,1771 @@
+{
+  "generated_at": "2026-11-09T22:20:14+07:00",
+  "script": "verify_paper_numbers.py",
+  "seed": null,
+  "paper": "paper.md",
+  "paper_sha256": "a43ab37886cc968b8b12d30ce52993a6e312496fc9f1d6d2af149ced7fa8e2ae",
+  "line_endings": {
+    "crlf": 472,
+    "lone_lf": 0,
+    "lone_cr": 0
+  },
+  "line_endings_ok": true,
+  "checked_sections": [
+    "abstrak",
+    "abstract",
+    "1",
+    "2.1",
+    "2.2",
+    "2.3",
+    "2.4",
+    "2.5",
+    "3",
+    "3.1",
+    "3.2",
+    "3.3",
+    "3.4",
+    "3.5",
+    "3.6",
+    "3.7",
+    "4",
+    "ketersediaan"
+  ],
+  "missing_sections": [],
+  "sources_sha256": {
+    "_01_python-scripts\\outputs\\build_text_disjoint_split_report.json": "6e2061b63ba62d736e40ad51a0ea4db4ae019214832d91ab4684278f575343e3",
+    "_01_python-scripts\\outputs\\build_nested_subsets_report.json": "a6251798cecb5b45a88b07a7d660ad3efdc25e1520de48fa859f2ba60ded805d",
+    "_01_python-scripts\\outputs\\audit_transcript_leakage_report.json": "9719ad4c1dcaa0a2a77824e9f44ba4cec791217db72753c5b5ae17cc0fa8eeaa",
+    "_01_python-scripts\\outputs\\measure_component_durations_report.json": "dd2e159936fe7c9dc2e703323566ebcbcf52d6674ee68d85d88c2baf4e8ffffe",
+    "_01_python-scripts\\outputs\\results\\bootstrap_metrics_report.json": "471a69c663c4622a720debb7840c1dc3e2ab78f6af25ca77a6e63062616d9073",
+    "_01_python-scripts\\outputs\\results\\scaling_curve_report.json": "08a672b557582fbfff55368e1dc3eb8b9dc683d28e47a83e0f3858862b453627",
+    "_01_python-scripts\\outputs\\results\\run_status.csv": "34ec6b646301aebfe1f7eab3425340f5bb1aa252201e5d118db697a82adc90ac",
+    "_01_python-scripts\\outputs\\results\\bootstrap_metrics_configs.csv": "24ea8f613163b552b37bbfc0bfa93c86e6e51e7493375f22a5601a9d09db7180",
+    "_01_python-scripts\\outputs\\results\\bootstrap_metrics_h1.csv": "026634f8fba3558fdcb46778ab390e7e45dff1d2e54526fa326fc0dfb5ece7a5",
+    "_01_python-scripts\\outputs\\results\\scaling_curve_parameters.csv": "24e738e49107f4aaa4c0f349b9791ffffe12e1b78ec14aedba27f99cebf0bde8",
+    "_01_python-scripts\\outputs\\results\\robustness_diacritics_report.json": "4dd7698eb809c37466d97acdd1e9db71b0ce1563a6641cf278967ad60b88ece6",
+    "_01_python-scripts\\outputs\\results\\error_analysis_report.json": "b2ad66d79d8e6171383c336295f9540e2e2672c678b2c2a0388283517c67fa11",
+    "_01_python-scripts\\outputs\\results\\whisper_d1_trial_test_metrics.json": "9f0572853321559a7b75006e1561f3629c0044aba8e20ccd5bd229bddf8ccbf6",
+    "_01_python-scripts\\outputs\\results\\whisper_d2_test_metrics.json": "3d2ec8bcde3801ce4d983799da2977c0608402ce7701f04efdbfdcd08bfa9b2f",
+    "_01_python-scripts\\outputs\\results\\whisper_d3_test_metrics.json": "7bae064340adafd308aa35d852024c0cb4d3ac0d5bd98578358de5f0ff426dc0",
+    "_01_python-scripts\\outputs\\results\\whisper_d4_test_metrics.json": "02a75ba968f9d4293ec9c551010b7ef2550f057a4837f1c4b368faef2fe0aec4",
+    "_01_python-scripts\\outputs\\results\\whisper_d5_test_metrics.json": "06400b45733675c560280d416455d25107c9c429ae118fc162a35b964e15e969",
+    "_01_python-scripts\\outputs\\results\\xlsr_d1_trial_test_metrics.json": "663c31536946a697362c6f051e2d0dce764131b77cf89f6e5881db49ac28b83d",
+    "_01_python-scripts\\outputs\\results\\xlsr_d2_test_metrics.json": "89707c6d48ca0bf7b7a542b0b78dc17fff13a4ad42272b225b0ba08adec5f1ae",
+    "_01_python-scripts\\outputs\\results\\xlsr_d3_test_metrics.json": "9435bab79bea9a8ceea2be89af8ff9b82c8f6ae27328413d91f8b219ccdb6887",
+    "_01_python-scripts\\outputs\\results\\xlsr_d4_test_metrics.json": "e9efded0e8ac7766e29e21acff598a84df45076388b39e697cd5d56893674235",
+    "_01_python-scripts\\outputs\\results\\xlsr_d5_test_metrics.json": "f1cc52075295c6f9829bf9637055f121f5fd3c888c9d5fb31aa9aa8d4dd35eaf",
+    "_01_python-scripts\\configs\\trial\\whisper_d1_trial.yaml": "d426265287fbd986e1d32ffc9970b5895046fcf226f526cddf30b279d45dc3fd",
+    "_01_python-scripts\\configs\\whisper_d2.yaml": "963746ba88a1bef0d7b927f7492a848509028ee3db135a721334fa4a3551f84f",
+    "_01_python-scripts\\configs\\whisper_d3.yaml": "39893e6cb5b2a59ba3caf4e8dd4b5d0cba8a7020bc282ccbf83d82bb0efabafa",
+    "_01_python-scripts\\configs\\whisper_d4.yaml": "cdd7259f6bcab4b25248432eb1a91337fb8206f2b57916591b60fa52850eaac7",
+    "_01_python-scripts\\configs\\whisper_d5.yaml": "1223faf4fbdfb51734e57eaa4e6db700352ccb10b8732e5568e4163cd1afe517",
+    "_01_python-scripts\\configs\\trial\\xlsr_d1_trial.yaml": "bc5425b5a16099e546ab876061fe714d6066b87419ea81755fa29effdb26e893",
+    "_01_python-scripts\\configs\\xlsr_d2.yaml": "9a358a86d2bfcac3631b046f5143b44c1e4c39a6e78373bde0cd4eb4e18035b5",
+    "_01_python-scripts\\configs\\xlsr_d3.yaml": "16d2155e7881f534a583d7fb330e24f391df92f5ce09435558d9542f86946046",
+    "_01_python-scripts\\configs\\xlsr_d4.yaml": "3c1f0f1c7b8927b2ba0b3b686cc0b6deaaf6df0ebbb69821a2799a24055a4047",
+    "_01_python-scripts\\configs\\xlsr_d5.yaml": "9caec80c2a486e3f3925ea6888537eb5bfcdf0f4d9b45290a26f875bd1df8204",
+    "_01_python-scripts\\outputs\\runs\\whisper_d1_trial\\run_report.json": "c454391c95f035b622215eb6c741fb6e66a345ff42e1f999d798179c5ccd6652",
+    "_01_python-scripts\\outputs\\runs\\whisper_d2\\run_report.json": "fdeff2bbdaf9fa9aa2922d0e8b3bbcc2b704cc176c96db3c56fc951bbea49a34",
+    "_01_python-scripts\\outputs\\runs\\whisper_d3\\run_report.json": "dc90e3e595296e5ff76ea98e439e11838760ab967d4fe10bbb043bb5d4bbcb2b",
+    "_01_python-scripts\\outputs\\runs\\whisper_d4\\run_report.json": "5cd180c55ab053c9b87634b315edd8b777839026f030488d65710543e3929774",
+    "_01_python-scripts\\outputs\\runs\\whisper_d5\\run_report.json": "b8ac31ee669c19aae10aef79afdddb69e6846e7b1d43583a2d695dfc22617e20",
+    "_01_python-scripts\\outputs\\runs\\xlsr_d1_trial\\run_report.json": "fab1fc51eb0959b66282fcc1ebf8d59b456fd0d341a761a4202c7e70f6ebef5f",
+    "_01_python-scripts\\outputs\\runs\\xlsr_d2\\run_report.json": "887b014b1f16246abc091cd700f0fd7bb804a01cab94c660580c79291b1a3b84",
+    "_01_python-scripts\\outputs\\runs\\xlsr_d3\\run_report.json": "143d18e531d31d9cac6166d07b2f93fbeb9802c7f953691ca626628cc7e62d7f",
+    "_01_python-scripts\\outputs\\runs\\xlsr_d4\\run_report.json": "461f79af8d55854c3eec534502a8d2515f64a5c33b860367edc5fffc35867e0e",
+    "_01_python-scripts\\outputs\\runs\\xlsr_d5\\run_report.json": "4e66943a158d803adb5798cb4728d22baed9cd19b31eeb58d7137f7c7a78a427",
+    "_01_python-scripts\\configs\\trial\\whisper_det_a.yaml": "febdfcf2a9e1eb8f22d82b18d23516d5e0b5fc30df8fa7df39dd1aeba319f998",
+    "_01_python-scripts\\configs\\trial\\whisper_det_b.yaml": "3300a80d6c06582e61f11579d7907d4c5d07a707e6e15c6d02011883dd92ac3a",
+    "_01_python-scripts\\configs\\trial\\xlsr_det_a.yaml": "89b2cc6ba1866c89f6c602c3505059d8de1f83bb8ec950b09205620a651de646",
+    "_01_python-scripts\\configs\\trial\\xlsr_det_b.yaml": "6d0d1f85d5aed6c2557e38ddddf90f0d1f01c6317bf98266595090c398108ead",
+    "_01_python-scripts\\outputs\\runs\\whisper_det_a\\trainer_state.json": "62e224e5f39ccb2c69de2d50ec9100be5c247a4b64f837e4ab05b3c7a317dac2",
+    "_01_python-scripts\\outputs\\runs\\whisper_det_b\\trainer_state.json": "9ad1c58f76f4021ee15b5fcc3db17fecc74910852ed51d1a70ae33c7662ef8c2",
+    "_01_python-scripts\\outputs\\runs\\xlsr_det_a\\trainer_state.json": "bb825f0ca64fcab2b7ce95b6f564bf4653f7e16dda8cfbcd78b758139521a3cd",
+    "_01_python-scripts\\outputs\\runs\\xlsr_det_b\\trainer_state.json": "8ea6e399ef5924ab00484c27905bc077894a9fb6049738c54123f3e6997c50fd",
+    "train_asr.py@5fda5f9": "8f1c8ae7092fb44bcdfd5c0661673d913864b775a8bb0fd90ccb89a4a6ffffad",
+    "run_inference.py@5fda5f9": "5d50a1edcb6fa1dfdc0829874e8a6a7017196a8ce57ce13d448765168eef1cdf",
+    "generation_config.json whisper-small@973afd24": "71565b8ef50d0bf7a1193ed4bbed195b94e70c18894d81bba2f1233dcec3ab53",
+    "_03_dataset\\asr_javanese_0\\LICENSE": "9348ddfd44da5a127c59141981954746a860ec8e03e0412cf3af7134af0f97e2",
+    "_02_context-MD-files\\DraftResearch.md": "5665d840b6f5c18554198d3966273ccfea2feea44652a3edb9198b734b924999",
+    "_02_context-MD-files\\bab-1.md": "d4b9270917cf86caa2fa036b438c13af479c2aa626b5d25138afed63f631ccf1",
+    "_02_context-MD-files\\bab-2.md": "91cd858455cb900263d7a8009fe324355dd95b37fc25655b8821b23ef36a4787"
+  },
+  "pipeline_unchanged_since": {
+    "commit": "5fda5f9",
+    "files": {
+      "train_asr.py": true,
+      "run_inference.py": true,
+      "asr_common.py": true
+    }
+  },
+  "claims": [
+    {
+      "section": "abstrak",
+      "text": "dalam rentang 1 sampai 66 jam",
+      "source": "build_nested_subsets_report.json",
+      "holds": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "section": "abstrak",
+      "text": "Pada data test 3.100 utterance, Whisper mencapai WER lebih rendah pada kelima tingkat, yaitu 41,2% lawan 47,9% pada 1 jam dan 15,4% lawan 18,8% pada 66 jam",
+      "source": "bootstrap_metrics_configs.csv",
+      "holds": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "section": "abstrak",
+      "text": "selisih keduanya berbeda dari nol pada setiap tingkat",
+      "source": "bootstrap_metrics_h1.csv",
+      "holds": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "section": "abstrak",
+      "text": "Eksponen `c` sebesar 0,364 bagi Whisper dan 0,356 bagi XLS-R tidak terbedakan, karena selang 95% selisihnya memuat nol",
+      "source": "scaling_curve_parameters.csv",
+      "holds": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "section": "abstrak",
+      "text": "Batas bawah bersama sebesar 7,5% memiliki selang yang tidak memuat nol",
+      "source": "scaling_curve_parameters.csv",
+      "holds": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "section": "abstrak",
+      "text": "menurut kriteria informasi Akaike (AIC) bentuk berbatas bawah tidak terbedakan dari *power law* murni",
+      "source": "scaling_curve_report.json: aic",
+      "holds": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "section": "abstrak",
+      "text": "keunggulan Whisper terletak pada kurva yang lebih rendah di seluruh rentang",
+      "source": "bootstrap_metrics_configs.csv dan scaling_curve_parameters.csv",
+      "holds": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "section": "abstrak",
+      "text": "dengan XLS-R tanpa model bahasa eksternal",
+      "source": "run_inference.py@5fda5f9",
+      "holds": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "section": "abstract",
+      "text": "from 1 to 66 hours",
+      "source": "build_nested_subsets_report.json",
+      "holds": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "section": "abstract",
+      "text": "On a test set of 3,100 utterances, Whisper achieves a lower WER at all five levels, 41.2% versus 47.9% at 1 hour and 15.4% versus 18.8% at 66 hours",
+      "source": "bootstrap_metrics_configs.csv",
+      "holds": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "section": "abstract",
+      "text": "the difference is significant at every level",
+      "source": "bootstrap_metrics_h1.csv",
+      "holds": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "section": "abstract",
+      "text": "The exponents `c` of 0.364 for Whisper and 0.356 for XLS-R are indistinguishable, as the 95% interval of their difference contains zero",
+      "source": "scaling_curve_parameters.csv",
+      "holds": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "section": "abstract",
+      "text": "The shared floor of 7.5% has an interval that excludes zero",
+      "source": "scaling_curve_parameters.csv",
+      "holds": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "section": "abstract",
+      "text": "by the Akaike information criterion (AIC) the floored form is indistinguishable from a pure power law",
+      "source": "scaling_curve_report.json: aic",
+      "holds": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "section": "abstract",
+      "text": "Whisper's advantage lies in a lower curve across the whole range",
+      "source": "bootstrap_metrics_configs.csv dan scaling_curve_parameters.csv",
+      "holds": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "section": "abstract",
+      "text": "XLS-R without an external language model",
+      "source": "run_inference.py@5fda5f9",
+      "holds": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "section": "ketersediaan",
+      "text": "dengan lisensi Creative Commons Attribution-ShareAlike 4.0 [2]",
+      "source": "LICENSE corpus",
+      "holds": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "section": "1",
+      "text": "Long Form Sensus Penduduk 2020",
+      "source": "angka penelitian terdahulu pada DraftResearch.md, bab-1.md, bab-2.md",
+      "holds": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "section": "1",
+      "text": "42,12% penduduk berumur lima tahun ke atas",
+      "source": "angka penelitian terdahulu pada DraftResearch.md, bab-1.md, bab-2.md",
+      "holds": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "section": "1",
+      "text": "42,19% di lingkungan tetangga",
+      "source": "angka penelitian terdahulu pada DraftResearch.md, bab-1.md, bab-2.md",
+      "holds": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "section": "1",
+      "text": "sekitar 90 juta orang [2]",
+      "source": "angka penelitian terdahulu pada DraftResearch.md, bab-1.md, bab-2.md",
+      "holds": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "section": "1",
+      "text": "sekitar 680.000 jam data wicara multibahasa",
+      "source": "angka penelitian terdahulu pada DraftResearch.md, bab-1.md, bab-2.md",
+      "holds": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "section": "1",
+      "text": "setengah juta jam data dari 128 bahasa",
+      "source": "angka penelitian terdahulu pada DraftResearch.md, bab-1.md, bab-2.md",
+      "holds": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "section": "1",
+      "text": "kerangka wav2vec 2.0",
+      "source": "angka penelitian terdahulu pada DraftResearch.md, bab-1.md, bab-2.md",
+      "holds": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "section": "1",
+      "text": "sebesar 89,40% pada data bahasa Jawa, yang turun menjadi 13,77% sesudah *fine-tuning* Whisper large-v2 [9]",
+      "source": "angka penelitian terdahulu pada DraftResearch.md, bab-1.md, bab-2.md",
+      "holds": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "section": "1",
+      "text": "WER 92,08% pada Whisper *medium* dan 74,62% pada Whisper large-v3",
+      "source": "angka penelitian terdahulu pada DraftResearch.md, bab-1.md, bab-2.md",
+      "holds": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "section": "1",
+      "text": "sekitar 60 jam [8]",
+      "source": "angka penelitian terdahulu pada DraftResearch.md, bab-1.md, bab-2.md",
+      "holds": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "section": "1",
+      "text": "WER 14,97% dengan Whisper *small* pada sekitar 100 jam data OpenSLR [10]",
+      "source": "angka penelitian terdahulu pada DraftResearch.md, bab-1.md, bab-2.md",
+      "holds": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "section": "1",
+      "text": "model bahasa 5-gram KenLM",
+      "source": "angka penelitian terdahulu pada DraftResearch.md, bab-1.md, bab-2.md",
+      "holds": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "section": "1",
+      "text": "sekitar 6 jam data OpenSLR, Wav2Vec2 XLSR-53",
+      "source": "angka penelitian terdahulu pada DraftResearch.md, bab-1.md, bab-2.md",
+      "holds": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "section": "1",
+      "text": "WER di bawah 13% sekitar 50 jam dan di bawah 10% sekitar 200 jam [14]",
+      "source": "angka penelitian terdahulu pada DraftResearch.md, bab-1.md, bab-2.md",
+      "holds": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "section": "1",
+      "text": "Wav2Vec2 XLSR-53 unggul pada data Telugu",
+      "source": "angka penelitian terdahulu pada DraftResearch.md, bab-1.md, bab-2.md",
+      "holds": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "section": "1",
+      "text": "sapuan data 134 sampai 23.000 jam",
+      "source": "angka penelitian terdahulu pada DraftResearch.md, bab-1.md, bab-2.md",
+      "holds": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "section": "1",
+      "text": "rentang 1 sampai 66 jam",
+      "source": "build_nested_subsets_report.json",
+      "holds": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "section": "2.1",
+      "text": "1, 3, 10, 30, dan 66 jam",
+      "source": "build_nested_subsets_report.json: level_target_hours dan pool.hours dibulatkan",
+      "holds": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "section": "2.1",
+      "text": "menghasilkan sepuluh konfigurasi",
+      "source": "MODELS x LEVELS",
+      "holds": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "section": "2.1",
+      "text": "sebelum delapan dari sepuluh konfigurasi dilatih",
+      "source": "run grid di luar D1 percobaan",
+      "holds": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "section": "2.2",
+      "text": "berlisensi Creative Commons Attribution-ShareAlike 4.0 [2]",
+      "source": "LICENSE corpus",
+      "holds": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "section": "2.2",
+      "text": "memuat 185.076 utterance dari 1.019 penutur yang terbagi atas enam belas arsip",
+      "source": "audit_transcript_leakage_report.json: corpus_penuh.base_statistics; jumlah arsip spesifikasi luar, bab-3.md",
+      "holds": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "section": "2.2",
+      "text": "memakai empat arsip, yaitu 46.309 utterance atau 74,24 jam audio",
+      "source": "build_text_disjoint_split_report.json: working_subset_archives, n_flac_files, total_hours",
+      "holds": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "section": "2.2",
+      "text": "sebesar 25% dari corpus penuh",
+      "source": "build_text_disjoint_split_report.json dan jumlah arsip spesifikasi luar, bab-3.md",
+      "holds": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "section": "2.2",
+      "text": "berformat FLAC 16 kHz mono 16-bit",
+      "source": "build_text_disjoint_split_report.json: audio_format",
+      "holds": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "section": "2.2",
+      "text": "berdurasi 28,30 detik",
+      "source": "build_text_disjoint_split_report.json: max_seconds",
+      "holds": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "section": "2.2",
+      "text": "selebar 30 detik [5]",
+      "source": "spesifikasi luar, bab-3.md",
+      "holds": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "section": "2.2",
+      "text": "disaring dari 16 utterance",
+      "source": "build_text_disjoint_split_report.json: exclusion",
+      "holds": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "section": "2.2",
+      "text": "Sebanyak 13 utterance dikeluarkan karena transkripnya memuat angka",
+      "source": "build_text_disjoint_split_report.json: exclusion.reason_counts",
+      "holds": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "section": "2.2",
+      "text": "dan 3 utterance dikeluarkan karena durasinya di bawah 1,5 detik",
+      "source": "build_text_disjoint_split_report.json: exclusion.reason_counts, min_duration_seconds",
+      "holds": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "section": "2.2",
+      "text": "Sisanya, 46.293 utterance",
+      "source": "build_text_disjoint_split_report.json: filtered",
+      "holds": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "section": "2.2",
+      "text": "porsi data test 6,7%, porsi data validation 4,1%, dan sepuluh *seed*",
+      "source": "audit_transcript_leakage_report.json: test_fraction, val_fraction, seeds",
+      "holds": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "section": "2.2",
+      "text": "rata-rata 30,93% utterance data test",
+      "source": "audit_transcript_leakage_report.json: subset_kerja random_utterance",
+      "holds": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "section": "2.2",
+      "text": "menurunkannya menjadi 30,36%",
+      "source": "audit_transcript_leakage_report.json: subset_kerja speaker_disjoint",
+      "holds": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "section": "2.2",
+      "text": "menjadi 37.872 grup",
+      "source": "build_text_disjoint_split_report.json: n_transcript_groups",
+      "holds": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "section": "2.2",
+      "text": "diacak dengan *seed* 42",
+      "source": "build_text_disjoint_split_report.json: split_seed",
+      "holds": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "section": "2.2",
+      "text": "sampai kuota 3.100 utterance terpenuhi dan ke data validation sampai kuota 1.900 utterance terpenuhi",
+      "source": "build_text_disjoint_split_report.json: test_quota, validation_quota",
+      "holds": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "section": "2.2",
+      "text": "sekitar 5 jam bagi data test dan 3 jam bagi data validation",
+      "source": "build_text_disjoint_split_report.json: parts.*.hours dibulatkan",
+      "holds": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "section": "2.2",
+      "text": "tetap sekitar 66 jam",
+      "source": "build_text_disjoint_split_report.json: parts.train_pool.hours dibulatkan",
+      "holds": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "section": "2.2",
+      "text": "kebocoran transkrip 0,00% di antara ketiga bagian",
+      "source": "build_text_disjoint_split_report.json: checks",
+      "holds": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "section": "2.2",
+      "text": "satu komponen berisi 63,66% utterance, satu komponen berisi 36,09% utterance, dan 59 komponen kecil yang seluruhnya hanya berisi 117 utterance atau 12,5 menit audio",
+      "source": "measure_component_durations_report.json: parts",
+      "holds": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "section": "2.2",
+      "text": "membuat tingkat 30 atau 66 jam mustahil disusun",
+      "source": "measure_component_durations_report.json: hours_left_if_test",
+      "holds": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "section": "2.2",
+      "text": "99,90% utterance data test berasal dari penutur yang juga muncul pada *training pool*",
+      "source": "build_text_disjoint_split_report.json: checks.test_speakers_in_train_pct",
+      "holds": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "section": "2.2",
+      "text": "diacak satu kali dengan *seed* 42",
+      "source": "build_nested_subsets_report.json: subset_seed",
+      "holds": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "section": "2.2",
+      "text": "secara bersarang dengan *seed* 42",
+      "source": "build_nested_subsets_report.json: subset_seed",
+      "holds": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "section": "2.2",
+      "text": "dari 63,94% pada D1 menjadi 99,90% pada D5",
+      "source": "build_nested_subsets_report.json: levels.*.test_speakers_in_level_pct",
+      "holds": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "section": "2.3",
+      "text": "inventaris 26 huruf Latin ditambah spasi",
+      "source": "CTC_VOCAB pada train_asr.py@5fda5f9",
+      "holds": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "section": "2.3",
+      "text": "sudah berformat 16 kHz mono",
+      "source": "build_text_disjoint_split_report.json: audio_format",
+      "holds": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "section": "2.4",
+      "text": "`openai/whisper-small` dengan sekitar 244 juta parameter [5]",
+      "source": "pretrained pada konfigurasi YAML kesepuluh run grid; jumlah parameter spesifikasi luar, bab-3.md",
+      "holds": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "section": "2.4",
+      "text": "`facebook/wav2vec2-xls-r-300m` dengan sekitar 315 juta parameter [6]",
+      "source": "pretrained pada konfigurasi YAML kesepuluh run grid; jumlah parameter spesifikasi luar, bab-3.md",
+      "holds": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "section": "2.4",
+      "text": "berukuran sekitar 769 juta parameter",
+      "source": "spesifikasi luar, bab-3.md",
+      "holds": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "section": "2.4",
+      "text": "XLS-R tetap sekitar 29% lebih besar",
+      "source": "turunan jumlah parameter spesifikasi luar, bab-3.md",
+      "holds": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "section": "2.4",
+      "text": "Berkas konfigurasi satu model hanya berbeda pada nama *run* dan subset training",
+      "source": "konfigurasi YAML kesepuluh run grid",
+      "holds": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "section": "2.4",
+      "text": "dimuat hanya dari cache lokal",
+      "source": "train_asr.py@5fda5f9: local_files_only",
+      "holds": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "section": "2.4",
+      "text": "Kosakata CTC terdiri atas 26 huruf, pembatas kata, dan dua token khusus",
+      "source": "CTC_VOCAB pada train_asr.py@5fda5f9",
+      "holds": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "section": "2.4",
+      "text": "*Batch* efektif ditetapkan 32 utterance per langkah *optimizer*",
+      "source": "konfigurasi YAML kesepuluh run grid",
+      "holds": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "section": "2.4",
+      "text": "merata-ratakan tepat 32 utterance",
+      "source": "run_report.json kesepuluh run grid: n_train_utterances_per_epoch",
+      "holds": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "section": "2.4",
+      "text": "Batas bawah 2.000 langkah",
+      "source": "konfigurasi YAML kesepuluh run grid: early_stopping_min_steps",
+      "holds": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "section": "2.4",
+      "text": "bertahan pada 100%",
+      "source": "run_report.json kesepuluh run grid: validation_history XLS-R langkah pertama",
+      "holds": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "section": "2.4",
+      "text": "Batas atas 10.000 langkah",
+      "source": "konfigurasi YAML kesepuluh run grid: max_steps",
+      "holds": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "section": "2.4",
+      "text": "paling banyak 320.000 utterance terproses",
+      "source": "konfigurasi YAML kesepuluh run grid: effective_batch_size x max_steps",
+      "holds": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "section": "2.4",
+      "text": "sampai nol tepat pada langkah 10.000",
+      "source": "konfigurasi YAML kesepuluh run grid: lr_scheduler_type",
+      "holds": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "section": "2.4",
+      "text": "satu GPU laptop NVIDIA GeForce RTX 4060 dengan VRAM 8.188 MiB",
+      "source": "run_report.json kesepuluh run grid: environment.gpu",
+      "holds": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "section": "2.4",
+      "text": "PyTorch 2.14.0+cu130, transformers 5.17.0, dan jiwer 4.0.0",
+      "source": "run_report.json kesepuluh run grid: environment.pustaka",
+      "holds": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "section": "2.4",
+      "text": "Pelatihan memakai bf16 *autocast*, TF32 dinonaktifkan",
+      "source": "konfigurasi YAML kesepuluh run grid dan run_report.json kesepuluh run grid",
+      "holds": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "section": "2.4",
+      "text": "Lintasan mundur CTC pada XLS-R tidak memiliki implementasi deterministik",
+      "source": "run_report.json kesepuluh run grid: determinism_warnings",
+      "holds": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "section": "2.4",
+      "text": "lintasan mundur *memory-efficient attention* pada kedua model memakai algoritme nondeterministik bawaannya, karena determinisme ditetapkan dengan `warn_only=True`",
+      "source": "run_report.json kesepuluh run grid: determinism_warnings dan numerics_state_at_end",
+      "holds": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "section": "2.4",
+      "text": "Dua *run* uji berkonfigurasi identik pada setiap model menghasilkan deret loss yang tidak identik",
+      "source": "trainer_state.json run uji determinisme",
+      "holds": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "section": "2.5",
+      "text": "Selang kepercayaan 95% bagi setiap WER dan CER",
+      "source": "bootstrap_metrics_report.json: confidence",
+      "holds": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "section": "2.5",
+      "text": "Sebanyak 3.100 utterance data test ditarik ulang dengan pengembalian dalam 10.000 iterasi",
+      "source": "bootstrap_metrics_report.json: n_bootstrap, configs.n_utterances",
+      "holds": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "section": "2.5",
+      "text": "persentil 2,5 dan 97,5",
+      "source": "bootstrap_metrics_report.json dan scaling_curve_report.json: confidence, interval_method",
+      "holds": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "section": "2.5",
+      "text": "ditarik dengan *seed* 42",
+      "source": "bootstrap_metrics_report.json: seed",
+      "holds": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "section": "2.5",
+      "text": "sebaran 10.000 selisih",
+      "source": "bootstrap_metrics_report.json: n_bootstrap",
+      "holds": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "section": "2.5",
+      "text": "berada di bawah 0,05",
+      "source": "bootstrap_metrics_report.json: h1",
+      "holds": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "section": "2.5",
+      "text": "dilaporkan bersama selang 95%",
+      "source": "bootstrap_metrics_report.json: confidence",
+      "holds": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "section": "2.5",
+      "text": "hanya menghasilkan lima titik pengamatan",
+      "source": "LEVELS",
+      "holds": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "section": "2.5",
+      "text": "hanya menyisakan dua derajat kebebasan residual",
+      "source": "LEVELS - 3 parameter",
+      "holds": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "section": "2.5",
+      "text": "menyisakan lima derajat kebebasan residual",
+      "source": "2 x LEVELS - 5 parameter",
+      "holds": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "section": "2.5",
+      "text": "yaitu 1,000; 3,000; 10,001; 30,001; dan 66,134 jam",
+      "source": "scaling_curve_report.json: hours",
+      "holds": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "section": "2.5",
+      "text": "`scipy.optimize.least_squares` di bawah kendala `E₀ ≥ 0` dan `a > 0`",
+      "source": "scaling_curve_report.json: fitting",
+      "holds": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "section": "2.5",
+      "text": "AIC = n ln(RSS/n) + 2K",
+      "source": "scaling_curve_report.json: aic.formula",
+      "holds": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "section": "2.5",
+      "text": "K jumlah parameter ditambah satu",
+      "source": "scaling_curve_report.json: aic.formula",
+      "holds": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "section": "2.5",
+      "text": "lebih rendah lebih dari 2",
+      "source": "scaling_curve_report.json: aic.threshold",
+      "holds": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "section": "2.5",
+      "text": "kasus khusus `E₀ = 0`",
+      "source": "scaling_curve_report.json: full_sample.pure_power_law",
+      "holds": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "section": "2.5",
+      "text": "selang 95% `c` model itu",
+      "source": "scaling_curve_report.json: confidence",
+      "holds": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "section": "2.5",
+      "text": "selang 95% selisih `c_W − c_X`",
+      "source": "scaling_curve_report.json: confidence",
+      "holds": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "section": "3",
+      "text": "yaitu 3.100 utterance hasil pembagian *text-disjoint*",
+      "source": "build_text_disjoint_split_report.json: parts.test",
+      "holds": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "section": "3.1",
+      "text": "tanpa satu pun hipotesis kosong",
+      "source": "<run>_test_metrics.json: n_empty_hypothesis",
+      "holds": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "section": "3.1",
+      "text": "Tiga *run* XLS-R, yaitu D1, D3, dan D4, tidak pernah memenuhi syarat *early stopping* dan berhenti pada batas 10.000 langkah, ketika *learning rate* sudah turun sampai nol",
+      "source": "run_status.csv",
+      "holds": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "section": "3.1",
+      "text": "Ketujuh *run* lainnya berhenti oleh *early stopping* ketika *learning rate* masih 24 sampai 84% dari puncaknya",
+      "source": "run_status.csv",
+      "holds": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "section": "3.1",
+      "text": "pada langkah 9.750 atau 10.000",
+      "source": "run_status.csv",
+      "holds": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "section": "3.1",
+      "text": "performa pada anggaran 10.000 langkah",
+      "source": "konfigurasi YAML: max_steps",
+      "holds": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "section": "3.1",
+      "text": "WER validation terbaik XLS-R pada D5 (18,6%) juga lebih tinggi daripada pada D4 (18,2%)",
+      "source": "run_status.csv",
+      "holds": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "section": "3.1",
+      "text": "padahal data D5 lebih dari dua kali lipat data D4",
+      "source": "build_nested_subsets_report.json",
+      "holds": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "section": "3.1",
+      "text": "*run* D5 berhenti ketika *learning rate* masih 45% dari puncaknya",
+      "source": "run_status.csv",
+      "holds": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "section": "3.1",
+      "text": "berlangsung 2,5 sampai 13,1 jam termasuk evaluasi validation",
+      "source": "run_status.csv: train_runtime_hours",
+      "holds": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "section": "3.1",
+      "text": "paling tinggi 6.336 MiB, di bawah kapasitas terpasang",
+      "source": "run_status.csv: train_peak_reserved_mib",
+      "holds": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "section": "3.1",
+      "text": "WER validation diukur pada 1.900 utterance validation",
+      "source": "run_report.json: n_validation_utterances",
+      "holds": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "section": "3.2",
+      "text": "Whisper *small* mencapai WER lebih rendah daripada XLS-R 300M pada kelima tingkat data",
+      "source": "bootstrap_metrics_configs.csv",
+      "holds": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "section": "3.2",
+      "text": "Pada D1, WER Whisper 41,2% dan XLS-R 47,9%, sedangkan pada D5 keduanya turun menjadi 15,4% dan 18,8%",
+      "source": "bootstrap_metrics_configs.csv",
+      "holds": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "section": "3.2",
+      "text": "Nilai *p* sesudah koreksi Holm sebesar 0,001 pada kelima tingkat, yaitu batas terkecil yang dapat dihasilkan 10.000 iterasi",
+      "source": "bootstrap_metrics_h1.csv",
+      "holds": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "section": "3.2",
+      "text": "selang selisih pada taraf Holm tidak memuat nol",
+      "source": "bootstrap_metrics_h1.csv",
+      "holds": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "section": "3.2",
+      "text": "selang kepercayaan 95% *bootstrap*, kecuali pada selisih WER",
+      "source": "bootstrap_metrics_report.json: confidence",
+      "holds": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "section": "3.2",
+      "text": "yaitu 99%, 98,75%, 98,33%, 97,5%, dan 95% berturut-turut dari D1 sampai D5",
+      "source": "bootstrap_metrics_h1.csv",
+      "holds": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "section": "3.2",
+      "text": "Data test berisi 3.100 utterance dengan 21.859 kata referensi",
+      "source": "bootstrap_metrics_report.json: configs",
+      "holds": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "section": "3.2",
+      "text": "Antara D1 dan D3, WER Whisper turun 19,0 poin persentase dan WER XLS-R 23,9 poin, sedangkan antara D3 dan D5 penurunannya tinggal 6,8 dan 5,2 poin",
+      "source": "bootstrap_metrics_configs.csv",
+      "holds": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "section": "3.2",
+      "text": "yaitu dari 17,6% pada D4 menjadi 18,8% pada D5, searah dengan WER validation pada Tabel 3",
+      "source": "bootstrap_metrics_configs.csv dan run_status.csv",
+      "holds": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "section": "3.2",
+      "text": "Selisih itu terbesar pada D1 dan D2, yaitu 6,6 dan 7,2 poin persentase, lalu menyempit menjadi 1,8 dan 1,2 poin pada D3 dan D4, dan melebar lagi menjadi 3,4 poin pada D5",
+      "source": "bootstrap_metrics_h1.csv",
+      "holds": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "section": "3.2",
+      "text": "CER memperlihatkan urutan yang sama dengan WER pada D1, D2, dan D5, tetapi tidak pada D3 dan D4",
+      "source": "bootstrap_metrics_h1.csv",
+      "holds": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "section": "3.2",
+      "text": "yaitu 5,1% pada D3 serta 3,8% dan 3,7% pada D4, dan selang selisih CER-nya memuat nol",
+      "source": "bootstrap_metrics_configs.csv dan bootstrap_metrics_h1.csv",
+      "holds": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "section": "3.3",
+      "text": "`E₀` bersama sebesar 7,5%, eksponen 0,364 bagi Whisper, dan eksponen 0,356 bagi XLS-R",
+      "source": "scaling_curve_parameters.csv: shared_e0",
+      "holds": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "section": "3.3",
+      "text": "Selang 95% kedua eksponen seluruhnya berada di atas nol",
+      "source": "scaling_curve_parameters.csv: shared_e0",
+      "holds": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "section": "3.3",
+      "text": "seluruh 10.000 pencocokan ulang *bootstrap* berhasil",
+      "source": "scaling_curve_report.json: bootstrap.shared_e0",
+      "holds": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "section": "3.3",
+      "text": "dalam rentang 1 sampai 66 jam",
+      "source": "build_nested_subsets_report.json",
+      "holds": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "section": "3.3",
+      "text": "selang kepercayaan 95% persentil dari 10.000 iterasi *bootstrap*",
+      "source": "scaling_curve_report.json: confidence, n_bootstrap",
+      "holds": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "section": "3.3",
+      "text": "Karena `D` bernilai 1 jam pada D1",
+      "source": "scaling_curve_report.json: hours",
+      "holds": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "section": "3.3",
+      "text": "yaitu 33,9 poin persentase bagi Whisper dan 41,2 poin bagi XLS-R, dan selang kedua koefisien tidak tumpang tindih",
+      "source": "scaling_curve_parameters.csv: shared_e0",
+      "holds": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "section": "3.3",
+      "text": "Titik Whisper menyimpang paling jauh 0,9 poin persentase dari kurvanya",
+      "source": "scaling_curve_report.json: full_sample.shared_e0.points",
+      "holds": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "section": "3.3",
+      "text": "Ketiga *run* yang mencapai batas 10.000 langkah berada di bawah kurva, yaitu D1, D3, dan D4 dengan residual −0,8, −1,6, dan −2,1 poin",
+      "source": "scaling_curve_report.json dan run_status.csv",
+      "holds": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "section": "3.3",
+      "text": "berada di atasnya dengan residual +2,5 dan +2,1 poin",
+      "source": "scaling_curve_report.json dan run_status.csv",
+      "holds": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "section": "3.3",
+      "text": "Residual XLS-R pada D2 sampai D5 melampaui dua kali setengah lebar selang WER titiknya",
+      "source": "scaling_curve_report.json dan bootstrap_metrics_configs.csv",
+      "holds": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "section": "3.3",
+      "text": "AIC-nya 1,994 lebih tinggi",
+      "source": "scaling_curve_report.json: aic",
+      "holds": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "section": "3.3",
+      "text": "memberi AIC 0,111 lebih rendah daripada `E₀` bersama",
+      "source": "scaling_curve_report.json: aic",
+      "holds": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "section": "3.3",
+      "text": "Menurut AIC, bentuk dengan `E₀` bersama tidak terbedakan dari kedua bentuk pembandingnya",
+      "source": "scaling_curve_report.json: aic",
+      "holds": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "section": "3.3",
+      "text": "selang `E₀` bersama tidak memuat nol, dan tidak satu pun iterasi *bootstrap* berakhir pada batas `E₀ = 0`",
+      "source": "scaling_curve_report.json: bootstrap.shared_e0",
+      "holds": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "section": "3.4",
+      "text": "selisih `c_W − c_X` sebesar 0,008 dengan selang 95% [−0,006; 0,024], yang memuat nol, sehingga H3 tidak diterima",
+      "source": "scaling_curve_parameters.csv: shared_e0",
+      "holds": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "section": "3.4",
+      "text": "dengan selisih −0,002 dan selang yang jauh lebih lebar, yaitu [−0,047; 0,043]",
+      "source": "scaling_curve_parameters.csv: separate_e0",
+      "holds": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "section": "3.4",
+      "text": "Pada *power law* murni, eksponen XLS-R justru sedikit lebih besar daripada eksponen Whisper",
+      "source": "scaling_curve_parameters.csv: pure_power_law",
+      "holds": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "section": "3.5",
+      "text": "Mempertahankan diakritik menaikkan WER kedua model pada setiap tingkat, dan kenaikannya bertambah seiring bertambahnya data",
+      "source": "robustness_diacritics_report.json",
+      "holds": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "section": "3.5",
+      "text": "dari 3,1 poin persentase pada Whisper D1 sampai 5,1 poin pada D4 dan D5 kedua model",
+      "source": "robustness_diacritics_report.json",
+      "holds": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "section": "3.5",
+      "text": "mengubah 872 dari 3.100 referensi data test",
+      "source": "robustness_diacritics_report.json",
+      "holds": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "section": "3.5",
+      "text": "yaitu 0,9 sampai 1,1 poin persentase",
+      "source": "robustness_diacritics_report.json",
+      "holds": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "section": "3.5",
+      "text": "kosakata CTC XLS-R tidak memuat huruf berdiakritik dan hipotesis Whisper memuat huruf é paling banyak satu kali pada setiap konfigurasi",
+      "source": "robustness_diacritics_report.json dan CTC_VOCAB",
+      "holds": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "section": "3.5",
+      "text": "urutan nilai titik kedua model tetap sama dengan hasil utama pada setiap tingkat, termasuk kenaikan WER XLS-R dari D4 ke D5",
+      "source": "robustness_diacritics_report.json",
+      "holds": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "section": "3.5",
+      "text": "yaitu 82,3 sampai 86,4% dari seluruh galat",
+      "source": "error_analysis_report.json",
+      "holds": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "section": "3.5",
+      "text": "Whisper lebih banyak menyisipkan daripada menghapus kata, sedangkan XLS-R sebaliknya",
+      "source": "error_analysis_report.json",
+      "holds": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "section": "3.5",
+      "text": "dari 9,1% menjadi 47,1% pada Whisper dan dari 4,7% menjadi 38,7% pada XLS-R",
+      "source": "error_analysis_report.json",
+      "holds": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "section": "3.5",
+      "text": "yaitu hipotesis yang lebih dari dua kali panjang referensinya, pada 0,16% utterance",
+      "source": "error_analysis_report.json",
+      "holds": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "section": "3.5",
+      "text": "*siti* menjadi *city* dan *akting* menjadi *acting*",
+      "source": "error_analysis_report.json",
+      "holds": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "section": "3.5",
+      "text": "Keluaran berulang semacam itu tidak tampak lagi pada D5",
+      "source": "error_analysis_report.json",
+      "holds": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "section": "3.5",
+      "text": "*cuba cuba* menjadi *cubacuba*",
+      "source": "error_analysis_report.json: worst_utterances XLS-R",
+      "holds": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "section": "3.5",
+      "text": "*atus* dan *loro* termasuk dua puluh kata yang paling sering terhapus pada kedua model, demikian pula *ewu* pada Whisper, tetapi ketiganya tidak lagi muncul di antara penghapusan tersering pada D5",
+      "source": "error_analysis_report.json",
+      "holds": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "section": "3.5",
+      "text": "sebagian besar dari dua puluh pasangan substitusi tersering kedua model berupa varian ejaan",
+      "source": "error_analysis_report.json",
+      "holds": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "section": "3.5",
+      "text": "*limo* dan *lima*, *biyasane* dan *biasane*, serta *daerah* dan *dhaerah*",
+      "source": "error_analysis_report.json",
+      "holds": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "section": "3.5",
+      "text": "*nduweni* yang ditulis *duweni* dan sebaliknya",
+      "source": "error_analysis_report.json",
+      "holds": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "section": "3.6",
+      "text": "masih 45% dari puncaknya, sedangkan D4 menjalani jadwal sampai selesai",
+      "source": "run_status.csv",
+      "holds": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "section": "3.6",
+      "text": "kemampuan kedua model pada 66 jam data",
+      "source": "build_nested_subsets_report.json",
+      "holds": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "section": "3.6",
+      "text": "Wav2Vec2 XLSR-53 sebesar 23,62% dan Whisper *small* sebesar 28,67% pada sekitar 6 jam data OpenSLR [12]",
+      "source": "angka penelitian terdahulu pada DraftResearch.md, bab-1.md, bab-2.md",
+      "holds": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "section": "3.6",
+      "text": "baik pada 3 jam maupun 10 jam",
+      "source": "bootstrap_metrics_configs.csv",
+      "holds": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "section": "3.6",
+      "text": "rentang 1 sampai 66 jam",
+      "source": "build_nested_subsets_report.json",
+      "holds": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "section": "3.6",
+      "text": "yaitu 14,97% dengan Whisper *small* pada sekitar 100 jam data OpenSLR [10], dibanding 15,4% pada 66 jam di sini",
+      "source": "angka penelitian terdahulu pada DraftResearch.md, bab-1.md, bab-2.md dan bootstrap_metrics_configs.csv",
+      "holds": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "section": "3.6",
+      "text": "WER 13,77% pada Whisper large-v2 [9]",
+      "source": "angka penelitian terdahulu pada DraftResearch.md, bab-1.md, bab-2.md",
+      "holds": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "section": "3.6",
+      "text": "model bahasa 5-gram menurunkan WER XLS-R [11]",
+      "source": "angka penelitian terdahulu pada DraftResearch.md, bab-1.md, bab-2.md",
+      "holds": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "section": "3.6",
+      "text": "antara 1 dan 10 jam lalu melandai",
+      "source": "bootstrap_metrics_configs.csv",
+      "holds": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "section": "3.6",
+      "text": "simpangan paling jauh 0,9 poin persentase",
+      "source": "scaling_curve_report.json",
+      "holds": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "section": "3.6",
+      "text": "Nilai `E₀` sebesar 7,5%",
+      "source": "scaling_curve_parameters.csv",
+      "holds": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "section": "3.6",
+      "text": "bahwa 38,6% kasus galat tinggi pada corpus mereka",
+      "source": "angka penelitian terdahulu pada DraftResearch.md, bab-1.md, bab-2.md",
+      "holds": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "section": "3.6",
+      "text": "dengan faktor 2^(−c), yaitu menjadi kira-kira 78% dari nilai sebelumnya bagi kedua model",
+      "source": "scaling_curve_parameters.csv",
+      "holds": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "section": "3.6",
+      "text": "koefisien `a` sebesar 33,9% lawan 41,2% pada XLS-R",
+      "source": "scaling_curve_parameters.csv",
+      "holds": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "section": "3.6",
+      "text": "selisih WER-nya terhadap XLS-R terbesar pada 1 dan 3 jam",
+      "source": "bootstrap_metrics_h1.csv",
+      "holds": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "section": "3.6",
+      "text": "Pada 10 sampai 30 jam, akurasi tidak lagi menjadi pembeda yang kuat",
+      "source": "bootstrap_metrics_h1.csv",
+      "holds": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "section": "3.6",
+      "text": "dengan porsi data test 6,7%, pembagian *speaker-disjoint* hanya menurunkan kebocoran transkrip dari 30,93% menjadi 30,36%",
+      "source": "audit_transcript_leakage_report.json",
+      "holds": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "section": "3.7",
+      "text": "data test sebesar 3.100 utterance cukup bagi H1",
+      "source": "bootstrap_metrics_h1.csv",
+      "holds": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "section": "3.7",
+      "text": "selisih terkecil, yaitu 1,2 poin pada D4, tetap terbedakan pada taraf Holm",
+      "source": "bootstrap_metrics_h1.csv",
+      "holds": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "section": "3.7",
+      "text": "tiga *run* menjalani penurunan *learning rate* sampai nol, sedangkan D2 dan D5 berhenti ketika *learning rate* masih tinggi",
+      "source": "run_status.csv",
+      "holds": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "section": "3.7",
+      "text": "sekitar 244 juta lawan 315 juta",
+      "source": "spesifikasi luar, bab-3.md",
+      "holds": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "section": "3.7",
+      "text": "naik dari 63,94% pada D1 menjadi 99,90% pada D5",
+      "source": "build_nested_subsets_report.json",
+      "holds": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "section": "3.7",
+      "text": "rentang 1 sampai 66 jam",
+      "source": "build_nested_subsets_report.json",
+      "holds": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "section": "3.7",
+      "text": "empat dari enam belas arsip SLR35",
+      "source": "build_text_disjoint_split_report.json; jumlah arsip spesifikasi luar, bab-3.md",
+      "holds": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "section": "4",
+      "text": "Pada data test 3.100 utterance, Whisper mencapai WER lebih rendah pada kelima tingkat, yaitu 41,2% lawan 47,9% pada 1 jam dan 15,4% lawan 18,8% pada 66 jam",
+      "source": "bootstrap_metrics_configs.csv",
+      "holds": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "section": "4",
+      "text": "paling besar pada 1 dan 3 jam dan menyempit pada 10 dan 30 jam, ketika CER kedua model setara",
+      "source": "bootstrap_metrics_h1.csv",
+      "holds": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "section": "4",
+      "text": "rentang 1 sampai 66 jam",
+      "source": "build_nested_subsets_report.json",
+      "holds": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "section": "4",
+      "text": "eksponen 0,364 bagi Whisper dan 0,356 bagi XLS-R yang selangnya berada di atas nol",
+      "source": "scaling_curve_parameters.csv",
+      "holds": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "section": "4",
+      "text": "Batas bawah bersama sebesar 7,5% memiliki selang yang tidak memuat nol",
+      "source": "scaling_curve_parameters.csv",
+      "holds": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "section": "4",
+      "text": "menurut AIC bentuk berbatas bawah tidak terbedakan dari *power law* murni",
+      "source": "scaling_curve_report.json: aic",
+      "holds": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "section": "4",
+      "text": "Selisih eksponen sebesar 0,008 memiliki selang yang memuat nol",
+      "source": "scaling_curve_parameters.csv",
+      "holds": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "section": "4",
+      "text": "sekurang-kurangnya pada 10 dan 30 jam",
+      "source": "build_nested_subsets_report.json",
+      "holds": true,
+      "found": true,
+      "ok": true
+    },
+    {
+      "section": "4",
+      "text": "Sapuan data di atas 66 jam",
+      "source": "build_nested_subsets_report.json",
+      "holds": true,
+      "found": true,
+      "ok": true
+    }
+  ],
+  "tables": [
+    {
+      "table": "1",
+      "source": "build_text_disjoint_split_report.json dan build_nested_subsets_report.json",
+      "mismatches": [],
+      "failed_conditions": [],
+      "ok": true
+    },
+    {
+      "table": "2",
+      "source": "konfigurasi YAML, run_report.json, train_asr.py@5fda5f9, nilai bawaan TrainingArguments",
+      "mismatches": [],
+      "failed_conditions": [],
+      "ok": true
+    },
+    {
+      "table": "3",
+      "source": "run_status.csv",
+      "mismatches": [],
+      "failed_conditions": [],
+      "ok": true
+    },
+    {
+      "table": "4",
+      "source": "bootstrap_metrics_configs.csv dan bootstrap_metrics_h1.csv",
+      "mismatches": [],
+      "failed_conditions": [],
+      "ok": true
+    },
+    {
+      "table": "5",
+      "source": "scaling_curve_parameters.csv dan scaling_curve_report.json",
+      "mismatches": [],
+      "failed_conditions": [],
+      "ok": true
+    }
+  ],
+  "uncovered_numbers": [],
+  "references": {
+    "n_entries": 20,
+    "n_citations": 44,
+    "first_appearance_order": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20
+    ],
+    "registry_to_paper": {
+      "3": 5,
+      "4": 6,
+      "7": 9,
+      "8": 11,
+      "9": 2,
+      "10": 12,
+      "11": 15,
+      "12": 14,
+      "13": 13,
+      "20": 7,
+      "25": 17,
+      "26": 18,
+      "27": 19,
+      "28": 20,
+      "37": 1,
+      "38": 3,
+      "39": 4,
+      "40": 10,
+      "41": 8,
+      "42": 16
+    },
+    "problems": [],
+    "ok": true
+  },
+  "abstracts": [
+    {
+      "section": "abstrak",
+      "words": 249,
+      "max_words": 250,
+      "keywords": 5,
+      "expected_keywords": 5,
+      "ok": true
+    },
+    {
+      "section": "abstract",
+      "words": 248,
+      "max_words": 250,
+      "keywords": 5,
+      "expected_keywords": 5,
+      "ok": true
+    }
+  ],
+  "all_ok": true,
+  "elapsed_seconds": 0.4
+}

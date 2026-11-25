@@ -1,0 +1,8 @@
+{
+  "seed": 42,
+  "test_sample_size": 320,
+  "warmup_size": 16,
+  "repetitions": 3,
+  "batch_size": 1,
+  "models": ["whisper_d5", "xlsr_d5"]
+}

@@ -1,0 +1,164 @@
+==============================================================================
+Pelatihan xlsr_det_b
+Waktu mulai        : 2026-10-04T10:45:12+07:00
+Konfigurasi        : configs\trial\xlsr_det_b.yaml (SHA-256 6d0d1f85d5aed6c2)
+Random seed        : 42
+Model              : facebook/wav2vec2-xls-r-300m @ 1a640f32ac3e39899438a2931f9924c02f080a54
+Presisi / TF32     : bf16 / False
+Batch efektif      : 32 = 2 x 16 akumulasi
+run_name: xlsr_det_b
+model_family: xlsr
+pretrained: facebook/wav2vec2-xls-r-300m
+revision: 1a640f32ac3e39899438a2931f9924c02f080a54
+train_subset: outputs/subsets/d1.tsv
+validation_split: outputs/splits/validation.tsv
+seed: 42
+precision: bf16
+tf32: false
+deterministic: true
+effective_batch_size: 32
+per_device_train_batch_size: 2
+per_device_eval_batch_size: 2
+learning_rate: 0.0003
+warmup_steps: 500
+lr_scheduler_type: linear
+optim: adamw_torch
+max_steps: 30
+eval_steps: 30
+early_stopping_patience: 4
+early_stopping_min_steps: 2000
+gradient_checkpointing: true
+logging_steps: 1
+dataloader_num_workers: 4
+save_only_model: true
+keep_checkpoints: false
+model_overrides:
+  attention_dropout: 0.0
+  hidden_dropout: 0.0
+  feat_proj_dropout: 0.0
+  mask_time_prob: 0.05
+  layerdrop: 0.0
+  ctc_loss_reduction: mean
+  ctc_zero_infinity: true
+
+==============================================================================
+Training           : 610 utterance, 1.000 jam, referensi kosong 0, simbol tak tercantum terhapus []
+Validation         : 1900 utterance, 3.053 jam, referensi kosong 0, simbol tak tercantum terhapus []
+
+Loading weights:   0%|          | 0/422 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 422/422 [00:00<00:00, 65608.88it/s]
+[transformers] Wav2Vec2ForCTC LOAD REPORT from: facebook/wav2vec2-xls-r-300m
+Key                          | Status     | 
+-----------------------------+------------+-
+quantizer.weight_proj.weight | UNEXPECTED | 
+project_q.weight             | UNEXPECTED | 
+project_hid.weight           | UNEXPECTED | 
+project_q.bias               | UNEXPECTED | 
+quantizer.weight_proj.bias   | UNEXPECTED | 
+project_hid.bias             | UNEXPECTED | 
+quantizer.codevectors        | UNEXPECTED | 
+lm_head.weight               | MISSING    | 
+lm_head.bias                 | MISSING    | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+Status numerik     : {'cuda_matmul_allow_tf32': False, 'cudnn_allow_tf32': False, 'cudnn_deterministic': True, 'cudnn_benchmark': False, 'use_deterministic_algorithms': True, 'deterministic_warn_only': True, 'cublas_workspace_config': ':4096:8'}
+[transformers] The tokenizer has new PAD/BOS/EOS tokens that differ from the model config and generation config. The model config and generation config were aligned accordingly, being updated with the tokenizer's values. Updated tokens: {'eos_token_id': None, 'bos_token_id': None}.
+D:\_01_Bachelor_Information_System\_00-SKRIPSI\skripsi-venv\Lib\site-packages\torch\autograd\graph.py:1072: UserWarning: ctc_loss_backward_gpu does not have a deterministic implementation, but you set 'torch.use_deterministic_algorithms(True, warn_only=True)'. You can file an issue at https://github.com/pytorch/pytorch/issues to help us prioritize adding deterministic support for this operation. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\Context.cpp:190.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+D:\_01_Bachelor_Information_System\_00-SKRIPSI\skripsi-venv\Lib\site-packages\torch\autograd\graph.py:1072: UserWarning: Memory Efficient attention defaults to a non-deterministic algorithm. To explicitly enable determinism call torch.use_deterministic_algorithms(True, warn_only=False). (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\aten\src\ATen\native\transformers\cuda\attention_backward.cu:912.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+[progres] langkah 1: 23.98 s pada langkah pertama, VRAM puncak training tercadang 6118 MiB
+{'loss': '280.6', 'grad_norm': '155.2', 'learning_rate': '0', 'epoch': '0.05246'}
+[progres] langkah 2: 2.82 s/langkah, VRAM puncak training tercadang 7310 MiB
+{'loss': '281.9', 'grad_norm': '157', 'learning_rate': '6e-07', 'epoch': '0.1049'}
+[progres] langkah 3: 2.88 s/langkah, VRAM puncak training tercadang 7310 MiB
+{'loss': '292.2', 'grad_norm': '171.7', 'learning_rate': '1.2e-06', 'epoch': '0.1574'}
+[progres] langkah 4: 3.09 s/langkah, VRAM puncak training tercadang 7312 MiB
+{'loss': '309.6', 'grad_norm': '175.4', 'learning_rate': '1.8e-06', 'epoch': '0.2098'}
+[progres] langkah 5: 2.94 s/langkah, VRAM puncak training tercadang 7314 MiB
+{'loss': '288.2', 'grad_norm': '164.2', 'learning_rate': '2.4e-06', 'epoch': '0.2623'}
+[progres] langkah 6: 2.98 s/langkah, VRAM puncak training tercadang 7314 MiB
+{'loss': '275.6', 'grad_norm': '161.4', 'learning_rate': '3e-06', 'epoch': '0.3148'}
+[progres] langkah 7: 3.00 s/langkah, VRAM puncak training tercadang 7314 MiB
+{'loss': '297.3', 'grad_norm': '172.4', 'learning_rate': '3.6e-06', 'epoch': '0.3672'}
+[progres] langkah 8: 3.27 s/langkah, VRAM puncak training tercadang 7790 MiB
+{'loss': '276.2', 'grad_norm': '157.8', 'learning_rate': '4.2e-06', 'epoch': '0.4197'}
+[progres] langkah 9: 3.14 s/langkah, VRAM puncak training tercadang 7790 MiB
+{'loss': '286.3', 'grad_norm': '168.2', 'learning_rate': '4.8e-06', 'epoch': '0.4721'}
+[progres] langkah 10: 3.59 s/langkah, VRAM puncak training tercadang 7790 MiB
+{'loss': '287.9', 'grad_norm': '176.3', 'learning_rate': '5.4e-06', 'epoch': '0.5246'}
+[progres] langkah 11: 4.36 s/langkah, VRAM puncak training tercadang 8528 MiB
+{'loss': '277.3', 'grad_norm': '163.4', 'learning_rate': '6e-06', 'epoch': '0.577'}
+[progres] langkah 12: 2.87 s/langkah, VRAM puncak training tercadang 8538 MiB
+{'loss': '281', 'grad_norm': '175.2', 'learning_rate': '6.6e-06', 'epoch': '0.6295'}
+[progres] langkah 13: 2.75 s/langkah, VRAM puncak training tercadang 8538 MiB
+{'loss': '271.9', 'grad_norm': '171.6', 'learning_rate': '7.2e-06', 'epoch': '0.682'}
+[progres] langkah 14: 3.38 s/langkah, VRAM puncak training tercadang 8538 MiB
+{'loss': '280.1', 'grad_norm': '177.5', 'learning_rate': '7.8e-06', 'epoch': '0.7344'}
+[progres] langkah 15: 2.73 s/langkah, VRAM puncak training tercadang 8538 MiB
+{'loss': '262.7', 'grad_norm': '170.6', 'learning_rate': '8.4e-06', 'epoch': '0.7869'}
+[progres] langkah 16: 3.10 s/langkah, VRAM puncak training tercadang 8538 MiB
+{'loss': '273.6', 'grad_norm': '188.3', 'learning_rate': '9e-06', 'epoch': '0.8393'}
+[progres] langkah 17: 2.70 s/langkah, VRAM puncak training tercadang 8538 MiB
+{'loss': '262.3', 'grad_norm': '183.2', 'learning_rate': '9.6e-06', 'epoch': '0.8918'}
+[progres] langkah 18: 2.81 s/langkah, VRAM puncak training tercadang 8538 MiB
+{'loss': '299.9', 'grad_norm': '215.2', 'learning_rate': '1.02e-05', 'epoch': '0.9443'}
+[progres] langkah 19: 2.74 s/langkah, VRAM puncak training tercadang 8538 MiB
+{'loss': '247.4', 'grad_norm': '184.4', 'learning_rate': '1.08e-05', 'epoch': '0.9967'}
+[progres] langkah 20: 0.27 s/langkah, VRAM puncak training tercadang 8538 MiB
+{'loss': '19.18', 'grad_norm': '16.37', 'learning_rate': '1.14e-05', 'epoch': '1'}
+[progres] langkah 21: 2.74 s/langkah, VRAM puncak training tercadang 8538 MiB
+{'loss': '248.4', 'grad_norm': '196.4', 'learning_rate': '1.2e-05', 'epoch': '1.052'}
+[progres] langkah 22: 3.33 s/langkah, VRAM puncak training tercadang 8538 MiB
+{'loss': '261.1', 'grad_norm': '236.4', 'learning_rate': '1.26e-05', 'epoch': '1.105'}
+[progres] langkah 23: 3.08 s/langkah, VRAM puncak training tercadang 8538 MiB
+{'loss': '292.7', 'grad_norm': '283', 'learning_rate': '1.32e-05', 'epoch': '1.157'}
+[progres] langkah 24: 2.97 s/langkah, VRAM puncak training tercadang 8538 MiB
+{'loss': '254.5', 'grad_norm': '250.3', 'learning_rate': '1.38e-05', 'epoch': '1.21'}
+[progres] langkah 25: 3.11 s/langkah, VRAM puncak training tercadang 8538 MiB
+{'loss': '267.5', 'grad_norm': '279.3', 'learning_rate': '1.44e-05', 'epoch': '1.262'}
+[progres] langkah 26: 2.89 s/langkah, VRAM puncak training tercadang 8538 MiB
+{'loss': '236.2', 'grad_norm': '250.9', 'learning_rate': '1.5e-05', 'epoch': '1.315'}
+[progres] langkah 27: 3.01 s/langkah, VRAM puncak training tercadang 8538 MiB
+{'loss': '237.7', 'grad_norm': '266.6', 'learning_rate': '1.56e-05', 'epoch': '1.367'}
+[progres] langkah 28: 2.98 s/langkah, VRAM puncak training tercadang 8538 MiB
+{'loss': '243.7', 'grad_norm': '290', 'learning_rate': '1.62e-05', 'epoch': '1.42'}
+[progres] langkah 29: 4.31 s/langkah, VRAM puncak training tercadang 8538 MiB
+{'loss': '236.8', 'grad_norm': '294', 'learning_rate': '1.68e-05', 'epoch': '1.472'}
+[progres] langkah 30: 2.96 s/langkah, VRAM puncak training tercadang 8538 MiB
+{'loss': '219.3', 'grad_norm': '286.9', 'learning_rate': '1.74e-05', 'epoch': '1.525'}
+{'eval_loss': '13.08', 'eval_wer': '1', 'eval_cer': '1', 'eval_runtime': '76.71', 'eval_samples_per_second': '24.77', 'eval_steps_per_second': '12.38', 'epoch': '1.525'}
+[evaluasi] langkah 30: WER 1.0000, terbaik 1.0000 pada langkah 30, tanpa perbaikan 0 kali
+[evaluasi] langkah 30: 76.7 detik, VRAM tercadang awal 3816 MiB, puncak 6280 MiB
+
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]
+Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  1.67it/s]
+Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  1.67it/s]
+{'train_runtime': '188.3', 'train_samples_per_second': '5.098', 'train_steps_per_second': '0.159', 'train_loss': '261.6', 'epoch': '1.525'}
+
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]
+Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  1.82it/s]
+Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  1.82it/s]
+==============================================================================
+n_train_utterances          : 610
+n_validation_utterances     : 1900
+gradient_accumulation_steps : 16
+global_step                 : 30
+epochs_completed            : 1.57
+stopped_early               : False
+best_validation_wer         : 1.0
+best_step                   : 30
+best_model_checkpoint       : D:\_01_Bachelor_Information_System\_00-SKRIPSI\_01_python-scripts\outputs\runs\xlsr_det_b\checkpoints\checkpoint-30
+train_runtime_seconds       : 188.3
+seconds_per_step            : 2.992
+timed_steps                 : 29
+first_step_seconds          : 24.0
+train_peak_reserved_mib     : 8538
+evaluation_seconds_total    : 76.7
+model_dir                   : D:\_01_Bachelor_Information_System\_00-SKRIPSI\_01_python-scripts\outputs\models\xlsr_det_b
+Peringatan determinisme: 2
+Laporan ditulis ke : D:\_01_Bachelor_Information_System\_00-SKRIPSI\_01_python-scripts\outputs\runs\xlsr_det_b\run_report.json
+Durasi eksekusi    : 193.8 detik
+==============================================================================

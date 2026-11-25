@@ -1,0 +1,73 @@
+# Pemantau whisper_d2 dimulai 2026-10-05 17:55:11, potret setiap 30 menit, pemeriksaan proses setiap 60 detik.
+# Kolom GPU: memory.used,memory.free,utilization.gpu,temperature.gpu,power.draw,clocks.sm,clocks.max.sm,clocks_throttle_reasons.active,clocks_throttle_reasons.sw_power_cap,clocks_throttle_reasons.hw_slowdown,clocks_throttle_reasons.hw_thermal_slowdown,clocks_throttle_reasons.sw_thermal_slowdown
+
+==== 2026-10-05 17:55:11 | awal ====
+Proses training    : hidup, PID 15072, 7388
+Progres terakhir   : [progres] langkah 1: 26.01 s pada langkah pertama, VRAM puncak training tercadang 4754 MiB, teralokasi 4701 MiB
+Laju 4 jendela     :  s/langkah
+Evaluasi terakhir  : (belum ada)
+Biaya evaluasi     : (belum ada)
+Baris galat di log : 0
+GPU                : 7129 MiB, 828 MiB, 100 %, 67, 82.89 W, 2475 MHz, 3105 MHz, 0x0000000000000000, Not Active, Not Active, Not Active, Not Active
+Daya               : sumber AC, baterai 77%; Power Scheme GUID: 381b4222-f694-41f0-9685-ff5bb260df2e  (Balanced)
+
+==== 2026-10-05 18:25:15 | berkala ====
+Proses training    : hidup, PID 15072, 7388
+Progres terakhir   : [progres] langkah 425: 3.58 s/langkah, VRAM puncak training tercadang 5960 MiB, teralokasi 5711 MiB
+Laju 4 jendela     : 3.58, 3.57, 3.57, 3.58 s/langkah
+Evaluasi terakhir  : [evaluasi] langkah 250: WER 0.3600, terbaik 0.3600 pada langkah 250, tanpa perbaikan 0 kali
+Biaya evaluasi     : [evaluasi] langkah 250: 241.4 detik, VRAM tercadang awal 3090 MiB, puncak 5282 MiB, puncak teralokasi 5113 MiB
+Baris galat di log : 0
+GPU                : 7208 MiB, 749 MiB, 100 %, 75, 87.12 W, 2475 MHz, 3105 MHz, 0x0000000000000000, Not Active, Not Active, Not Active, Not Active
+Daya               : sumber AC, baterai 77%; Power Scheme GUID: 381b4222-f694-41f0-9685-ff5bb260df2e  (Balanced)
+
+==== 2026-10-05 18:55:19 | berkala ====
+Proses training    : hidup, PID 15072, 7388
+Progres terakhir   : [progres] langkah 825: 3.58 s/langkah, VRAM puncak training tercadang 5972 MiB, teralokasi 5711 MiB
+Laju 4 jendela     : 3.56, 3.58, 3.58, 3.58 s/langkah
+Evaluasi terakhir  : [evaluasi] langkah 750: WER 0.3037, terbaik 0.3037 pada langkah 750, tanpa perbaikan 0 kali
+Biaya evaluasi     : [evaluasi] langkah 750: 219.0 detik, VRAM tercadang awal 3090 MiB, puncak 5260 MiB, puncak teralokasi 5113 MiB
+Baris galat di log : 0
+GPU                : 7208 MiB, 749 MiB, 100 %, 73, 85.69 W, 2475 MHz, 3105 MHz, 0x0000000000000000, Not Active, Not Active, Not Active, Not Active
+Daya               : sumber AC, baterai 77%; Power Scheme GUID: 381b4222-f694-41f0-9685-ff5bb260df2e  (Balanced)
+
+==== 2026-10-05 19:25:23 | berkala ====
+Proses training    : hidup, PID 15072, 7388
+Progres terakhir   : [progres] langkah 1250: 3.57 s/langkah, VRAM puncak training tercadang 5972 MiB, teralokasi 5711 MiB
+Laju 4 jendela     : 3.58, 3.57, 3.58, 3.57 s/langkah
+Evaluasi terakhir  : [evaluasi] langkah 1000: WER 0.3003, terbaik 0.3003 pada langkah 1000, tanpa perbaikan 0 kali
+Biaya evaluasi     : [evaluasi] langkah 1000: 220.3 detik, VRAM tercadang awal 3090 MiB, puncak 5260 MiB, puncak teralokasi 5113 MiB
+Baris galat di log : 0
+GPU                : 6529 MiB, 1428 MiB, 100 %, 79, 104.09 W, 2460 MHz, 3105 MHz, 0x0000000000000000, Not Active, Not Active, Not Active, Not Active
+Daya               : sumber AC, baterai 77%; Power Scheme GUID: 381b4222-f694-41f0-9685-ff5bb260df2e  (Balanced)
+
+==== 2026-10-05 19:55:26 | berkala ====
+Proses training    : hidup, PID 15072, 7388
+Progres terakhir   : [progres] langkah 1650: 3.58 s/langkah, VRAM puncak training tercadang 5972 MiB, teralokasi 5711 MiB
+Laju 4 jendela     : 3.58, 3.57, 3.58, 3.58 s/langkah
+Evaluasi terakhir  : [evaluasi] langkah 1500: WER 0.3018, terbaik 0.3003 pada langkah 1000, tanpa perbaikan 2 kali
+Biaya evaluasi     : [evaluasi] langkah 1500: 223.2 detik, VRAM tercadang awal 3090 MiB, puncak 5262 MiB, puncak teralokasi 5113 MiB
+Baris galat di log : 0
+GPU                : 7229 MiB, 728 MiB, 100 %, 74, 87.32 W, 2475 MHz, 3105 MHz, 0x0000000000000000, Not Active, Not Active, Not Active, Not Active
+Daya               : sumber AC, baterai 77%; Power Scheme GUID: 381b4222-f694-41f0-9685-ff5bb260df2e  (Balanced)
+
+==== 2026-10-05 20:24:30 | akhir: proses training sudah keluar ====
+Proses training    : tidak ada
+Progres terakhir   : [progres] langkah 2000: 3.57 s/langkah, VRAM puncak training tercadang 5972 MiB, teralokasi 5711 MiB
+Laju 4 jendela     : 3.58, 3.57, 3.58, 3.57 s/langkah
+Evaluasi terakhir  : [evaluasi] langkah 2000: WER 0.3015, terbaik 0.3003 pada langkah 1000, tanpa perbaikan 4 kali
+Biaya evaluasi     : [evaluasi] langkah 2000: 221.7 detik, VRAM tercadang awal 3090 MiB, puncak 5262 MiB, puncak teralokasi 5113 MiB
+Baris galat di log : 0
+GPU                : 1142 MiB, 6815 MiB, 0 %, 44, 2.19 W, 210 MHz, 3105 MHz, 0x0000000000000001, Not Active, Not Active, Not Active, Not Active
+Daya               : sumber AC, baterai 77%; Power Scheme GUID: 381b4222-f694-41f0-9685-ff5bb260df2e  (Balanced)
+Laporan run        : global_step 2000, stopped_early True, WER terbaik 0.300261878039656 pada langkah 1000, seconds_per_step 3.583, puncak tercadang 5972 MiB, teralokasi 5711 MiB
+Baris akhir log    :
+    train_peak_reserved_mib     : 5972
+    train_peak_allocated_mib    : 5711
+    evaluation_seconds_total    : 1794.9
+    model_dir                   : D:\_01_Bachelor_Information_System\_00-SKRIPSI\_01_python-scripts\outputs\models\whisper_d2
+    Peringatan determinisme: 1
+    Laporan ditulis ke : D:\_01_Bachelor_Information_System\_00-SKRIPSI\_01_python-scripts\outputs\runs\whisper_d2\run_report.json
+    Durasi eksekusi    : 8999.9 detik
+    ==============================================================================
+

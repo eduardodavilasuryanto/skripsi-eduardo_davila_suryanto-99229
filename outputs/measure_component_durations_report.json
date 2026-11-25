@@ -1,0 +1,45 @@
+{
+  "generated_at": "2026-10-03T15:39:00+07:00",
+  "script": "measure_component_durations.py",
+  "population": "subset_kerja",
+  "split_files": [
+    "test.tsv",
+    "validation.tsv",
+    "train_pool.tsv",
+    "excluded.tsv"
+  ],
+  "audit_report": "D:\\_01_Bachelor_Information_System\\_00-SKRIPSI\\_01_python-scripts\\outputs\\audit_transcript_leakage_report.json",
+  "n_utterances": 46309,
+  "total_hours": 74.239,
+  "n_components": 61,
+  "parts": {
+    "largest": {
+      "n_components": 1,
+      "n_utterances": 29479,
+      "pct_utterances": 63.66,
+      "hours": 51.201,
+      "minutes": 3072.1,
+      "hours_left_if_test": 23.037
+    },
+    "second": {
+      "n_components": 1,
+      "n_utterances": 16713,
+      "pct_utterances": 36.09,
+      "hours": 22.829,
+      "minutes": 1369.7,
+      "hours_left_if_test": 51.41
+    },
+    "remaining": {
+      "n_components": 59,
+      "n_utterances": 117,
+      "pct_utterances": 0.25,
+      "hours": 0.208,
+      "minutes": 12.5
+    }
+  },
+  "checks": {
+    "utterance_ids_unique": true,
+    "component_sizes_match_audit": true
+  },
+  "elapsed_seconds": 0.36
+}

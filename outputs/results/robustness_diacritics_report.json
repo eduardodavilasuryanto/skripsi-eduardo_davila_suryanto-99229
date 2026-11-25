@@ -1,0 +1,443 @@
+{
+  "generated_at": "2026-10-09T10:03:52+07:00",
+  "script": "robustness_diacritics.py",
+  "seed": 42,
+  "n_bootstrap": 10000,
+  "confidence": 0.95,
+  "interval_method": "persentil",
+  "normalization": "langkah 1, 2, 4, dan 6 Subbab 3.3.4 tanpa langkah 3; huruf dan tanda diakritik (kategori Unicode L dan M) dipertahankan",
+  "reference_source": "test.tsv, kolom transcript",
+  "hypothesis_source": "kolom hypothesis_raw berkas hipotesis",
+  "n_references_changed": 872,
+  "reference_non_ascii_letters": {
+    "U+00E9 LATIN SMALL LETTER E WITH ACUTE": 1141,
+    "U+00E8 LATIN SMALL LETTER E WITH GRAVE": 459,
+    "U+00EA LATIN SMALL LETTER E WITH CIRCUMFLEX": 12
+  },
+  "configs": [
+    {
+      "model": "whisper",
+      "level": "d1",
+      "run_name": "whisper_d1_trial",
+      "hours": 1.0,
+      "wer_main": 0.4123244430211812,
+      "wer_kept": 0.44370739741067755,
+      "wer_kept_ci": [
+        0.4330821551857248,
+        0.4549743635016142
+      ],
+      "wer_kept_minus_main": 0.03138295438949634,
+      "wer_kept_minus_main_ci": [
+        0.028751317717809026,
+        0.0340152360931989
+      ],
+      "cer_main": 0.09948408582191406,
+      "cer_kept": 0.10875825735655402,
+      "cer_kept_ci": [
+        0.10327168589196817,
+        0.11546756775870701
+      ],
+      "cer_kept_minus_main": 0.009274171534639955,
+      "cer_kept_minus_main_ci": [
+        0.008629599296060364,
+        0.009910964634375843
+      ],
+      "hypothesis_non_ascii_letters": {
+        "U+00E9 LATIN SMALL LETTER E WITH ACUTE": 1
+      }
+    },
+    {
+      "model": "whisper",
+      "level": "d2",
+      "run_name": "whisper_d2",
+      "hours": 3.0,
+      "wer_main": 0.3057779404364335,
+      "wer_kept": 0.3456699757536941,
+      "wer_kept_ci": [
+        0.3362967029779213,
+        0.3556759465262705
+      ],
+      "wer_kept_minus_main": 0.0398920353172606,
+      "wer_kept_minus_main_ci": [
+        0.03683578710371601,
+        0.04293946497372808
+      ],
+      "cer_main": 0.0718731233280559,
+      "cer_kept": 0.0814953322050554,
+      "cer_kept_ci": [
+        0.07765753852165401,
+        0.08659380352756982
+      ],
+      "cer_kept_minus_main": 0.009622208876999508,
+      "cer_kept_minus_main_ci": [
+        0.008964678326358656,
+        0.010281202146477294
+      ],
+      "hypothesis_non_ascii_letters": {
+        "U+00E9 LATIN SMALL LETTER E WITH ACUTE": 1
+      }
+    },
+    {
+      "model": "whisper",
+      "level": "d3",
+      "run_name": "whisper_d3",
+      "hours": 10.001,
+      "wer_main": 0.2222425545541882,
+      "wer_kept": 0.26821904021226955,
+      "wer_kept_ci": [
+        0.260263212621869,
+        0.27614680317468077
+      ],
+      "wer_kept_minus_main": 0.04597648565808135,
+      "wer_kept_minus_main_ci": [
+        0.04266946860817924,
+        0.049309718628832655
+      ],
+      "cer_main": 0.051127368018780366,
+      "cer_kept": 0.061302342086586234,
+      "cer_kept_ci": [
+        0.05909783438366042,
+        0.06351868670429098
+      ],
+      "cer_kept_minus_main": 0.010174974067805868,
+      "cer_kept_minus_main_ci": [
+        0.009499451991452136,
+        0.010851880204412667
+      ],
+      "hypothesis_non_ascii_letters": {}
+    },
+    {
+      "model": "whisper",
+      "level": "d4",
+      "run_name": "whisper_d4",
+      "hours": 30.001,
+      "wer_main": 0.1642801592021593,
+      "wer_kept": 0.21506015828720434,
+      "wer_kept_ci": [
+        0.2078271680597868,
+        0.22229318010470364
+      ],
+      "wer_kept_minus_main": 0.05077999908504505,
+      "wer_kept_minus_main_ci": [
+        0.04723499378205688,
+        0.054375194337970785
+      ],
+      "cer_main": 0.038024785718185294,
+      "cer_kept": 0.04846590598897199,
+      "cer_kept_ci": [
+        0.046512062216812464,
+        0.05051498509443226
+      ],
+      "cer_kept_minus_main": 0.010441120270786697,
+      "cer_kept_minus_main_ci": [
+        0.009744510037202813,
+        0.011135020742422477
+      ],
+      "hypothesis_non_ascii_letters": {}
+    },
+    {
+      "model": "whisper",
+      "level": "d5",
+      "run_name": "whisper_d5",
+      "hours": 66.134,
+      "wer_main": 0.1539869161443799,
+      "wer_kept": 0.204675419735578,
+      "wer_kept_ci": [
+        0.19731271754450844,
+        0.21189785992905769
+      ],
+      "wer_kept_minus_main": 0.050688503591198114,
+      "wer_kept_minus_main_ci": [
+        0.047123568470793964,
+        0.054287504642792764
+      ],
+      "cer_main": 0.03551345744390457,
+      "cer_kept": 0.04607741442375935,
+      "cer_kept_ci": [
+        0.04408436987261812,
+        0.04811082526541941
+      ],
+      "cer_kept_minus_main": 0.01056395697985478,
+      "cer_kept_minus_main_ci": [
+        0.009864179434707361,
+        0.011263040391896885
+      ],
+      "hypothesis_non_ascii_letters": {
+        "U+00E9 LATIN SMALL LETTER E WITH ACUTE": 1
+      }
+    },
+    {
+      "model": "xlsr",
+      "level": "d1",
+      "run_name": "xlsr_d1_trial",
+      "hours": 1.0,
+      "wer_main": 0.4787044238071275,
+      "wer_kept": 0.5106363511597054,
+      "wer_kept_ci": [
+        0.5017490433548272,
+        0.5191694234250188
+      ],
+      "wer_kept_minus_main": 0.03193192735257788,
+      "wer_kept_minus_main_ci": [
+        0.029265488033988887,
+        0.034568971708430984
+      ],
+      "cer_main": 0.11107168204400283,
+      "cer_kept": 0.12040044767156194,
+      "cer_kept_ci": [
+        0.11755217628109979,
+        0.12330083220999102
+      ],
+      "cer_kept_minus_main": 0.009328765627559105,
+      "cer_kept_minus_main_ci": [
+        0.008686301958878937,
+        0.009958790597859483
+      ],
+      "hypothesis_non_ascii_letters": {}
+    },
+    {
+      "model": "xlsr",
+      "level": "d2",
+      "run_name": "xlsr_d2",
+      "hours": 3.0,
+      "wer_main": 0.3777391463470424,
+      "wer_kept": 0.41584701953428793,
+      "wer_kept_ci": [
+        0.4073769202091244,
+        0.4239681044298948
+      ],
+      "wer_kept_minus_main": 0.03810787318724551,
+      "wer_kept_minus_main_ci": [
+        0.03508763915270131,
+        0.041186459636616844
+      ],
+      "cer_main": 0.08455942567014249,
+      "cer_kept": 0.09440683518043348,
+      "cer_kept_ci": [
+        0.09179483036860007,
+        0.09711514042911117
+      ],
+      "cer_kept_minus_main": 0.009847409510290991,
+      "cer_kept_minus_main_ci": [
+        0.009185489448254052,
+        0.010513696290620779
+      ],
+      "hypothesis_non_ascii_letters": {}
+    },
+    {
+      "model": "xlsr",
+      "level": "d3",
+      "run_name": "xlsr_d3",
+      "hours": 10.001,
+      "wer_main": 0.2398096893727984,
+      "wer_kept": 0.28702136419781327,
+      "wer_kept_ci": [
+        0.279039821288079,
+        0.29492397844425333
+      ],
+      "wer_kept_minus_main": 0.04721167482501487,
+      "wer_kept_minus_main_ci": [
+        0.043911314277770376,
+        0.050573213015549734
+      ],
+      "cer_main": 0.05071791232188677,
+      "cer_kept": 0.06103619588360539,
+      "cer_kept_ci": [
+        0.05880233615044179,
+        0.06327806397082414
+      ],
+      "cer_kept_minus_main": 0.01031828356171862,
+      "cer_kept_minus_main_ci": [
+        0.00962838078373373,
+        0.011000049650507769
+      ],
+      "hypothesis_non_ascii_letters": {}
+    },
+    {
+      "model": "xlsr",
+      "level": "d4",
+      "run_name": "xlsr_d4",
+      "hours": 30.001,
+      "wer_main": 0.1764948076307242,
+      "wer_kept": 0.22768653643808043,
+      "wer_kept_ci": [
+        0.22003013915162817,
+        0.23531569645114492
+      ],
+      "wer_kept_minus_main": 0.05119172880735623,
+      "wer_kept_minus_main_ci": [
+        0.04765612876623866,
+        0.054693544134854215
+      ],
+      "cer_main": 0.03664628487197685,
+      "cer_kept": 0.04722389037506142,
+      "cer_kept_ci": [
+        0.04522777104638141,
+        0.049298125546478055
+      ],
+      "cer_kept_minus_main": 0.010577605503084564,
+      "cer_kept_minus_main_ci": [
+        0.0098785369042719,
+        0.011271076618319218
+      ],
+      "hypothesis_non_ascii_letters": {}
+    },
+    {
+      "model": "xlsr",
+      "level": "d5",
+      "run_name": "xlsr_d5",
+      "hours": 66.134,
+      "wer_main": 0.18811473534928405,
+      "wer_kept": 0.2395352028912576,
+      "wer_kept_ci": [
+        0.2319714434450604,
+        0.2470344505984071
+      ],
+      "wer_kept_minus_main": 0.05142046754197355,
+      "wer_kept_minus_main_ci": [
+        0.04784238837567678,
+        0.05498940899139669
+      ],
+      "cer_main": 0.039437407872468196,
+      "cer_kept": 0.05002866189878255,
+      "cer_kept_ci": [
+        0.048069016628982046,
+        0.05206941378360834
+      ],
+      "cer_kept_minus_main": 0.010591254026314355,
+      "cer_kept_minus_main_ci": [
+        0.009878823894674092,
+        0.011284838838283738
+      ],
+      "hypothesis_non_ascii_letters": {}
+    }
+  ],
+  "input_sha256": {
+    "whisper_d1_trial_test.tsv": "9c6a51f450b2e3d4cc347a6c0c4ce467d6d639c8124f5b7bcd444655d1c11ec4",
+    "whisper_d2_test.tsv": "ea8ff9b88852a2c4c96c3d7f26d5f0af021a57d84e0d0a2cc5b460b70d611fc5",
+    "whisper_d3_test.tsv": "118e05def5274b01517fe7ee6e0047faf525505d42533d3e868cc9dd08c33d0a",
+    "whisper_d4_test.tsv": "f05b1bc509da70ae7c004a6f613fa86282f941fc69e386095ecfc2f0f9fa5c7b",
+    "whisper_d5_test.tsv": "0bc978bf437745e40f9e039c6408c7cda194dcb109a7d0b44372ec265e6bf871",
+    "xlsr_d1_trial_test.tsv": "0a2f581e56824179d91d55647a02a8561f383e8492a721c1549afdbf90474950",
+    "xlsr_d2_test.tsv": "bf9f012df6bbad33b937af9d9179ae5ce7e37a1e8041a7f49193d15a0daa4f50",
+    "xlsr_d3_test.tsv": "b3128109fed9f2e1fe7e502c558343871c7d14a2e04fceeb5916a7cfbb45c953",
+    "xlsr_d4_test.tsv": "cdc40bdc96b6e02822f74f4618e8fc8586fb0bca097501996020c3fa402ab6b7",
+    "xlsr_d5_test.tsv": "2242d1c0e3151548c5b04df006c5d7802496b7509efbdbb2748a9e9a014936e1",
+    "test.tsv": "38b1bf70f1e12e2b5a6097d647ab0e3324446a485d1e8b7ec2ba260028aed347",
+    "build_nested_subsets_report.json": "a6251798cecb5b45a88b07a7d660ad3efdc25e1520de48fa859f2ba60ded805d"
+  },
+  "environment": {
+    "skrip": "log_environment.py",
+    "lapis_1_perangkat_keras": {
+      "gpu": {
+        "jumlah_gpu_terdeteksi_torch": 1,
+        "nama": "NVIDIA GeForce RTX 4060 Laptop GPU",
+        "vram_total_mib": 8188,
+        "compute_capability": "sm_89",
+        "jumlah_streaming_multiprocessor": 24
+      },
+      "cpu": {
+        "nama": "13th Gen Intel(R) Core(TM) i7-13700HX",
+        "penanda_keluarga": "Intel64 Family 6 Model 191 Stepping 2, GenuineIntel",
+        "core_fisik": 16,
+        "core_logis": 24
+      },
+      "ram_sistem": {
+        "total_gib": 31.81,
+        "tersedia_saat_pencatatan_gib": 17.05
+      },
+      "penyimpanan": {
+        "PhysicalDisks": [
+          {
+            "FriendlyName": "SAMSUNG MZVL21T0HCLR-00BL2",
+            "MediaType": "SSD",
+            "SizeGB": 953.9
+          }
+        ],
+        "Volumes": [
+          {
+            "DriveLetter": "D",
+            "FileSystemType": "NTFS",
+            "SizeGB": 476.2
+          },
+          {
+            "DriveLetter": "C",
+            "FileSystemType": "NTFS",
+            "SizeGB": 475.8
+          }
+        ]
+      },
+      "sistem_operasi": {
+        "platform": "Windows-11-10.0.26300-SP0",
+        "sistem": "Windows",
+        "rilis": "11",
+        "versi": "10.0.26300",
+        "arsitektur": "AMD64",
+        "nama_host": "Eduardo"
+      }
+    },
+    "lapis_2_perangkat_lunak_terikat_perangkat_keras": {
+      "python": {
+        "versi": "3.12.10",
+        "implementasi": "CPython",
+        "executable": "D:\\_01_Bachelor_Information_System\\_00-SKRIPSI\\skripsi-venv\\Scripts\\python.exe"
+      },
+      "driver_nvidia": {
+        "versi": "610.88",
+        "sumber": "nvidia-smi"
+      },
+      "cuda": {
+        "tersedia": true,
+        "runtime_versi_torch": "13.0",
+        "cudnn_versi_mentah": 92400,
+        "cudnn_versi": "9.24.0"
+      },
+      "pytorch": {
+        "versi": "2.14.0+cu130",
+        "build_cuda": "13.0",
+        "versi_lengkap": "2.14.0+cu130"
+      },
+      "presisi": {
+        "dtype_bawaan": "torch.float32",
+        "float32_matmul_precision": "highest",
+        "bf16_didukung": true
+      },
+      "tf32": {
+        "cuda_matmul_allow_tf32": false,
+        "cudnn_allow_tf32": true,
+        "catatan": "Kedua kanal dilaporkan terpisah karena nilai bawaannya berbeda. Melaporkannya sebagai satu status tunggal adalah penyederhanaan yang keliru."
+      },
+      "determinisme": {
+        "cudnn_deterministic": false,
+        "cudnn_benchmark": false,
+        "use_deterministic_algorithms": false
+      },
+      "pustaka": {
+        "torch": "2.14.0+cu130",
+        "transformers": "5.17.0",
+        "datasets": "5.0.1",
+        "accelerate": "1.15.0",
+        "tokenizers": "0.23.2",
+        "safetensors": "0.8.0",
+        "soundfile": "0.14.0",
+        "jiwer": "4.0.0",
+        "bitsandbytes": "0.50.2",
+        "numpy": "2.5.3",
+        "pandas": "3.0.5",
+        "scipy": "1.18.1",
+        "scikit-learn": "1.9.0",
+        "statsmodels": "0.15.0",
+        "matplotlib": "3.11.1"
+      }
+    },
+    "lapis_3_jejak_eksekusi": {
+      "timestamp_utc": "2026-10-09T03:04:05+00:00",
+      "timestamp_lokal": "2026-10-09T10:04:05+07:00",
+      "random_seed": 42,
+      "vram_puncak_teralokasi_mib": 0.0,
+      "vram_puncak_tercadang_mib": 0.0,
+      "durasi_pengumpulan_detik": 13.008
+    }
+  },
+  "elapsed_seconds": 11.2
+}
